@@ -1,0 +1,51 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ErrorResponse_2",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ErrorAccountHasAlreadyActiveGFO",
+        "OmniProcessId": {
+            "Name": "SaleFileIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorAccountHasAlreadyActiveGFO",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ErrorAccountHasAlreadyActiveGFO",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BatchPO": "%ExtrtactAndBuildData:MemberInfo:BatchPO%",
+            "CodePub": "%ExtrtactAndBuildData:PolicyInfos:OriginalCodePub%",
+            "ConcilErrorCode": 951,
+            "ConcilErrorMessage": "Une police active existe deja sur un des comptes detecté en doublon",
+            "DateVente": "%ExtrtactAndBuildData:PolicyInfos:SalesDate%",
+            "EffectriveDate": "%ExtrtactAndBuildData:PolicyInfos:effectiveDate%",
+            "LeadNumber": "%ExtrtactAndBuildData:MemberInfo:LeadPO%",
+            "T11Id": "%contextId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorResponse_2"
+}

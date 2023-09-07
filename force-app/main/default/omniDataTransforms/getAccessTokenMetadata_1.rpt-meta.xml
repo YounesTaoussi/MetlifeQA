@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DataRaptorExtractAction1&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;GetSepaMandateFeedback&quot; : null,
+    &quot;GetToken&quot; : null,
+    &quot;GetTokenMetaData&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>getAccessTokenMetadata</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4add336f-0dd3-4621-958e-8ad6eee91c0d</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:Client_Id__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ClientId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>6d653292-764d-4c13-b032-7c1793ed49dd</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:ContentType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContentType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d3a6e96c-0742-4ef8-9d2f-fc032b60ff78</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:EndPoint__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EndPoint</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>0a4a14b2-f306-44da-aa82-a2aae369a35d</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:Method__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Method</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;SCIM_API_Token&quot;</filterValue>
+        <globalKey>d3a634ba-ea41-4bbb-a7dd-883ca1e0e693</globalKey>
+        <inputFieldName>DeveloperName</inputFieldName>
+        <inputObjectName>WebService_Setting__mdt</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>WebserviceSettingMetadata</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:APICAccessToken:Token1__c var:APICAccessToken:Token2__c var:APICAccessToken:Token3__c var:APICAccessToken:Token4__c CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(APICAccessToken:Token1__c,APICAccessToken:Token2__c,APICAccessToken:Token3__c,APICAccessToken:Token4__c)</formulaExpression>
+        <formulaResultPath>AccessToken</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>e92733cc-f993-45fa-a4de-b3c706a3edeb</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>getAccessTokenMetadataCustom7034</globalKey>
+        <inputFieldName>AccessToken</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccessToken</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b79427c6-a620-4d72-96f0-ddf6e8b00923</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:Password__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Password</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>dd363d54-9413-4666-8bb3-bc32eec715eb</globalKey>
+        <inputFieldName>WebserviceSettingMetadata:Username__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getAccessTokenMetadata</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Username</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{ }</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>getAccessTokenMetadata_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

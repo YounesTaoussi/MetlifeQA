@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>[ {
+  &quot;LatestPolicyAmountToCollect&quot; : 0.00470400000006066,
+  &quot;LatestPolicyCreatedDate&quot; : &quot;2023-02-13T09:33:43.000Z&quot;,
+  &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+  &quot;LatestPolicyName&quot; : &quot;CGFOR000043&quot;,
+  &quot;SubType&quot; : &quot;Special Avis d&apos;écheance&quot;,
+  &quot;TaskId&quot; : &quot;00T0E00000MqvImUAJ&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004pjhGAA&quot;,
+  &quot;WhatName&quot; : &quot;CGFOR000043&quot;
+}, {
+  &quot;LatestPolicyAmountToCollect&quot; : -8743.923552,
+  &quot;LatestPolicyCreatedDate&quot; : &quot;2023-02-14T16:27:56.000Z&quot;,
+  &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbdWAE&quot;,
+  &quot;LatestPolicyName&quot; : &quot;CGFOR000045&quot;,
+  &quot;SubType&quot; : &quot;MED&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HFA8NEAX&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;,
+  &quot;WhatName&quot; : &quot;CGFOR000045&quot;
+}, {
+  &quot;LatestPolicyCreatedDate&quot; : &quot;2022-12-07T09:57:38.000Z&quot;,
+  &quot;LatestPolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+  &quot;LatestPolicyName&quot; : &quot;CGFOR314159&quot;,
+  &quot;SubType&quot; : &quot;Lettre de rappel&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HGpktEAD&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004plTGAQ&quot;,
+  &quot;WhatName&quot; : &quot;CGFOR314159&quot;
+}, {
+  &quot;LatestPolicyAmountToCollect&quot; : 0,
+  &quot;LatestPolicyCreatedDate&quot; : &quot;2023-04-07T08:56:54.000Z&quot;,
+  &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFfQWAU&quot;,
+  &quot;LatestPolicyName&quot; : &quot;testPolicy&quot;,
+  &quot;SubType&quot; : &quot;Renunciation&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HGq2QEAT&quot;,
+  &quot;WhatId&quot; : &quot;0YT0E000001gFfQWAU&quot;,
+  &quot;WhatName&quot; : &quot;testPolicy&quot;
+} ]</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ReadLatestPolicyTask</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom8630</globalKey>
+        <inputFieldName>WhatName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WhatName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom4966</globalKey>
+        <inputFieldName>RelatedMEDTasksAbsent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>RelatedMEDTasksAbsent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom9085</globalKey>
+        <inputFieldName>SubType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom6600</globalKey>
+        <inputFieldName>TaskId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TaskId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom3456</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom866</globalKey>
+        <inputFieldName>LatestPolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LatestPolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom5638</globalKey>
+        <inputFieldName>RelatedMEDLapseTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom8555</globalKey>
+        <inputFieldName>RelatedMEDLapseTasksAbsent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>RelatedMEDLapseTasksAbsent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom9671</globalKey>
+        <inputFieldName>RelatedMEDTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:RelatedMEDTasks:SubTaskType__c var:null ==</formulaConverted>
+        <formulaExpression>(RelatedMEDTasks:SubTaskType__c==null)</formulaExpression>
+        <formulaResultPath>RelatedMEDTasksAbsent</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>ReadLatestPolicyTaskCustom9616</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom3577</globalKey>
+        <inputFieldName>EligibleTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Boolean</outputFieldFormat>
+        <outputFieldName>EligibleTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom919</globalKey>
+        <inputFieldName>FilterEligibleTransaction</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FilterEligibleTransaction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ReadLatestPolicyTaskCustom8920</globalKey>
+        <inputFieldName>LatestPolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LatestPolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;MED&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom5112</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>LatestPolicyId</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom7814</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:RelatedMEDLapseTasks:SubTaskType__c var:null ==</formulaConverted>
+        <formulaExpression>(RelatedMEDLapseTasks:SubTaskType__c==null)</formulaExpression>
+        <formulaResultPath>RelatedMEDLapseTasksAbsent</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ReadLatestPolicyTaskCustom798</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:RelatedMEDLapseTasksAbsent var:SubType &quot;MED&quot; == &amp;&amp; var:RelatedMEDTasksAbsent var:SubType &quot;MED&quot; &lt;&gt; &amp;&amp; ||</formulaConverted>
+        <formulaExpression>(RelatedMEDLapseTasksAbsent&amp;&amp;SubType==&quot;MED&quot;)||(RelatedMEDTasksAbsent&amp;&amp;SubType&lt;&gt;&quot;MED&quot;)</formulaExpression>
+        <formulaResultPath>EligibleTasks</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>ReadLatestPolicyTaskCustom3164</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;LETTER&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom647</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>LatestPolicyId</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom7961</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Completed&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom2707</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;MED Lapse&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom4448</globalKey>
+        <inputFieldName>SubTaskType__c</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Completed&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom4340</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;MED&apos;</filterValue>
+        <globalKey>ReadLatestPolicyTaskCustom8744</globalKey>
+        <inputFieldName>SubTaskType__c</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ReadLatestPolicyTask</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;0&quot; : {
+    &quot;LatestPolicyAmountToCollect&quot; : 0.00470400000006066,
+    &quot;LatestPolicyCreatedDate&quot; : &quot;2023-02-13T09:33:43.000Z&quot;,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000043&quot;,
+    &quot;SubType&quot; : &quot;Special Avis d&apos;écheance&quot;,
+    &quot;TaskId&quot; : &quot;00T0E00000MqvImUAJ&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjhGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000043&quot;
+  },
+  &quot;1&quot; : {
+    &quot;LatestPolicyAmountToCollect&quot; : -8743.923552,
+    &quot;LatestPolicyCreatedDate&quot; : &quot;2023-02-14T16:27:56.000Z&quot;,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbdWAE&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000045&quot;,
+    &quot;SubType&quot; : &quot;MED&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HFA8NEAX&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000045&quot;
+  },
+  &quot;2&quot; : {
+    &quot;LatestPolicyCreatedDate&quot; : &quot;2022-12-07T09:57:38.000Z&quot;,
+    &quot;LatestPolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR314159&quot;,
+    &quot;SubType&quot; : &quot;Lettre de rappel&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HGpktEAD&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004plTGAQ&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR314159&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>ReadLatestPolicyTask_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

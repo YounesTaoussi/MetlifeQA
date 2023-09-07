@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CheckAccountDuplicate",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BirthDate": "%ExtrtactAndBuildData:AccountInfo:BirthDate%",
+            "BirthName": "%ExtrtactAndBuildData:AccountInfo:BirthName%",
+            "FirstName": "%ExtrtactAndBuildData:AccountInfo:FirstName%",
+            "LastName": "%ExtrtactAndBuildData:AccountInfo:LastName%",
+            "ProductSubType": "%ExtrtactAndBuildData:ProductInfo:productFamilfy%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": true,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "metLife_AccountPoliciesDuplicate",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/CheckAccountDuplicate"
+}

@@ -1,0 +1,1324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Task&quot; : [ {
+    &quot;Id&quot; : &quot;00T1x00000HkZpeEAF&quot;,
+    &quot;Policy&quot; : {
+      &quot;ClauseBeneficiaire&quot; : &quot;Date d&apos;effet le 26/03/2023. Fletcher Cargill&quot;,
+      &quot;EffectiveDate&quot; : &quot;14/07/2020&quot;,
+      &quot;Id&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+      &quot;Name&quot; : &quot;CGFOR000083&quot;,
+      &quot;NameInsuredBillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;NameInsuredBillingCountry&quot; : &quot;France&quot;,
+      &quot;NameInsuredBillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;NameInsuredFirstName&quot; : &quot;GEORGE&quot;,
+      &quot;NameInsuredLastName&quot; : &quot;FORMBY&quot;,
+      &quot;NameInsuredPersonBirthdate&quot; : &quot;1961-07-15&quot;,
+      &quot;NameInsuredPersonEmail&quot; : &quot;claire.lambert@metlife.fr&quot;,
+      &quot;NameInsuredPersonTitle&quot; : &quot;Mr.&quot;,
+      &quot;PaymentMethodBIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethodBankAccountNumber&quot; : &quot;FR1420041010050500013M02605&quot;,
+      &quot;PaymentMethodMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyParticipantBeneficiary&quot; : {
+        &quot;PrimaryParticipantAccountAge&quot; : 67,
+        &quot;PrimaryParticipantAccountBillingCountry&quot; : &quot;France&quot;,
+        &quot;PrimaryParticipantAccountFirstName&quot; : &quot;GEORGETTE&quot;,
+        &quot;PrimaryParticipantAccountLastName&quot; : &quot;FORMBY&quot;,
+        &quot;PrimaryParticipantAccountPersonBirthdate&quot; : &quot;1956-02-29&quot;,
+        &quot;PrimaryParticipantAccountSalutation&quot; : &quot;Mme&quot;
+      },
+      &quot;PremiumAmount&quot; : &quot;15.912272&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Semi Annual(twice a year)&quot;,
+      &quot;ProducerAccountName&quot; : &quot;ONEY BANK&quot;,
+      &quot;ProducerAccountSponsorCode&quot; : &quot;ONEY&quot;,
+      &quot;ProductName&quot; : &quot;GFO Cetelem&quot;
+    },
+    &quot;SubTaskType&quot; : &quot;Dont acte - Clause bénéficiaire&quot;
+  }, {
+    &quot;Id&quot; : &quot;00T1x00000HlSN4EAN&quot;,
+    &quot;Policy&quot; : {
+      &quot;ClauseBeneficiaire&quot; : &quot;Date d&apos;effet le 30/03/2023. just testing&quot;,
+      &quot;EffectiveDate&quot; : &quot;24/11/2022&quot;,
+      &quot;Id&quot; : &quot;0YT1x0000004w11GAA&quot;,
+      &quot;Name&quot; : &quot;CGFOR000122&quot;,
+      &quot;NameInsuredBillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;NameInsuredBillingCountry&quot; : &quot;France&quot;,
+      &quot;NameInsuredBillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;NameInsuredFirstName&quot; : &quot;MARINE&quot;,
+      &quot;NameInsuredLastName&quot; : &quot;LECLAIRE&quot;,
+      &quot;NameInsuredPersonBirthdate&quot; : &quot;1957-10-09&quot;,
+      &quot;NameInsuredPersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethodBIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethodBankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentMethodMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyParticipantBeneficiary&quot; : {
+        &quot;PrimaryParticipantAccountAge&quot; : 65,
+        &quot;PrimaryParticipantAccountBillingCity&quot; : &quot;MEDIS&quot;,
+        &quot;PrimaryParticipantAccountBillingCountry&quot; : &quot;France&quot;,
+        &quot;PrimaryParticipantAccountBillingPostalCode&quot; : &quot;17600&quot;,
+        &quot;PrimaryParticipantAccountFirstName&quot; : &quot;MARINE&quot;,
+        &quot;PrimaryParticipantAccountGender&quot; : &quot;Female&quot;,
+        &quot;PrimaryParticipantAccountLastName&quot; : &quot;LECLAIRE&quot;,
+        &quot;PrimaryParticipantAccountPersonBirthdate&quot; : &quot;1957-10-09&quot;,
+        &quot;PrimaryParticipantAccountPersonTitle&quot; : &quot;Ms.&quot;
+      },
+      &quot;PremiumAmount&quot; : &quot;29.324232&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Monthly&quot;,
+      &quot;ProducerAccountName&quot; : &quot;ONEY BANK&quot;,
+      &quot;ProducerAccountSponsorCode&quot; : &quot;ONEY&quot;,
+      &quot;ProductName&quot; : &quot;GFO Cetelem&quot;
+    },
+    &quot;SubTaskType&quot; : &quot;Dont acte - Clause bénéficiaire&quot;
+  } ]
+}</expectedInputJson>
+    <expectedOutputXml>&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;
+&lt;root&gt;
+&lt;plis&gt;
+&lt;pli id=&apos;S200585643&apos;&gt;
+&lt;letter_type&gt;AVTNT&lt;/letter_type&gt;
+&lt;SRC_id&gt;a0s1l00003deEUAAY&lt;/SRC_id&gt;
+&lt;type_doc&gt;benef&lt;/type_doc&gt;
+&lt;type_destinataire&gt;souscripteur&lt;/type_destinataire&gt;
+&lt;nb_ex&gt;1&lt;/nb_ex&gt;
+&lt;cpub_libelle_produit&gt;SUPER NOVATERM CREDIT LAGARDE&lt;/cpub_libelle_produit&gt;
+&lt;contrat_date_effet&gt;01/07/2018&lt;/contrat_date_effet&gt;
+&lt;date_effet_resiliation&gt;12/04/2018&lt;/date_effet_resiliation&gt;
+&lt;contrat_identifiant&gt;S200585643&lt;/contrat_identifiant&gt;
+&lt;contrat_periodicite&gt;Trimestrielle&lt;/contrat_periodicite&gt;
+&lt;avenant_date_effet&gt;02/01/2020&lt;/avenant_date_effet&gt;
+&lt;contrat_prime&gt;  30,05 Euros&lt;/contrat_prime&gt;
+&lt;beneficiaire_clause&gt;
+ LCL 18 RUE DE LA REPUBLIQUE 69002 LYON 02, A CONCURRENCE DES SOMMES DUES, SUR LE(S) PRET(S) D&apos;UN MONTANT DE 111 000 EUROS AU TAUX DE 1.4% POUR UNE DUREE DE 252 MOIS DONT 12 MOIS DE DIFFERE, LE SOLDE EVENTUEL AUX HERITIERS DE L&apos;ASSURE
+&lt;/beneficiaire_clause&gt;
+&lt;contrat_date_proch_echeance&gt;01/04/2020&lt;/contrat_date_proch_echeance&gt;
+&lt;contrat_valeur_proch_prime&gt;  30,05 Euros&lt;/contrat_valeur_proch_prime&gt;
+&lt;destinataire_type&gt;P&lt;/destinataire_type&gt;
+&lt;destinataire_civilite&gt;Monsieur&lt;/destinataire_civilite&gt;
+&lt;destinataire_nom&gt;GEORGE&lt;/destinataire_nom&gt;
+&lt;destinataire_prenom&gt;AMAURY&lt;/destinataire_prenom&gt;
+&lt;destinataire_adresse_voie&gt;18 BUCKLEY ROAD 05 09&lt;/destinataire_adresse_voie&gt;
+&lt;destinataire_adresse_voie1&gt;&lt;/destinataire_adresse_voie1&gt;
+&lt;destinataire_adresse_codepostal&gt;99999&lt;/destinataire_adresse_codepostal&gt;
+&lt;destinataire_adresse_ville&gt;SINGAPOUR&lt;/destinataire_adresse_ville&gt;
+&lt;destinataire_adresse_cedex&gt;&lt;/destinataire_adresse_cedex&gt;
+&lt;destinataire_adresse_mail&gt;investissementlocatif2000@gmail.com&lt;/destinataire_adresse_mail&gt;
+&lt;destinataire_adresse_pays&gt;SINGAPOUR&lt;/destinataire_adresse_pays&gt;
+&lt;assure_type&gt;&lt;/assure_type&gt;
+&lt;assure_civilite&gt;Monsieur&lt;/assure_civilite&gt;
+&lt;assure_nom&gt;GEORGE&lt;/assure_nom&gt;
+&lt;assure_prenom&gt;AMAURY&lt;/assure_prenom&gt;
+&lt;assure_date_naissance&gt;27/09/1981&lt;/assure_date_naissance&gt;
+&lt;assure_adresse_voie&gt;18 BUCKLEY ROAD 05 09&lt;/assure_adresse_voie&gt;
+&lt;assure_adresse_voie1&gt;&lt;/assure_adresse_voie1&gt;
+&lt;assure_adresse_complement&gt;&lt;/assure_adresse_complement&gt;&lt;assure_adresse_codepostal&gt;99999&lt;/assure_adresse_codepostal&gt;
+&lt;assure_adresse_ville&gt;SINGAPOUR&lt;/assure_adresse_ville&gt;
+&lt;assure_adresse_cedex&gt;&lt;/assure_adresse_cedex&gt;
+&lt;assure_adresse_pays&gt;SINGAPOUR&lt;/assure_adresse_pays&gt;
+&lt;assure_adresse_mail&gt;investissementlocatif2000@gmail.com&lt;/assure_adresse_mail&gt;
+&lt;beneficiaire_civilite&gt;&lt;/beneficiaire_civilite&gt;
+&lt;beneficiaire_type&gt;&lt;/beneficiaire_type&gt;
+&lt;beneficiaire_prenom&gt;&lt;/beneficiaire_prenom&gt;
+&lt;beneficiaire_nom&gt;&lt;/beneficiaire_nom&gt;
+&lt;beneficiaire_particule&gt;&lt;/beneficiaire_particule&gt;
+&lt;beneficiaire_adresse_voie&gt;&lt;/beneficiaire_adresse_voie&gt;
+&lt;beneficiaire_adresse_voie1&gt;&lt;/beneficiaire_adresse_voie1&gt;
+&lt;beneficiaire_adresse_complement&gt;&lt;/beneficiaire_adresse_complement&gt;
+&lt;beneficiaire_adresse_lieu_dit&gt;&lt;/beneficiaire_adresse_lieu_dit&gt;
+&lt;beneficiaire_adresse_codepostal&gt;&lt;/beneficiaire_adresse_codepostal&gt;
+&lt;beneficiaire_adresse_ville&gt;&lt;/beneficiaire_adresse_ville&gt;
+&lt;beneficiaire_adresse_cedex&gt;&lt;/beneficiaire_adresse_cedex&gt;
+&lt;beneficiaire_adresse_pays&gt;&lt;/beneficiaire_adresse_pays&gt;
+&lt;beneficiaire_adresse_mail&gt;&lt;/beneficiaire_adresse_mail&gt;
+&lt;souscripteur_type&gt;P&lt;/souscripteur_type&gt;
+&lt;souscripteur_civilite&gt;Monsieur&lt;/souscripteur_civilite&gt;
+&lt;souscripteur_nom&gt;GEORGE&lt;/souscripteur_nom&gt;
+&lt;souscripteur_prenom&gt;AMAURY&lt;/souscripteur_prenom&gt;
+&lt;souscripteur_adresse_voie&gt;18 BUCKLEY ROAD 05 09&lt;/souscripteur_adresse_voie&gt;
+&lt;souscripteur_adresse_voie1&gt;&lt;/souscripteur_adresse_voie1&gt;
+&lt;souscripteur_adresse_complement&gt;&lt;/souscripteur_adresse_complement&gt;
+&lt;souscripteur_adresse_codepostal&gt;99999&lt;/souscripteur_adresse_codepostal&gt;
+&lt;souscripteur_adresse_ville&gt;SINGAPOUR&lt;/souscripteur_adresse_ville&gt;
+&lt;souscripteur_adresse_cedex&gt;&lt;/souscripteur_adresse_cedex&gt;
+&lt;souscripteur_adresse_pays&gt;SINGAPOUR&lt;/souscripteur_adresse_pays&gt;
+&lt;souscripteur_adresse_mail&gt;investissementlocatif2000@gmail.com&lt;/souscripteur_adresse_mail&gt;
+&lt;courtier_type&gt;M&lt;/courtier_type&gt;
+&lt;courtier_numero&gt;958702&lt;/courtier_numero&gt;
+&lt;courtier_civilite&gt;&lt;/courtier_civilite&gt;
+&lt;courtier_prenom&gt;&lt;/courtier_prenom&gt;
+&lt;courtier_nom&gt;CABINET VALORAMA&lt;/courtier_nom&gt;
+&lt;courtier_adresse_voie&gt;7 RUE DE LA TIRELIRE&lt;/courtier_adresse_voie&gt;
+&lt;courtier_adresse_voie1&gt;&lt;/courtier_adresse_voie1&gt;
+&lt;courtier_telephone&gt;0679614429&lt;/courtier_telephone&gt;
+&lt;courtier_adresse_codepostal&gt;51100&lt;/courtier_adresse_codepostal&gt;
+&lt;courtier_adresse_ville&gt;REIMS&lt;/courtier_adresse_ville&gt;
+&lt;courtier_adresse_cedex&gt;&lt;/courtier_adresse_cedex&gt;
+&lt;courtier_adresse_pays&gt;FRANCE&lt;/courtier_adresse_pays&gt;
+&lt;bq_etablissement&gt;LCL&lt;/bq_etablissement&gt;
+&lt;bq_codebanque&gt;30002&lt;/bq_codebanque&gt;
+&lt;bq_codeguichet&gt;00429&lt;/bq_codeguichet&gt;
+&lt;bq_compte&gt;0000021396V&lt;/bq_compte&gt;
+&lt;bq_rib&gt;56&lt;/bq_rib&gt;
+&lt;bq_iban&gt;FR9130002004290000021396V56&lt;/bq_iban&gt;
+&lt;bq_bic&gt;CRLYFRPP&lt;/bq_bic&gt;
+&lt;remboursement_mode_paiement&gt;&lt;/remboursement_mode_paiement&gt;
+&lt;remboursement_montant_total&gt;&lt;/remboursement_montant_total&gt;
+&lt;/pli&gt;
+&lt;/plis&gt;
+&lt;/root&gt;</expectedOutputXml>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTDunningLetterXMLMaps</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps21059625648800773</globalKey>
+        <inputFieldName>Task:Policy:ProducerAccountName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_nom_contact</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps4841824589940311</globalKey>
+        <inputFieldName>Task:Policy:ProducerAccountSponsorCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_code</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>P</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps5142758397048641</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps3838956984751174</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_prenom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps9471589636994588</globalKey>
+        <inputFieldName>Task:calculatedTypeDoc</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:type_doc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>souscripteur</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps31264356551846983</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:type_destinataire</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps7568934682422299</globalKey>
+        <inputFieldName>Task:Policy:ProducerAccountPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_num_tel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom3011</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingvoie1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_voie1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps4567870317760896</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_ville</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps6477435549807864</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_pays</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps8632570949529936</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredPersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_mail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps14155168698299336</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_nom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps3561515000108517</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredPersonBirthdate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:souscripteur_date_naissance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps703631049967075</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredPersonTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_civilite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Ms.&quot; : &quot;Madame&quot;,
+  &quot;Mr.&quot; : &quot;Monsieur&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom1683</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingvoie</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_voie:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps8444896189067559</globalKey>
+        <inputFieldName>Task:TransactionTotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:montant_impaye</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps7020549208848472</globalKey>
+        <inputFieldName>Task:Policy:PaymentMethodMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:mode_paiement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>AVTNT</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps5999344625804337</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:letter_type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>EUR</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps07552809349438183</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:devise_defaut</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom7039</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingcomplement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_complement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps6098328193494034</globalKey>
+        <inputFieldName>Task:Policy:NameInsuredBillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:souscripteur_adresse_codepostal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps44891842359384215</globalKey>
+        <inputFieldName>Task:TransactionEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:prime_date</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>1</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps17664918982854783</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:nb_ex</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps24638628089582681</globalKey>
+        <inputFieldName>Task:Policy:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>root:plis:pli:@id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom7830</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingvoieFirstCommaPos</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom5463</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:SubTaskType &quot;MED&quot; == &quot;med&quot; | var:Task:SubTaskType &quot;Special/\/\/Avis/\/\/d&apos;écheance&quot; == &quot;AEcheance&quot; | var:Task:SubTaskType &quot;Dont/\/\/acte/\/\/-/\/\/Clause/\/\/bénéficiaire&quot; == &quot;cbenef&quot; &quot;LRappel&quot; IF IF IF</formulaConverted>
+        <formulaExpression>IF(Task:SubTaskType==&quot;MED&quot;, &quot;med&quot;, IF(Task:SubTaskType==&quot;Special Avis d&apos;écheance&quot;, &quot;AEcheance&quot;, IF(Task:SubTaskType==&quot;Dont acte - Clause bénéficiaire&quot;, &quot;cbenef&quot;, &quot;LRappel&quot;)))</formulaExpression>
+        <formulaResultPath>Task:calculatedTypeDoc</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMaps31633002503303365</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieThirdCommaPos 1 &gt; | | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos + 3 + var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieThirdCommaPos var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos + var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos + 2 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieThirdCommaPos&gt;1,SUBSTRING(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos+Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos+3,Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieThirdCommaPos+Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos+Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos+2),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingcomplement</formulaResultPath>
+        <formulaSequence>14.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom8854</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos+1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom2162</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos 1 + var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos + 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos + 1 + Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos + 1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieThirdCommaPos</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom7628</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:NameInsuredBillingvoieFirstCommaPos 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),Task:Policy:NameInsuredBillingvoieFirstCommaPos+1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingvoieSecondCommaPos</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom5727</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:NameInsuredBillingvoieFirstCommaPos 1 + var:Task:Policy:NameInsuredBillingvoieSecondCommaPos + 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),Task:Policy:NameInsuredBillingvoieFirstCommaPos + 1 + Task:Policy:NameInsuredBillingvoieSecondCommaPos + 1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingvoieThirdCommaPos</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom4801</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos 1 &gt; | | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos 2 + var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos + 1 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos&gt;1,SUBSTRING(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos+2,Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieSecondCommaPos+Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos+1),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoie1</formulaResultPath>
+        <formulaSequence>13.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom8096</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos 0 &gt; | | var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet &quot;,,,&quot; CONCAT 0 var:Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos&gt;0,SUBSTRING(CONCAT(Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingStreet,&quot;,,,&quot;),0,Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoieFirstCommaPos),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoie</formulaResultPath>
+        <formulaSequence>12.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom7462</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:NameInsuredBillingvoieThirdCommaPos 1 &gt; | | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:NameInsuredBillingvoieSecondCommaPos var:Task:Policy:NameInsuredBillingvoieFirstCommaPos + 3 + var:Task:Policy:NameInsuredBillingvoieThirdCommaPos var:Task:Policy:NameInsuredBillingvoieSecondCommaPos + var:Task:Policy:NameInsuredBillingvoieFirstCommaPos + 2 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:NameInsuredBillingvoieThirdCommaPos&gt;1,SUBSTRING(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),Task:Policy:NameInsuredBillingvoieSecondCommaPos+Task:Policy:NameInsuredBillingvoieFirstCommaPos+3,Task:Policy:NameInsuredBillingvoieThirdCommaPos+Task:Policy:NameInsuredBillingvoieSecondCommaPos+Task:Policy:NameInsuredBillingvoieFirstCommaPos+2),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingcomplement</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom7531</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>P</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom7105</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:NameInsuredBillingvoieSecondCommaPos 1 &gt; | | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT var:Task:Policy:NameInsuredBillingvoieFirstCommaPos 2 + var:Task:Policy:NameInsuredBillingvoieSecondCommaPos var:Task:Policy:NameInsuredBillingvoieFirstCommaPos + 1 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:NameInsuredBillingvoieSecondCommaPos&gt;1,SUBSTRING(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),Task:Policy:NameInsuredBillingvoieFirstCommaPos+2,Task:Policy:NameInsuredBillingvoieSecondCommaPos+Task:Policy:NameInsuredBillingvoieFirstCommaPos+1),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingvoie1</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom1802</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps30612153997074865</globalKey>
+        <inputFieldName>Task:Policy:ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:cpub_libelle_produit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps01595517547966674</globalKey>
+        <inputFieldName>Task:Policy:ExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_date_resil</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;$Vlocity.NULL&apos;</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps9654080887413292</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>LettersTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps6322788491813491</globalKey>
+        <inputFieldName>Task:Policy:EffectiveDateInParis</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_date_effet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;LETTER&apos;</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps19928155924364632</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>LettersTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps7643096221811281</globalKey>
+        <inputFieldName>Task:Policy:PaymentMethodBankAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:bq_iban</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;Not Started&apos;</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps9011611508830901</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>LettersTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps43084222900919067</globalKey>
+        <inputFieldName>Task:Policy:PaymentMethodBIC</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:bq_bic</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;=</filterOperator>
+        <filterValue>&apos;$Vlocity.TODAY&apos;</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps6374393802519616</globalKey>
+        <inputFieldName>ActivityDate</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>LettersTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:NameInsuredBillingvoieFirstCommaPos 0 &gt; | | var:Task:Policy:NameInsuredBillingStreet &quot;,,,&quot; CONCAT 0 var:Task:Policy:NameInsuredBillingvoieFirstCommaPos SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(Task:Policy:NameInsuredBillingvoieFirstCommaPos&gt;0,SUBSTRING(CONCAT(Task:Policy:NameInsuredBillingStreet,&quot;,,,&quot;),0,Task:Policy:NameInsuredBillingvoieFirstCommaPos),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:NameInsuredBillingvoie</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom2156</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps14830690864898277</globalKey>
+        <inputFieldName>Task:Policy:PremiumAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_prime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Task:Policy:EffectiveDate &quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ&quot; &quot;Europe/Paris&quot; FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(Task:Policy:EffectiveDate,&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ&quot;,&quot;Europe/Paris&quot;)</formulaExpression>
+        <formulaResultPath>Task:Policy:EffectiveDateInParis</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTDunningLetterXMLMapsCustom8839</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps6242906138595057</globalKey>
+        <inputFieldName>Task:Policy:PremiumFrequency</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_periodicite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Monthly&quot; : &quot;mensuel&quot;,
+  &quot;Quarterly&quot; : &quot;trimestriel&quot;,
+  &quot;Semi Annual(twice a year)&quot; : &quot;semestriel&quot;,
+  &quot;Annually&quot; : &quot;annuel&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Policy:Id</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps31328891519404123</globalKey>
+        <inputFieldName>InsurancePolicyId</inputFieldName>
+        <inputObjectName>InsurancePolicyParticipant</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>PolicyParticipantBeneficiary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps9214116090858606</globalKey>
+        <inputFieldName>Task:Policy:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_identifiant</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>VIE</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps8346131661247571</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_duree</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>LettersTask:WhatId</filterValue>
+        <globalKey>DRTDunningLetterXMLMaps14822893681725424</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>InsurancePolicy</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Policy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps16866762905225308</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_nom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps7980627650099792</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountPersonBirthdate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:assure_date_naissance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps35839305651679143</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountPersonTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_civilite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Ms.&quot; : &quot;Madame&quot;,
+  &quot;Mr.&quot; : &quot;Monsieur&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps5196696058749273</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountAge</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_age</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>P</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps5711310344829597</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:beneficiaire_type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps7028199695240482</globalKey>
+        <inputFieldName>Task:Policy:ClauseBeneficiaire</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:beneficiaire_clause</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>P</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps5431886196396276</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps8923770113689857</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_prenom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps045526345393192</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountPersonEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_mail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom6266</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingcomplement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_complement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps4763603062126447</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_codepostal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps34969849307355716</globalKey>
+        <inputFieldName>Task:Policy:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>root:plis:pli:SRC_id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMapsCustom3937</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoie1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_voie1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps06683929594355043</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingvoie</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_voie</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps3368133991174347</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_ville</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTDunningLetterXMLMaps3072233611318529</globalKey>
+        <inputFieldName>Task:Policy:PolicyParticipantBeneficiary:PrimaryParticipantAccountBillingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTDunningLetterXMLMaps</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_pays</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>XML</outputType>
+    <previewJsonData>{
+  &quot;Task&quot; : [ {
+    &quot;Id&quot; : &quot;00T1x00000HkZpeEAF&quot;,
+    &quot;Policy&quot; : {
+      &quot;ClauseBeneficiaire&quot; : &quot;Date d&apos;effet le 26/03/2023. Fletcher Cargill&quot;,
+      &quot;EffectiveDate&quot; : &quot;14/07/2020&quot;,
+      &quot;Id&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+      &quot;Name&quot; : &quot;CGFOR000083&quot;,
+      &quot;NameInsuredBillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;NameInsuredBillingCountry&quot; : &quot;France&quot;,
+      &quot;NameInsuredBillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;NameInsuredBillingStreet&quot; : &quot;LOT 1 MUSSON\r\nABC\r\nIMPASSE DE LA BELERIE&quot;,
+      &quot;NameInsuredFirstName&quot; : &quot;GEORGE&quot;,
+      &quot;NameInsuredLastName&quot; : &quot;FORMBY&quot;,
+      &quot;NameInsuredPersonBirthdate&quot; : &quot;1961-07-15&quot;,
+      &quot;NameInsuredPersonEmail&quot; : &quot;claire.lambert@metlife.fr&quot;,
+      &quot;NameInsuredPersonTitle&quot; : &quot;Mr.&quot;,
+      &quot;PaymentMethodBIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethodBankAccountNumber&quot; : &quot;FR1420041010050500013M02605&quot;,
+      &quot;PaymentMethodMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyParticipantBeneficiary&quot; : {
+        &quot;PrimaryParticipantAccountAge&quot; : 67,
+        &quot;PrimaryParticipantAccountBillingCountry&quot; : &quot;France&quot;,
+        &quot;PrimaryParticipantAccountFirstName&quot; : &quot;GEORGETTE&quot;,
+        &quot;PrimaryParticipantAccountLastName&quot; : &quot;FORMBY&quot;,
+        &quot;PrimaryParticipantAccountPersonBirthdate&quot; : &quot;1956-02-29&quot;,
+        &quot;PrimaryParticipantAccountSalutation&quot; : &quot;Mme&quot;
+      },
+      &quot;PremiumAmount&quot; : &quot;15.912272&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Semi Annual(twice a year)&quot;,
+      &quot;ProducerAccountName&quot; : &quot;ONEY BANK&quot;,
+      &quot;ProducerAccountSponsorCode&quot; : &quot;ONEY&quot;,
+      &quot;ProductName&quot; : &quot;GFO Cetelem&quot;
+    },
+    &quot;SubTaskType&quot; : &quot;Dont acte - Clause bénéficiaire&quot;
+  }, {
+    &quot;Id&quot; : &quot;00T1x00000HlSN4EAN&quot;,
+    &quot;Policy&quot; : {
+      &quot;ClauseBeneficiaire&quot; : &quot;Date d&apos;effet le 30/03/2023. just testing&quot;,
+      &quot;EffectiveDate&quot; : &quot;24/11/2022&quot;,
+      &quot;Id&quot; : &quot;0YT1x0000004w11GAA&quot;,
+      &quot;Name&quot; : &quot;CGFOR000122&quot;,
+      &quot;NameInsuredBillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;NameInsuredBillingCountry&quot; : &quot;France&quot;,
+      &quot;NameInsuredBillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;NameInsuredBillingStreet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;NameInsuredFirstName&quot; : &quot;MARINE&quot;,
+      &quot;NameInsuredLastName&quot; : &quot;LECLAIRE&quot;,
+      &quot;NameInsuredPersonBirthdate&quot; : &quot;1957-10-09&quot;,
+      &quot;NameInsuredPersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethodBIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethodBankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentMethodMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyParticipantBeneficiary&quot; : {
+        &quot;PrimaryParticipantAccountAge&quot; : 65,
+        &quot;PrimaryParticipantAccountBillingCity&quot; : &quot;MEDIS&quot;,
+        &quot;PrimaryParticipantAccountBillingCountry&quot; : &quot;France&quot;,
+        &quot;PrimaryParticipantAccountBillingPostalCode&quot; : &quot;17600&quot;,
+        &quot;PrimaryParticipantAccountBillingStreet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+        &quot;PrimaryParticipantAccountFirstName&quot; : &quot;MARINE&quot;,
+        &quot;PrimaryParticipantAccountGender&quot; : &quot;Female&quot;,
+        &quot;PrimaryParticipantAccountLastName&quot; : &quot;LECLAIRE&quot;,
+        &quot;PrimaryParticipantAccountPersonBirthdate&quot; : &quot;1957-10-09&quot;,
+        &quot;PrimaryParticipantAccountPersonTitle&quot; : &quot;Ms.&quot;
+      },
+      &quot;PremiumAmount&quot; : &quot;29.324232&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Monthly&quot;,
+      &quot;ProducerAccountName&quot; : &quot;ONEY BANK&quot;,
+      &quot;ProducerAccountSponsorCode&quot; : &quot;ONEY&quot;,
+      &quot;ProductName&quot; : &quot;GFO Cetelem&quot;
+    },
+    &quot;SubTaskType&quot; : &quot;Dont acte - Clause bénéficiaire&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTDunningLetterXMLMaps_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+    <xmlOutputTagsOrder>[&quot;root&quot;,&quot;root:plis&quot;,&quot;root:plis:pli&quot;,&quot;root:plis:pli:@id&quot;,&quot;root:plis:pli:letter_type&quot;,&quot;root:plis:pli:letter_type:#text&quot;,&quot;root:plis:pli:SRC_id&quot;,&quot;root:plis:pli:SRC_id:#text&quot;,&quot;root:plis:pli:type_doc&quot;,&quot;root:plis:pli:type_doc:#text&quot;,&quot;root:plis:pli:type_destinataire&quot;,&quot;root:plis:pli:type_destinataire:#text&quot;,&quot;root:plis:pli:nb_ex&quot;,&quot;root:plis:pli:nb_ex:#text&quot;,&quot;root:plis:pli:cpub_libelle_produit&quot;,&quot;root:plis:pli:cpub_libelle_produit:#text&quot;,&quot;root:plis:pli:contrat_date_effet&quot;,&quot;root:plis:pli:contrat_date_effet:#text&quot;,&quot;root:plis:pli:date_effet_resiliation&quot;,&quot;root:plis:pli:date_effet_resiliation:#text&quot;,&quot;root:plis:pli:contrat_identifiant&quot;,&quot;root:plis:pli:contrat_identifiant:#text&quot;,&quot;root:plis:pli:contrat_periodicite&quot;,&quot;root:plis:pli:contrat_periodicite:#text&quot;,&quot;root:plis:pli:avenant_date_effet&quot;,&quot;root:plis:pli:avenant_date_effet:#text&quot;,&quot;root:plis:pli:contrat_prime&quot;,&quot;root:plis:pli:contrat_prime:#text&quot;,&quot;root:plis:pli:beneficiaire_clause&quot;,&quot;root:plis:pli:beneficiaire_clause:#text&quot;,&quot;root:plis:pli:contrat_date_proch_echeance&quot;,&quot;root:plis:pli:contrat_date_proch_echeance:#text&quot;,&quot;root:plis:pli:contrat_valeur_proch_prime&quot;,&quot;root:plis:pli:contrat_valeur_proch_prime:#text&quot;,&quot;root:plis:pli:destinataire_type&quot;,&quot;root:plis:pli:destinataire_type:#text&quot;,&quot;root:plis:pli:destinataire_civilite&quot;,&quot;root:plis:pli:destinataire_civilite:#text&quot;,&quot;root:plis:pli:destinataire_nom&quot;,&quot;root:plis:pli:destinataire_nom:#text&quot;,&quot;root:plis:pli:destinataire_prenom&quot;,&quot;root:plis:pli:destinataire_prenom:#text&quot;,&quot;root:plis:pli:destinataire_adresse_voie&quot;,&quot;root:plis:pli:destinataire_adresse_voie:#text&quot;,&quot;root:plis:pli:destinataire_adresse_voie1&quot;,&quot;root:plis:pli:destinataire_adresse_codepostal&quot;,&quot;root:plis:pli:destinataire_adresse_codepostal:#text&quot;,&quot;root:plis:pli:destinataire_adresse_ville&quot;,&quot;root:plis:pli:destinataire_adresse_ville:#text&quot;,&quot;root:plis:pli:destinataire_adresse_cedex&quot;,&quot;root:plis:pli:destinataire_adresse_mail&quot;,&quot;root:plis:pli:destinataire_adresse_mail:#text&quot;,&quot;root:plis:pli:destinataire_adresse_pays&quot;,&quot;root:plis:pli:destinataire_adresse_pays:#text&quot;,&quot;root:plis:pli:assure_type&quot;,&quot;root:plis:pli:assure_civilite&quot;,&quot;root:plis:pli:assure_civilite:#text&quot;,&quot;root:plis:pli:assure_nom&quot;,&quot;root:plis:pli:assure_nom:#text&quot;,&quot;root:plis:pli:assure_prenom&quot;,&quot;root:plis:pli:assure_prenom:#text&quot;,&quot;root:plis:pli:assure_date_naissance&quot;,&quot;root:plis:pli:assure_date_naissance:#text&quot;,&quot;root:plis:pli:assure_adresse_voie&quot;,&quot;root:plis:pli:assure_adresse_voie:#text&quot;,&quot;root:plis:pli:assure_adresse_voie1&quot;,&quot;root:plis:pli:assure_adresse_complement&quot;,&quot;root:plis:pli:assure_adresse_codepostal&quot;,&quot;root:plis:pli:assure_adresse_codepostal:#text&quot;,&quot;root:plis:pli:assure_adresse_ville&quot;,&quot;root:plis:pli:assure_adresse_ville:#text&quot;,&quot;root:plis:pli:assure_adresse_cedex&quot;,&quot;root:plis:pli:assure_adresse_pays&quot;,&quot;root:plis:pli:assure_adresse_pays:#text&quot;,&quot;root:plis:pli:assure_adresse_mail&quot;,&quot;root:plis:pli:assure_adresse_mail:#text&quot;,&quot;root:plis:pli:beneficiaire_civilite&quot;,&quot;root:plis:pli:beneficiaire_type&quot;,&quot;root:plis:pli:beneficiaire_prenom&quot;,&quot;root:plis:pli:beneficiaire_nom&quot;,&quot;root:plis:pli:beneficiaire_particule&quot;,&quot;root:plis:pli:beneficiaire_adresse_voie&quot;,&quot;root:plis:pli:beneficiaire_adresse_voie1&quot;,&quot;root:plis:pli:beneficiaire_adresse_complement&quot;,&quot;root:plis:pli:beneficiaire_adresse_lieu_dit&quot;,&quot;root:plis:pli:beneficiaire_adresse_codepostal&quot;,&quot;root:plis:pli:beneficiaire_adresse_ville&quot;,&quot;root:plis:pli:beneficiaire_adresse_cedex&quot;,&quot;root:plis:pli:beneficiaire_adresse_pays&quot;,&quot;root:plis:pli:beneficiaire_adresse_mail&quot;,&quot;root:plis:pli:souscripteur_type&quot;,&quot;root:plis:pli:souscripteur_type:#text&quot;,&quot;root:plis:pli:souscripteur_civilite&quot;,&quot;root:plis:pli:souscripteur_civilite:#text&quot;,&quot;root:plis:pli:souscripteur_nom&quot;,&quot;root:plis:pli:souscripteur_nom:#text&quot;,&quot;root:plis:pli:souscripteur_prenom&quot;,&quot;root:plis:pli:souscripteur_prenom:#text&quot;,&quot;root:plis:pli:souscripteur_adresse_voie&quot;,&quot;root:plis:pli:souscripteur_adresse_voie:#text&quot;,&quot;root:plis:pli:souscripteur_adresse_voie1&quot;,&quot;root:plis:pli:souscripteur_adresse_complement&quot;,&quot;root:plis:pli:souscripteur_adresse_codepostal&quot;,&quot;root:plis:pli:souscripteur_adresse_codepostal:#text&quot;,&quot;root:plis:pli:souscripteur_adresse_ville&quot;,&quot;root:plis:pli:souscripteur_adresse_ville:#text&quot;,&quot;root:plis:pli:souscripteur_adresse_cedex&quot;,&quot;root:plis:pli:souscripteur_adresse_pays&quot;,&quot;root:plis:pli:souscripteur_adresse_pays:#text&quot;,&quot;root:plis:pli:souscripteur_adresse_mail&quot;,&quot;root:plis:pli:souscripteur_adresse_mail:#text&quot;,&quot;root:plis:pli:courtier_type&quot;,&quot;root:plis:pli:courtier_type:#text&quot;,&quot;root:plis:pli:courtier_numero&quot;,&quot;root:plis:pli:courtier_numero:#text&quot;,&quot;root:plis:pli:courtier_civilite&quot;,&quot;root:plis:pli:courtier_prenom&quot;,&quot;root:plis:pli:courtier_nom&quot;,&quot;root:plis:pli:courtier_nom:#text&quot;,&quot;root:plis:pli:courtier_adresse_voie&quot;,&quot;root:plis:pli:courtier_adresse_voie:#text&quot;,&quot;root:plis:pli:courtier_adresse_voie1&quot;,&quot;root:plis:pli:courtier_telephone&quot;,&quot;root:plis:pli:courtier_telephone:#text&quot;,&quot;root:plis:pli:courtier_adresse_codepostal&quot;,&quot;root:plis:pli:courtier_adresse_codepostal:#text&quot;,&quot;root:plis:pli:courtier_adresse_ville&quot;,&quot;root:plis:pli:courtier_adresse_ville:#text&quot;,&quot;root:plis:pli:courtier_adresse_cedex&quot;,&quot;root:plis:pli:courtier_adresse_pays&quot;,&quot;root:plis:pli:courtier_adresse_pays:#text&quot;,&quot;root:plis:pli:bq_etablissement&quot;,&quot;root:plis:pli:bq_etablissement:#text&quot;,&quot;root:plis:pli:bq_codebanque&quot;,&quot;root:plis:pli:bq_codebanque:#text&quot;,&quot;root:plis:pli:bq_codeguichet&quot;,&quot;root:plis:pli:bq_codeguichet:#text&quot;,&quot;root:plis:pli:bq_compte&quot;,&quot;root:plis:pli:bq_compte:#text&quot;,&quot;root:plis:pli:bq_rib&quot;,&quot;root:plis:pli:bq_rib:#text&quot;,&quot;root:plis:pli:bq_iban&quot;,&quot;root:plis:pli:bq_iban:#text&quot;,&quot;root:plis:pli:bq_bic&quot;,&quot;root:plis:pli:bq_bic:#text&quot;,&quot;root:plis:pli:remboursement_mode_paiement&quot;,&quot;root:plis:pli:remboursement_montant_total&quot;]</xmlOutputTagsOrder>
+</OmniDataTransform>

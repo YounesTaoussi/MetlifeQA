@@ -1,0 +1,2116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AccountSearch-Block&quot; : {
+    &quot;Name&quot; : &quot;Alan&apos;s Awnings&quot;
+  },
+  &quot;ContextId&quot; : &quot;&quot;,
+  &quot;id&quot; : &quot;a3F4P000002DXvQUAW&quot;,
+  &quot;isdtp&quot; : &quot;p1&quot;,
+  &quot;layout&quot; : &quot;lightning&quot;,
+  &quot;newAccount2&quot; : {
+    &quot;AccountSearch-Block&quot; : {
+      &quot;AccountSearch&quot; : &quot;Test&quot;,
+      &quot;Id&quot; : null
+    },
+    &quot;AddAccount&quot; : true,
+    &quot;AddContact&quot; : null,
+    &quot;AddContactBlock&quot; : {
+      &quot;authEmail2&quot; : &quot;sally@salyy.com&quot;,
+      &quot;authFirstName2&quot; : &quot;Sally&quot;,
+      &quot;authLastName2&quot; : &quot;Smith&quot;,
+      &quot;authMobilePhone2&quot; : &quot;6540556522&quot;
+    },
+    &quot;ContactId&quot; : null,
+    &quot;newAccountName2&quot; : null,
+    &quot;newAddress2-Block&quot; : {
+      &quot;newAddress2&quot; : null,
+      &quot;newCity2&quot; : null,
+      &quot;newCountry2&quot; : null,
+      &quot;newPostalCode2&quot; : null,
+      &quot;newState2&quot; : null,
+      &quot;newStreet2&quot; : null
+    },
+    &quot;newWebSite2&quot; : null
+  },
+  &quot;sfdcIFrameHost&quot; : &quot;web&quot;,
+  &quot;sfdcIFrameOrigin&quot; : &quot;https://vido--vlocity-ins.visualforce.com&quot;,
+  &quot;timeStamp&quot; : &quot;2019-09-25T21:43:24.791Z&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userId&quot; : &quot;0054P00000AnTiqQAF&quot;,
+  &quot;userName&quot; : &quot;tsears@vido.demo&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : -420,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : { }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>insPostContact</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact9509025664734689</globalKey>
+        <inputFieldName>AddressState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingState</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact24376386410859308</globalKey>
+        <inputFieldName>AddressPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingPostalCode</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact1772279760275568</globalKey>
+        <inputFieldName>AddressCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingCity</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact6258341582722169</globalKey>
+        <inputFieldName>AddressStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MailingStreet</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact6070135572188564</globalKey>
+        <inputFieldName>Phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact5746498561759543</globalKey>
+        <inputFieldName>LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>insPostContact7275126494832875</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact2825450484165848</globalKey>
+        <inputFieldName>FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insPostContact6096259150288366</globalKey>
+        <inputFieldName>Email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insPostContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Email</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;bundleName&quot; : &quot;Account_BusinessSetUp&quot;,
+  &quot;filesMap&quot; : { },
+  &quot;objectList&quot; : {
+    &quot;AccountId&quot; : &quot;0016A000006eGQqQAM&quot;,
+    &quot;AgencyNo&quot; : &quot;2131&quot;,
+    &quot;BrokerId&quot; : &quot;0036A000002E1WFQA0&quot;,
+    &quot;BusInfo&quot; : {
+      &quot;SICCategory&quot; : &quot;Dry Cleaners&quot;,
+      &quot;SICCode&quot; : &quot;5251&quot;,
+      &quot;effectiveDate&quot; : &quot;2018-01-18T05:00:00.000Z&quot;,
+      &quot;expirationDate&quot; : &quot;2019-01-17T05:00:00.000Z&quot;
+    },
+    &quot;Configure&quot; : {
+      &quot;ConfigureProduct&quot; : [ {
+        &quot;CalculatedPriceData&quot; : {
+          &quot;ID&quot; : &quot;1&quot;,
+          &quot;basePremium&quot; : 818,
+          &quot;premAR&quot; : 6.9,
+          &quot;premElectronicMedia&quot; : 42.25,
+          &quot;premEmpFraud&quot; : 491.13,
+          &quot;premEmployeeAuto__premEmployeeAuto&quot; : 51,
+          &quot;premGenLiab__premGenlLiab&quot; : &quot;356&quot;,
+          &quot;premRentalCar__premRentalCar&quot; : 52,
+          &quot;premSignage&quot; : 30.65,
+          &quot;premTenantLiability__premTenantLiab&quot; : 98
+        },
+        &quot;Family&quot; : &quot;Commercial Lines&quot;,
+        &quot;Id&quot; : &quot;01t6A000000FshIQAS&quot;,
+        &quot;IsConfigurable__c&quot; : true,
+        &quot;IsRecommended__c&quot; : false,
+        &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+        &quot;Name&quot; : &quot;Economy Business&quot;,
+        &quot;Price&quot; : 1314.25,
+        &quot;PricingFormula__c&quot; : &quot;basePremium + premGenLiab__premGenlLiab + premTenantLiability__premTenantLiab + premSignage + premAR + premValuePapers + premEmpFraud + premRentalCar__premRentalCar + premElectronicMedia + premEmployeeAuto__premEmployeeAuto&quot;,
+        &quot;ProductCode&quot; : &quot;bop-ECON&quot;,
+        &quot;RecordTypeName__c&quot; : &quot;Product&quot;,
+        &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+        &quot;attributeCategories&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Code__c&quot; : &quot;terms&quot;,
+            &quot;Name&quot; : &quot;Policy Terms&quot;,
+            &quot;displaySequence&quot; : 265,
+            &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+            &quot;productAttributes&quot; : {
+              &quot;records&quot; : [ {
+                &quot;attributeId&quot; : &quot;a0P6A000000XZ9OUAW&quot;,
+                &quot;code&quot; : &quot;covDeductible&quot;,
+                &quot;dataType&quot; : &quot;currency&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : -1,
+                &quot;filterable&quot; : true,
+                &quot;hasRules&quot; : false,
+                &quot;inputType&quot; : &quot;dropdown&quot;,
+                &quot;label&quot; : &quot;Deductible&quot;,
+                &quot;readonly&quot; : false,
+                &quot;required&quot; : false,
+                &quot;userValues&quot; : 1000,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;0&quot;,
+                  &quot;label&quot; : &quot;$250&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 250
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;1&quot;,
+                  &quot;label&quot; : &quot;$500&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 500
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;2&quot;,
+                  &quot;label&quot; : &quot;$1,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 1000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;3&quot;,
+                  &quot;label&quot; : &quot;$2,500&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 2500
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;4&quot;,
+                  &quot;label&quot; : &quot;$5,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 5000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;5&quot;,
+                  &quot;label&quot; : &quot;$10,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 10000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;6&quot;,
+                  &quot;label&quot; : &quot;$20,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 20000
+                } ]
+              }, {
+                &quot;attributeId&quot; : &quot;a0P6A000000XZ9UUAW&quot;,
+                &quot;code&quot; : &quot;covType&quot;,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : -1,
+                &quot;filterable&quot; : true,
+                &quot;hasRules&quot; : false,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;label&quot; : &quot;Type&quot;,
+                &quot;readonly&quot; : true,
+                &quot;required&quot; : false,
+                &quot;userValues&quot; : &quot;Economy&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : true,
+                  &quot;readonly&quot; : true
+                } ]
+              } ],
+              &quot;totalSize&quot; : 2
+            }
+          } ],
+          &quot;totalSize&quot; : 1
+        },
+        &quot;childProducts&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000Fsh3QAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Valuable Papers&quot;,
+            &quot;PricingSource__c&quot; : &quot;premValuePapers&quot;,
+            &quot;ProductCode&quot; : &quot;bop-VP&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 3,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf2QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000Fsh3QAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgeQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Tenants Liability&quot;,
+            &quot;Price&quot; : 98,
+            &quot;PricingSource__c&quot; : &quot;premTenantLiability__premTenantLiab&quot;,
+            &quot;ProductCode&quot; : &quot;bop-TL&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$100,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 100000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 2,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf1QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgeQAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect your business&apos;s signage from damage and vandalism.&quot;,
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgoQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Signage&quot;,
+            &quot;Price&quot; : 30.65,
+            &quot;PricingSource__c&quot; : &quot;premSignage&quot;,
+            &quot;ProductCode&quot; : &quot;bop-Signage&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$2,500&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2500
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 1,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDfAQAW&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgoQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgfQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Rental Cars&quot;,
+            &quot;Price&quot; : 52,
+            &quot;PricingSource__c&quot; : &quot;premRentalCar__premRentalCar&quot;,
+            &quot;ProductCode&quot; : &quot;bop-RentCar&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$500,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 500000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 1,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf0QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgfQAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect your business against lawsuits.&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgZQAS&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;General Liability&quot;,
+            &quot;PricingSource__c&quot; : &quot;premiumLiability&quot;,
+            &quot;ProductCode&quot; : &quot;bop-GL&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$250,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 250000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$5,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 7,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf6QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgZQAS&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgjQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;Name&quot; : &quot;Employee Fraud&quot;,
+            &quot;Price&quot; : 491.13,
+            &quot;PricingSource__c&quot; : &quot;premEmpFraud&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EF&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$10,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 10000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;6&quot;,
+                      &quot;label&quot; : &quot;$750,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 750000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;7&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 4,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf3QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgjQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgtQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Employee Auto Liability&quot;,
+            &quot;Price&quot; : 51,
+            &quot;PricingSource__c&quot; : &quot;premEmployeeAuto__premEmployeeAuto&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EmpAuto&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$500,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 500000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 9,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf8QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgtQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000Fsh8QAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Electronic Media&quot;,
+            &quot;Price&quot; : 42.25,
+            &quot;PricingSource__c&quot; : &quot;premElectronicMedia&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EM&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$5,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 5000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 5,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf4QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000Fsh8QAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect the property owned by your business.&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgUQAS&quot;,
+            &quot;ImageId&quot; : &quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0686A000000lnkHQAQ&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Business Property&quot;,
+            &quot;Price&quot; : 818,
+            &quot;PricingSource__c&quot; : &quot;basePremium&quot;,
+            &quot;ProductCode&quot; : &quot;bop-BP&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$10,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 10000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 10,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf9QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgUQAS&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgyQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Accounts Receivable&quot;,
+            &quot;Price&quot; : 6.9,
+            &quot;PricingSource__c&quot; : &quot;premAR&quot;,
+            &quot;ProductCode&quot; : &quot;bop-AR&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 6,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf5QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgyQAC&quot;
+          } ],
+          &quot;totalSize&quot; : 10
+        },
+        &quot;displaySequence&quot; : -1,
+        &quot;originalIndex&quot; : 0,
+        &quot;productId&quot; : &quot;01t6A000000FshIQAS&quot;,
+        &quot;vlcSelected&quot; : true
+      } ],
+      &quot;QuoteOrIssue&quot; : &quot;policy&quot;
+    },
+    &quot;Context&quot; : &quot;Account&quot;,
+    &quot;ContextId&quot; : &quot;0016A000006eGQq&quot;,
+    &quot;ISOClass&quot; : 3,
+    &quot;Policyholder&quot; : {
+      &quot;Birthdate&quot; : &quot;1981-07-18&quot;,
+      &quot;City&quot; : &quot;San Francisco&quot;,
+      &quot;Country&quot; : &quot;US&quot;,
+      &quot;Email&quot; : &quot;dlq@vlocity.com&quot;,
+      &quot;FirstName&quot; : &quot;Sophia&quot;,
+      &quot;FullName&quot; : &quot;Sophia Fournier&quot;,
+      &quot;Gender&quot; : &quot;Female&quot;,
+      &quot;LastName&quot; : &quot;Fournier&quot;,
+      &quot;Phone&quot; : &quot;(603) 801-2666&quot;,
+      &quot;PostalCode&quot; : &quot;94105&quot;,
+      &quot;Salutation&quot; : &quot;Ms.&quot;,
+      &quot;State&quot; : &quot;CA&quot;,
+      &quot;Street&quot; : &quot;50 Fremont St&quot;
+    },
+    &quot;Producer&quot; : {
+      &quot;producerEmail&quot; : &quot;dlq@vlocity.com&quot;,
+      &quot;producerName&quot; : &quot;Larry Sullivan&quot;,
+      &quot;producerNumber&quot; : &quot;98762&quot;,
+      &quot;producerPhone&quot; : &quot;(415) 789-8474&quot;
+    },
+    &quot;PropertyInfo&quot; : {
+      &quot;OwnType&quot; : &quot;sole&quot;,
+      &quot;ageBuilding&quot; : 18,
+      &quot;ageBusiness&quot; : 16,
+      &quot;agePlumbing&quot; : 18,
+      &quot;ageRoof&quot; : 15,
+      &quot;ageWiring&quot; : 18,
+      &quot;bldgAlarm&quot; : &quot;none&quot;,
+      &quot;bldgConstruction&quot; : &quot;frame&quot;,
+      &quot;bldgSprinklered&quot; : &quot;Y&quot;,
+      &quot;busEmployees&quot; : 245,
+      &quot;busHours&quot; : 8,
+      &quot;locationBuilding&quot; : &quot;standalone&quot;,
+      &quot;respParkingLot&quot; : &quot;no&quot;,
+      &quot;yearBuliding&quot; : 2000,
+      &quot;yearFounded&quot; : 2002,
+      &quot;yearPlumbing&quot; : 2000,
+      &quot;yearRoof&quot; : 2003,
+      &quot;yearWiring&quot; : 2000
+    },
+    &quot;SelectProduct&quot; : {
+      &quot;ProductSelection&quot; : [ {
+        &quot;CalculatedPriceData&quot; : {
+          &quot;ID&quot; : &quot;1&quot;,
+          &quot;basePremium&quot; : 818,
+          &quot;premAR&quot; : 6.9,
+          &quot;premElectronicMedia&quot; : 42.25,
+          &quot;premEmpFraud&quot; : 491.13,
+          &quot;premEmployeeAuto__premEmployeeAuto&quot; : 51,
+          &quot;premGenLiab__premGenlLiab&quot; : &quot;356&quot;,
+          &quot;premRentalCar__premRentalCar&quot; : 52,
+          &quot;premSignage&quot; : 30.65,
+          &quot;premTenantLiability__premTenantLiab&quot; : 98
+        },
+        &quot;Family&quot; : &quot;Commercial Lines&quot;,
+        &quot;Id&quot; : &quot;01t6A000000FshIQAS&quot;,
+        &quot;IsConfigurable__c&quot; : true,
+        &quot;IsRecommended__c&quot; : false,
+        &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+        &quot;Name&quot; : &quot;Economy Business&quot;,
+        &quot;Price&quot; : 1314.25,
+        &quot;PricingFormula__c&quot; : &quot;basePremium + premGenLiab__premGenlLiab + premTenantLiability__premTenantLiab + premSignage + premAR + premValuePapers + premEmpFraud + premRentalCar__premRentalCar + premElectronicMedia + premEmployeeAuto__premEmployeeAuto&quot;,
+        &quot;ProductCode&quot; : &quot;bop-ECON&quot;,
+        &quot;RecordTypeName__c&quot; : &quot;Product&quot;,
+        &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+        &quot;attributeCategories&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Code__c&quot; : &quot;terms&quot;,
+            &quot;Name&quot; : &quot;Policy Terms&quot;,
+            &quot;displaySequence&quot; : 265,
+            &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+            &quot;productAttributes&quot; : {
+              &quot;records&quot; : [ {
+                &quot;attributeId&quot; : &quot;a0P6A000000XZ9OUAW&quot;,
+                &quot;code&quot; : &quot;covDeductible&quot;,
+                &quot;dataType&quot; : &quot;currency&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : -1,
+                &quot;filterable&quot; : true,
+                &quot;hasRules&quot; : false,
+                &quot;inputType&quot; : &quot;dropdown&quot;,
+                &quot;label&quot; : &quot;Deductible&quot;,
+                &quot;readonly&quot; : false,
+                &quot;required&quot; : false,
+                &quot;userValues&quot; : 1000,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;0&quot;,
+                  &quot;label&quot; : &quot;$250&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 250
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;1&quot;,
+                  &quot;label&quot; : &quot;$500&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 500
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;2&quot;,
+                  &quot;label&quot; : &quot;$1,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 1000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;3&quot;,
+                  &quot;label&quot; : &quot;$2,500&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 2500
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;4&quot;,
+                  &quot;label&quot; : &quot;$5,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 5000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;5&quot;,
+                  &quot;label&quot; : &quot;$10,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 10000
+                }, {
+                  &quot;disabled&quot; : false,
+                  &quot;id&quot; : &quot;6&quot;,
+                  &quot;label&quot; : &quot;$20,000&quot;,
+                  &quot;readonly&quot; : false,
+                  &quot;value&quot; : 20000
+                } ]
+              }, {
+                &quot;attributeId&quot; : &quot;a0P6A000000XZ9UUAW&quot;,
+                &quot;code&quot; : &quot;covType&quot;,
+                &quot;dataType&quot; : &quot;text&quot;,
+                &quot;disabled&quot; : false,
+                &quot;displaySequence&quot; : -1,
+                &quot;filterable&quot; : true,
+                &quot;hasRules&quot; : false,
+                &quot;inputType&quot; : &quot;text&quot;,
+                &quot;label&quot; : &quot;Type&quot;,
+                &quot;readonly&quot; : true,
+                &quot;required&quot; : false,
+                &quot;userValues&quot; : &quot;Economy&quot;,
+                &quot;values&quot; : [ {
+                  &quot;disabled&quot; : true,
+                  &quot;readonly&quot; : true
+                } ]
+              } ],
+              &quot;totalSize&quot; : 2
+            }
+          } ],
+          &quot;totalSize&quot; : 1
+        },
+        &quot;childProducts&quot; : {
+          &quot;records&quot; : [ {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000Fsh3QAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Valuable Papers&quot;,
+            &quot;PricingSource__c&quot; : &quot;premValuePapers&quot;,
+            &quot;ProductCode&quot; : &quot;bop-VP&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 3,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf2QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000Fsh3QAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgeQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Tenants Liability&quot;,
+            &quot;Price&quot; : 98,
+            &quot;PricingSource__c&quot; : &quot;premTenantLiability__premTenantLiab&quot;,
+            &quot;ProductCode&quot; : &quot;bop-TL&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$100,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 100000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 2,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf1QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgeQAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect your business&apos;s signage from damage and vandalism.&quot;,
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgoQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Signage&quot;,
+            &quot;Price&quot; : 30.65,
+            &quot;PricingSource__c&quot; : &quot;premSignage&quot;,
+            &quot;ProductCode&quot; : &quot;bop-Signage&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$2,500&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2500
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 1,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDfAQAW&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgoQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgfQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Rental Cars&quot;,
+            &quot;Price&quot; : 52,
+            &quot;PricingSource__c&quot; : &quot;premRentalCar__premRentalCar&quot;,
+            &quot;ProductCode&quot; : &quot;bop-RentCar&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$500,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 500000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 1,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf0QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgfQAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect your business against lawsuits.&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgZQAS&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;General Liability&quot;,
+            &quot;PricingSource__c&quot; : &quot;premiumLiability&quot;,
+            &quot;ProductCode&quot; : &quot;bop-GL&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$250,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 250000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$5,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 7,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf6QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgZQAS&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgjQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;Name&quot; : &quot;Employee Fraud&quot;,
+            &quot;Price&quot; : 491.13,
+            &quot;PricingSource__c&quot; : &quot;premEmpFraud&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EF&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$10,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 10000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;6&quot;,
+                      &quot;label&quot; : &quot;$750,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 750000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;7&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 4,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf3QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgjQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgtQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Employee Auto Liability&quot;,
+            &quot;Price&quot; : 51,
+            &quot;PricingSource__c&quot; : &quot;premEmployeeAuto__premEmployeeAuto&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EmpAuto&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$500,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 500000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$1,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$2,000,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 2000000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 9,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf8QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgtQAC&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000Fsh8QAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Electronic Media&quot;,
+            &quot;Price&quot; : 42.25,
+            &quot;PricingSource__c&quot; : &quot;premElectronicMedia&quot;,
+            &quot;ProductCode&quot; : &quot;bop-EM&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$5,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 5000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 5,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf4QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000Fsh8QAC&quot;
+          }, {
+            &quot;Description&quot; : &quot;Protect the property owned by your business.&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgUQAS&quot;,
+            &quot;ImageId&quot; : &quot;/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&amp;versionId=0686A000000lnkHQAQ&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Business Property&quot;,
+            &quot;Price&quot; : 818,
+            &quot;PricingSource__c&quot; : &quot;basePremium&quot;,
+            &quot;ProductCode&quot; : &quot;bop-BP&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 265,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$10,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 10000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$10,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 10000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$250,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 250000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;5&quot;,
+                      &quot;label&quot; : &quot;$500,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 500000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 10,
+            &quot;isOptional&quot; : false,
+            &quot;isSelected&quot; : true,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf9QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgUQAS&quot;
+          }, {
+            &quot;Family&quot; : &quot;None&quot;,
+            &quot;Id&quot; : &quot;01t6A000000FsgyQAC&quot;,
+            &quot;IsConfigurable__c&quot; : true,
+            &quot;IsRecommended__c&quot; : false,
+            &quot;LineOfBusiness__c&quot; : &quot;Property &amp; Casualty&quot;,
+            &quot;Name&quot; : &quot;Accounts Receivable&quot;,
+            &quot;Price&quot; : 6.9,
+            &quot;PricingSource__c&quot; : &quot;premAR&quot;,
+            &quot;ProductCode&quot; : &quot;bop-AR&quot;,
+            &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+            &quot;Type__c&quot; : &quot;BusinessOwners&quot;,
+            &quot;attributeCategories&quot; : {
+              &quot;records&quot; : [ {
+                &quot;Code__c&quot; : &quot;terms&quot;,
+                &quot;Name&quot; : &quot;Policy Terms&quot;,
+                &quot;displaySequence&quot; : 100,
+                &quot;id&quot; : &quot;a0O6A000000F2dyUAC&quot;,
+                &quot;productAttributes&quot; : {
+                  &quot;records&quot; : [ {
+                    &quot;attributeId&quot; : &quot;a0P6A000000XZ9RUAW&quot;,
+                    &quot;code&quot; : &quot;LIMIT2&quot;,
+                    &quot;dataType&quot; : &quot;currency&quot;,
+                    &quot;disabled&quot; : false,
+                    &quot;displaySequence&quot; : -1,
+                    &quot;filterable&quot; : true,
+                    &quot;hasRules&quot; : false,
+                    &quot;hidden&quot; : false,
+                    &quot;inputType&quot; : &quot;dropdown&quot;,
+                    &quot;label&quot; : &quot;Limit&quot;,
+                    &quot;labelAndValue&quot; : {
+                      &quot;label&quot; : &quot;Limit&quot;,
+                      &quot;valueLabel&quot; : &quot;$1,000&quot;
+                    },
+                    &quot;readonly&quot; : false,
+                    &quot;required&quot; : false,
+                    &quot;userValues&quot; : 1000,
+                    &quot;values&quot; : [ {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;0&quot;,
+                      &quot;label&quot; : &quot;$1,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 1000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;1&quot;,
+                      &quot;label&quot; : &quot;$5,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 5000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;2&quot;,
+                      &quot;label&quot; : &quot;$25,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 25000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;3&quot;,
+                      &quot;label&quot; : &quot;$50,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 50000
+                    }, {
+                      &quot;disabled&quot; : false,
+                      &quot;id&quot; : &quot;4&quot;,
+                      &quot;label&quot; : &quot;$100,000&quot;,
+                      &quot;readonly&quot; : false,
+                      &quot;value&quot; : 100000
+                    } ]
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              } ],
+              &quot;totalSize&quot; : 1
+            },
+            &quot;displaySequence&quot; : 6,
+            &quot;isOptional&quot; : true,
+            &quot;isSelected&quot; : false,
+            &quot;pciId&quot; : &quot;a2p6A000000YDf5QAG&quot;,
+            &quot;productId&quot; : &quot;01t6A000000FsgyQAC&quot;
+          } ],
+          &quot;totalSize&quot; : 10
+        },
+        &quot;displaySequence&quot; : -1,
+        &quot;originalIndex&quot; : 0,
+        &quot;productId&quot; : &quot;01t6A000000FshIQAS&quot;,
+        &quot;vlcSelected&quot; : true
+      } ]
+    },
+    &quot;contextId&quot; : &quot;0016A000006eGQq&quot;,
+    &quot;id&quot; : &quot;a2C6A0000009tcbUAA&quot;,
+    &quot;layout&quot; : &quot;lightning&quot;,
+    &quot;newAccount&quot; : {
+      &quot;BankAccountNumber&quot; : null,
+      &quot;BankAccountRoutingNumber&quot; : null,
+      &quot;BankAccountType&quot; : null,
+      &quot;CardCCV&quot; : null,
+      &quot;CardExpirationMonth&quot; : null,
+      &quot;CardExpirationYear&quot; : null,
+      &quot;CardNumber&quot; : null,
+      &quot;CardType&quot; : null,
+      &quot;DifferentFromBilling&quot; : false,
+      &quot;MethodHolderName&quot; : &quot;Brian Owen&quot;,
+      &quot;MethodName&quot; : &quot;OwensAcct&quot;,
+      &quot;MethodType&quot; : null,
+      &quot;authorizedContact&quot; : {
+        &quot;authEmail&quot; : &quot;dlq@vlocity.com&quot;,
+        &quot;authFirstName&quot; : &quot;Brian&quot;,
+        &quot;authLastName&quot; : &quot;Owen&quot;,
+        &quot;authMobilePhone&quot; : &quot;(603) 801-2640&quot;,
+        &quot;authOfficePhone&quot; : &quot;(603) 801-2640&quot;,
+        &quot;authSalutation&quot; : &quot;Mr.&quot;,
+        &quot;authTitle&quot; : &quot;Director&quot;
+      },
+      &quot;billDelivery&quot; : &quot;Email&quot;,
+      &quot;billMethod&quot; : &quot;Direct Bill&quot;,
+      &quot;billingContact&quot; : {
+        &quot;billingEmail&quot; : null,
+        &quot;billingFirstName&quot; : &quot;Brian&quot;,
+        &quot;billingLastName&quot; : &quot;Owens&quot;,
+        &quot;billingMobile&quot; : null,
+        &quot;billingPhone&quot; : null,
+        &quot;billingSalutation&quot; : &quot;Mr.&quot;,
+        &quot;billingTitle&quot; : null
+      },
+      &quot;newAccountName&quot; : &quot;ABC Company&quot;,
+      &quot;newAccountSite&quot; : &quot;ABC Site&quot;,
+      &quot;newBillingAddress-Block&quot; : {
+        &quot;newBillingAddress&quot; : null,
+        &quot;newBillingCity&quot; : null,
+        &quot;newBillingCountry&quot; : null,
+        &quot;newBillingPostalCode&quot; : null,
+        &quot;newBillingState&quot; : null,
+        &quot;newBillingStreet&quot; : null
+      },
+      &quot;newMainFax&quot; : null,
+      &quot;newMainPhone&quot; : &quot;(603) 801-2640&quot;,
+      &quot;newShippingAddress-Block&quot; : null,
+      &quot;newTaxId&quot; : &quot;11-9999999&quot;,
+      &quot;newWebSite&quot; : &quot;https://www.abc.com&quot;,
+      &quot;statementFrequency&quot; : &quot;Monthly&quot;
+    },
+    &quot;newAccount2&quot; : {
+      &quot;authEmail2&quot; : null,
+      &quot;authFirstName2&quot; : null,
+      &quot;authLastName2&quot; : null,
+      &quot;authMobilePhone2&quot; : null,
+      &quot;authOfficePhone2&quot; : null,
+      &quot;authSalutation2&quot; : null,
+      &quot;authTitle2&quot; : null,
+      &quot;newAccountName2&quot; : null,
+      &quot;newAddress2-Block&quot; : {
+        &quot;newAddress2&quot; : null,
+        &quot;newCity2&quot; : null,
+        &quot;newCountry2&quot; : null,
+        &quot;newPostalCode2&quot; : null,
+        &quot;newState2&quot; : null,
+        &quot;newStreet2&quot; : null
+      },
+      &quot;newWebSite2&quot; : null
+    },
+    &quot;newShippingCity&quot; : &quot;&quot;,
+    &quot;newShippingCountry&quot; : &quot;&quot;,
+    &quot;newShippingPostalCode&quot; : &quot;&quot;,
+    &quot;newShippingState&quot; : &quot;&quot;,
+    &quot;newShippingStreet&quot; : &quot;&quot;,
+    &quot;testContextId&quot; : &quot;0016A000006eGQq&quot;,
+    &quot;timeStamp&quot; : &quot;2018-01-18T22:26:34.299Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+    &quot;userId&quot; : &quot;0056A000000IFFmQAO&quot;,
+    &quot;userName&quot; : &quot;dlq@ins.ibo&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : -480,
+    &quot;vlcPersistentComponent&quot; : { }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>insPostContact_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

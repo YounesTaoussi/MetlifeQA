@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CheckAccountDuplicate&quot; : [ ],
+  &quot;CheckAccountDuplicateStatus&quot; : true,
+  &quot;ErrorAccountHasAlreadyActiveGFOStatus&quot; : false,
+  &quot;ErrorPriceNotCalculatedStatus&quot; : false,
+  &quot;ExtrtactAndBuildData&quot; : {
+    &quot;AccountInfo&quot; : {
+      &quot;AccountType&quot; : &quot;Souscripteur uniquement&quot;,
+      &quot;Address&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;BirthCity&quot; : &quot;PREURE&quot;,
+      &quot;BirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;BirthDepartmentCode&quot; : &quot;62&quot;,
+      &quot;BirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;Country&quot; : &quot;France&quot;,
+      &quot;FirstName&quot; : &quot;DANIELE12&quot;,
+      &quot;Gender&quot; : &quot;F&quot;,
+      &quot;LastName&quot; : &quot;DELFORGE12&quot;,
+      &quot;PersonAccountRecordType&quot; : &quot;0121l0000001QHiAAM&quot;,
+      &quot;Title&quot; : &quot;Ms.&quot;
+    }
+  },
+  &quot;ExtrtactAndBuildDataStatus&quot; : true,
+  &quot;GetRatedProducts&quot; : &quot;GetRatedProducts&quot;,
+  &quot;GetRatedProductsStatus&quot; : true,
+  &quot;MergePoliciesIfAccountsReturned&quot; : {
+    &quot;Policies&quot; : {
+      &quot;result&quot; : [ ]
+    }
+  },
+  &quot;MergePoliciesIfAccountsReturnedStatus&quot; : true,
+  &quot;SetValuesForCheck&quot; : {
+    &quot;FirstElement&quot; : &quot;&quot;,
+    &quot;policiesSize&quot; : 1
+  },
+  &quot;SetValuesForCheckStatus&quot; : true,
+  &quot;SetValuesTech&quot; : {
+    &quot;DuplicatesRes&quot; : [ ]
+  },
+  &quot;SetValuesTechStatus&quot; : true,
+  &quot;contextId&quot; : &quot;a8x0Q000000MB4IQAW&quot;,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CreateOrUpdateNewBusiness</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom7601</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BirthDepartmentCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BirthFrenchDepartmentCode__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom2157</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BirthCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BirthCountry__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom3815</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:Country</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCountry</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom8865</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom8929</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:Gender</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__Gender__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:firstElement &quot;&quot; &lt;&gt; var:firstElement:AccountID var:null IF</formulaConverted>
+        <formulaExpression>IF(%firstElement% &lt;&gt; &quot;&quot;, %firstElement:AccountID%, null)</formulaExpression>
+        <formulaResultPath>accountId</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>CreateOrUpdateNewBusinessCustom9732</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom5823</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BirthCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BirthCity__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom1196</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:Address</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom7926</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BillingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom8084</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom5741</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:AccountType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:SetValuesTech:DuplicatesRes|1</formulaConverted>
+        <formulaExpression>%SetValuesTech:DuplicatesRes|1%</formulaExpression>
+        <formulaResultPath>firstElement</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>CreateOrUpdateNewBusinessCustom493</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:ConvertLead:AccountId</formulaConverted>
+        <formulaExpression>%ConvertLead:AccountId%</formulaExpression>
+        <formulaResultPath>accountId</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>CreateOrUpdateNewBusinessCustom2579</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateOrUpdateNewBusinessCustom8244</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom7197</globalKey>
+        <inputFieldName>accountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom8059</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:FirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom3185</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BirthName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Birth_Name__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom4492</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:PersonAccountRecordType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom4048</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:Title</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonTitle</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom8380</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:BirthDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateOrUpdateNewBusinessCustom1364</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:AccountInfo:LastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateOrUpdateNewBusiness</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CheckAccountDuplicate&quot; : [ ],
+  &quot;CheckAccountDuplicateStatus&quot; : true,
+  &quot;ErrorAccountHasAlreadyActiveGFOStatus&quot; : false,
+  &quot;ErrorPriceNotCalculatedStatus&quot; : false,
+  &quot;ExtrtactAndBuildData&quot; : {
+    &quot;AccountInfo&quot; : {
+      &quot;AccountType&quot; : &quot;Souscripteur uniquement&quot;,
+      &quot;Address&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;BirthCity&quot; : &quot;PREURE&quot;,
+      &quot;BirthCountry&quot; : &quot;FR&quot;,
+      &quot;BirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;BirthDepartmentCode&quot; : &quot;&quot;,
+      &quot;BirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;Country&quot; : &quot;France&quot;,
+      &quot;FirstName&quot; : &quot;DANIELE12&quot;,
+      &quot;Gender&quot; : &quot;F&quot;,
+      &quot;LastName&quot; : &quot;DELFORGE12&quot;,
+      &quot;PersonAccountRecordType&quot; : &quot;0121l0000001QHiAAM&quot;,
+      &quot;Title&quot; : &quot;Ms.&quot;
+    }
+  },
+  &quot;ExtrtactAndBuildDataStatus&quot; : true,
+  &quot;GetRatedProducts&quot; : &quot;GetRatedProducts&quot;,
+  &quot;GetRatedProductsStatus&quot; : true,
+  &quot;MergePoliciesIfAccountsReturned&quot; : {
+    &quot;Policies&quot; : {
+      &quot;result&quot; : [ ]
+    }
+  },
+  &quot;MergePoliciesIfAccountsReturnedStatus&quot; : true,
+  &quot;SetValuesForCheck&quot; : {
+    &quot;FirstElement&quot; : &quot;&quot;,
+    &quot;policiesSize&quot; : 1
+  },
+  &quot;SetValuesForCheckStatus&quot; : true,
+  &quot;SetValuesTech&quot; : {
+    &quot;DuplicatesRes&quot; : [ ]
+  },
+  &quot;SetValuesTechStatus&quot; : true,
+  &quot;contextId&quot; : &quot;a8x0Q000000MB4IQAW&quot;,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateOrUpdateNewBusiness_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

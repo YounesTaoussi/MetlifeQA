@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ChargeDurationInMonths&quot; : 2,
+  &quot;HasNoParent&quot; : false,
+  &quot;Id&quot; : &quot;0k9MU000000000BYAQ&quot;,
+  &quot;InFavorOfClient&quot; : false,
+  &quot;InsurancePolicyId&quot; : &quot;&quot;,
+  &quot;Name&quot; : &quot;test&quot;,
+  &quot;ParentTransactionId&quot; : &quot;0k9MU000000000CYAQ&quot;,
+  &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+  &quot;Period_End_Date__c&quot; : &quot;&quot;,
+  &quot;TotalTransactionAmount&quot; : 29.32,
+  &quot;TotalTransactionAmountSigned&quot; : -29.32,
+  &quot;TransactionAmount&quot; : 23,
+  &quot;TransactionEffectiveDate&quot; : &quot;Oct 5, 2022 12:00:00 AM&quot;,
+  &quot;TransactionTaxAmount&quot; : 4,
+  &quot;Type&quot; : &quot;Premium Charge&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent12221367639039271</globalKey>
+        <inputFieldName>Today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionEffectiveDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent020499858692163198</globalKey>
+        <inputFieldName>Today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionPostedDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent5622025580051544</globalKey>
+        <inputFieldName>CancelationName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent847065141815962</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParentTransactionId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent6333810110045366</globalKey>
+        <inputFieldName>Period_End_Date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Period_End_Date__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent7898983733045182</globalKey>
+        <inputFieldName>TransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>Today</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent8669550004651598</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent0865999923237335</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent48559709794390904</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CanceledTransaction__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent11587148105626888</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent07645674327091445</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent7111232761890645</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ParentTransactionId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParentCustom4659</globalKey>
+        <inputFieldName>InsurancePolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent013854859665062502</globalKey>
+        <inputFieldName>TransactionTaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionTaxAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Annulation/\/\/&quot; var:Name CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Annulation &quot;, Name)</formulaExpression>
+        <formulaResultPath>CancelationName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent3638587407992553</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Premium Cancellation</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumChargeCancelationUpdateParent4412305264452192</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumChargeCancelationUpdateParent</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ChargeDurationInMonths&quot; : 2,
+  &quot;HasNoParent&quot; : false,
+  &quot;Id&quot; : &quot;0k9MU000000000BYAQ&quot;,
+  &quot;InFavorOfClient&quot; : false,
+  &quot;InsurancePolicyId&quot; : &quot;&quot;,
+  &quot;Name&quot; : &quot;test&quot;,
+  &quot;ParentTransactionId&quot; : &quot;0k9MU000000000CYAQ&quot;,
+  &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+  &quot;Period_End_Date__c&quot; : &quot;&quot;,
+  &quot;TotalTransactionAmount&quot; : 29.32,
+  &quot;TotalTransactionAmountSigned&quot; : -29.32,
+  &quot;TransactionAmount&quot; : 23,
+  &quot;TransactionEffectiveDate&quot; : &quot;Oct 5, 2022 12:00:00 AM&quot;,
+  &quot;TransactionTaxAmount&quot; : 4,
+  &quot;Type&quot; : &quot;Premium Charge&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreatePremiumChargeCancelationUpdateParent_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

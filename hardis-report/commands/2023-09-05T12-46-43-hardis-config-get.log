@@ -1,0 +1,2 @@
+/Users/younestaoussi/.local/share/sfdx/client/7.188.1-4a4bb9c/bin/node /Users/younestaoussi/.local/share/sfdx/client/7.188.1-4a4bb9c/bin/run hardis:config:get --level user --json/Users/younestaoussi/.local/share/sfdx/client/7.188.1-4a4bb9c/bin/node /Users/younestaoussi/.local/share/sfdx/client/7.188.1-4a4bb9c/bin/run hardis:config:get --level project --json[sfdx-hardis] {}
+[sfdx-hardis] {}

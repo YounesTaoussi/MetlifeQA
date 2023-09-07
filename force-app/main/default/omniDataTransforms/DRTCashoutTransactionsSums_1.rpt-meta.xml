@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;InsurancePolicyTransaction&quot; : {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_SponsorCardNumber&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Text&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;Text&quot;,
+    &quot;Id&quot; : &quot;Text&quot;,
+    &quot;InFavorOfClient__c&quot; : &quot;Text&quot;,
+    &quot;TotalTransactionAmount&quot; : &quot;Text&quot;,
+    &quot;Type&quot; : &quot;Text&quot;,
+    &quot;isForRachat&quot; : &quot;Text&quot;,
+    &quot;isForRemPrime&quot; : &quot;Text&quot;,
+    &quot;isForRenonciation&quot; : &quot;Text&quot;,
+    &quot;isForResiliation&quot; : &quot;Text&quot;,
+    &quot;isPremiumCancelationCharge&quot; : &quot;Text&quot;,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Text&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTCashoutTransactionsSums</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom4334</globalKey>
+        <inputFieldName>ReimboursementType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ReimboursementType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom893</globalKey>
+        <inputFieldName>SponsorCardEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom535</globalKey>
+        <inputFieldName>SponsorCardMaxTrasactionEffectiveDateTMP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardMaxTrasactionEffectiveDateTMP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom2842</globalKey>
+        <inputFieldName>SponsorCardTrasactionEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardTrasactionEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom4310</globalKey>
+        <inputFieldName>BankAccountMaxTransactionEffectiveDateTMP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountMaxTransactionEffectiveDateTMP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom9394</globalKey>
+        <inputFieldName>BankAccountTransactionEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountTransactionEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom308</globalKey>
+        <inputFieldName>BankAccountTransactionEffectiveDateTMP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountTransactionEffectiveDateTMP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom8729</globalKey>
+        <inputFieldName>LastYearUnixDateTime</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastYearUnixDateTime</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SponsorCardTrasactionEffectiveDateTMP UNIXTODATETIME</formulaConverted>
+        <formulaExpression>UNIXTODATETIME(SponsorCardTrasactionEffectiveDateTMP)</formulaExpression>
+        <formulaResultPath>SponsorCardMaxTrasactionEffectiveDateTMP</formulaResultPath>
+        <formulaSequence>21.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom338</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom4771</globalKey>
+        <inputFieldName>BankAccountEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ListTransactionsBankAccount:Id ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(ListTransactionsBankAccount:Id)</formulaExpression>
+        <formulaResultPath>hasBankAccountTransactions</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ListTransactionsSponsorCard:Id ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(ListTransactionsSponsorCard:Id)</formulaExpression>
+        <formulaResultPath>hasSponsorCardTransactions</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item11</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Id&quot; | var:ListTransactionsBankAccount LIST | var:ListTransactionsSponsorCard LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;Id&quot;,LIST(ListTransactionsBankAccount),LIST(ListTransactionsSponsorCard))</formulaExpression>
+        <formulaResultPath>allTransactions</formulaResultPath>
+        <formulaSequence>25.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom5417</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:BankAccountTransactionEffectiveDateTMP UNIXTODATETIME</formulaConverted>
+        <formulaExpression>UNIXTODATETIME(BankAccountTransactionEffectiveDateTMP)</formulaExpression>
+        <formulaResultPath>BankAccountMaxTransactionEffectiveDateTMP</formulaResultPath>
+        <formulaSequence>20.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom2355</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasSponsorCardTransactions | | | var:ListTransactionsSponsorCard LIST &quot;canceledParentEffectiveDate&quot; &quot;[:DSC]&quot; SORTBY LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(hasSponsorCardTransactions, LIST(SORTBY(LIST(ListTransactionsSponsorCard),&quot;canceledParentEffectiveDate&quot;,&quot;[:DSC]&quot;)), null)</formulaExpression>
+        <formulaResultPath>sortedListSponsorCardByEffectiveDate</formulaResultPath>
+        <formulaSequence>15.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom8353</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasSponsorCardTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsSponsorCard LIST &quot;TaxAmountSigned&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasSponsorCardTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsSponsorCard), &quot;TaxAmountSigned&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumSponsorTAXSigned</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom350</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasSponsorCardTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsSponsorCard LIST &quot;WTAmountSigned&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasSponsorCardTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsSponsorCard), &quot;WTAmountSigned&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumSponsorWTSigned</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasSponsorCardTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsSponsorCard LIST &quot;signedTotalAmount&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasSponsorCardTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsSponsorCard), &quot;signedTotalAmount&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumSponsorSigned</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasBankAccountTransactions | | | var:ListTransactionsBankAccount LIST &quot;canceledParentEffectiveDate&quot; &quot;[:DSC]&quot; SORTBY LIST var:null IF</formulaConverted>
+        <formulaExpression>IF(hasBankAccountTransactions, LIST(SORTBY(LIST(ListTransactionsBankAccount),&quot;canceledParentEffectiveDate&quot;,&quot;[:DSC]&quot;)), null)</formulaExpression>
+        <formulaResultPath>sortedListBankAccountByEffectiveDate</formulaResultPath>
+        <formulaSequence>14.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom3969</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasBankAccountTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsBankAccount LIST &quot;TaxAmountSigned&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasBankAccountTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsBankAccount), &quot;TaxAmountSigned&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumbankAccountTAXSigned</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom8672</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasBankAccountTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsBankAccount LIST &quot;WTAmountSigned&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasBankAccountTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsBankAccount), &quot;WTAmountSigned&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumbankAccountWTSigned</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom8726</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:hasBankAccountTransactions | | &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:ListTransactionsBankAccount LIST &quot;signedTotalAmount&quot; FUNCTION 2 ROUND 0 IF</formulaConverted>
+        <formulaExpression>IF(hasBankAccountTransactions, ROUND(FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(ListTransactionsBankAccount), &quot;signedTotalAmount&quot; ),2), 0)</formulaExpression>
+        <formulaResultPath>SumbankAccountSigned</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item10</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumSponsorWTSigned | var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &gt;= &amp;&amp; var:SumSponsorWTSigned var:SumbankAccountWTSigned + 0 IF IF</formulaConverted>
+        <formulaExpression>IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumSponsorWTSigned, IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &gt;= 0, SumSponsorWTSigned + SumbankAccountWTSigned, 0))</formulaExpression>
+        <formulaResultPath>SumWTToReimbourseSponsorCard</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom2007</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumbankAccountTAXSigned | var:SumSponsorSigned 0 &gt;= var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumSponsorTAXSigned var:SumbankAccountTAXSigned + 0 IF IF</formulaConverted>
+        <formulaExpression>IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumbankAccountTAXSigned, IF(SumSponsorSigned &gt;= 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumSponsorTAXSigned + SumbankAccountTAXSigned, 0))</formulaExpression>
+        <formulaResultPath>SumTAXToReimbourseBankAccount</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom5647</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumbankAccountWTSigned | var:SumSponsorSigned 0 &gt;= var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumSponsorWTSigned var:SumbankAccountWTSigned + 0 IF IF</formulaConverted>
+        <formulaExpression>IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumbankAccountWTSigned, IF(SumSponsorSigned &gt;= 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumSponsorWTSigned + SumbankAccountWTSigned, 0))</formulaExpression>
+        <formulaResultPath>SumWTToReimbourseBankAccount</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom5730</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &lt; &amp;&amp; &quot;Both&quot; | var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &gt;= &amp;&amp; &quot;Sponsor&quot; | var:SumSponsorSigned 0 &gt;= var:SumbankAccountSigned 0 &lt; &amp;&amp; &quot;Bank&quot; &quot;&quot; IF IF IF</formulaConverted>
+        <formulaExpression>IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &lt; 0, &quot;Both&quot; , IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &gt;= 0, &quot;Sponsor&quot;, IF(SumSponsorSigned &gt;= 0 &amp;&amp; SumbankAccountSigned &lt; 0, &quot;Bank&quot;, &quot;&quot;)))</formulaExpression>
+        <formulaResultPath>ReimboursementType</formulaResultPath>
+        <formulaSequence>13.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom3804</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SponsorCardMaxTrasactionEffectiveDateTMP var:PaymentRejectionPeriodInDays ADDDAY | TODAY &gt; | var:SponsorCardMaxTrasactionEffectiveDateTMP var:PaymentRejectionPeriodInDays ADDDAY | TODAY IF</formulaConverted>
+        <formulaExpression>IF(ADDDAY(SponsorCardMaxTrasactionEffectiveDateTMP,PaymentRejectionPeriodInDays) &gt; TODAY(), ADDDAY(SponsorCardMaxTrasactionEffectiveDateTMP,PaymentRejectionPeriodInDays), TODAY())</formulaExpression>
+        <formulaResultPath>SponsorCardEffectiveDate</formulaResultPath>
+        <formulaSequence>24.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom2365</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ReimboursementType &quot;Bank&quot; == | var:hasBankAccountTransactions true == var:hasSponsorCardTransactions false == &amp;&amp; var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate | var:hasBankAccountTransactions true == var:hasSponsorCardTransactions true == &amp;&amp; | var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate &gt; var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate IF var:LastYearUnixDateTime IF IF | var:ReimboursementType &quot;Both&quot; == | var:hasBankAccountTransactions true == var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate var:LastYearUnixDateTime IF var:LastYearUnixDateTime IF IF</formulaConverted>
+        <formulaExpression>IF(ReimboursementType == &quot;Bank&quot;,IF(hasBankAccountTransactions == true &amp;&amp; hasSponsorCardTransactions == false,sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate,IF(hasBankAccountTransactions == true &amp;&amp; hasSponsorCardTransactions == true,IF(sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate &gt; sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate,sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate,sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate),LastYearUnixDateTime)),IF(ReimboursementType == &quot;Both&quot;,IF(hasBankAccountTransactions == true,sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate,LastYearUnixDateTime),LastYearUnixDateTime))</formulaExpression>
+        <formulaResultPath>BankAccountTransactionEffectiveDateTMP</formulaResultPath>
+        <formulaSequence>18.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom2506</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ReimboursementType &quot;Sponsor&quot; == | var:hasBankAccountTransactions false == var:hasSponsorCardTransactions true == &amp;&amp; var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate | var:hasBankAccountTransactions true == var:hasSponsorCardTransactions true == &amp;&amp; | var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate &gt; var:sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate IF var:LastYearUnixDateTime IF IF | var:ReimboursementType &quot;Both&quot; == | var:hasSponsorCardTransactions true == var:sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate var:LastYearUnixDateTime IF var:LastYearUnixDateTime IF IF</formulaConverted>
+        <formulaExpression>IF(ReimboursementType == &quot;Sponsor&quot;,IF(hasBankAccountTransactions == false &amp;&amp; hasSponsorCardTransactions == true,sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate,IF(hasBankAccountTransactions == true &amp;&amp; hasSponsorCardTransactions == true,IF(sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate &gt; sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate,sortedListBankAccountByEffectiveDate|1:canceledParentEffectiveDate,sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate),LastYearUnixDateTime))IF(ReimboursementType == &quot;Both&quot;,IF(hasSponsorCardTransactions == true,sortedListSponsorCardByEffectiveDate|1:canceledParentEffectiveDate,LastYearUnixDateTime),LastYearUnixDateTime))</formulaExpression>
+        <formulaResultPath>SponsorCardTrasactionEffectiveDateTMP</formulaResultPath>
+        <formulaSequence>19.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom3221</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &lt; &amp;&amp; var:SumSponsorTAXSigned | var:SumSponsorSigned 0 &lt; var:SumbankAccountSigned 0 &gt;= &amp;&amp; var:SumSponsorTAXSigned var:SumbankAccountTAXSigned + 0 IF IF</formulaConverted>
+        <formulaExpression>IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &lt; 0, SumSponsorTAXSigned, IF(SumSponsorSigned &lt; 0 &amp;&amp; SumbankAccountSigned &gt;= 0, SumSponsorTAXSigned + SumbankAccountTAXSigned, 0))</formulaExpression>
+        <formulaResultPath>SumTAXToReimbourseSponsorCard</formulaResultPath>
+        <formulaSequence>12.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom8773</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | TODAY -1 ADDYEAR DATETIMETOUNIX</formulaConverted>
+        <formulaExpression>DATETIMETOUNIX(ADDYEAR(TODAY(),-1))</formulaExpression>
+        <formulaResultPath>LastYearUnixDateTime</formulaResultPath>
+        <formulaSequence>17.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom4385</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY DATETIMETOUNIX</formulaConverted>
+        <formulaExpression>DATETIMETOUNIX(TODAY())</formulaExpression>
+        <formulaResultPath>nowUnixTime</formulaResultPath>
+        <formulaSequence>16.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom8237</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;getLabel&quot; &quot;PaymentRejectionPeriodInDays&quot; FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;getLabel&quot;, &quot;PaymentRejectionPeriodInDays&quot;)</formulaExpression>
+        <formulaResultPath>PaymentRejectionPeriodInDays</formulaResultPath>
+        <formulaSequence>22.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom9859</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:BankAccountMaxTransactionEffectiveDateTMP var:PaymentRejectionPeriodInDays ADDDAY | TODAY &gt; | var:BankAccountMaxTransactionEffectiveDateTMP var:PaymentRejectionPeriodInDays ADDDAY | TODAY IF</formulaConverted>
+        <formulaExpression>IF(ADDDAY(BankAccountMaxTransactionEffectiveDateTMP,PaymentRejectionPeriodInDays) &gt; TODAY(), ADDDAY(BankAccountMaxTransactionEffectiveDateTMP,PaymentRejectionPeriodInDays), TODAY())</formulaExpression>
+        <formulaResultPath>BankAccountEffectiveDate</formulaResultPath>
+        <formulaSequence>23.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom9064</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SumSponsorSigned var:SumbankAccountSigned + ABS</formulaConverted>
+        <formulaExpression>ABS(SumSponsorSigned + SumbankAccountSigned)</formulaExpression>
+        <formulaResultPath>totalToDeduceFromAmountToCollect</formulaResultPath>
+        <formulaSequence>26.0</formulaSequence>
+        <globalKey>DRTCashoutTransactionsSumsCustom9088</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom3759</globalKey>
+        <inputFieldName>hasBankAccountTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>hasBankAccountTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom1652</globalKey>
+        <inputFieldName>hasSponsorCardTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>hasSponsorCardTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom9839</globalKey>
+        <inputFieldName>totalToDeduceFromAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>totalToDeduceFromAmountToCollect</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom6737</globalKey>
+        <inputFieldName>SumWTToReimbourseBankAccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumWTToReimbourseBankAccount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom8670</globalKey>
+        <inputFieldName>SumWTToReimbourseSponsorCard</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumWTToReimbourseSponsorCard</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item20</globalKey>
+        <inputFieldName>SumbankAccountSigned</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumbankAccountSigned</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom7610</globalKey>
+        <inputFieldName>allTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>allTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom9126</globalKey>
+        <inputFieldName>SponsorCardTrasactionEffectiveDateTMP</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardTrasactionEffectiveDateTMP</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom0jIMU0000004CAQ2A2Item16</globalKey>
+        <inputFieldName>SumSponsorSigned</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumSponsorSigned</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom7904</globalKey>
+        <inputFieldName>SumTAXToReimbourseBankAccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumTAXToReimbourseBankAccount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCashoutTransactionsSumsCustom3143</globalKey>
+        <inputFieldName>SumTAXToReimbourseSponsorCard</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCashoutTransactionsSums</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumTAXToReimbourseSponsorCard</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CreateNewPaumentMethodStatus&quot; : false,
+  &quot;ExistingBankAccountId&quot; : &quot;a6PMU0000004CFV2A2&quot;,
+  &quot;ListBankAccountTransactions&quot; : [ {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHcYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMU0000004CFV2A2&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHbYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNPYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  }, {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHcYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMU0000004CFV2A2&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHbYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNUYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  }, {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHdYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMU0000004CFV2A2&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHgYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNVYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  }, {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHdYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMU0000004CFV2A2&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHgYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNQYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  }, {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHqYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHlYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNRYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  }, {
+    &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MU0000004CHqYAM&quot;,
+    &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+    &quot;CanceledTransaction__c&quot; : &quot;0k9MU0000004CHlYAM&quot;,
+    &quot;Id&quot; : &quot;0k9MU0000004CNWYA2&quot;,
+    &quot;InFavorOfClient__c&quot; : true,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;isForRachat&quot; : true,
+    &quot;isForRemPrime&quot; : true,
+    &quot;isForRenonciation&quot; : true,
+    &quot;isForResiliation&quot; : true,
+    &quot;isPremiumCancelationCharge&quot; : true,
+    &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+    &quot;signedTotalAmount&quot; : -29.32
+  } ],
+  &quot;ListSponsorCardTransactions&quot; : &quot;&quot;,
+  &quot;NameInsuredId&quot; : &quot;001MU000003XhH8YAK&quot;,
+  &quot;SpornorCardId&quot; : &quot;&quot;,
+  &quot;acte&quot; : &quot;Renunciation&quot;,
+  &quot;elementName&quot; : &quot;CreateCashoutTransaction&quot;,
+  &quot;ipName&quot; : &quot;metLife_CreateCashoutTranscation&quot;,
+  &quot;newHolder&quot; : &quot;&quot;,
+  &quot;newIBAN&quot; : &quot;&quot;,
+  &quot;newPMCreted&quot; : false,
+  &quot;omniScriptId&quot; : &quot;0jNMU000000000V2AQ&quot;,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  },
+  &quot;policyId&quot; : &quot;0YTMU0000008OM24AM&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTCashoutTransactionsSums_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

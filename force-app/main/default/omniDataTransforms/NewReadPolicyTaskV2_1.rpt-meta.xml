@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;data&quot; : [ {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:21:00&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wGQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HFA8NEAX&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:20:58&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wBQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGpktEAD&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:20:55&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007w6QAA&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGq2QEAT&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-27 06:38:06&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007uSQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T0E00000MqvImUAJ&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>NewReadPolicyTaskV2</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem19</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDTasks:SubTaskType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks:SubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem23</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:SubTaskType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:SubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem16</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:Type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem15</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:WhatId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:WhatId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem26</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDTasks:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem30</globalKey>
+        <inputFieldName>IMP_SRC_Task:Policy:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:Policy:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem20</globalKey>
+        <inputFieldName>IMP_SRC_Task:Policy:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:PolicyCreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem21</globalKey>
+        <inputFieldName>IMP_SRC_Task:Policy:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:PolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem25</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem29</globalKey>
+        <inputFieldName>IMP_SRC_Task:FeedbackCreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:FeedbackCreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:IMP_SRC_Task:SubTaskType__c var:nul &lt;&gt; var:IMP_SRC_Task:SubTaskType__c &quot;Special/\/\/Avis/\/\/d&apos;écheance&quot; == var:IMP_SRC_Task:RelatedMEDTasks:Status var:null == &amp;&amp; var:IMP_SRC_Task:SubTaskType__c &quot;MED&quot; == var:IMP_SRC_Task:RelatedMEDLapseTasks:Status var:null == &amp;&amp; || var:IMP_SRC_Task:SubTaskType__c &quot;Lettre/\/\/de/\/\/rappel&quot; == var:IMP_SRC_Task:RelatedMEDTasks:Status var:null == &amp;&amp; || var:null IF</formulaConverted>
+        <formulaExpression>IF(IMP_SRC_Task:SubTaskType__c&lt;&gt;nul,((IMP_SRC_Task:SubTaskType__c==&quot;Special Avis d&apos;écheance&quot;&amp;&amp;IMP_SRC_Task:RelatedMEDTasks:Status==null)||(IMP_SRC_Task:SubTaskType__c==&quot;MED&quot;&amp;&amp;IMP_SRC_Task:RelatedMEDLapseTasks:Status==null)||(IMP_SRC_Task:SubTaskType__c==&quot;Lettre de rappel&quot;&amp;&amp;IMP_SRC_Task:RelatedMEDTasks:Status==null)),null)</formulaExpression>
+        <formulaResultPath>IMP_SRC_Task:EligibleTask</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem13</globalKey>
+        <inputFieldName>FilteredEligibleTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FilteredEligibleTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem28</globalKey>
+        <inputFieldName>IMP_SRC_Task:EligibleTask</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:EligibleTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>IMP_SRC_Task:WhatId</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem4</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>IMP_SRC_Task:WhatId</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem9</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>InsurancePolicy</inputObjectName>
+        <inputObjectQuerySequence>4.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:Policy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:IMP_SRC_Task LIST &apos;EligibleTask&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(IMP_SRC_Task), &apos;EligibleTask&apos;)</formulaExpression>
+        <formulaResultPath>FilteredEligibleTasks</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:IMP_SRC_Task LIST &apos;SubTaskType__c/\/\/==/\/\/&quot;MED&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(IMP_SRC_Task), &apos;SubTaskType__c == &quot;MED&quot;&apos;)</formulaExpression>
+        <formulaResultPath>MEDTasks</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>IMP_SRC_Task:WhatId</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem10</globalKey>
+        <inputFieldName>WhatId</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Completed&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem12</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;MED Lapse&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem8</globalKey>
+        <inputFieldName>SubTaskType__c</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;LETTER&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem7</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>3.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDLapseTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>data:IMP_SRC_ID</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem5</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>&lt;&gt;</filterOperator>
+        <filterValue>&apos;Completed&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem6</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;MED&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem11</globalKey>
+        <inputFieldName>SubTaskType__c</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&apos;LETTER&apos;</filterValue>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem3</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectName>Task</inputObjectName>
+        <inputObjectQuerySequence>2.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem18</globalKey>
+        <inputFieldName>IMP_SRC_Task:WhatId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:WhatId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem14</globalKey>
+        <inputFieldName>MEDTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem27</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDTasks:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks:Type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem24</globalKey>
+        <inputFieldName>IMP_SRC_Task:RelatedMEDTasks:WhatId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:RelatedMEDTasks:WhatId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem22</globalKey>
+        <inputFieldName>IMP_SRC_Task:SubTaskType__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:SubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>NewReadPolicyTaskV2Custom0jI0E0000004CEcUAMItem17</globalKey>
+        <inputFieldName>IMP_SRC_Task:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>NewReadPolicyTaskV2</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_Task:TaskId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SetMEDPeriod&quot; : {
+    &quot;medLapsePeriod&quot; : 49,
+    &quot;medPeriod&quot; : 15
+  },
+  &quot;SetMEDPeriodStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:21:00&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wGQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HFA8NEAX&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:20:58&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wBQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGpktEAD&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-28 08:20:55&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007w6QAA&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGq2QEAT&quot;
+  }, {
+    &quot;FeedbackCreatedDate&quot; : &quot;2023-03-27 06:38:06&quot;,
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007uSQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T0E00000MqvImUAJ&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>NewReadPolicyTaskV2_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

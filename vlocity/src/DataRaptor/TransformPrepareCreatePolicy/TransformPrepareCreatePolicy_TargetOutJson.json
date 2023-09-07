@@ -1,0 +1,18 @@
+{
+    "quotepolicyJson": {
+        "accountId": "Text",
+        "additionalFields": {
+            "PolicyType": "Text",
+            "PremiumFrequency": "Text",
+            "PremiumPaymentType": "Text",
+            "SaleDate": "Text",
+            "SourceQuoteId": "Text",
+            "Substatus": "Text",
+            "status": "Text"
+        },
+        "effectiveDate": "Text",
+        "insuredItems": "Text",
+        "productConfigurationDetail": "Text",
+        "term": "Text"
+    }
+}

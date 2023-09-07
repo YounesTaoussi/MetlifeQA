@@ -1,0 +1,2576 @@
+{
+    "CheckAccountDuplicate": [
+        {
+            "AccountID": "0010Q00001cP1uSQAS",
+            "Name": "DANIELE22222 DELFORG-78",
+            "PoliciesHolded": [
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZclWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdeWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZcvWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdZWAU",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010Zd5WAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdPWAU",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdUWAU",
+                    "Status": "In Force"
+                }
+            ]
+        },
+        {
+            "AccountID": "0010Q00001cP1uqQAC",
+            "Name": "DANIELE22222 DELFORG-78"
+        }
+    ],
+    "CheckAccountDuplicateStatus": true,
+    "CreateOrUpdateAccount": {
+        "Account_1": [
+            {
+                "%vlocity_namespace%__Gender__pc": "Female",
+                "BillingCountry": "France",
+                "BillingStreet": "LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE",
+                "Birth_Name__pc": "CHARLIAC",
+                "FirstName": "DANIELE22222",
+                "Id": "0010Q00001cP1uSQAS",
+                "LastName": "DELFORG-78",
+                "Naissance_Address__City__ps": "PREURE",
+                "Naissance_Address__CountryCode__ps": "FR",
+                "PersonBirthdate": "1957-10-05",
+                "PersonTitle": "Ms.",
+                "RecordTypeId": "0121l0000001QHiAAM",
+                "Type": "Souscripteur uniquement",
+                "UpsertSuccess": true
+            }
+        ],
+        "ActualTime": 4399,
+        "CpuTime": 3004,
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "CreateOrUpdateAccountStatus": true,
+    "CreatePolicyInput": {
+        "newQuoteJson": {
+            "CalculatedPriceData": {
+                "ID": "0",
+                "amountAssured": 4000,
+                "insuredAgeAtSubscription": 65,
+                "insuredCovAssistancePremium": 0.55556,
+                "insuredCovDecesPremium": 28.65756
+            },
+            "Family": "Obseques",
+            "IsConfigurable__c": true,
+            "IsRecommended__c": false,
+            "LineOfBusiness__c": "DirectToConsumer",
+            "Name": "GFO Oney",
+            "OpportunityDetails": {
+                "AccountId": "0010Q00001cP1uSQAS",
+                "CampaignId": "7010Q000001EphWQAS",
+                "CloseDate": "2022-10-05",
+                "Name": "DANIELE22222 DELFORG-78",
+                "StageName": "Closed Won",
+                "Type": "New business"
+            },
+            "ParentClassCode__c": "metLifeClasseObseques",
+            "ParentClassId__c": "01t0Q00000AdsMTQAZ",
+            "Price": 29.21312,
+            "PricingFormula__c": "SUM(insuredCovAssistancePremium + insuredCovDecesPremium)",
+            "ProductCode": "GFOY",
+            "RawPriceData": [
+                {
+                    "aggregationResults": null,
+                    "calculationResults": [
+                        {
+                            "ID": "0",
+                            "amountAssured": 4000,
+                            "insuredAgeAtSubscription": 65,
+                            "insuredCovAssistancePremium": 0.55556,
+                            "insuredCovDecesPremium": 28.65756
+                        }
+                    ]
+                }
+            ],
+            "SubType__c": "GarantieFraisObseques",
+            "TotalInsuredFormula__c": "SUM(amountAssured)",
+            "Type__c": "Obseques",
+            "accountId": "0010Q00001cP1uSQAS",
+            "currencyCode": "EUR",
+            "currencySymbol": "€",
+            "insuredItemSpec": {
+                "Tranche 4000": {
+                    "Id": "01t0Q00000ANQDcQAP",
+                    "Price": 29.21312,
+                    "ProductCode": "metLifeGFOTrancheInsured",
+                    "childProducts": {
+                        "actions": {
+                        },
+                        "data": {
+                            "actions": {
+                            },
+                            "dataMap": {
+                            },
+                            "messages": [
+                            ],
+                            "totalSize": null
+                        },
+                        "description": null,
+                        "messages": [
+                        ],
+                        "name": null,
+                        "records": [
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": 1,
+                                "fields": {
+                                    "Family": "Obseques",
+                                    "Id": "01t0Q00000AdvQbQAJ",
+                                    "IsConfigurable__c": true,
+                                    "IsRecommended__c": false,
+                                    "LineOfBusiness__c": "DirectToConsumer",
+                                    "Name": "Capital en cas de décès",
+                                    "Price": 28.65756,
+                                    "PricingSource__c": "insuredCovDecesPremium",
+                                    "ProductCode": "metLifeCovDecesTteCause",
+                                    "RecordTypeName__c": "CoverageSpec",
+                                    "SubType__c": "GarantieFraisObseques",
+                                    "Term__c": "Annual",
+                                    "Type__c": "Obseques",
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "parentInstanceKey": "Tranche 4000",
+                                    "pciId": "a6Q0Q000000HDnXUAW",
+                                    "productId": "01t0Q00000AdvQbQAJ"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "attributeCategories": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1602,
+                                                "fields": {
+                                                    "Code__c": "metLifeGFOCov",
+                                                    "Name": "MetLife GFO Coverages",
+                                                    "id": "a2G1l0000007uCDEAY"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiWUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "gfoBenefitChosen",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": "Capital décès assuré choisi par le souscripteur au moment de la souscription",
+                                                                "disabled": false,
+                                                                "displaySequence": 0,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Capital choisi",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "4000"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "0",
+                                                                        "label": "€1.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "1000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "1",
+                                                                        "label": "€1.500,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "1500"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "2",
+                                                                        "label": "€2.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "2000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "3",
+                                                                        "label": "€3.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "3000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "4",
+                                                                        "label": "€4.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "4000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "5",
+                                                                        "label": "€5.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "5000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "6",
+                                                                        "label": "€6.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "6000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "7",
+                                                                        "label": "€7.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "7000"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "8",
+                                                                        "label": "€8.000,00",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "8000"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiQUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "benefitAnnualRevisionRate",
+                                                                "customTemplate": null,
+                                                                "dataType": "percentage",
+                                                                "description": "Si l'option de revalorisation est choisi, ce taux (base 100%) est issu de la Note Technique en vigueur au moment de la souscription",
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": true,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Taux de revalorisation annuel du capital",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": 100
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiSUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "deathBenefitIllness",
+                                                                "customTemplate": null,
+                                                                "dataType": "currency",
+                                                                "description": "Valorisé lors d'un sinistre ou lors d'une réduction avec le montant du bénéfice décès en cas de maladie (incluant la participation aux bénéfices et déduction faite d'éventuelles avances, intérêts et rachat)",
+                                                                "disabled": false,
+                                                                "displaySequence": 2,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Capital Garanti (Maladie)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiTUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "deathBenefitIllnessWhileWaiting",
+                                                                "customTemplate": null,
+                                                                "dataType": "currency",
+                                                                "description": "Valorisé lors d'un sinistre ou lors d'une réduction avec le montant du bénéfice décès en cas de maladie pendant la période de carence (par exemple le montant de remboursement de primes, déduction faite d'éventuelles avances, intérêts et rachat)",
+                                                                "disabled": false,
+                                                                "displaySequence": 3,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Capital Garanti (Maladie Carence)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiRUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "deathBenefitAccident",
+                                                                "customTemplate": null,
+                                                                "dataType": "currency",
+                                                                "description": "Valorisé lors d'un sinistre ou lors d'une réduction avec le montant du bénéfice décès en cas d'accident (incluant la PB et déduction faite d'éventuelles avances, intérêts et rachat, et l'éventuelle majoration pour décès accidentel)",
+                                                                "disabled": false,
+                                                                "displaySequence": 4,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Capital Garanti (Accident)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiVUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "endOfWaitingPeriodIllness",
+                                                                "customTemplate": null,
+                                                                "dataType": "date",
+                                                                "description": "Renseigné à la souscription, selon la date de souscription et le délai de carence Maladie",
+                                                                "disabled": false,
+                                                                "displaySequence": 5,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "date",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Fin de carence le (Maladie)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiUUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "endOfWaitingPeriodAccident",
+                                                                "customTemplate": null,
+                                                                "dataType": "date",
+                                                                "description": "Renseigné à la souscription, selon la date de souscription et le délai de carence Accident",
+                                                                "disabled": false,
+                                                                "displaySequence": 6,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "date",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Fin de carence le (Accident)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": null,
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiYUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "maxDeathAgeIllness",
+                                                                "customTemplate": null,
+                                                                "dataType": "number",
+                                                                "description": "Configuré au produit (si prévu aux CG), et utilisé comme condition de refus de sinistre",
+                                                                "disabled": false,
+                                                                "displaySequence": 7,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Âge limite décès (Maladie)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": ""
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwiXUAS",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "maxDeathAgeAccident",
+                                                                "customTemplate": null,
+                                                                "dataType": "number",
+                                                                "description": "Configuré au produit (si prévu aux CG), et utilisé comme condition de refus de sinistre",
+                                                                "disabled": false,
+                                                                "displaySequence": 8,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": true,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Âge limite décès (Accident)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": ""
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002HTyhUAG",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "waitingPeriodDurationMonthsIllness",
+                                                                "customTemplate": null,
+                                                                "dataType": "number",
+                                                                "description": "Configuré au produit (si prévu aux CG), et utilisé pour calculer la date de fin de carence",
+                                                                "disabled": false,
+                                                                "displaySequence": 10,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Délai de carence en mois (Maladie)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": 24
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002HTymUAG",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "waitingPeriodDurationMonthsAccident",
+                                                                "customTemplate": null,
+                                                                "dataType": "number",
+                                                                "description": "Configuré au produit (si prévu aux CG), et utilisé pour calculer la date de fin de carence",
+                                                                "disabled": false,
+                                                                "displaySequence": 11,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "number",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Délai de carence en mois (Accident)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": 0
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002HTyrUAG",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "premiumCancellationIfIllnessInWaiting",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 13,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "checkbox",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Remboursement Prime (Maladie Carence)",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": true
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 12
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            },
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1605,
+                                                "fields": {
+                                                    "Code__c": "metLifePolicy",
+                                                    "Name": "MetLife Policy",
+                                                    "id": "a2G5E000000gQZyUAM"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002GO5PUAW",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "annualCapitalRevaluation",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": "Choisi lors de la souscription, et ayant un impact sur l'attribution d'une Note Technique",
+                                                                "disabled": false,
+                                                                "displaySequence": 9,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "checkbox",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Revalorisation Annuelle du Capital",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": false
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002H8olUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "Reduced",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": "Valorisé par l'acte de gestion 'Réduction' pour indiquer que les primes ne sont plus dues sur la garantie, et que le capital garanti est figé sur la base de la provision mathématique calculée en fonction des primes déjà payées",
+                                                                "disabled": false,
+                                                                "displaySequence": 12,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "checkbox",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Tranche réduite",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": false
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 2
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 2
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            },
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": 2,
+                                "fields": {
+                                    "Family": "Obseques",
+                                    "Id": "01t5E000009DqYQQA0",
+                                    "IsConfigurable__c": false,
+                                    "IsRecommended__c": false,
+                                    "LineOfBusiness__c": "DirectToConsumer",
+                                    "Name": "Assistance au moment du décès",
+                                    "Price": 0.55556,
+                                    "PricingSource__c": "insuredCovAssistancePremium",
+                                    "ProductCode": "metLifeCovAssistFuneral",
+                                    "RecordTypeName__c": "CoverageSpec",
+                                    "Term__c": "Annual",
+                                    "Type__c": "Property",
+                                    "defaultSelectedCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                    "eligibilityCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                    "isOptional": false,
+                                    "isSelected": true,
+                                    "parentInstanceKey": "Tranche 4000",
+                                    "pciId": "a6Q0Q000000HDnYUAW",
+                                    "productId": "01t5E000009DqYQQA0",
+                                    "requiredCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                    "taxAmount": 0.111112,
+                                    "taxesAndFees": [
+                                        {
+                                            "Amount__c": null,
+                                            "Condition__c": null,
+                                            "Id": "a6C0Q0000000XAqUAM",
+                                            "IsRefundable__c": true,
+                                            "JurisdictionId__c": null,
+                                            "Name": "Taxe sur la Valeur Ajoutée",
+                                            "Percent__c": 20,
+                                            "ProcedureFormula__c": null,
+                                            "ProcedureName__c": null,
+                                            "ProcedureSource__c": null,
+                                            "RatingType__c": "Percent",
+                                            "Type__c": "Tax",
+                                            "calculatedAmount": 0.111112,
+                                            "currencyCode": "EUR",
+                                            "currencySymbol": "€"
+                                        }
+                                    ],
+                                    "totalTaxFeeAmount": 0.111112
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                },
+                                "uiStates": {
+                                }
+                            },
+                            {
+                                "actions": {
+                                },
+                                "displaySequence": 2,
+                                "fields": {
+                                    "Family": "Obseques",
+                                    "Id": "01t0Q00000AdsNvQAJ",
+                                    "IsConfigurable__c": true,
+                                    "IsRecommended__c": false,
+                                    "LineOfBusiness__c": "DirectToConsumer",
+                                    "Name": "Assuré GFO",
+                                    "ProductCode": "metLifeGFOLifeInsured",
+                                    "RecordTypeName__c": "InsuredPartySpec",
+                                    "SubType__c": "GarantieFraisObseques",
+                                    "Term__c": "Annual",
+                                    "Type__c": "Obseques",
+                                    "maxQuantity": 1,
+                                    "minQuantity": 1,
+                                    "parentInstanceKey": "Tranche 4000",
+                                    "pciId": "a6Q0Q000000HDnWUAW",
+                                    "productId": "01t0Q00000AdsNvQAJ"
+                                },
+                                "messages": [
+                                ],
+                                "nameResult": {
+                                    "attributeCategories": {
+                                        "actions": {
+                                        },
+                                        "data": {
+                                            "actions": {
+                                            },
+                                            "dataMap": {
+                                            },
+                                            "messages": [
+                                            ],
+                                            "totalSize": null
+                                        },
+                                        "description": null,
+                                        "messages": [
+                                        ],
+                                        "name": null,
+                                        "records": [
+                                            {
+                                                "actions": {
+                                                },
+                                                "displaySequence": 1603,
+                                                "fields": {
+                                                    "Code__c": "metLifeGFOPerson",
+                                                    "Name": "MetLife GFO Person",
+                                                    "id": "a2G1l0000007uE8EAI"
+                                                },
+                                                "messages": [
+                                                ],
+                                                "nameResult": {
+                                                    "productAttributes": {
+                                                        "actions": {
+                                                        },
+                                                        "data": {
+                                                            "actions": {
+                                                            },
+                                                            "dataMap": {
+                                                            },
+                                                            "messages": [
+                                                            ],
+                                                            "totalSize": null
+                                                        },
+                                                        "description": null,
+                                                        "messages": [
+                                                        ],
+                                                        "name": null,
+                                                        "records": [
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwigUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personTitle",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 0,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Civilité",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "Ms."
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "0",
+                                                                        "label": "Madame",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "Ms."
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "1",
+                                                                        "label": "Monsieur",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "Mr."
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwieUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personLastName",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 1,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Nom",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "DELFORG-78"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwidUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personFirstName",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 2,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Prénom",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "DANIELE22222"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwicUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personBirthDate",
+                                                                "customTemplate": null,
+                                                                "dataType": "date",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 3,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "date",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Date de naissance",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "1957-10-05"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H5E000001KwifUAC",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personRelationship",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": null,
+                                                                "disabled": false,
+                                                                "displaySequence": 4,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "dropdown",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Lien au Souscripteur",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "Souscripteur"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "0",
+                                                                        "label": "Souscripteur",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "Souscripteur"
+                                                                    },
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": "1",
+                                                                        "label": "Conjoint(e)",
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": "Conjoint(e)"
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "actions": {
+                                                                },
+                                                                "attributeConfigurable": null,
+                                                                "attributeId": "a2H0Q000002HTyXUAW",
+                                                                "autocomplete": null,
+                                                                "cacheable": null,
+                                                                "cloneable": true,
+                                                                "code": "personBirthName",
+                                                                "customTemplate": null,
+                                                                "dataType": "text",
+                                                                "description": "Name (surname / family name) of the person when they were born; useful in case they changed their name later on in life (most often at time of marriage or remarriage)",
+                                                                "disabled": false,
+                                                                "displaySequence": 5,
+                                                                "fields": {
+                                                                },
+                                                                "filterable": true,
+                                                                "formatMask": null,
+                                                                "hasRules": false,
+                                                                "hidden": false,
+                                                                "inputType": "text",
+                                                                "isConfigurable": null,
+                                                                "isNotAssetizable": null,
+                                                                "isNotTranslatable": false,
+                                                                "isRatingAttribute": null,
+                                                                "label": "Nom de naissance",
+                                                                "max": null,
+                                                                "maxLongValue": null,
+                                                                "maxlength": null,
+                                                                "messages": [
+                                                                ],
+                                                                "min": null,
+                                                                "minLongValue": null,
+                                                                "minlength": null,
+                                                                "multiselect": false,
+                                                                "nameResult": {
+                                                                },
+                                                                "pattern": null,
+                                                                "placeholder": null,
+                                                                "readonly": false,
+                                                                "required": false,
+                                                                "rules": [
+                                                                ],
+                                                                "step": null,
+                                                                "uiStates": {
+                                                                },
+                                                                "userValues": {
+                                                                    "value": "CHARLIAC"
+                                                                },
+                                                                "values": [
+                                                                    {
+                                                                        "defaultSelected": null,
+                                                                        "defaultValue": null,
+                                                                        "disabled": false,
+                                                                        "displaySequence": null,
+                                                                        "id": null,
+                                                                        "label": null,
+                                                                        "name": null,
+                                                                        "readonly": false,
+                                                                        "rules": [
+                                                                        ],
+                                                                        "selected": null,
+                                                                        "value": null
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "totalSize": 6
+                                                    }
+                                                },
+                                                "uiStates": {
+                                                }
+                                            }
+                                        ],
+                                        "totalSize": 1
+                                    }
+                                },
+                                "uiStates": {
+                                }
+                            }
+                        ],
+                        "totalSize": 3
+                    },
+                    "instanceKey": "Tranche 4000",
+                    "pciId": "a6Q0Q000000HDnVUAW",
+                    "productId": "01t0Q00000ANQDcQAP",
+                    "productName": "Tranche GFO",
+                    "recordType": "InsuredItemSpec",
+                    "selectedValues": {
+                        "Reduced": false,
+                        "addonIndex": "01",
+                        "premiumAdjustmentRate": "100",
+                        "premiumPaymentTerm": "wholeLife",
+                        "refNT": "12n",
+                        "subscriptionDate": "2022-10-05",
+                        "trancheType": "base"
+                    },
+                    "taxAmount": 0.111112
+                }
+            },
+            "insuredItems": {
+                "metLifeGFOLifeInsured": {
+                    "Price": 29.21312,
+                    "Reduced": false,
+                    "addonIndex": "01",
+                    "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+                    "pciId": null,
+                    "personBirthDate": "1957-10-05",
+                    "personBirthName": "CHARLIAC",
+                    "personFirstName": "DANIELE22222",
+                    "personLastName": "DELFORG-78",
+                    "personRelationship": "Souscripteur",
+                    "personTitle": "Ms.",
+                    "premiumAdjustmentRate": "100",
+                    "premiumPaymentTerm": "wholeLife",
+                    "productCode": "metLifeGFOLifeInsured",
+                    "refNT": "12n",
+                    "subscriptionDate": "2022-10-05",
+                    "taxAmount": 0.111112,
+                    "trancheType": "base"
+                },
+                "metLifeGFOTrancheInsured": {
+                    "Price": 29.21312,
+                    "ProductCode": "metLifeGFOTrancheInsured",
+                    "Reduced": false,
+                    "addonIndex": "01",
+                    "instanceKey": "Tranche 4000",
+                    "pciId": "a6Q0Q000000HDnVUAW",
+                    "personAgeAtSubscription": 65,
+                    "premiumAdjustmentRate": "100",
+                    "premiumPaymentTerm": "wholeLife",
+                    "productCode": "metLifeGFOTrancheInsured",
+                    "productName": "Tranche GFO",
+                    "refNT": "12n",
+                    "subscriptionDate": "2022-10-05",
+                    "taxAmount": 0.111112,
+                    "trancheType": "base"
+                }
+            },
+            "insuredItemsRelationships": {
+                "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+                "parentInstanceKey": "Tranche 4000"
+            },
+            "opportunityId": "0060Q00000L7VxMQAV",
+            "productId": "01t0Q00000AfmJlQAJ",
+            "recordType": "Product",
+            "selectedValues": {
+                "beneficiaryClauseByDefault": "En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin",
+                "beneficiaryHasLegallyAccepted": false,
+                "coolingOffPeriodDurationInDays": 90,
+                "indemnityType": "lumpSum",
+                "productName": "Garantie Obsèques Oney",
+                "refCG": "CGKJZ23",
+                "saleChannel": "Acq",
+                "sourceProductCode": "850"
+            },
+            "taxAmount": 0.111112,
+            "totalSumInsured": 4000,
+            "totalTaxFeeAmount": 0.111112
+        },
+        "quotepolicyJson": {
+            "term": "Annual"
+        }
+    },
+    "CreateQuoteService": {
+        "error": "OK",
+        "errorCode": "INVOKE-200",
+        "opportunityId": "0060Q00000L7VxMQAV",
+        "quoteDetail": {
+            "%vlocity_namespace%__EffectiveDate__c": "2022-11-14",
+            "%vlocity_namespace%__PrimaryRootItemId__c": "0QL0Q000000RFp4WAG",
+            "%vlocity_namespace%__SourceSystemIdentifier__c": "d569e8b6-5417-a418-9fd7-0c2ea578c24d",
+            "%vlocity_namespace%__SourceSystem__c": "Salesforce",
+            "%vlocity_namespace%__StandardPremium__c": 29.21312,
+            "%vlocity_namespace%__Term__c": null,
+            "Id": "0Q00Q000000zHPsSAM",
+            "Name": "TEEEEEEEEEE",
+            "OpportunityId": "0060Q00000L7VxMQAV",
+            "Pricebook2Id": "01sD0000000HL3qIAG",
+            "Status": "Issued"
+        },
+        "quoteId": "0Q00Q000000zHPsSAM"
+    },
+    "CreateQuoteServiceStatus": true,
+    "DataRaptorTransformPrepareCreateQuoteStatus": true,
+    "ErrorPriceNotCalculatedStatus": false,
+    "ExtrtactAndBuildData": {
+        "AccountInfo": {
+            "AccountType": "Souscripteur uniquement",
+            "Address": "LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE",
+            "BirthCity": "PREURE",
+            "BirthCountry": "FR",
+            "BirthDate": "1957-10-05",
+            "BirthName": "CHARLIAC",
+            "Country": "France",
+            "FirstName": "DANIELE22222",
+            "Gender": "Female",
+            "LastName": "DELFORG-78",
+            "PersonAccountRecordType": "0121l0000001QHiAAM",
+            "Title": "Ms."
+        },
+        "GetRatedProducts": {
+            "metLifeCovDecesTteCause.annualCapitalRevaluation": false,
+            "metLifeCovDecesTteCause.gfoBenefitChosen": "4000",
+            "metLifeCovDecesTteCause.instanceKey": "Tranche 4000",
+            "metLifeGFOLifeInsured.instanceKey": "Assuré DANIELE22222 DELFORG-78",
+            "metLifeGFOLifeInsured.personBirthDate": "1957-10-05",
+            "metLifeGFOLifeInsured.personBirthName": "CHARLIAC",
+            "metLifeGFOLifeInsured.personFirstName": "DANIELE22222",
+            "metLifeGFOLifeInsured.personLastName": "DELFORG-78",
+            "metLifeGFOLifeInsured.personRelationship": "Souscripteur",
+            "metLifeGFOLifeInsured.personTitle": "Ms.",
+            "metLifeGFOTrancheInsured.Reduced": false,
+            "metLifeGFOTrancheInsured.addonIndex": "01",
+            "metLifeGFOTrancheInsured.instanceKey": "Tranche 4000",
+            "metLifeGFOTrancheInsured.premiumAdjustmentRate": "100",
+            "metLifeGFOTrancheInsured.premiumPaymentTerm": "wholeLife",
+            "metLifeGFOTrancheInsured.refNT": "12n",
+            "metLifeGFOTrancheInsured.subscriptionDate": "2022-10-05",
+            "metLifeGFOTrancheInsured.trancheType": "base"
+        },
+        "InsredItems": {
+            "metLifeGFOLifeInsured": {
+                "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+                "personBirthDate": "1957-10-05",
+                "personBirthName": "CHARLIAC",
+                "personFirstName": "DANIELE22222",
+                "personLastName": "DELFORG-78",
+                "personRelationship": "Souscripteur",
+                "personTitle": "Ms.",
+                "productCode": "metLifeGFOLifeInsured"
+            },
+            "metLifeGFOTrancheInsured": {
+                "Reduced": "false",
+                "addonIndex": "01",
+                "instanceKey": "Tranche 4000",
+                "personAgeAtSubscription": 65,
+                "premiumAdjustmentRate": 100,
+                "premiumPaymentTerm": "wholeLife",
+                "productCode": "metLifeGFOTrancheInsured",
+                "refNT": "12n",
+                "subscriptionDate": "2022-10-05",
+                "trancheType": "base"
+            }
+        },
+        "OpportunityInfo": {
+            "CampaignId": "7010Q000001EphWQAS",
+            "CloseDate": "2022-10-05",
+            "Name": "DANIELE22222 DELFORG-78",
+            "Stage": "Closed Won",
+            "Type": "New business"
+        },
+        "PaymentMethodInfos": {
+            "BIC": "PSSTFRPPLIM",
+            "BankAccountNumber": "FR1420041010050500013M02606",
+            "MethodType": "Bank Account",
+            "SignatureDate": "20221006",
+            "TokenId": "0500013M026"
+        },
+        "PaymentMethodRecordTypes": [
+            {
+                "DeveloperName": "Prelevement_bancaire",
+                "Id": "0120Q0000006TPlQAM"
+            },
+            {
+                "DeveloperName": "Carte_Sponsor",
+                "Id": "0120Q0000006TPqQAM"
+            },
+            {
+                "DeveloperName": "Ch_que",
+                "Id": "0120Q0000006TPvQAM"
+            }
+        ],
+        "PolicyInfos": {
+            "BillingFrequency": "Monthly",
+            "PaymentMethodTiming": "Advance",
+            "SalesDate": "20221005",
+            "Status": "In Force",
+            "SubStatus": "Active",
+            "Type": "Life",
+            "effectiveDate": "2022-10-05",
+            "term": "Custom"
+        },
+        "ProductInfo": {
+            "productCode": "GFOY",
+            "productFamilfy": "Obseques"
+        },
+        "QuoteInfo": {
+            "CloseDate": "2022-10-05",
+            "InstanceKey": "DANIELE22222 DELFORG-78",
+            "Status": "Issued"
+        },
+        "TaskCallInfos": {
+            "CallDuration": "60",
+            "Date": "20221006",
+            "Status": "Closed"
+        },
+        "TaskKitContractInfos": {
+            "Date": "2022-11-14",
+            "RecordType": "0120Q0000006Q6MQAU",
+            "Status": "New"
+        },
+        "insuredItemsRelationships": {
+            "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+            "parentInstanceKey": "Tranche 4000"
+        }
+    },
+    "ExtrtactAndBuildDataStatus": true,
+    "GetRatedProducts": {
+        "records": [
+            {
+                "CalculatedPriceData": {
+                    "ID": "0",
+                    "amountAssured": 4000,
+                    "insuredAgeAtSubscription": 65,
+                    "insuredCovAssistancePremium": 0.55556,
+                    "insuredCovDecesPremium": 28.65756
+                },
+                "Family": "Obseques",
+                "Id": "01t0Q00000AfmJlQAJ",
+                "IsConfigurable__c": true,
+                "IsRecommended__c": false,
+                "LineOfBusiness__c": "DirectToConsumer",
+                "Name": "GFO Oney",
+                "ParentClassCode__c": "metLifeClasseObseques",
+                "ParentClassId__c": "01t0Q00000AdsMTQAZ",
+                "Price": 29.21312,
+                "PricingFormula__c": "SUM(insuredCovAssistancePremium + insuredCovDecesPremium)",
+                "ProductCode": "GFOY",
+                "RawPriceData": [
+                    {
+                        "aggregationResults": null,
+                        "calculationResults": [
+                            {
+                                "ID": "0",
+                                "amountAssured": 4000,
+                                "insuredAgeAtSubscription": 65,
+                                "insuredCovAssistancePremium": 0.55556,
+                                "insuredCovDecesPremium": 28.65756
+                            }
+                        ]
+                    }
+                ],
+                "RecordTypeName__c": "Product",
+                "SubType__c": "GarantieFraisObseques",
+                "TotalInsuredFormula__c": "SUM(amountAssured)",
+                "Type__c": "Obseques",
+                "attributeCategories": {
+                    "records": [
+                        {
+                            "Code__c": "metLifeProduct",
+                            "Name": "MetLife Product",
+                            "displaySequence": 1604,
+                            "id": "a2G5E000000gQZzUAM",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    }
+                                ],
+                                "totalSize": 5
+                            }
+                        },
+                        {
+                            "Code__c": "metLifePolicy",
+                            "Name": "MetLife Policy",
+                            "displaySequence": 1605,
+                            "id": "a2G5E000000gQZyUAM",
+                            "productAttributes": {
+                                "records": [
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    },
+                                    {
+                                    }
+                                ],
+                                "totalSize": 4
+                            }
+                        }
+                    ],
+                    "totalSize": 2
+                },
+                "childProducts": {
+                    "records": [
+                        {
+                            "Family": "Obseques",
+                            "Id": "01t0Q00000ANQDcQAP",
+                            "IsConfigurable__c": true,
+                            "IsRecommended__c": false,
+                            "LineOfBusiness__c": "DirectToConsumer",
+                            "Name": "Tranche GFO",
+                            "Price": 29.21312,
+                            "PricingFormula__c": "insuredCovAssistancePremium + insuredCovDecesPremium",
+                            "ProductCode": "metLifeGFOTrancheInsured",
+                            "RecordTypeName__c": "InsuredItemSpec",
+                            "SubType__c": "GarantieFraisObseques",
+                            "Term__c": "Annual",
+                            "Type__c": "Obseques",
+                            "attributeCategories": {
+                                "records": [
+                                    {
+                                        "Code__c": "metLifePolicy",
+                                        "Name": "MetLife Policy",
+                                        "displaySequence": 1605,
+                                        "id": "a2G5E000000gQZyUAM",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                },
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 7
+                                        }
+                                    },
+                                    {
+                                        "Code__c": "metLifeGFOPerson",
+                                        "Name": "MetLife GFO Person",
+                                        "displaySequence": 1603,
+                                        "id": "a2G1l0000007uE8EAI",
+                                        "productAttributes": {
+                                            "records": [
+                                                {
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        }
+                                    }
+                                ],
+                                "totalSize": 2
+                            },
+                            "childProducts": {
+                                "records": [
+                                    {
+                                        "Family": "Obseques",
+                                        "Id": "01t0Q00000AdvQbQAJ",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "LineOfBusiness__c": "DirectToConsumer",
+                                        "Name": "Capital en cas de décès",
+                                        "Price": 28.65756,
+                                        "PricingSource__c": "insuredCovDecesPremium",
+                                        "ProductCode": "metLifeCovDecesTteCause",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "SubType__c": "GarantieFraisObseques",
+                                        "Term__c": "Annual",
+                                        "Type__c": "Obseques",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "Code__c": "metLifeGFOCov",
+                                                    "Name": "MetLife GFO Coverages",
+                                                    "displaySequence": 1602,
+                                                    "id": "a2G1l0000007uCDEAY",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            }
+                                                        ],
+                                                        "totalSize": 12
+                                                    }
+                                                },
+                                                {
+                                                    "Code__c": "metLifePolicy",
+                                                    "Name": "MetLife Policy",
+                                                    "displaySequence": 1605,
+                                                    "id": "a2G5E000000gQZyUAM",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                            },
+                                                            {
+                                                            }
+                                                        ],
+                                                        "totalSize": 2
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 2
+                                        },
+                                        "displaySequence": 1,
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "parentInstanceKey": "Tranche 4000",
+                                        "pciId": "a6Q0Q000000HDnXUAW",
+                                        "productId": "01t0Q00000AdvQbQAJ"
+                                    },
+                                    {
+                                        "Family": "Obseques",
+                                        "Id": "01t5E000009DqYQQA0",
+                                        "IsConfigurable__c": false,
+                                        "IsRecommended__c": false,
+                                        "LineOfBusiness__c": "DirectToConsumer",
+                                        "Name": "Assistance au moment du décès",
+                                        "Price": 0.55556,
+                                        "PricingSource__c": "insuredCovAssistancePremium",
+                                        "ProductCode": "metLifeCovAssistFuneral",
+                                        "RecordTypeName__c": "CoverageSpec",
+                                        "Term__c": "Annual",
+                                        "Type__c": "Property",
+                                        "defaultSelectedCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                        "displaySequence": 2,
+                                        "eligibilityCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                        "isOptional": false,
+                                        "isSelected": true,
+                                        "parentInstanceKey": "Tranche 4000",
+                                        "pciId": "a6Q0Q000000HDnYUAW",
+                                        "productId": "01t5E000009DqYQQA0",
+                                        "requiredCriteria": "metLifeGFOTrancheInsured.Reduced != true",
+                                        "taxAmount": 0.111112,
+                                        "taxesAndFees": [
+                                            {
+                                                "Amount__c": null,
+                                                "Condition__c": null,
+                                                "Id": "a6C0Q0000000XAqUAM",
+                                                "IsRefundable__c": true,
+                                                "JurisdictionId__c": null,
+                                                "Name": "Taxe sur la Valeur Ajoutée",
+                                                "Percent__c": 20,
+                                                "ProcedureFormula__c": null,
+                                                "ProcedureName__c": null,
+                                                "ProcedureSource__c": null,
+                                                "RatingType__c": "Percent",
+                                                "Type__c": "Tax",
+                                                "calculatedAmount": 0.111112,
+                                                "currencyCode": "EUR",
+                                                "currencySymbol": "€"
+                                            }
+                                        ],
+                                        "totalTaxFeeAmount": 0.111112
+                                    },
+                                    {
+                                        "Family": "Obseques",
+                                        "Id": "01t0Q00000AdsNvQAJ",
+                                        "IsConfigurable__c": true,
+                                        "IsRecommended__c": false,
+                                        "LineOfBusiness__c": "DirectToConsumer",
+                                        "Name": "Assuré GFO",
+                                        "ProductCode": "metLifeGFOLifeInsured",
+                                        "RecordTypeName__c": "InsuredPartySpec",
+                                        "SubType__c": "GarantieFraisObseques",
+                                        "Term__c": "Annual",
+                                        "Type__c": "Obseques",
+                                        "attributeCategories": {
+                                            "records": [
+                                                {
+                                                    "Code__c": "metLifeGFOPerson",
+                                                    "Name": "MetLife GFO Person",
+                                                    "displaySequence": 1603,
+                                                    "id": "a2G1l0000007uE8EAI",
+                                                    "productAttributes": {
+                                                        "records": [
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            },
+                                                            {
+                                                            }
+                                                        ],
+                                                        "totalSize": 6
+                                                    }
+                                                }
+                                            ],
+                                            "totalSize": 1
+                                        },
+                                        "displaySequence": 2,
+                                        "maxQuantity": 1,
+                                        "minQuantity": 1,
+                                        "parentInstanceKey": "Tranche 4000",
+                                        "pciId": "a6Q0Q000000HDnWUAW",
+                                        "productId": "01t0Q00000AdsNvQAJ"
+                                    }
+                                ],
+                                "totalSize": 3
+                            },
+                            "displaySequence": 1,
+                            "instanceKey": "Tranche 4000",
+                            "maxQuantity": 6,
+                            "minQuantity": 1,
+                            "pciId": "a6Q0Q000000HDnVUAW",
+                            "productId": "01t0Q00000ANQDcQAP",
+                            "taxAmount": 0.111112,
+                            "totalTaxFeeAmount": 0.111112
+                        }
+                    ],
+                    "totalSize": 1
+                },
+                "currencyCode": "EUR",
+                "currencySymbol": "€",
+                "displaySequence": -1,
+                "productId": "01t0Q00000AfmJlQAJ",
+                "taxAmount": 0.111112,
+                "totalSumInsured": 4000,
+                "totalTaxFeeAmount": 0.111112
+            }
+        ],
+        "totalSize": 1
+    },
+    "GetRatedProductsStatus": true,
+    "MergePoliciesIfAccountsReturned": {
+        "Policies": {
+            "result": [
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZclWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdeWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZcvWAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdZWAU",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010Zd5WAE",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdPWAU",
+                    "Status": "In Force"
+                },
+                {
+                    "AccountId": "0010Q00001cP1uSQAS",
+                    "Family": "Obseques",
+                    "Name": "GFO Oney",
+                    "PolicyId": "0YT0Q0000010ZdUWAU",
+                    "Status": "In Force"
+                }
+            ]
+        }
+    },
+    "MergePoliciesIfAccountsReturnedStatus": true,
+    "SetValuesForCheck": {
+        "FirstElement": {
+            "AccountId": "0010Q00001cP1uSQAS",
+            "Family": "Obseques",
+            "Name": "GFO Oney",
+            "PolicyId": "0YT0Q0000010ZclWAE",
+            "Status": "In Force"
+        },
+        "policiesSize": 7
+    },
+    "SetValuesForCheckStatus": true,
+    "SetValuesTech": {
+        "DuplicatesRes": [
+            {
+                "AccountID": "0010Q00001cP1uSQAS",
+                "Name": "DANIELE22222 DELFORG-78",
+                "PoliciesHolded": [
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZclWAE",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZdeWAE",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZcvWAE",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZdZWAU",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010Zd5WAE",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZdPWAU",
+                        "Status": "In Force"
+                    },
+                    {
+                        "AccountId": "0010Q00001cP1uSQAS",
+                        "Family": "Obseques",
+                        "Name": "GFO Oney",
+                        "PolicyId": "0YT0Q0000010ZdUWAU",
+                        "Status": "In Force"
+                    }
+                ]
+            },
+            {
+                "AccountID": "0010Q00001cP1uqQAC",
+                "Name": "DANIELE22222 DELFORG-78"
+            }
+        ]
+    },
+    "SetValuesTechStatus": true,
+    "contextId": "a8x0Q000000MB4IQAW",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    }
+}

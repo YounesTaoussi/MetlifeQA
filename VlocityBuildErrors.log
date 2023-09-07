@@ -1,0 +1,8 @@
+Org: 4sfiqa2
+Version: 1.15.8
+PackageVersion: undefined
+Namespace: vlocity_ins
+Job: vlocity/build/vlocityConfigData.yaml
+Action: Export
+ProjectPath: ./vlocity
+Errors: None

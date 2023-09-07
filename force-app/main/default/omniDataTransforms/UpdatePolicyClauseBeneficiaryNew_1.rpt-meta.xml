@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ClauseDefault&quot; : { },
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;ClauseDefault&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>UpdatePolicyClauseBeneficiaryNew</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>LETTER</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem11</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Changement de clause bénéficiaires</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem13</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem16</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>The old value of the &quot;Clause bénéficiaire&quot; field stored in the omniscript</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem9</globalKey>
+        <inputFieldName>Policy:ClauseBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem10</globalKey>
+        <inputFieldName>TaskDueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ActivityDate</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Dont acte - Clause bénéficiaire</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem12</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>SubTaskType__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Not Started</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem14</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Document_generation</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem15</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>RecordType.DeveloperName</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustom2210</globalKey>
+        <inputFieldName>TechUser:TechUserId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem3</globalKey>
+        <inputFieldName>ClauselibreEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Clause_beneficiaire__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustom6910</globalKey>
+        <inputFieldName>ModifyClause:BeneficiaryAccepting</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BeneficiaryAccepting__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>TaskDueDate</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ModifyClause:NouvelleclauseWrite var:null &lt;&gt; | &quot;Date/\/\/d&apos;effet/\/\/le/\/\/&quot; | var:ModifyClause:DateDefautToDefaut &quot;dd/MM/yyyy&quot; FORMATDATETIME &quot;./\/\/&quot; var:ModifyClause:NouvelleclauseWrite CONCAT | var:ModifyClause:NouvelleclauseSelectAttribute var:null &lt;&gt; | &quot;Date/\/\/d&apos;effet/\/\/le/\/\/&quot; | var:ModifyClause:DateDefautToDefaut &quot;dd/MM/yyyy&quot; FORMATDATETIME &quot;./\/\/&quot; var:ModifyClause:NouvelleclauseSelectAttribute CONCAT var:null IF IF</formulaConverted>
+        <formulaExpression>IF(ModifyClause:NouvelleclauseWrite &lt;&gt; null,CONCAT(&quot;Date d&apos;effet le &quot;, FORMATDATETIME(ModifyClause:DateDefautToDefaut,&quot;dd/MM/yyyy&quot;),&quot;. &quot;,%ModifyClause:NouvelleclauseWrite%),IF(ModifyClause:NouvelleclauseSelectAttribute &lt;&gt; null,CONCAT(&quot;Date d&apos;effet le &quot;, FORMATDATETIME(ModifyClause:DateDefautToDefaut,&quot;dd/MM/yyyy&quot;),&quot;. &quot;,%ModifyClause:NouvelleclauseSelectAttribute%),null)))</formulaExpression>
+        <formulaResultPath>ClauselibreEffectiveDate</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustom134</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem4</globalKey>
+        <inputFieldName>ModifyClause:RadioTypede</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type_de_clause__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem6</globalKey>
+        <inputFieldName>Policy:PolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ModifyClause:DateDefautToDefaut &quot;dd/MM/yyyy&quot; FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(ModifyClause:DateDefautToDefaut,&quot;dd/MM/yyyy&quot;)</formulaExpression>
+        <formulaResultPath>ClauselibreFormattedDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>UpdatePolicyClauseBeneficiaryNewCustoma3P0Q000002qpUKUAYItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePolicyClauseBeneficiaryNew</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;bundleName&quot; : &quot;UpdatePolicyClauseBeneficiaryNew&quot;,
+  &quot;objectList&quot; : {
+    &quot;Clausebeneficiary&quot; : &quot;Date d&apos;effet le 29/11/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+    &quot;ContextId&quot; : &quot;0YT0Q000001DvLSWA0&quot;,
+    &quot;ModifyClause&quot; : {
+      &quot;ClauseBeneficiaryOLD&quot; : &quot;Date d&apos;effet le 29/11/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;DateDefautToDefaut&quot; : &quot;2022-11-29&quot;,
+      &quot;NouvelleclauseReadOnly&quot; : null,
+      &quot;NouvelleclauseSelectAttribute&quot; : null,
+      &quot;NouvelleclauseWrite&quot; : &quot;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;RadioTypede&quot; : &quot;Clause libre&quot;
+    },
+    &quot;Policy&quot; : {
+      &quot;AttributeSelectedValues&quot; : &quot;{\&quot;sourceProductCode\&quot;:\&quot;850\&quot;,\&quot;refCG\&quot;:\&quot;CGKJZ23\&quot;,\&quot;productName\&quot;:\&quot;Garantie Obsèques Oney\&quot;,\&quot;beneficiaryClauseByDefault\&quot;:\&quot;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin\&quot;,\&quot;coolingOffPeriodDurationInDays\&quot;:90,\&quot;indemnityType\&quot;:\&quot;lumpSum\&quot;,\&quot;beneficiaryHasLegallyAccepted\&quot;:false,\&quot;saleChannel\&quot;:\&quot;Acq\&quot;}&quot;,
+      &quot;ClauseBeneficiary&quot; : &quot;Date d&apos;effet le 29/11/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q000001DvLSWA0&quot;,
+      &quot;SubstrClauseBeneficiaryNew&quot; : &quot;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;TypedeClause&quot; : &quot;Clause par défaut&quot;,
+      &quot;clauseBenefDefaultAttribute&quot; : &quot;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;
+    },
+    &quot;TechUser&quot; : {
+      &quot;TechUserId&quot; : &quot;0050Q0000089GatQAE&quot;
+    },
+    &quot;TypedeClause&quot; : &quot;Clause par défaut&quot;,
+    &quot;contextId&quot; : &quot;0YT0Q000001DvLSWA0&quot;,
+    &quot;isClauseReadOnly&quot; : false,
+    &quot;timeStamp&quot; : &quot;2022-12-13T14:59:18.501Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+    &quot;userId&quot; : &quot;0050Q0000076VZzQAM&quot;,
+    &quot;userName&quot; : &quot;abendris@salesforce.com.4sfiqa&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : &quot;60&quot;,
+    &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>UpdatePolicyClauseBeneficiaryNew_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ConcatBankAccountNumberPMType</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ConcatBankAccountNumberPMTypeCustom5423</globalKey>
+        <inputFieldName>SponsorPM:AccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConcatBankAccountNumberPMType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SponsorPM:SponsorPaymentMethod &quot;-&quot; var:SponsorPM:AccountNumber CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(SponsorPM:SponsorPaymentMethod,&quot;-&quot;,SponsorPM:AccountNumber)</formulaExpression>
+        <formulaResultPath>PaymentMethod</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ConcatBankAccountNumberPMType24606475616921109</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConcatBankAccountNumberPMType</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ConcatBankAccountNumberPMTypeCustom3274</globalKey>
+        <inputFieldName>SponsorPM:SponsorPaymentMethod</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConcatBankAccountNumberPMType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorPM</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ConcatBankAccountNumberPMType13912674250143797</globalKey>
+        <inputFieldName>PaymentMethod</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConcatBankAccountNumberPMType</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IP&quot; : {
+    &quot;ProdComm&quot; : [ {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-20T00:00:00.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T09:27:02.000Z&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    } ]
+  },
+  &quot;SponsorPM&quot; : [ {
+    &quot;AccountNumber&quot; : &quot;xxxxxxxxx&quot;,
+    &quot;SponsorPaymentMethod&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;AccountNumber&quot; : &quot;XXXXXxxxx&quot;,
+    &quot;SponsorPaymentMethod&quot; : &quot;Carte Sponsor&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ConcatBankAccountNumberPMType_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

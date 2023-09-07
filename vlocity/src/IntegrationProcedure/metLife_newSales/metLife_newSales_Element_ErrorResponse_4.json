@@ -1,0 +1,51 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ErrorResponse_4",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConversionFailed",
+        "OmniProcessId": {
+            "Name": "SaleFileIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ConversionFailed",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConversionFailed",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BatchPO": "%ExtrtactAndBuildData:MemberInfo:BatchPO%",
+            "CodePub": "%ExtrtactAndBuildData:PolicyInfos:OriginalCodePub%",
+            "ConcilErrorCode": 953,
+            "ConcilErrorMessage": "%ConvertLead:Message%",
+            "DateVente": "%ExtrtactAndBuildData:PolicyInfos:SalesDate%",
+            "EffectriveDate": "%ExtrtactAndBuildData:PolicyInfos:effectiveDate%",
+            "LeadNumber": "%ExtrtactAndBuildData:MemberInfo:LeadPO%",
+            "T11Id": "%contextId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues9",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorResponse_4"
+}

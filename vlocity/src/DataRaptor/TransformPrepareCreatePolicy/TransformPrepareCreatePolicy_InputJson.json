@@ -1,0 +1,158 @@
+{
+    "CheckAccountDuplicateStatus": true,
+    "CreateOrUpdateAccount": {
+        "Account_1": [
+            {
+                "Id": "0010Q00001cP1uSQAS"
+            }
+        ],
+        "ActualTime": 4077,
+        "CpuTime": 2799,
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "CreateOrUpdateAccountStatus": true,
+    "CreateQuoteService": {
+        "error": "OK",
+        "errorCode": "INVOKE-200",
+        "opportunityId": "0060Q00000L7V3YQAV",
+        "quoteDetail": {
+            "%vlocity_namespace%__EffectiveDate__c": "2022-11-14",
+            "%vlocity_namespace%__PrimaryRootItemId__c": "0QL0Q000000RFiIWAW",
+            "%vlocity_namespace%__SourceSystemIdentifier__c": "e7ef4d03-b896-b688-2608-e7883da1e418",
+            "%vlocity_namespace%__SourceSystem__c": "Salesforce",
+            "%vlocity_namespace%__StandardPremium__c": 29.21312,
+            "%vlocity_namespace%__Term__c": null,
+            "Id": "0Q00Q000000zHKOSA2",
+            "Name": "TEEEEEEEEEE",
+            "OpportunityId": "0060Q00000L7V3YQAV",
+            "Pricebook2Id": "01sD0000000HL3qIAG",
+            "Status": "Issued"
+        },
+        "quoteId": "0Q00Q000000zHKOSA2"
+    },
+    "CreateQuoteServiceStatus": true,
+    "DataRaptorTransformPrepareCreateQuote": "DataRaptorTransformPrepareCreateQuote",
+    "DataRaptorTransformPrepareCreateQuoteStatus": true,
+    "ErrorAccountHasAlreadyActiveGFOStatus": false,
+    "ErrorPriceNotCalculatedStatus": false,
+    "ExtrtactAndBuildData": {
+        "AccountInfo": {
+            "AccountType": "Souscripteur uniquement",
+            "Address": "LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE",
+            "BirthCity": "PREURE",
+            "BirthCountry": "FR",
+            "BirthDate": "1957-10-05",
+            "BirthName": "CHARLIAC",
+            "Country": "France",
+            "FirstName": "DANIELE22222",
+            "Gender": "Female",
+            "LastName": "DELFORG-78",
+            "PersonAccountRecordType": "0121l0000001QHiAAM",
+            "Title": "Ms."
+        },
+        "GetRatedProducts": {
+            "metLifeCovDecesTteCause.annualCapitalRevaluation": false,
+            "metLifeCovDecesTteCause.gfoBenefitChosen": "4000",
+            "metLifeCovDecesTteCause.instanceKey": "Tranche 4000",
+            "metLifeGFOLifeInsured.instanceKey": "Assuré DANIELE22222 DELFORG-78",
+            "metLifeGFOLifeInsured.personBirthDate": "1957-10-05",
+            "metLifeGFOLifeInsured.personBirthName": "CHARLIAC",
+            "metLifeGFOLifeInsured.personFirstName": "DANIELE22222",
+            "metLifeGFOLifeInsured.personLastName": "DELFORG-78",
+            "metLifeGFOLifeInsured.personRelationship": "Souscripteur",
+            "metLifeGFOLifeInsured.personTitle": "Ms.",
+            "metLifeGFOTrancheInsured.Reduced": false,
+            "metLifeGFOTrancheInsured.addonIndex": "01",
+            "metLifeGFOTrancheInsured.instanceKey": "Tranche 4000",
+            "metLifeGFOTrancheInsured.premiumAdjustmentRate": "100",
+            "metLifeGFOTrancheInsured.premiumPaymentTerm": "wholeLife",
+            "metLifeGFOTrancheInsured.refNT": "12n",
+            "metLifeGFOTrancheInsured.subscriptionDate": "2022-10-05",
+            "metLifeGFOTrancheInsured.trancheType": "base"
+        },
+        "InsredItems": {
+            "metLifeGFOLifeInsured": {
+                "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+                "personBirthDate": "1957-10-05",
+                "personBirthName": "CHARLIAC",
+                "personFirstName": "DANIELE22222",
+                "personLastName": "DELFORG-78",
+                "personRelationship": "Souscripteur",
+                "personTitle": "Ms.",
+                "productCode": "metLifeGFOLifeInsured"
+            },
+            "metLifeGFOTrancheInsured": {
+                "Reduced": "false",
+                "addonIndex": "01",
+                "instanceKey": "Tranche 4000",
+                "personAgeAtSubscription": 65,
+                "premiumAdjustmentRate": 100,
+                "premiumPaymentTerm": "wholeLife",
+                "productCode": "metLifeGFOTrancheInsured",
+                "refNT": "12n",
+                "subscriptionDate": "2022-10-05",
+                "trancheType": "base"
+            }
+        },
+        "OpportunityInfo": {
+            "CampaignId": "7010Q000001EphWQAS",
+            "CloseDate": "2022-10-05",
+            "Name": "DANIELE22222 DELFORG-78",
+            "Stage": "Closed Won",
+            "Type": "New business"
+        },
+        "PaymentMethodInfos": {
+            "BIC": "PSSTFRPPLIM",
+            "BankAccountNumber": "FR1420041010050500013M02606",
+            "MethodType": "3",
+            "SignatureDate": "20221006",
+            "TokenId": "0500013M026"
+        },
+        "PolicyInfos": {
+            "BillingFrequency": "1",
+            "SalesDate": "20221005",
+            "effectiveDate": "2022-10-05"
+        },
+        "ProductInfo": {
+            "productCode": "GFOY",
+            "productFamilfy": "Obseques"
+        },
+        "QuoteInfo": {
+            "CloseDate": "2022-10-05",
+            "InstanceKey": "DANIELE22222 DELFORG-78",
+            "Status": "Issued"
+        },
+        "TaskCallInfos": {
+            "CallDuration": "60",
+            "Date": "20221006",
+            "Status": "Closed"
+        },
+        "TaskKitContractInfos": {
+            "Date": "2022-11-14",
+            "RecordType": "0120Q0000006Q6MQAU",
+            "Status": "New"
+        },
+        "insuredItemsRelationships": {
+            "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+            "parentInstanceKey": "Tranche 4000"
+        }
+    },
+    "ExtrtactAndBuildDataStatus": true,
+    "GetRatedProducts": "GetRatedProducts",
+    "GetRatedProductsStatus": true,
+    "SetValuesForCheck": {
+        "FirstElement": "",
+        "policiesSize": 1
+    },
+    "SetValuesForCheckStatus": true,
+    "SetValuesTechStatus": true,
+    "contextId": "a8x0Q000000MB4IQAW",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    }
+}

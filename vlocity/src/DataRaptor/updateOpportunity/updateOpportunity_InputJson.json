@@ -1,0 +1,42 @@
+{
+    "ContextId": null,
+    "ConversionFailed": {
+    },
+    "ErrorAccountHasAlreadyActiveGFO": {
+    },
+    "ErrorOnPolicyCreation": {
+    },
+    "ErrorPriceNotCalculated": {
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CheckAccountDuplicate": null,
+        "ConversionFailed": null,
+        "ConvertLead": null,
+        "CreateOrUpdateAccount": null,
+        "CreatePolicy": null,
+        "CreateQuoteService": null,
+        "CreateUpdatePM_Tasks": null,
+        "DataRaptorTransformPrepareCreatePolicy": null,
+        "DataRaptorTransformPrepareCreateQuote": null,
+        "ErrorAccountHasAlreadyActiveGFO": null,
+        "ErrorOnPolicyCreation": null,
+        "ErrorPriceNotCalculated": null,
+        "ExtrtactAndBuildData": null,
+        "GetQuoteDetail": null,
+        "GetRatedProducts": null,
+        "MergePoliciesIfAccountsReturned": null,
+        "ResponseAction": null,
+        "SelectAccount": null,
+        "SetValuesForCheck": null,
+        "SetValuesTech": null,
+        "SuccessResponse": null,
+        "UpdateOpportunity": null
+    }
+}

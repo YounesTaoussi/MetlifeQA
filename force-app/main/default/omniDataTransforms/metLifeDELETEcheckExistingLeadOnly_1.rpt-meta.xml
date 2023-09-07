@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CB_If_MaximumCoverageMoreThan8000&quot; : { },
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CB_If_MaximumCoverageMoreThan8000&quot; : null,
+    &quot;CheckExistingLead&quot; : null,
+    &quot;CheckExistingPolicy&quot; : null,
+    &quot;CreatePolicyVersion&quot; : null,
+    &quot;ExtractExistingpolicy&quot; : null,
+    &quot;ExtractPolicyData&quot; : null,
+    &quot;GetPolicyDetails&quot; : null,
+    &quot;RepriceProduct&quot; : null,
+    &quot;TransformCreatePolicyVersion&quot; : null,
+    &quot;UpdateExistingPolicy&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>metLifeDELETEcheckExistingLeadOnly</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>ExtractPolicyData:SF11:SF11LeadNumber</filterValue>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly8168464039206129</globalKey>
+        <inputFieldName>LEADPO__c</inputFieldName>
+        <inputObjectName>SFI_SalesFlow_T11__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>SF11</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly010292887475385815</globalKey>
+        <inputFieldName>SF11Flag</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SF11Flag</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly6152562369101611</globalKey>
+        <inputFieldName>SF11:LEADPO__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;String&gt;</outputFieldFormat>
+        <outputFieldName>LeadNo</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SF11 LISTSIZE 1 == false true IF</formulaConverted>
+        <formulaExpression>IF(LISTSIZE(SF11) == 1,false,true)</formulaExpression>
+        <formulaResultPath>SF11Flag</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly3775761316171049</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>&quot;Success&quot;</filterValue>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly5984182927339277</globalKey>
+        <inputFieldName>Status__c</inputFieldName>
+        <inputObjectName>SFI_SalesFlow_T11__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>SF11</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly843040076919191</globalKey>
+        <inputFieldName>SF11:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SF11List:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeDELETEcheckExistingLeadOnly4325129918770987</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeDELETEcheckExistingLeadOnly</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>SF11List</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ExtractPolicyData&quot; : {
+    &quot;SF11&quot; : {
+      &quot;LeadNumber&quot; : &quot;5320002457&quot;
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>metLifeDELETEcheckExistingLeadOnly_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

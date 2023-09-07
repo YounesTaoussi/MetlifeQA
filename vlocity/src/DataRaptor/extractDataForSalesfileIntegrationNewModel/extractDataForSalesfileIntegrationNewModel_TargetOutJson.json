@@ -1,0 +1,110 @@
+{
+    "AccountInfo": {
+        "AccountType": "Customer",
+        "Address": "5 rue de paris",
+        "BirthCity": "Limoge",
+        "BirthDate": "1970-12-21",
+        "BirthDepartmentCode": "12",
+        "BirthName": "Bendris",
+        "City": "Paris",
+        "Country": "France",
+        "FirstName": "Amine",
+        "Gender": "Male",
+        "LastName": "Bendris",
+        "PersonAccountRecordType": "9QM1x0000000006GAA",
+        "PostalCode": "75001",
+        "State": "Paris",
+        "Title": "Mr"
+    },
+    "GetRatedProducts": {
+        "metLifeCovDecesTteCause.annualCapitalRevaluation": false,
+        "metLifeCovDecesTteCause.gfoBenefitChosen": "1000",
+        "metLifeCovDecesTteCause.instanceKey": "Tranche metLifeGFOTrancheInsured",
+        "metLifeGFOLifeInsured.instanceKey": "Amine Bendris",
+        "metLifeGFOLifeInsured.personBirthDate": "1957-10-05",
+        "metLifeGFOLifeInsured.personBirthName": "Bendris",
+        "metLifeGFOLifeInsured.personFirstName": "Amine",
+        "metLifeGFOLifeInsured.personLastName": "Bendris",
+        "metLifeGFOLifeInsured.personRelationship": "Souscripteur",
+        "metLifeGFOLifeInsured.personTitle": "Mr.",
+        "metLifeGFOTrancheInsured.Reduced": false,
+        "metLifeGFOTrancheInsured.addonIndex": "1",
+        "metLifeGFOTrancheInsured.instanceKey": "Tranche",
+        "metLifeGFOTrancheInsured.premiumAdjustmentRate": "100",
+        "metLifeGFOTrancheInsured.premiumPaymentTerm": "wholeLife",
+        "metLifeGFOTrancheInsured.refNT": "12o",
+        "metLifeGFOTrancheInsured.subscriptionDate": "2022-10-17",
+        "metLifeGFOTrancheInsured.trancheType": "base"
+    },
+    "InsredItems": {
+        "metLifeGFOLifeInsured": [
+            {
+                "instanceKey": "Amine Bendris",
+                "personBirthDate": "1957-10-05",
+                "personBirthName": "Bendris",
+                "personFirstName": "Amine",
+                "personLastName": "Bendris",
+                "personRelationship": "Souscripteur",
+                "personTitle": "Ms.",
+                "productCode": "metLifeGFOLifeInsured"
+            }
+        ],
+        "metLifeGFOTrancheInsured": [
+            {
+                "Reduced": false,
+                "addonIndex": "1",
+                "instanceKey": "Tranche",
+                "personAgeAtSubscription": "70",
+                "premiumAdjustmentRate": 100,
+                "premiumPaymentTerm": "wholeLife",
+                "productCode": "metLifeGFOTrancheInsured",
+                "refNT": "12o",
+                "subscriptionDate": "2022-10-17",
+                "trancheType": "base"
+            }
+        ]
+    },
+    "OpportunityInfo": {
+        "CampaignId": "9QM1x0000000006GAA",
+        "CloseDate": "2022-10-17",
+        "Name": "Opp name",
+        "Stage": "Close Won",
+        "Type": "New"
+    },
+    "PaymentMethodInfos": {
+        "BIC": "BNPPARIXXX",
+        "BankAccountNumber": "FR76345679898291731787",
+        "MethodType": "DirectDebit",
+        "SignatureDate": "2022-09-17",
+        "TokenId": "0009288338"
+    },
+    "PolicyInfos": {
+        "BillingFrequency": "1",
+        "FreeMonths": "0",
+        "SalesDate": "2022-10-17",
+        "effectiveDate": "2022-10-17"
+    },
+    "ProductInfo": {
+        "Producer": "9QM1x0000000006GAA",
+        "productCode": "GFO"
+    },
+    "QuoteInfo": {
+        "CloseDate": "2022-10-17",
+        "InstanceKey": "Quote Name",
+        "Status": "Close"
+    },
+    "TaskCallInfos": {
+        "CallDuration": "200",
+        "RecordType": "9QM1x0000000006GAA"
+    },
+    "TaskKitContractInfos": {
+        "Email": "test@mail.com",
+        "RecordType": "9QM1x0000000006GAA"
+    },
+    "insuredItemsRelationships": [
+        {
+            "instanceKey": "Amine Bendris",
+            "parentInstanceKey": "Tranche"
+        }
+    ]
+}

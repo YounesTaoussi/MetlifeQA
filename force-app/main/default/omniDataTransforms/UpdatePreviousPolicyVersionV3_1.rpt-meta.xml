@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AssignAllTasksToReducedVersion&quot; : {
+    &quot;ExtractAllPolicyTasks&quot; : null,
+    &quot;NewPolicyId&quot; : null
+  },
+  &quot;CreateTaskToRefund&quot; : {
+    &quot;DueDate&quot; : &quot;2023-01-16&quot;,
+    &quot;RelatedTo&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;Status&quot; : &quot;Open&quot;,
+    &quot;Subject&quot; : &quot;Décaissement&quot;,
+    &quot;TaskSubType&quot; : &quot;Reduction&quot;,
+    &quot;Type&quot; : &quot;DECAISSEMENT&quot;,
+    &quot;ownerId&quot; : &quot;00G0Q000007mAiY&quot;
+  },
+  &quot;RemoveOldPolicyExpirationDate&quot; : {
+    &quot;Id&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;expirationDate&quot; : &quot;0000:00:00&quot;
+  },
+  &quot;TaskCreationSendingReductionLetter&quot; : {
+    &quot;DueDate&quot; : &quot;2023-01-16&quot;,
+    &quot;RelatedTo&quot; : null,
+    &quot;Status&quot; : &quot;Open&quot;,
+    &quot;Subject&quot; : &quot;Envoie de lettre de réduction pour impayé&quot;,
+    &quot;TaskSubType&quot; : &quot;Reduction&quot;,
+    &quot;Type&quot; : &quot;LETTER&quot;,
+    &quot;ownerId&quot; : null
+  },
+  &quot;UpdateNewPolicyVersion&quot; : {
+    &quot;Id&quot; : null,
+    &quot;OriginalAmountToCollect&quot; : 234,
+    &quot;PaymentDueDate&quot; : &quot;0000-00-00&quot;,
+    &quot;Status&quot; : &quot;In Force&quot;,
+    &quot;SubStatus&quot; : &quot;Reduced&quot;,
+    &quot;TotalAmountToDeductFromPolicyAmount&quot; : null,
+    &quot;effectiveDate&quot; : &quot;2024-02-11 00:00:00&quot;
+  },
+  &quot;UpdatePreviousPolicyVersion&quot; : {
+    &quot;AmountToCollect&quot; : 0,
+    &quot;Id&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;Status&quot; : &quot;Previous Version&quot;,
+    &quot;SubStatus&quot; : &quot;Expired&quot;,
+    &quot;expirationDate&quot; : &quot;2023-01-16&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>UpdatePreviousPolicyVersionV3</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom3266</globalKey>
+        <inputFieldName>CreateTaskToRefund:RelatedTo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom9987</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:DueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>ActivityDate</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom6149</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom5399</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:ownerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom3570</globalKey>
+        <inputFieldName>CreateTaskToRefund:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom4137</globalKey>
+        <inputFieldName>CreateTaskToRefund:TaskSubType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>SubTaskType__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom8593</globalKey>
+        <inputFieldName>CreateTaskToRefund:Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom9804</globalKey>
+        <inputFieldName>CreateTaskToRefund:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem8</globalKey>
+        <inputFieldName>AssignAllTasksToReducedVersion:NewPolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom287</globalKey>
+        <inputFieldName>CreateTaskToRefund:DueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>ActivityDate</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom384</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom5505</globalKey>
+        <inputFieldName>CreateTaskToRefund:ownerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem5</globalKey>
+        <inputFieldName>UpdatePreviousPolicyVersion:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem4</globalKey>
+        <inputFieldName>UpdatePreviousPolicyVersion:SubStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Substatus</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem7</globalKey>
+        <inputFieldName>AssignAllTasksToReducedVersion:ExtractAllPolicyTasks:Tasks:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem3</globalKey>
+        <inputFieldName>UpdatePreviousPolicyVersion:AmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AmountToCollect__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem1</globalKey>
+        <inputFieldName>UpdatePreviousPolicyVersion:expirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExpirationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem2</globalKey>
+        <inputFieldName>UpdatePreviousPolicyVersion:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Customa3P0Q000002tiOVUAYItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom3717</globalKey>
+        <inputFieldName>RemoveOldPolicyExpirationDate:expirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>6.0</outputCreationSequence>
+        <outputFieldName>ExpirationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom5511</globalKey>
+        <inputFieldName>RemoveOldPolicyExpirationDate:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>6.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:UpdateNewPolicyVersion:OriginalAmountToCollect var:UpdateNewPolicyVersion:TotalAmountToDeductFromPolicyAmount -</formulaConverted>
+        <formulaExpression>%UpdateNewPolicyVersion:OriginalAmountToCollect%-%UpdateNewPolicyVersion:TotalAmountToDeductFromPolicyAmount%</formulaExpression>
+        <formulaResultPath>UpdateNewPolicyVersion:FinalAmountToCollect</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom6832</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom135</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>6.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY 1 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY(TODAY(),1)</formulaExpression>
+        <formulaResultPath>UpdateNewPolicyVersion:NewVersionExpirationDate</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom5714</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom9673</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:SubStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Substatus</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom4955</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom2207</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom2920</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:PaymentDueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>PaymentDueDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom7474</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom7182</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:RelatedTo</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom3211</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:FinalAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>AmountToCollect__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom4010</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:effectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>EffectiveDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom838</globalKey>
+        <inputFieldName>UpdateNewPolicyVersion:NewVersionExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>ExpirationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom9517</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom6819</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom8884</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdatePreviousPolicyVersionV3Custom5641</globalKey>
+        <inputFieldName>TaskCreationSendingReductionLetter:TaskSubType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdatePreviousPolicyVersionV3</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>SubTaskType__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;AssignAllTasksToReducedVersion&quot; : {
+    &quot;ExtractAllPolicyTasks&quot; : null,
+    &quot;NewPolicyId&quot; : null
+  },
+  &quot;CreateTaskToRefund&quot; : {
+    &quot;DueDate&quot; : &quot;2023-01-16&quot;,
+    &quot;RelatedTo&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;Status&quot; : &quot;Open&quot;,
+    &quot;Subject&quot; : &quot;Décaissement&quot;,
+    &quot;TaskSubType&quot; : &quot;Reduction&quot;,
+    &quot;Type&quot; : &quot;DECAISSEMENT&quot;,
+    &quot;ownerId&quot; : &quot;00G0Q000007mAiY&quot;
+  },
+  &quot;RemoveOldPolicyExpirationDate&quot; : {
+    &quot;Id&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;expirationDate&quot; : &quot;0000:00:00&quot;
+  },
+  &quot;TaskCreationSendingReductionLetter&quot; : {
+    &quot;DueDate&quot; : &quot;2023-01-16&quot;,
+    &quot;RelatedTo&quot; : null,
+    &quot;Status&quot; : &quot;Open&quot;,
+    &quot;Subject&quot; : &quot;Envoie de lettre de réduction pour impayé&quot;,
+    &quot;TaskSubType&quot; : &quot;Reduction&quot;,
+    &quot;Type&quot; : &quot;LETTER&quot;,
+    &quot;ownerId&quot; : null
+  },
+  &quot;UpdateNewPolicyVersion&quot; : {
+    &quot;Id&quot; : null,
+    &quot;OriginalAmountToCollect&quot; : 234,
+    &quot;PaymentDueDate&quot; : &quot;0000-00-00&quot;,
+    &quot;Status&quot; : &quot;In Force&quot;,
+    &quot;SubStatus&quot; : &quot;Reduced&quot;,
+    &quot;TotalAmountToDeductFromPolicyAmount&quot; : null,
+    &quot;effectiveDate&quot; : &quot;2024-02-11 00:00:00&quot;
+  },
+  &quot;UpdatePreviousPolicyVersion&quot; : {
+    &quot;AmountToCollect&quot; : 0,
+    &quot;Id&quot; : &quot;0YT0Q000001F6y4WAC&quot;,
+    &quot;Status&quot; : &quot;Previous Version&quot;,
+    &quot;SubStatus&quot; : &quot;Expired&quot;,
+    &quot;expirationDate&quot; : &quot;2023-01-16&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>UpdatePreviousPolicyVersionV3_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,11 @@
+[
+    "DataRaptor/CreateOrUpdateNewBusiness",
+    "DataRaptor/DREGetPolicy",
+    "DataRaptor/TransformPrepareCreatePolicy",
+    "DataRaptor/TransformPrepareCreateQuote",
+    "DataRaptor/concilCreateAndT11Update",
+    "DataRaptor/createUpdatePMandTasks",
+    "DataRaptor/extractDataForSalesfileIntegrationNewModel",
+    "DataRaptor/updateOpportunity",
+    "IntegrationProcedure/metLife_AccountPoliciesDuplicate"
+]

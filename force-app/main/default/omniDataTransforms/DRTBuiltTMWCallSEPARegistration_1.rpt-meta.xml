@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;LoadDirectDebitPaymentMethods&quot; : {
+    &quot;MetfifeIBANS&quot; : {
+      &quot;CreditorCode&quot; : &quot;Text&quot;,
+      &quot;FileName&quot; : &quot;Text&quot;,
+      &quot;FileType&quot; : &quot;Text&quot;,
+      &quot;IBAN&quot; : &quot;Text&quot;,
+      &quot;Id&quot; : &quot;Text&quot;,
+      &quot;OriginatorName&quot; : &quot;Text&quot;,
+      &quot;SourceApplication&quot; : &quot;Text&quot;,
+      &quot;Type&quot; : &quot;Text&quot;
+    },
+    &quot;PM&quot; : {
+      &quot;Account_BillingCity&quot; : &quot;Text&quot;,
+      &quot;Account_BillingCountry&quot; : &quot;Text&quot;,
+      &quot;Account_BillingCountryCode&quot; : &quot;Text&quot;,
+      &quot;Account_BillingPostalCode&quot; : &quot;Text&quot;,
+      &quot;Account_BillingState&quot; : &quot;Text&quot;,
+      &quot;Account_BillingStreet&quot; : &quot;Text&quot;,
+      &quot;Account_Id&quot; : &quot;Text&quot;,
+      &quot;Account_Name&quot; : &quot;Text&quot;,
+      &quot;Account_PersonBirthDate&quot; : &quot;Text&quot;,
+      &quot;Account_PersonEmail&quot; : &quot;Text&quot;,
+      &quot;Account_PersonTitle&quot; : &quot;Text&quot;,
+      &quot;Account_Phone&quot; : &quot;Text&quot;,
+      &quot;PaymentMethod_BIC&quot; : &quot;Text&quot;,
+      &quot;PaymentMethod_BankAccountNumber&quot; : &quot;Text&quot;,
+      &quot;PaymentMethod_Id&quot; : &quot;Text&quot;,
+      &quot;PaymentMethod_SepaMandateSignatureDate&quot; : &quot;Text&quot;,
+      &quot;PaymentMethod_SepaMandateUMR&quot; : &quot;Text&quot;,
+      &quot;Policy_Id&quot; : &quot;Text&quot;,
+      &quot;Policy_Name&quot; : &quot;Text&quot;,
+      &quot;Producer_Id&quot; : &quot;Text&quot;,
+      &quot;Producer_Name&quot; : &quot;Text&quot;,
+      &quot;Product_CarrierName&quot; : &quot;Text&quot;,
+      &quot;Product_Id&quot; : &quot;Text&quot;,
+      &quot;Product_Name&quot; : &quot;Text&quot;
+    }
+  },
+  &quot;Operation&quot; : &quot;AMND&quot;,
+  &quot;StaticValues&quot; : {
+    &quot;ApiPushDate&quot; : &quot;Text&quot;,
+    &quot;DebtorAddressCountry&quot; : &quot;Text&quot;,
+    &quot;DomesticAccountCountry&quot; : &quot;Text&quot;,
+    &quot;DomesticMandateCountry&quot; : &quot;Text&quot;,
+    &quot;Language&quot; : &quot;Text&quot;,
+    &quot;MandateDescription&quot; : &quot;Text&quot;,
+    &quot;MandateSchemaType&quot; : &quot;Text&quot;,
+    &quot;Size&quot; : &quot;Text&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;AMEND&quot; : {
+    &quot;debtorAccountIban&quot; : &quot;text&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;text&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;text&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;text&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;text&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;text&quot;,
+    &quot;debtorName&quot; : &quot;text&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;text&quot;,
+    &quot;domesticAccNum&quot; : &quot;text&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;text&quot;,
+    &quot;domesticBankCode&quot; : &quot;text&quot;,
+    &quot;domesticBranchCode&quot; : &quot;text&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;text&quot;,
+    &quot;fileTypeCode&quot; : &quot;text&quot;,
+    &quot;language&quot; : &quot;text&quot;,
+    &quot;mandateDescription&quot; : &quot;text&quot;,
+    &quot;mandateOperation&quot; : &quot;text&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;text&quot;,
+    &quot;mandateSchemaType&quot; : &quot;text&quot;,
+    &quot;mandateType&quot; : &quot;text&quot;,
+    &quot;originatorAccIban&quot; : &quot;text&quot;,
+    &quot;originatorName&quot; : &quot;text&quot;,
+    &quot;signatureDate&quot; : &quot;text&quot;,
+    &quot;sourceId&quot; : &quot;text&quot;
+  },
+  &quot;INIT&quot; : {
+    &quot;debtorAccountIban&quot; : &quot;text&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;text&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;text&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;text&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;text&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;text&quot;,
+    &quot;debtorName&quot; : &quot;text&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;text&quot;,
+    &quot;domesticAccNum&quot; : &quot;text&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;text&quot;,
+    &quot;domesticBankCode&quot; : &quot;text&quot;,
+    &quot;domesticBranchCode&quot; : &quot;text&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;text&quot;,
+    &quot;fileTypeCode&quot; : &quot;text&quot;,
+    &quot;language&quot; : &quot;text&quot;,
+    &quot;mandateDescription&quot; : &quot;text&quot;,
+    &quot;mandateOperation&quot; : &quot;text&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;text&quot;,
+    &quot;mandateSchemaType&quot; : &quot;text&quot;,
+    &quot;mandateType&quot; : &quot;text&quot;,
+    &quot;originatorAccIban&quot; : &quot;text&quot;,
+    &quot;originatorName&quot; : &quot;text&quot;,
+    &quot;signatureDate&quot; : &quot;text&quot;,
+    &quot;sourceId&quot; : &quot;text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBuiltTMWCallSEPARegistration</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:LoadDirectDebitPaymentMethods:MetfifeIBANS LIST &apos;OriginatorName/\/\/~=/\/\/&quot;&apos; var:LoadDirectDebitPaymentMethods:PM:Product_CarrierName + &apos;&quot;&apos; + FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(%LoadDirectDebitPaymentMethods:MetfifeIBANS%), &apos;OriginatorName ~= &quot;&apos; + %LoadDirectDebitPaymentMethods:PM:Product_CarrierName% + &apos;&quot;&apos;)</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:Originator</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom7031</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom7074</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:PaymentMethod_SepaMandateSignatureDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:signatureDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom271</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:SourceId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:sourceId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>FRST</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom7669</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:mandateType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom3439</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Originator:IBAN</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:originatorAccIban</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4096</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Originator:OriginatorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:originatorName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom3701</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:SourceId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:reserveField10</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom9433</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Originator:SourceApplication</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:mandateDescription</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4606</globalKey>
+        <inputFieldName>Operation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:mandateOperation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4531</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:PaymentMethod_SepaMandateUMR</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:mandateSEPARefUmr</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>CORE</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom2398</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:mandateSchemaType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom8831</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:domesticBranchCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticBranchCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom7847</globalKey>
+        <inputFieldName>StaticValues:DomesticMandateCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticMandateCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom8854</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Originator:CreditorCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:fileTypeCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4804</globalKey>
+        <inputFieldName>StaticValues:Language</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:language</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4543</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:domesticAccChecksum</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticAccChecksum</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom5718</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:domesticAccNum</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticAccNum</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom2716</globalKey>
+        <inputFieldName>StaticValues:DomesticAccountCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticAccountCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom3221</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:domesticBankCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:domesticBankCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4165</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Account_BillingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAddrStatePrvnceCntry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom5623</globalKey>
+        <inputFieldName>StaticValues:DebtorAddressCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAddressCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom3415</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Account_BillingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAddressLine1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom5393</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Account_Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom472</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Account_BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAddrCityTown</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom5641</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:Account_BillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAddrPOCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber 9 14 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber%,9,14)</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:domesticBranchCode</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom7516</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom5550</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:PaymentMethod_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registration:reserveField9</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom9960</globalKey>
+        <inputFieldName>LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Registrations:debtorAccountIban</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Operation &quot;AMND&quot; == | var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_Id &quot;A&quot; | | | TODAY YEAR 2 4 SUBSTRING | | TODAY MONTH | | TODAY DAY CONCAT | var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_Id &quot;I&quot; | | | TODAY YEAR 2 4 SUBSTRING | | TODAY MONTH | | TODAY DAY CONCAT IF</formulaConverted>
+        <formulaExpression>IF(Operation == &quot;AMND&quot;, CONCAT(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_Id%,&quot;A&quot;,SUBSTRING(YEAR(TODAY),2,4),MONTH(TODAY),DAY(TODAY)), CONCAT(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_Id%,&quot;I&quot;,SUBSTRING(YEAR(TODAY),2,4),MONTH(TODAY),DAY(TODAY)))</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:SourceId</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom4318</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber 16 25 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber%,16,25)</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:domesticAccNum</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom9655</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber 25 27 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber%,25,27)</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:domesticAccChecksum</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom1313</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber 4 9 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(%LoadDirectDebitPaymentMethods:PM:PaymentMethod_BankAccountNumber%,4,9)</formulaExpression>
+        <formulaResultPath>LoadDirectDebitPaymentMethods:PM:domesticBankCode</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTBuiltTMWCallSEPARegistrationCustom9501</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuiltTMWCallSEPARegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;LoadDirectDebitPaymentMethods&quot; : {
+    &quot;MetfifeIBANS&quot; : [ {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBGB&quot;,
+      &quot;IBAN&quot; : &quot;FR763000400828000162476222225376&quot;,
+      &quot;Id&quot; : &quot;m0S0Q0000000GEEUA2&quot;,
+      &quot;OriginatorName&quot; : &quot;GB&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    }, {
+      &quot;CreditorCode&quot; : &quot;51&quot;,
+      &quot;FileName&quot; : &quot;METSEPA1.007549815-core.genericmncsv&quot;,
+      &quot;FileType&quot; : &quot;AIG&quot;,
+      &quot;IBAN&quot; : &quot;LU100670006550207774&quot;,
+      &quot;Id&quot; : &quot;m0S0Q0000000GEYUA2&quot;,
+      &quot;OriginatorName&quot; : &quot;AIG&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandat&quot;
+    }, {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBNV&quot;,
+      &quot;IBAN&quot; : &quot;FR7611111111111111111111148&quot;,
+      &quot;Id&quot; : &quot;m0S0Q0000000GETUA2&quot;,
+      &quot;OriginatorName&quot; : &quot;NV&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    }, {
+      &quot;CreditorCode&quot; : &quot;52&quot;,
+      &quot;FileName&quot; : &quot;METSEPA1.007543911-core.genericmncsv&quot;,
+      &quot;FileType&quot; : &quot;METLIFE&quot;,
+      &quot;IBAN&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;Id&quot; : &quot;m0S0Q0000000GEdUAM&quot;,
+      &quot;OriginatorName&quot; : &quot;METLIFE&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandat&quot;
+    }, {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBDM&quot;,
+      &quot;IBAN&quot; : &quot;FR7630004008280001610312376&quot;,
+      &quot;Id&quot; : &quot;m0S0Q0000000GE9UAM&quot;,
+      &quot;OriginatorName&quot; : &quot;DM&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    } ],
+    &quot;PM&quot; : [ {
+      &quot;Account_BillingCountry&quot; : &quot;France&quot;,
+      &quot;Account_BillingCountryCode&quot; : &quot;Need to be filled&quot;,
+      &quot;Account_BillingStreet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;Account_Id&quot; : &quot;0010Q00001dF9cOQAS&quot;,
+      &quot;Account_Name&quot; : &quot;asetti djtityiy&quot;,
+      &quot;Account_PersonBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;Account_PersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethod_BIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentMethod_Id&quot; : &quot;a600Q000000590zQAA&quot;,
+      &quot;PaymentMethod_SepaMandateSignatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;PaymentMethod_SepaMandateUMR&quot; : &quot;CGFOR004165-2022-10-06&quot;,
+      &quot;Policy_Id&quot; : &quot;0YT0Q000001DvG3WAK&quot;,
+      &quot;Policy_Name&quot; : &quot;CGFOR004165&quot;,
+      &quot;Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;Producer_Name&quot; : &quot;Norauto&quot;,
+      &quot;Product_CarrierName&quot; : &quot;Metlife&quot;,
+      &quot;Product_Id&quot; : &quot;01t0Q00000AfmJlQAJ&quot;,
+      &quot;Product_Name&quot; : &quot;GFO Oney&quot;
+    }, {
+      &quot;Account_BillingCity&quot; : &quot;Paris&quot;,
+      &quot;Account_BillingCountry&quot; : &quot;France&quot;,
+      &quot;Account_BillingCountryCode&quot; : &quot;Need to be filled&quot;,
+      &quot;Account_BillingPostalCode&quot; : &quot;75001&quot;,
+      &quot;Account_BillingStreet&quot; : &quot;4 Rue des Innocents&quot;,
+      &quot;Account_Id&quot; : &quot;0010Q00001dLtOFQA0&quot;,
+      &quot;Account_Name&quot; : &quot;Claire lamberto&quot;,
+      &quot;Account_PersonBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;Account_PersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethod_BIC&quot; : &quot;345678&quot;,
+      &quot;PaymentMethod_BankAccountNumber&quot; : &quot;FR34567899393222222229393993&quot;,
+      &quot;PaymentMethod_Id&quot; : &quot;a600Q0000005AV9QAM&quot;,
+      &quot;PaymentMethod_SepaMandateSignatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;PaymentMethod_SepaMandateUMR&quot; : &quot;CGFOR004191-2022-10-06&quot;
+    } ]
+  },
+  &quot;LoadDirectDebitPaymentMethodsStatus&quot; : true,
+  &quot;Operation&quot; : &quot;AMND&quot;,
+  &quot;StaticValues&quot; : {
+    &quot;ApiPushDate&quot; : &quot;2022-12-19&quot;,
+    &quot;DebtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;DomesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;DomesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;Language&quot; : &quot;FR&quot;,
+    &quot;MandateDescription&quot; : &quot;SFI&quot;,
+    &quot;MandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;Size&quot; : 2
+  },
+  &quot;StaticValuesStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;a600Q0000005AV9QAM&quot;
+  }, {
+    &quot;Id&quot; : &quot;a600Q000000590zQAA&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBuiltTMWCallSEPARegistration_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

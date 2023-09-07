@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareDataClientRequest</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ValeurBalance1 ROUND</formulaConverted>
+        <formulaExpression>ROUND(ValeurBalance1)</formulaExpression>
+        <formulaResultPath>ValeurBalance</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom9800</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Step1:Block2:ResiliationType ISNOTBLANK var:Step1:Block2:ResiliationType | | var:Step1:Block2:RachatType ISNOTBLANK var:Step1:Block2:RachatType | | var:Step1:Block2:ReductionType ISNOTBLANK var:Step1:Block2:ReductionType | | var:Step1:Block2:NewPolicy ISNOTBLANK var:Step1:Block2:NewPolicy &quot;&quot; IF IF IF IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(Step1:Block2:ResiliationType), Step1:Block2:ResiliationType, IF(ISNOTBLANK(Step1:Block2:RachatType), Step1:Block2:RachatType, IF(ISNOTBLANK(Step1:Block2:ReductionType),Step1:Block2:ReductionType, IF(ISNOTBLANK(Step1:Block2:NewPolicy),Step1:Block2:NewPolicy, &quot;&quot;))))</formulaExpression>
+        <formulaResultPath>acte</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom1964</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:acte &quot;Renunciation&quot; == &quot;renonciation&quot; | var:acte &quot;Annulation&quot; == &quot;annulation&quot; | var:acte &quot;Reduction&quot; == &quot;réduction&quot; | var:acte &quot;Rachat&quot; == &quot;rachat&quot; | var:acte &quot;Resiliation&quot; == &quot;résiliation&quot; &quot;UNKNOWN&quot; IF IF IF IF IF</formulaConverted>
+        <formulaExpression>IF( acte == &quot;Renunciation&quot;, &quot;renonciation&quot;, IF(acte == &quot;Annulation&quot;, &quot;annulation&quot;, IF( acte == &quot;Reduction&quot;, &quot;réduction&quot;, IF( acte == &quot;Rachat&quot;,  &quot;rachat&quot; , IF( acte == &quot;Resiliation&quot; , &quot;résiliation&quot;, &quot;UNKNOWN&quot; )))))</formulaExpression>
+        <formulaResultPath>acteLabel</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom4615</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:acte &quot;Renunciation&quot; == var:acte &quot;Annulation&quot; == || var:PrepareData:getNecessaryData:OriginalEffectiveDateMinus1day | | var:PrepareData:getNecessaryData:PaidToDate ISNOTBLANK var:PrepareData:getNecessaryData:PaidToDate var:PrepareData:getNecessaryData:OriginalEffectiveDateMinus1day IF IF</formulaConverted>
+        <formulaExpression>IF( acte == &quot;Renunciation&quot; || acte == &quot;Annulation&quot;, PrepareData:getNecessaryData:OriginalEffectiveDateMinus1day, IF(ISNOTBLANK(PrepareData:getNecessaryData:PaidToDate), PrepareData:getNecessaryData:PaidToDate,PrepareData:getNecessaryData:OriginalEffectiveDateMinus1day))</formulaExpression>
+        <formulaResultPath>dateFin</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom7472</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataClientRequestCustom4744</globalKey>
+        <inputFieldName>acteLabel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>acteLabel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataClientRequestCustom2578</globalKey>
+        <inputFieldName>acte</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>acte</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataClientRequestCustom6736</globalKey>
+        <inputFieldName>ValeurBalance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ValeurBalance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataClientRequestCustom4027</globalKey>
+        <inputFieldName>LabelBalance</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>LabelBalance</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataClientRequestCustom5640</globalKey>
+        <inputFieldName>dateFin</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>dateFin</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:acte &quot;Renunciation&quot; == var:acte &quot;Annulation&quot; == || | var:PrepareData:GroupTransactions:SumAnnulationRenunciation 0 &lt;= | var:PrepareData:GroupTransactions:SumAnnulationRenunciation ABS var:PrepareData:GroupTransactions:SumAnnulationRenunciation IF | var:acte &quot;Reduction&quot; == | var:PrepareData:GroupTransactions:SumReduction 0 &lt;= | var:PrepareData:GroupTransactions:SumReduction ABS var:PrepareData:GroupTransactions:SumReduction IF | var:acte &quot;Rachat&quot; == | var:PrepareData:GroupTransactions:SumRachat 0 &lt;= | var:PrepareData:GroupTransactions:SumRachat ABS var:PrepareData:GroupTransactions:SumRachat IF | var:acte &quot;Resiliation&quot; == | var:PrepareData:GroupTransactions:SumResiliation 0 &lt;= | var:PrepareData:GroupTransactions:SumResiliation ABS var:PrepareData:GroupTransactions:SumResiliation IF &quot;Error&quot; IF IF IF IF</formulaConverted>
+        <formulaExpression>IF( acte == &quot;Renunciation&quot; || acte == &quot;Annulation&quot;, IF( PrepareData:GroupTransactions:SumAnnulationRenunciation &lt;= 0, ABS(PrepareData:GroupTransactions:SumAnnulationRenunciation), PrepareData:GroupTransactions:SumAnnulationRenunciation ), IF( acte == &quot;Reduction&quot; , IF( PrepareData:GroupTransactions:SumReduction &lt;= 0, ABS(PrepareData:GroupTransactions:SumReduction), PrepareData:GroupTransactions:SumReduction ), IF( acte == &quot;Rachat&quot; , IF( PrepareData:GroupTransactions:SumRachat &lt;= 0, ABS(PrepareData:GroupTransactions:SumRachat), PrepareData:GroupTransactions:SumRachat ), IF( acte == &quot;Resiliation&quot; , IF( PrepareData:GroupTransactions:SumResiliation &lt;= 0, ABS(PrepareData:GroupTransactions:SumResiliation), PrepareData:GroupTransactions:SumResiliation ), &quot;Error&quot; ) ) ) )</formulaExpression>
+        <formulaResultPath>ValeurBalance1</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom9776</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:acte &quot;Renunciation&quot; == var:acte &quot;Annulation&quot; == || | var:PrepareData:GroupTransactions:SumAnnulationRenunciation 0 &lt;= 1 -1 IF | var:acte &quot;Reduction&quot; == | var:PrepareData:GroupTransactions:SumReduction 0 &lt;= 1 -1 IF | var:acte &quot;Rachat&quot; == | var:PrepareData:GroupTransactions:SumRachat 0 &lt;= 1 -1 IF | var:acte &quot;Resiliation&quot; == | var:PrepareData:GroupTransactions:SumResiliation 0 &lt;= 1 -1 IF 0 IF IF IF IF</formulaConverted>
+        <formulaExpression>IF( acte == &quot;Renunciation&quot; || acte == &quot;Annulation&quot;, IF( PrepareData:GroupTransactions:SumAnnulationRenunciation &lt;= 0, 1, -1 ), IF( acte == &quot;Reduction&quot;,  IF( PrepareData:GroupTransactions:SumReduction &lt;= 0, 1, -1 ), IF( acte == &quot;Rachat&quot;,  IF( PrepareData:GroupTransactions:SumRachat &lt;= 0, 1, -1 ), IF( acte == &quot;Resiliation&quot; , IF( PrepareData:GroupTransactions:SumResiliation &lt;= 0, 1, -1 ), 0 ) ) ) )</formulaExpression>
+        <formulaResultPath>LabelBalance</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTPrepareDataClientRequestCustom969</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataClientRequest</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;0YTMU0000008OKf4AM&quot;,
+  &quot;LabelBalance&quot; : 1,
+  &quot;PrepareData&quot; : {
+    &quot;GroupTransactions&quot; : {
+      &quot;AllPremiumCharges&quot; : [ {
+        &quot;HasNoParent&quot; : false,
+        &quot;Id&quot; : &quot;0k9MU0000004CCvYAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;ParentTransactionId&quot; : &quot;0k9MU0000004CD0YAM&quot;,
+        &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      }, {
+        &quot;HasNoParent&quot; : true,
+        &quot;Id&quot; : &quot;0k9MU0000004CD2YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      }, {
+        &quot;HasNoParent&quot; : false,
+        &quot;Id&quot; : &quot;0k9MU0000004CD1YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;ParentTransactionId&quot; : &quot;0k9MU0000004CC8YAM&quot;,
+        &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-11-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      } ],
+      &quot;AllUnpaidPremiumCharges&quot; : {
+        &quot;HasNoParent&quot; : true,
+        &quot;Id&quot; : &quot;0k9MU0000004CD2YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;SumAllPremiumCharges&quot; : 87.96000000000001,
+      &quot;SumAllUnpaidPremiumCharges&quot; : 29.32,
+      &quot;SumAnnulationRenunciation&quot; : -58.64000000000001,
+      &quot;SumRachat&quot; : -40.11,
+      &quot;SumReduction&quot; : 0,
+      &quot;SumResiliation&quot; : 0
+    },
+    &quot;GroupTransactionsStatus&quot; : true,
+    &quot;PickListChoice&quot; : {
+      &quot;RachatAvailable&quot; : false,
+      &quot;ReductionAvailable&quot; : true,
+      &quot;ResiliationAvailable&quot; : false
+    },
+    &quot;PickListChoiceStatus&quot; : true,
+    &quot;RecalculateSurrenderValueStatus&quot; : false,
+    &quot;ReturnAllStatus&quot; : true,
+    &quot;SurrenderValues&quot; : {
+      &quot;ReductionValue&quot; : 60.72,
+      &quot;SurrenderValue&quot; : 40.11
+    },
+    &quot;SurrenderValuesStatus&quot; : true,
+    &quot;contextId&quot; : &quot;0YTMU0000008OKf4AM&quot;,
+    &quot;elementName&quot; : &quot;retrieveRequiredData&quot;,
+    &quot;getNecessaryData&quot; : {
+      &quot;AmountToCollect&quot; : 29.32,
+      &quot;Capital_Advance&quot; : 0,
+      &quot;CashSurrenderValue&quot; : 40.1079,
+      &quot;EffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;EndOfCoolingOffPeriod&quot; : &quot;2023-01-03&quot;,
+      &quot;Interest_on_Advance&quot; : 0,
+      &quot;Name&quot; : &quot;CGFOR000125&quot;,
+      &quot;OriginalEffectiveDate&quot; : &quot;2022-10-05T02:00:00.000Z&quot;,
+      &quot;OriginalEffectiveDateMinus1day&quot; : &quot;2022-10-04&quot;,
+      &quot;PaidToDate&quot; : &quot;2022-12-04&quot;,
+      &quot;PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Monthly&quot;,
+      &quot;Profit_Sharing&quot; : 0,
+      &quot;ReductionValue&quot; : 60.71522,
+      &quot;SMIC&quot; : [ {
+        &quot;date&quot; : &quot;2024-01-01&quot;,
+        &quot;val&quot; : 1720.67
+      }, {
+        &quot;date&quot; : &quot;2023-01-01&quot;,
+        &quot;val&quot; : 1709.28
+      } ],
+      &quot;SMIC_Value&quot; : 1709.28,
+      &quot;SurrenderValueShouldBeRecalculated&quot; : false,
+      &quot;TotalStandardAmount&quot; : 29.32,
+      &quot;Transaction&quot; : [ {
+        &quot;HasNoParent&quot; : false,
+        &quot;Id&quot; : &quot;0k9MU0000004CCvYAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;ParentTransactionId&quot; : &quot;0k9MU0000004CD0YAM&quot;,
+        &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      }, {
+        &quot;HasNoParent&quot; : true,
+        &quot;Id&quot; : &quot;0k9MU0000004CC8YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2023-03-03T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Payment&quot;
+      }, {
+        &quot;HasNoParent&quot; : true,
+        &quot;Id&quot; : &quot;0k9MU0000004CD2YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      }, {
+        &quot;HasNoParent&quot; : true,
+        &quot;Id&quot; : &quot;0k9MU0000004CD0YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2023-03-03T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Payment&quot;
+      }, {
+        &quot;HasNoParent&quot; : false,
+        &quot;Id&quot; : &quot;0k9MU0000004CD1YAM&quot;,
+        &quot;InFavorOfClient&quot; : false,
+        &quot;ParentTransactionId&quot; : &quot;0k9MU0000004CC8YAM&quot;,
+        &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+        &quot;TotalTransactionAmount&quot; : 29.32,
+        &quot;TotalTransactionAmountSigned&quot; : -29.32,
+        &quot;TransactionEffectiveDate&quot; : &quot;2022-11-05T00:00:00.000Z&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      } ],
+      &quot;coolingOffPeriodDurationInDays&quot; : 90,
+      &quot;listSmicSorted&quot; : {
+        &quot;DeveloperName&quot; : &quot;X01_2023&quot;,
+        &quot;Effective_Start_Date__c&quot; : &quot;2023-01-01&quot;,
+        &quot;Id&quot; : &quot;m0gMU0000004C98YAE&quot;,
+        &quot;Value__c&quot; : 1709.28
+      }
+    },
+    &quot;getNecessaryDataStatus&quot; : true,
+    &quot;ipName&quot; : &quot;metLife_clientRequestPrepareData&quot;,
+    &quot;omniScriptId&quot; : &quot;0jNMU000000000V2AQ&quot;,
+    &quot;options&quot; : {
+      &quot;ignoreCache&quot; : false,
+      &quot;postTransformBundle&quot; : &quot;&quot;,
+      &quot;preTransformBundle&quot; : &quot;&quot;,
+      &quot;useContinuation&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false,
+      &quot;vlcClass&quot; : &quot;Metlife_InsurancePolicyManagement&quot;
+    },
+    &quot;response&quot; : { }
+  },
+  &quot;Step1&quot; : {
+    &quot;Block1&quot; : {
+      &quot;AvanceCapitalReimbursement&quot; : 0,
+      &quot;CapitalInterestReimbursement&quot; : 0,
+      &quot;Currency1&quot; : 60.72,
+      &quot;EndOfRenuncitationPeriod&quot; : &quot;2023-01-03&quot;,
+      &quot;PolicyAmountToCollect&quot; : 29.32,
+      &quot;PolicyEffectiveDate&quot; : &quot;2022-10-05&quot;,
+      &quot;PolicyFrequency&quot; : &quot;Monthly&quot;,
+      &quot;PolicyOriginalEffectiveDate&quot; : &quot;2022-10-05&quot;,
+      &quot;PolicyPaidToDate&quot; : &quot;2022-12-04&quot;,
+      &quot;PolicyPaymentDueDate&quot; : &quot;2023-01-05&quot;,
+      &quot;PolicyTotalPremiumAmount&quot; : 29.32,
+      &quot;ProfitSharing&quot; : 0,
+      &quot;SurrenderValue&quot; : 40.11
+    },
+    &quot;Block2&quot; : {
+      &quot;CancellationReason&quot; : &quot;zzz&quot;,
+      &quot;CancellationReasonType&quot; : &quot;Canceled at Request of the Finance Company&quot;,
+      &quot;RachatType&quot; : null,
+      &quot;ReductionType&quot; : &quot;Renunciation&quot;,
+      &quot;ResiliationType&quot; : null
+    },
+    &quot;Radio1&quot; : null,
+    &quot;RenunciationWarning&quot; : null
+  },
+  &quot;Step2&quot; : {
+    &quot;CheckboxDecaissement&quot; : null,
+    &quot;NewSolde&quot; : null,
+    &quot;OldPolicyAmountToCollect&quot; : 29.32,
+    &quot;PolicyEndDate&quot; : &quot;2022-10-04&quot;,
+    &quot;PolicyOriginalEffectiveDateVerification&quot; : &quot;2022-10-05&quot;,
+    &quot;ResteACouvrir&quot; : null
+  },
+  &quot;ValeurBalance&quot; : 58.64000000000001,
+  &quot;acte&quot; : &quot;Renunciation&quot;,
+  &quot;dateFin&quot; : &quot;2022-10-04&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNMU000000000V2AQ&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNMU000000000V2AQ&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNMU000000000V2AQ&quot;,
+  &quot;subType&quot; : &quot;clientRequest&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;timeStamp&quot; : &quot;2023-03-03T11:05:14.681Z&quot;,
+  &quot;type&quot; : &quot;metLife&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0051x00000BgkUHAAZ&quot;,
+  &quot;userName&quot; : &quot;abendris@salesforce.com.4sfidev06&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareDataClientRequest_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

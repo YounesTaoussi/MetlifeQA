@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;EligibleTransactions&quot; : [ {
+    &quot;CashOutStatus&quot; : &quot;Rejected&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000qRQAQ&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFe3WAE&quot;,
+    &quot;IsApproved&quot; : false,
+    &quot;IsRejected&quot; : true,
+    &quot;Names&quot; : &quot;Décaissement-CGFOR000079-0k90E00000000qRQAQ&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EDSoUAO&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;NO SPECIFIED REASON CUSTOMER GENERATED&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;MS02&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-03-01&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.32,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Rejected&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000rTQAQ&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFe3WAE&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : true,
+    &quot;Names&quot; : &quot;Décaissement-CGFOR000081-0k90E00000000rTQAQ&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EDVrUAO&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;NO SPECIFIED REASON CUSTOMER GENERATED&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;MS02&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-03-01&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.32,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000nHQAQ&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFe3WAE&quot;,
+    &quot;IsApproved&quot; : false,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement-CGFOR000070-0k90E00000000nHQAQ&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EDAoUAO&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;NO SPECIFIED REASON CUSTOMER GENERATED&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;MS02&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-03-01&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.32,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Sponsor Card&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000r5QAA&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFe3WAE&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement-CGFOR000080-0k90E00000000r5QAA&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EDVhUAO&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;NO SPECIFIED REASON CUSTOMER GENERATED&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;MS02&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-03-01&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.32,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Rejected&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000pOQAQ&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFe3WAE&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : true,
+    &quot;Names&quot; : &quot;Décaissement-CGFOR000076-0k90E00000000pOQAQ&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EDSPUA4&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;NO SPECIFIED REASON CUSTOMER GENERATED&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;MS02&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-03-01&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.32,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FilterEligibleTransactions</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTransactionsCustom7268</globalKey>
+        <inputFieldName>EligibleTransactions:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Processed:ProcessedTransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTransactionsCustom4623</globalKey>
+        <inputFieldName>EligibleTransactions:IdPlusPolicyNames</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Processed:ReferenceIDName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTransactionsCustom1168</globalKey>
+        <inputFieldName>EligibleTransactions:IdPlusPolicyNames</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ProcessedTransactions:ReferenceIDName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:EligibleTransactions:SelectedTransaction | | var:EligibleTransactions LIST &apos;SelectedTransaction/\/\/==/\/\/true&apos; FILTER | | var:EligibleTransactions LIST &apos;IsApproved/\/\/==/\/\/true&apos; FILTER IF</formulaConverted>
+        <formulaExpression>IF(EligibleTransactions:SelectedTransaction,(FILTER(LIST(EligibleTransactions), &apos;SelectedTransaction == true&apos;)),(FILTER(LIST(EligibleTransactions), &apos;IsApproved == true&apos;)))</formulaExpression>
+        <formulaResultPath>NewSelectedEligibleTransactions</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FilterEligibleTransactionsCustom8762</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedEligibleTransactions:TotalTransactionAmounts SUM</formulaConverted>
+        <formulaExpression>SUM(SelectedEligibleTransactions:TotalTransactionAmounts)</formulaExpression>
+        <formulaResultPath>DeductFromAmountToCollect</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>FilterEligibleTransactionsCustom8617</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTransactionsCustom7508</globalKey>
+        <inputFieldName>DeductFromAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeductFromAmountToCollect</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTransactionsCustom9968</globalKey>
+        <inputFieldName>SelectedEligibleTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>EligibleTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:EligibleTransactions LIST &apos;IsApproved/\/\/==/\/\/true&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(EligibleTransactions), &apos;IsApproved == true&apos;)</formulaExpression>
+        <formulaResultPath>SelectedEligibleTransactions</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FilterEligibleTransactionsCustom2179</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;EligibleTransactions&quot; : [ {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000wOQAQ&quot;,
+    &quot;IdPlusPolicyNames&quot; : &quot;0k90E00000000wOQAQ/CGFOR000049&quot;,
+    &quot;InsurancePolicyAmountToCollect&quot; : -408.94,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk9GAA&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000049&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement-3&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentMethodId&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;INCORRECT ACCOUNT NUMBER&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;AC01&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-04-28&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.21,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000w9QAA&quot;,
+    &quot;IdPlusPolicyNames&quot; : &quot;0k90E00000000w9QAA/CGFOR000086&quot;,
+    &quot;InsurancePolicyAmountToCollect&quot; : -292.1,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFewWAE&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000086&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement 123&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EEbtUAG&quot;,
+    &quot;PaymentMethodId&quot; : &quot;a6P0E000000EEbtUAG&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;INCORRECT ACCOUNT NUMBER&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;AC01&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-04-28&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.21,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000wAQAQ&quot;,
+    &quot;IdPlusPolicyNames&quot; : &quot;0k90E00000000wAQAQ/CGFOR000044&quot;,
+    &quot;InsurancePolicyAmountToCollect&quot; : -233.68,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFbYWAU&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000044&quot;,
+    &quot;IsApproved&quot; : false,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement-2&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentMethodId&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;INCORRECT ACCOUNT NUMBER&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;AC01&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-04-28&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.21,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FilterEligibleTransactions_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

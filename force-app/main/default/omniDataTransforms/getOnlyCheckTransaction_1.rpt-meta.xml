@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CreatePremiumCharge&quot; : {
+    &quot;ActualTime&quot; : 597,
+    &quot;CpuTime&quot; : 536,
+    &quot;InsurancePolicyTransaction_1&quot; : [ {
+      &quot;Id&quot; : &quot;0k90Q0000008QJeQAM&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Name&quot; : &quot;Prime du 2028-06-08 au 2028-09-07&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2028-09-07&quot;,
+      &quot;TransactionAmount&quot; : 68.93544,
+      &quot;TransactionEffectiveDate&quot; : &quot;2028-06-08T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2022-11-24T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;Id&quot; : &quot;0k90Q0000008QJfQAM&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Name&quot; : &quot;Prime du 2023-03-08 au 2023-06-07&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-06-07&quot;,
+      &quot;TransactionAmount&quot; : 68.93544,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-03-08T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2022-11-24T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;InsurancePolicy_2&quot; : [ {
+      &quot;AmountToCollect__c&quot; : 1616.271848,
+      &quot;Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;PaymentDueDate&quot; : &quot;2028-09-08T00:00:00.000Z&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;AmountToCollect__c&quot; : 161.627552,
+      &quot;Id&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;PaymentDueDate&quot; : &quot;2023-06-08T00:00:00.000Z&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreatePremiumChargeStatus&quot; : true,
+  &quot;ExtractInsurancePolicyDetails&quot; : {
+    &quot;InsurancePolicy&quot; : [ {
+      &quot;Policy_Frequency&quot; : 3,
+      &quot;Policy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Policy_New_AmountToCollect&quot; : 1616.271848,
+      &quot;Policy_New_PaymentDueDate&quot; : &quot;2028-09-08&quot;,
+      &quot;Policy_Old_AmountToCollect&quot; : 1547.003072,
+      &quot;Policy_Old_PaymentDueDate&quot; : &quot;2028-06-08T00:00:00.000Z&quot;,
+      &quot;Policy_PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;Task_ActivityDate&quot; : &quot;2022-11-24&quot;,
+      &quot;Task_Description&quot; : &quot;Envoyer une lettre d&apos;echeance pour le paiement de la prime pour la police CGFOR003998 , la transaction porte le nom : Prime du 2028-06-08 au 2028-09-07 Pour un montant de : 69.268776&quot;,
+      &quot;Task_OwnerId&quot; : &quot;0050Q0000089GatQAE&quot;,
+      &quot;Task_Status&quot; : &quot;Not Started&quot;,
+      &quot;Task_SubTaskType__c&quot; : &quot;Avis d&apos;échéance&quot;,
+      &quot;Task_Subject&quot; : &quot;Envoie d’avis d’échéance&quot;,
+      &quot;Task_Type&quot; : &quot;LETTER&quot;,
+      &quot;Task_WhatId&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Transaction_EndDate&quot; : &quot;2028-09-07&quot;,
+      &quot;Transaction_HT_Amount&quot; : 68.93544,
+      &quot;Transaction_Name&quot; : &quot;Prime du 2028-06-08 au 2028-09-07&quot;,
+      &quot;Transaction_TAX_Amount&quot; : 0.333336,
+      &quot;Transaction_TTC_Amount&quot; : 69.268776
+    }, {
+      &quot;Policy_Frequency&quot; : 3,
+      &quot;Policy_Id&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Policy_New_AmountToCollect&quot; : 161.627552,
+      &quot;Policy_New_PaymentDueDate&quot; : &quot;2023-06-08&quot;,
+      &quot;Policy_Old_AmountToCollect&quot; : 92.358776,
+      &quot;Policy_Old_PaymentDueDate&quot; : &quot;2023-03-08T00:00:00.000Z&quot;,
+      &quot;Policy_PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;Task_ActivityDate&quot; : &quot;2022-11-24&quot;,
+      &quot;Task_Description&quot; : &quot;Envoyer une lettre d&apos;echeance pour le paiement de la prime pour la police CGFOR004021 , la transaction porte le nom : Prime du 2023-03-08 au 2023-06-07 Pour un montant de : 69.268776&quot;,
+      &quot;Task_OwnerId&quot; : &quot;0050Q0000089GatQAE&quot;,
+      &quot;Task_Status&quot; : &quot;Not Started&quot;,
+      &quot;Task_SubTaskType__c&quot; : &quot;Avis d&apos;échéance&quot;,
+      &quot;Task_Subject&quot; : &quot;Envoie d’avis d’échéance&quot;,
+      &quot;Task_Type&quot; : &quot;LETTER&quot;,
+      &quot;Task_WhatId&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Transaction_EndDate&quot; : &quot;2023-06-07&quot;,
+      &quot;Transaction_HT_Amount&quot; : 68.93544,
+      &quot;Transaction_Name&quot; : &quot;Prime du 2023-03-08 au 2023-06-07&quot;,
+      &quot;Transaction_TAX_Amount&quot; : 0.333336,
+      &quot;Transaction_TTC_Amount&quot; : 69.268776
+    } ]
+  },
+  &quot;ExtractInsurancePolicyDetailsStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;policyId&quot; : &quot;0YT0Q000001DstyWAC&quot;
+  }, {
+    &quot;policyId&quot; : &quot;0YT0Q000001DswOWAS&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>getOnlyCheckTransaction</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>getOnlyCheckTransactionCustom1802</globalKey>
+        <inputFieldName>CheckList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getOnlyCheckTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CheckList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;InsurancePolicyId&quot; | var:CreatePremiumCharge:InsurancePolicyTransaction_1 LIST | var:ExtractInsurancePolicyDetails:InsurancePolicy LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;InsurancePolicyId&quot;, LIST(CreatePremiumCharge:InsurancePolicyTransaction_1), LIST(ExtractInsurancePolicyDetails:InsurancePolicy))</formulaExpression>
+        <formulaResultPath>mergedList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>getOnlyCheckTransactionCustom4898</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getOnlyCheckTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:mergedList LIST &apos;Policy_PaymentMethodType/\/\/==/\/\/&quot;Check&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(mergedList), &apos;Policy_PaymentMethodType == &quot;Check&quot;&apos;)</formulaExpression>
+        <formulaResultPath>CheckList</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>getOnlyCheckTransactionCustom8453</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>getOnlyCheckTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CreatePremiumCharge&quot; : {
+    &quot;ActualTime&quot; : 683,
+    &quot;CpuTime&quot; : 567,
+    &quot;InsurancePolicyTransaction_1&quot; : [ {
+      &quot;Id&quot; : &quot;0k90Q0000008QJoQAM&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Name&quot; : &quot;Prime du 2028-12-08 au 2029-03-07&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2029-03-07&quot;,
+      &quot;TransactionAmount&quot; : 68.93544,
+      &quot;TransactionEffectiveDate&quot; : &quot;2028-12-08T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2022-11-24T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;Id&quot; : &quot;0k90Q0000008QJpQAM&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Name&quot; : &quot;Prime du 2023-09-08 au 2023-12-07&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-12-07&quot;,
+      &quot;TransactionAmount&quot; : 68.93544,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-09-08T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2022-11-24T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreatePremiumChargeStatus&quot; : true,
+  &quot;ExtractInsurancePolicyDetails&quot; : {
+    &quot;InsurancePolicy&quot; : [ {
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Policy_Frequency&quot; : 3,
+      &quot;Policy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Policy_New_AmountToCollect&quot; : 1754.8094,
+      &quot;Policy_New_PaymentDueDate&quot; : &quot;2029-03-08&quot;,
+      &quot;Policy_Old_AmountToCollect&quot; : 1685.540624,
+      &quot;Policy_Old_PaymentDueDate&quot; : &quot;2028-12-08T00:00:00.000Z&quot;,
+      &quot;Policy_PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;Task_ActivityDate&quot; : &quot;2022-11-24&quot;,
+      &quot;Task_Description&quot; : &quot;Envoyer une lettre d&apos;echeance pour le paiement de la prime pour la police CGFOR003998 , la transaction porte le nom : Prime du 2028-12-08 au 2029-03-07 Pour un montant de : 69.268776&quot;,
+      &quot;Task_OwnerId&quot; : &quot;0050Q0000089GatQAE&quot;,
+      &quot;Task_Status&quot; : &quot;Not Started&quot;,
+      &quot;Task_SubTaskType__c&quot; : &quot;Avis d&apos;échéance&quot;,
+      &quot;Task_Subject&quot; : &quot;Envoie d’avis d’échéance&quot;,
+      &quot;Task_Type&quot; : &quot;LETTER&quot;,
+      &quot;Task_WhatId&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;Transaction_EndDate&quot; : &quot;2029-03-07&quot;,
+      &quot;Transaction_HT_Amount&quot; : 68.93544,
+      &quot;Transaction_Name&quot; : &quot;Prime du 2028-12-08 au 2029-03-07&quot;,
+      &quot;Transaction_TAX_Amount&quot; : 0.333336,
+      &quot;Transaction_TTC_Amount&quot; : 69.268776
+    }, {
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Policy_Frequency&quot; : 3,
+      &quot;Policy_Id&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Policy_New_AmountToCollect&quot; : 300.165104,
+      &quot;Policy_New_PaymentDueDate&quot; : &quot;2023-12-08&quot;,
+      &quot;Policy_Old_AmountToCollect&quot; : 230.896328,
+      &quot;Policy_Old_PaymentDueDate&quot; : &quot;2023-09-08T00:00:00.000Z&quot;,
+      &quot;Policy_PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;Task_ActivityDate&quot; : &quot;2022-11-24&quot;,
+      &quot;Task_Description&quot; : &quot;Envoyer une lettre d&apos;echeance pour le paiement de la prime pour la police CGFOR004021 , la transaction porte le nom : Prime du 2023-09-08 au 2023-12-07 Pour un montant de : 69.268776&quot;,
+      &quot;Task_OwnerId&quot; : &quot;0050Q0000089GatQAE&quot;,
+      &quot;Task_Status&quot; : &quot;Not Started&quot;,
+      &quot;Task_SubTaskType__c&quot; : &quot;Avis d&apos;échéance&quot;,
+      &quot;Task_Subject&quot; : &quot;Envoie d’avis d’échéance&quot;,
+      &quot;Task_Type&quot; : &quot;LETTER&quot;,
+      &quot;Task_WhatId&quot; : &quot;0YT0Q000001DswOWAS&quot;,
+      &quot;Transaction_EndDate&quot; : &quot;2023-12-07&quot;,
+      &quot;Transaction_HT_Amount&quot; : 68.93544,
+      &quot;Transaction_Name&quot; : &quot;Prime du 2023-09-08 au 2023-12-07&quot;,
+      &quot;Transaction_TAX_Amount&quot; : 0.333336,
+      &quot;Transaction_TTC_Amount&quot; : 69.268776
+    } ]
+  },
+  &quot;ExtractInsurancePolicyDetailsStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;policyId&quot; : &quot;0YT0Q000001DstyWAC&quot;
+  }, {
+    &quot;policyId&quot; : &quot;0YT0Q000001DswOWAS&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>getOnlyCheckTransaction_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

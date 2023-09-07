@@ -1,0 +1,37 @@
+Org: 4sfiqa2
+Version: 1.15.8
+Node: v16.14.2
+PackageVersion: !<tag:yaml.org,2002:js/undefined> ''
+Namespace: vlocity_ins
+Job: VDX
+Action: Export
+ProjectPath: ./vlocity
+TotalTime: 2m 1s
+Count:
+  Success:
+    IntegrationProcedure: 2
+    DataRaptor: 12
+Errors: []
+Status:
+  Success:
+    IntegrationProcedure:
+      - metLife_AccountPoliciesDuplicate
+      - metLife_newSales
+    DataRaptor:
+      - CreateOrUpdateNewBusiness
+      - DRDuplicateDetectionCase1
+      - DRDuplicateDetectionCase1Bis
+      - DRDuplicateDetectionCase4
+      - DRDuplicateDetectionCase4bis
+      - DREGetPolicy
+      - TransformPrepareCreatePolicy
+      - TransformPrepareCreateQuote
+      - concilCreateAndT11Update
+      - createUpdatePMandTasks
+      - extractDataForSalesfileIntegrationNewModel
+      - updateOpportunity
+StatusCount:
+  Remaining: 0
+  Success: 14
+  Error: 0
+id: !<tag:yaml.org,2002:js/undefined> ''

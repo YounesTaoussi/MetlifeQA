@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ReadLatestPolicyTask&quot; : [ {
+    &quot;EligibleTasks&quot; : false,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000043&quot;,
+    &quot;RelatedMEDLapseTasksAbsent&quot; : true,
+    &quot;RelatedMEDTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N507AUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508hUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5324UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507UUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508XUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508DUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507fUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5083UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508IUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508NUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508SUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508cUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4kD6UAJ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    } ],
+    &quot;RelatedMEDTasksAbsent&quot; : false,
+    &quot;SubType&quot; : &quot;Special Avis d&apos;écheance&quot;,
+    &quot;TaskId&quot; : &quot;00T0E00000MqvImUAJ&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjhGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000043&quot;
+  }, {
+    &quot;EligibleTasks&quot; : false,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbdWAE&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000045&quot;,
+    &quot;RelatedMEDLapseTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N507BUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508iUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4w9bUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5325UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507VUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508YUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508EUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507gUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5084UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508JUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508OUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508TUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508dUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4kD7UAJ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    } ],
+    &quot;RelatedMEDLapseTasksAbsent&quot; : false,
+    &quot;RelatedMEDTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N4CMiUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CGIUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CJtUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CJoUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFIUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFXUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CKrUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFmUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CI3UAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFhUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    } ],
+    &quot;RelatedMEDTasksAbsent&quot; : false,
+    &quot;SubType&quot; : &quot;MED&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HFA8NEAX&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000045&quot;
+  }, {
+    &quot;EligibleTasks&quot; : true,
+    &quot;LatestPolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR314159&quot;,
+    &quot;RelatedMEDLapseTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N4kh6UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT1x0000004pldGAA&quot;
+    } ],
+    &quot;RelatedMEDLapseTasksAbsent&quot; : false,
+    &quot;RelatedMEDTasksAbsent&quot; : true,
+    &quot;SubType&quot; : &quot;Lettre de rappel&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HGpktEAD&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004plTGAQ&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR314159&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>FilterEligibleTasks</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ReadLatestPolicyTask LIST &apos;EligibleTasks&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ReadLatestPolicyTask),&apos;EligibleTasks&apos;)</formulaExpression>
+        <formulaResultPath>FilteredEligibleTasksListOutput</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>FilterEligibleTasksCustom3668</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ReadLatestPolicyTask LIST &apos;SubType==&quot;MED&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ReadLatestPolicyTask),&apos;SubType==&quot;MED&quot;&apos;)</formulaExpression>
+        <formulaResultPath>MEDTaskToUpdatePolicy</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>FilterEligibleTasksCustom1728</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom8681</globalKey>
+        <inputFieldName>FilteredEligibleTasksListOutput</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FilteredEligibleTasksListOutput</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom782</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:WhatId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:WhatId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom9425</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:WhatName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:WhatName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom2373</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:LatestPolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:LatestPolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom94</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:LatestPolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:LatestPolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom8398</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:SubType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:SubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom2795</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:TaskId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:TaskId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>FilterEligibleTasksCustom9626</globalKey>
+        <inputFieldName>MEDTaskToUpdatePolicy:EligibleTasks</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>FilterEligibleTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MEDTaskToUpdatePolicy:EligibleTasks</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ReadLatestPolicyTask&quot; : [ {
+    &quot;EligibleTasks&quot; : false,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000043&quot;,
+    &quot;RelatedMEDLapseTasksAbsent&quot; : true,
+    &quot;RelatedMEDTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N507AUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508hUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5324UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507UUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508XUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508DUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507fUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5083UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508IUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508NUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508SUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508cUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4kD6UAJ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbTWAU&quot;
+    } ],
+    &quot;RelatedMEDTasksAbsent&quot; : false,
+    &quot;SubType&quot; : &quot;Special Avis d&apos;écheance&quot;,
+    &quot;TaskId&quot; : &quot;00T0E00000MqvImUAJ&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjhGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000043&quot;
+  }, {
+    &quot;EligibleTasks&quot; : false,
+    &quot;LatestPolicyId&quot; : &quot;0YT0E000001gFbdWAE&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR000045&quot;,
+    &quot;RelatedMEDLapseTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N507BUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508iUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4w9bUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5325UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507VUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508YUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508EUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N507gUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N5084UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508JUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508OUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508TUAR&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N508dUAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4kD7UAJ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    } ],
+    &quot;RelatedMEDLapseTasksAbsent&quot; : false,
+    &quot;RelatedMEDTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N4CMiUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CGIUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CJtUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CJoUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFIUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFXUA3&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CKrUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFmUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CI3UAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    }, {
+      &quot;Id&quot; : &quot;00T0E00000N4CFhUAN&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED&quot;,
+      &quot;Type&quot; : &quot;LETTER&quot;,
+      &quot;WhatId&quot; : &quot;0YT0E000001gFbdWAE&quot;
+    } ],
+    &quot;RelatedMEDTasksAbsent&quot; : false,
+    &quot;SubType&quot; : &quot;MED&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HFA8NEAX&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR000045&quot;
+  }, {
+    &quot;EligibleTasks&quot; : true,
+    &quot;LatestPolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;LatestPolicyName&quot; : &quot;CGFOR314159&quot;,
+    &quot;RelatedMEDLapseTasks&quot; : [ {
+      &quot;Id&quot; : &quot;00T0E00000N4kh6UAB&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121x0000050CLQAA2&quot;,
+      &quot;Status&quot; : &quot;Not Started&quot;,
+      &quot;SubTaskType__c&quot; : &quot;MED Lapse&quot;,
+      &quot;Type&quot; : &quot;MED&quot;,
+      &quot;WhatId&quot; : &quot;0YT1x0000004pldGAA&quot;
+    } ],
+    &quot;RelatedMEDLapseTasksAbsent&quot; : false,
+    &quot;RelatedMEDTasksAbsent&quot; : true,
+    &quot;SubType&quot; : &quot;Lettre de rappel&quot;,
+    &quot;TaskId&quot; : &quot;00T1x00000HGpktEAD&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004plTGAQ&quot;,
+    &quot;WhatName&quot; : &quot;CGFOR314159&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>FilterEligibleTasks_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

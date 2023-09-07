@@ -1,0 +1,262 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PolicyId",
+        "GlobalKey": "DREGetPolicyCustom7250",
+        "InputFieldName": "Id",
+        "InputObjectName": "InsurancePolicy",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "InsurancePolicy",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION(\"CustomFunctionImplementation\",\"replace\", InsurancePolicy:Name, StrToReplace, InsurancePolicy:AutoNumber__c)",
+        "FormulaResultPath": "InsurancePolicy_Name_New",
+        "FormulaSequence": 1,
+        "GlobalKey": "DREGetPolicyCustom9629",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION(\"CustomFunctionImplementation\",\"replace\", InsurancePolicy:PolicyName, StrToReplace, InsurancePolicy:AutoNumber__c)",
+        "FormulaResultPath": "InsurancePolicy_PolicyName_New",
+        "FormulaSequence": 2,
+        "GlobalKey": "DREGetPolicyCustom8275",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION(\"CustomFunctionImplementation\",\"replace\", InsurancePolicy:SourceOpportunity.Name, StrToReplace, InsurancePolicy:AutoNumber__c)",
+        "FormulaResultPath": "InsurancePolicy_SourceOpportunity_Name_New",
+        "FormulaSequence": 3,
+        "GlobalKey": "DREGetPolicyCustom5224",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FUNCTION(\"CustomFunctionImplementation\",\"replace\", InsurancePolicy:SourceQuote.Name, StrToReplace, InsurancePolicy:AutoNumber__c)",
+        "FormulaResultPath": "InsurancePolicy_SourceQuote_Name_New",
+        "FormulaSequence": 4,
+        "GlobalKey": "DREGetPolicyCustom2438",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom7611",
+        "InputFieldName": "InsurancePolicy:AutoNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "InsurancePolicy_AutoNumber__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom2518",
+        "InputFieldName": "InsurancePolicy:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "InsurancePolicy_Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom9845",
+        "InputFieldName": "InsurancePolicy:SourceOpportunityId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "InsurancePolicy_SourceOpportunityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom3831",
+        "InputFieldName": "InsurancePolicy:SourceQuoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "InsurancePolicy_SourceQuoteId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom7955",
+        "InputFieldName": "InsurancePolicy_Name_New:result",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "new:InsurancePolicy_Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom3732",
+        "InputFieldName": "InsurancePolicy_PolicyName_New:result",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "new:InsurancePolicy_PolicyName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom1961",
+        "InputFieldName": "InsurancePolicy_SourceOpportunity_Name_New:result",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "new:InsurancePolicy_SourceOpportunity_Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DREGetPolicyCustom4514",
+        "InputFieldName": "InsurancePolicy_SourceQuote_Name_New:result",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DREGetPolicy",
+        "OmniDataTransformationId": {
+            "Name": "DREGetPolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DREGetPolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "new:InsurancePolicy_SourceQuote_Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

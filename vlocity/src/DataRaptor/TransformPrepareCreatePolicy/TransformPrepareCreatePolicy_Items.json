@@ -1,0 +1,777 @@
+[
+    {
+        "FormulaExpression": "CONCAT(ExtrtactAndBuildData:PolicyInfos:Name,\" - \", policyNumber)",
+        "FormulaResultPath": "PolicyName",
+        "FormulaSequence": 5,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom3581",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(ExtrtactAndBuildData:ProductInfo:productSubType , \"000\")",
+        "FormulaResultPath": "prefix",
+        "FormulaSequence": 3,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom4128",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(SUBSTRING(prefix,0,3), SetValuesTech:UniqueNumber)",
+        "FormulaResultPath": "policyNumber",
+        "FormulaSequence": 4,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom1228",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(\"Date d'effet le \",FORMATDATETIME(ExtrtactAndBuildData:PolicyInfos:effectiveDate,\"dd/MM/yyyy\"),\". \",DefaultClauseBeneficiaire:userValues)",
+        "FormulaResultPath": "clauseBeneficiary",
+        "FormulaSequence": 2,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5964",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(GetQuoteDetail:productConfigurationDetail:records:attributeCategories:records:productAttributes:records), 'code == \"beneficiaryClauseByDefault\"')",
+        "FormulaResultPath": "DefaultClauseBeneficiaire",
+        "FormulaSequence": 1,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5913",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FORMATDATETIMEGMT(ExtrtactAndBuildData:PolicyInfos:effectiveDate,\"Europe/Paris\",\"yyyy-MM-dd'T'HH:mm:ss.SSSZ\")",
+        "FormulaResultPath": "effictiveDate",
+        "FormulaSequence": 8,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom6492",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "GetQuoteDetail:productConfigurationDetail:records:taxAmount + GetQuoteDetail:productConfigurationDetail:records:Price",
+        "FormulaResultPath": "monthlyTTC",
+        "FormulaSequence": 6,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom9250",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(CreateQuoteService:opportunityId), ConvertLead:OpportunityId, CreateQuoteService:opportunityId)",
+        "FormulaResultPath": "oppId",
+        "FormulaSequence": 7,
+        "GlobalKey": "TransformPrepareCreatePolicyCustom4701",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom8052",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:ExternalClientId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuotePolicyJSON:AdditionalFields:externalClientId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2153",
+        "InputFieldName": "CreateOrUpdateAccount:Account_1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:accountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5863",
+        "InputFieldName": "monthlyTTC",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:%vlocity_namespace%_fsc__MonthlyPremium__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom3945",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:SalesChanel",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:Canal_de_vente__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5901",
+        "InputFieldName": "clauseBeneficiary",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:Clause_beneficiaire__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom4919",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:OriginalCodePub",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:CodePubOriginal__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "2199-12-31",
+        "GlobalKey": "TransformPrepareCreatePolicyCustom9",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:ExpirationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2111",
+        "InputFieldName": "policyNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:Name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom3056",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:FreeMonths",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:OfferedMonths__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom8680",
+        "InputFieldName": "effictiveDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:OriginalEffectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom9144",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PaidToDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5761",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:dueDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PaymentDueDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom1699",
+        "InputFieldName": "PolicyName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PolicyName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2246",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:term",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PolicyTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom956",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PolicyType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom5164",
+        "InputFieldName": "monthlyTTC",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PremiumAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Modal",
+        "GlobalKey": "TransformPrepareCreatePolicyCustom1974",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PremiumCalculationMethod",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom807",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:BillingFrequency",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PremiumFrequency",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom128",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:PaymentMethodTiming",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:PremiumPaymentType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom7793",
+        "InputFieldName": "ExtrtactAndBuildData:Producer:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:ProducerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom6781",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:SalesDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:SaleDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom7024",
+        "InputFieldName": "oppId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:SourceOpportunityId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom4330",
+        "InputFieldName": "CreateQuoteService:quoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:SourceQuoteId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom7723",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:SubStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:Substatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom622",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:TermPremiumAmount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2366",
+        "InputFieldName": "ExtrtactAndBuildData:GetRatedProducts:metLifeCovDecesTteCause.gfoBenefitChosen",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "quotepolicyJson:additionalFields:TotalSumInsured",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom9773",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:CampaignType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:Type_de_campagne__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom3100",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:additionalFields:status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2260",
+        "InputFieldName": "effictiveDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:effectiveDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2220",
+        "InputFieldName": "ExtrtactAndBuildData:InsredItems",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:insuredItems",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom4124",
+        "InputFieldName": "GetQuoteDetail:productConfigurationDetail",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:productConfigurationDetail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformPrepareCreatePolicyCustom2469",
+        "InputFieldName": "ExtrtactAndBuildData:PolicyInfos:term",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformPrepareCreatePolicy",
+        "OmniDataTransformationId": {
+            "Name": "TransformPrepareCreatePolicy",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformPrepareCreatePolicy",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quotepolicyJson:term",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

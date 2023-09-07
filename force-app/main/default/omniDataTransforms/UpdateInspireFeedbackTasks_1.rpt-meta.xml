@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>[ {
+  &quot;PolicyCreatedDate&quot; : &quot;2022-12-06T10:15:34.000Z&quot;,
+  &quot;PolicyId&quot; : &quot;0YT1x0000004pjhGAA&quot;,
+  &quot;SubType&quot; : &quot;Special Avis d&apos;écheance&quot;,
+  &quot;TaskId&quot; : &quot;00T0E00000MqvImUAJ&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004pjhGAA&quot;
+}, {
+  &quot;PolicyCreatedDate&quot; : &quot;2022-12-06T10:24:38.000Z&quot;,
+  &quot;PolicyId&quot; : &quot;0YT1x0000004pjrGAA&quot;,
+  &quot;RelatedMEDTasks&quot; : {
+    &quot;Status&quot; : &quot;Completed&quot;,
+    &quot;SubType&quot; : &quot;MED&quot;,
+    &quot;Type&quot; : &quot;LETTER&quot;,
+    &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;
+  },
+  &quot;SubType&quot; : &quot;MED&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HFA8NEAX&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004pjrGAA&quot;
+}, {
+  &quot;PolicyCreatedDate&quot; : &quot;2022-12-07T09:44:57.000Z&quot;,
+  &quot;PolicyId&quot; : &quot;0YT1x0000004plTGAQ&quot;,
+  &quot;SubType&quot; : &quot;Lettre de rappel&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HGpktEAD&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004plTGAQ&quot;
+}, {
+  &quot;PolicyCreatedDate&quot; : &quot;2022-12-07T09:48:55.000Z&quot;,
+  &quot;PolicyId&quot; : &quot;0YT1x0000004plYGAQ&quot;,
+  &quot;SubType&quot; : &quot;Renonciation&quot;,
+  &quot;TaskId&quot; : &quot;00T1x00000HGq2QEAT&quot;,
+  &quot;WhatId&quot; : &quot;0YT1x0000004plYGAQ&quot;
+} ]</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>UpdateInspireFeedbackTasks</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Completed</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdateInspireFeedbackTasksCustom564</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdateInspireFeedbackTasksCustom6737</globalKey>
+        <inputFieldName>data:FeedbackId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_INSPIRE_FEEDBACK__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdateInspireFeedbackTasksCustom9934</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_INSPIRE_FEEDBACK__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>$Vlocity.TRUE</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdateInspireFeedbackTasksCustom6622</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ProcessedFlag__c</outputFieldName>
+        <outputObjectName>SFI_INSPIRE_FEEDBACK__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>UpdateInspireFeedbackTasksCustom9489</globalKey>
+        <inputFieldName>data:IMP_SRC_ID</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>UpdateInspireFeedbackTasksCustom3135</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>UpdateInspireFeedbackTasks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;data&quot; : [ {
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wGQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HFA8NEAX&quot;
+  }, {
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007wBQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGpktEAD&quot;
+  }, {
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007w6QAA&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T1x00000HGq2QEAT&quot;
+  }, {
+    &quot;FeedbackId&quot; : &quot;a9r0E00000007uSQAQ&quot;,
+    &quot;IMP_SRC_ID&quot; : &quot;00T0E00000MqvImUAJ&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>UpdateInspireFeedbackTasks_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

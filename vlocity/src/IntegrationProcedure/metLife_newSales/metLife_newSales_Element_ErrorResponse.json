@@ -1,0 +1,51 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ErrorResponse",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ErrorPriceNotCalculated",
+        "OmniProcessId": {
+            "Name": "SaleFileIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorPriceNotCalculated",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ErrorPriceNotCalculated",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BatchPO": "%ExtrtactAndBuildData:MemberInfo:BatchPO%",
+            "CodePub": "%ExtrtactAndBuildData:PolicyInfos:OriginalCodePub%",
+            "ConcilErrorCode": 950,
+            "ConcilErrorMessage": "Impossible de Calculer la prime avec les informations disponibles",
+            "DateVente": "%ExtrtactAndBuildData:PolicyInfos:SalesDate%",
+            "EffectriveDate": "%ExtrtactAndBuildData:PolicyInfos:effectiveDate%",
+            "LeadNumber": "%ExtrtactAndBuildData:MemberInfo:LeadPO%",
+            "T11Id": "%contextId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorResponse"
+}

@@ -1,0 +1,67 @@
+{
+    "CreateOrUpdateAccount": {
+        "Account_1": [
+            {
+                "Id": "0010Q00001cP1uSQAS",
+                "UpsertSuccess": true
+            }
+        ],
+        "ActualTime": 4572,
+        "CpuTime": 2942,
+        "error": "OK",
+        "responseType": "SObject"
+    },
+    "ExtrtactAndBuildData": {
+        "InsredItems": {
+            "metLifeGFOLifeInsured": {
+                "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+                "personBirthDate": "1957-10-05",
+                "personBirthName": "CHARLIAC",
+                "personFirstName": "DANIELE22222",
+                "personLastName": "DELFORG-78",
+                "personRelationship": "Souscripteur",
+                "personTitle": "Ms.",
+                "productCode": "metLifeGFOLifeInsured"
+            },
+            "metLifeGFOTrancheInsured": {
+                "Reduced": "false",
+                "addonIndex": "01",
+                "instanceKey": "Tranche 4000",
+                "personAgeAtSubscription": 65,
+                "premiumAdjustmentRate": 100,
+                "premiumPaymentTerm": "wholeLife",
+                "productCode": "metLifeGFOTrancheInsured",
+                "refNT": "12n",
+                "subscriptionDate": "2022-10-05",
+                "trancheType": "base"
+            }
+        },
+        "OpportunityInfo": {
+            "CampaignId": "7010Q000001EphWQAS",
+            "CloseDate": "2022-10-05",
+            "Name": "DANIELE22222 DELFORG-78",
+            "Stage": "Close/Won",
+            "Type": "New business"
+        },
+        "QuoteInfo": {
+            "CloseDate": "2022-10-05",
+            "InstanceKey": "DANIELE22222 DELFORG-78",
+            "Status": "Closed"
+        },
+        "insuredItemsRelationships": {
+            "instanceKey": "Assuré DANIELE22222 DELFORG-78",
+            "parentInstanceKey": "Tranche 4000"
+        }
+    },
+    "ExtrtactAndBuildDataStatus": true,
+    "GetRatedProducts": "GetRatedProducts",
+    "GetRatedProductsStatus": true,
+    "contextId": "a8x0Q000000MB4IQAW",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    }
+}

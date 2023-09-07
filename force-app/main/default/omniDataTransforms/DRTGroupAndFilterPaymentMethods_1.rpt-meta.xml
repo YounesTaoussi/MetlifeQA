@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;GetPaymentMethodsByPolicy&quot; : {
+    &quot;OtherPaymentMethods&quot; : [ {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 1111&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;1111&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 889900&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;889900&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665465&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte  123454&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;667788&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chèque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Chèque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;77660&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;98897978&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;22233&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte  8899500&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8899500&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475655667&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665453&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475677777&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475677777&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665111&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;665543&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;6666&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 6756&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;6756&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR25364746389338474756651234&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;0099999&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte Axelle d’Aboville 876&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;876&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Cheque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;556677&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte Axelle d’Aboville 312&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;312&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chèque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665403&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;67876897896&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;998889&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;90908&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8899&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;235234&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665234&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665465&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475668977098&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665666&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;Chéque&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747564534&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665111&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;55667788&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;786132478943126853&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;11111&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665342&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747566534543&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747562345&quot;,
+      &quot;Label&quot; : &quot;SEPA FR253647463893384747562345&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665454&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475644444&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475644444&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76543&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 66554&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;66554&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747500000&quot;,
+      &quot;Label&quot; : &quot;SEPA FR253647463893384747500000&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;55555&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;78613247894312684231687&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 999&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;999&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;12345&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;7098&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475664444&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665555&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665555&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;9900&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;90909&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475661122&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 8888&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8888&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665400&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665400&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    } ],
+    &quot;Policy&quot; : {
+      &quot;BIC&quot; : &quot;5235435&quot;,
+      &quot;DateRUM&quot; : &quot;2022-11-08&quot;,
+      &quot;IBANOld&quot; : &quot;FR763000400828001624765389&quot;,
+      &quot;NameInsuredAccount&quot; : &quot;Axelle d’Aboville&quot;,
+      &quot;NameInsuredID&quot; : &quot;0010Q00001abIPzQAM&quot;,
+      &quot;PaymentMethod&quot; : &quot;a600Q000000582fQAA&quot;,
+      &quot;PaymentMethodName&quot; : &quot;IBAN 389 5234&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q000001055cWAA&quot;,
+      &quot;PolicyName&quot; : &quot;CGFOR003330&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Trimestriel&quot;,
+      &quot;RUMSEPA&quot; : &quot;5234&quot;
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTGroupAndFilterPaymentMethods</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Label&quot; | var:ValidPaymentMethods LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;Label&quot;, LIST(ValidPaymentMethods))</formulaExpression>
+        <formulaResultPath>ValidPaymentMethodsUnique</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom7557</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExistingMandatesForIBAN ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(ExistingMandatesForIBAN)</formulaExpression>
+        <formulaResultPath>policyHasExistingMandate</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom2890</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ValidPaymentMethods LIST &apos;isMandateForThisPolicy&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ValidPaymentMethods), &apos;isMandateForThisPolicy&apos;)</formulaExpression>
+        <formulaResultPath>ExistingMandatesForIBAN</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom7044</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetPaymentMethodsByPolicy:OtherPaymentMethods LIST &apos;ValidPM&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetPaymentMethodsByPolicy:OtherPaymentMethods), &apos;ValidPM&apos;)</formulaExpression>
+        <formulaResultPath>ValidPaymentMethods</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom4086</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom4269</globalKey>
+        <inputFieldName>policyHasExistingMandate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>policyHasExistingMandate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom7706</globalKey>
+        <inputFieldName>ValidPaymentMethodsUnique</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ValidPaymentMethodsUnique</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupAndFilterPaymentMethodsCustom480</globalKey>
+        <inputFieldName>GetPaymentMethodsByPolicy:Policy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupAndFilterPaymentMethods</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Policy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;GetPaymentMethodsByPolicy&quot; : {
+    &quot;OtherPaymentMethods&quot; : [ {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00316720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00317620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00321620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00309520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00318620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00321020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00322220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 1111&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;1111&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;Mandate&quot; : &quot;23123&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;Mandate&quot; : &quot;542376571&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00308020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00305320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 889900&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;889900&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00308620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00310220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00310820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00308920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00309220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00304120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00303820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00322520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665465&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;8789988&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte  123454&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00312320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00317020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00306220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00236820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00319220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;667788&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00299920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00318920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;77660&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;98897978&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;22233&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte  8899500&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8899500&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475655667&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;5656&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00319520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665453&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;8766789&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475677777&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475677777&quot;,
+      &quot;Mandate&quot; : &quot;123456&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00321320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00313020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00228620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665111&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;87962345&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00237120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00236320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;665543&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;6666&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00325820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00317320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00320120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00320420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00315720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00323420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00322820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00248420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00316420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00316220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00325220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00324620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00315120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00316020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00324320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00326120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 6756&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;6756&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00333320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR25364746389338474756651234&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;4231&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00249020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00324920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR763000400828001624765389&quot;,
+      &quot;Label&quot; : &quot;SEPA FR763000400828001624765389&quot;,
+      &quot;Mandate&quot; : &quot;5234&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;0099999&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte Axelle d’Aboville 876&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;876&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00305920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;556677&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00306520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00311120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00311720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte Axelle d’Aboville 312&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;312&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00310520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665765&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665765&quot;,
+      &quot;Mandate&quot; : &quot;564325714&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665403&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;789879&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;67876897896&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;998889&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;90908&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8899&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 123454&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123454&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00225020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00236620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00292720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;235234&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665234&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;543&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00295220220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00313420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665465&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;786798&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00294920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00323120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00319820220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475668977098&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;672378&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00246920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00294320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00237720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665666&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;678576&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00292120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00294620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00315420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00294020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00292420220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747564534&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;2654&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665111&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;423534&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00330320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;55667788&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;786132478943126853&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;5432143&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;11111&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00243920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00249620220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00249920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00329520220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665342&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;65675456&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747566534543&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;rew&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747562345&quot;,
+      &quot;Label&quot; : &quot;SEPA FR253647463893384747562345&quot;,
+      &quot;Mandate&quot; : &quot;98765&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665454&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;2654&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475644444&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475644444&quot;,
+      &quot;Mandate&quot; : &quot;5623765&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76543&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Check&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 66554&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;66554&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR253647463893384747500000&quot;,
+      &quot;Label&quot; : &quot;SEPA FR253647463893384747500000&quot;,
+      &quot;Mandate&quot; : &quot;00009&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;55555&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00249320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;78613247894312684231687&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;54320000&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 999&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;999&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00248120220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00328920220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;00246320220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;12345&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00333020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;7098&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475664444&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;534122&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00328020220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665555&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665555&quot;,
+      &quot;Mandate&quot; : &quot;766578&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00248720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;9900&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;90909&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Carte Sponsor&quot;,
+      &quot;SponsorCardToken&quot; : &quot;123&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;CGFOR00332720220202&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;SponsorCardToken&quot; : &quot;76867879&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475661122&quot;,
+      &quot;Label&quot; : &quot;noName&quot;,
+      &quot;Mandate&quot; : &quot;6534&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Prélèvement bancaire&quot;,
+      &quot;ValidPM&quot; : false
+    }, {
+      &quot;Label&quot; : &quot;SEPA &quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;Label&quot; : &quot;Carte FirstName4 LastName4 8888&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Sponsor Card&quot;,
+      &quot;SponsorCardToken&quot; : &quot;8888&quot;,
+      &quot;ValidPM&quot; : true
+    }, {
+      &quot;IBAN&quot; : &quot;FR2536474638933847475665400&quot;,
+      &quot;Label&quot; : &quot;SEPA FR2536474638933847475665400&quot;,
+      &quot;Mandate&quot; : &quot;5243&quot;,
+      &quot;PaymentMethodTypeExtract&quot; : &quot;Bank Account&quot;,
+      &quot;ValidPM&quot; : true
+    } ],
+    &quot;Policy&quot; : {
+      &quot;BIC&quot; : &quot;5235435&quot;,
+      &quot;DateRUM&quot; : &quot;2022-11-08&quot;,
+      &quot;IBANOld&quot; : &quot;FR763000400828001624765389&quot;,
+      &quot;NameInsuredAccount&quot; : &quot;Axelle d’Aboville&quot;,
+      &quot;NameInsuredID&quot; : &quot;0010Q00001abIPzQAM&quot;,
+      &quot;PaymentMethod&quot; : &quot;a600Q000000582fQAA&quot;,
+      &quot;PaymentMethodName&quot; : &quot;IBAN 389 5234&quot;,
+      &quot;PaymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q000001055cWAA&quot;,
+      &quot;PolicyName&quot; : &quot;CGFOR003330&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Trimestriel&quot;,
+      &quot;ProducerId&quot; : &quot;0Yx1l000000CfF5CAK&quot;,
+      &quot;ProducerName&quot; : &quot;Larry Sullivan&quot;,
+      &quot;RUMSEPA&quot; : &quot;5234&quot;
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTGroupAndFilterPaymentMethods_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

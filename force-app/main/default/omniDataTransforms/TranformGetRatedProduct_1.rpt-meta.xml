@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ElapsedTime&quot; : 49,
+  &quot;ElapsedTimeCPU&quot; : 42,
+  &quot;Input&quot; : {
+    &quot;CB_IF_codePubErrorStatus&quot; : false,
+    &quot;CB_If_CodeOptionMoreThan8000Status&quot; : false,
+    &quot;CheckExistingLead&quot; : [ ],
+    &quot;CheckExistingLeadStatus&quot; : true,
+    &quot;ContextId&quot; : &quot;a991x000000CkB0AAK&quot;,
+    &quot;ExtractPolicyData&quot; : {
+      &quot;AccountRecordType&quot; : {
+        &quot;RecordTypeId&quot; : &quot;0122p000000Yk8vAAC&quot;
+      },
+      &quot;Campaign&quot; : {
+        &quot;CampaignId&quot; : &quot;7011x000000qyAXAAY&quot;,
+        &quot;CampaignName&quot; : &quot;2022-0607&quot;,
+        &quot;CodePub&quot; : &quot;FF45SY3789&quot;,
+        &quot;DefaultRevalorisation&quot; : false,
+        &quot;DefaultpremiumPaymentTerm&quot; : &quot;20&quot;,
+        &quot;ParentCampaignId&quot; : &quot;7011x000000qyA9AAI&quot;,
+        &quot;ParentCampaignName&quot; : &quot;2022 Oney&quot;,
+        &quot;ParentClassCode&quot; : &quot;metLifeClasseObsequesRefresh&quot;,
+        &quot;ParentClassId&quot; : &quot;01t1x00000IyN4zAAF&quot;,
+        &quot;ParentClassName&quot; : &quot;MetLife Classe Obsèques Refresh&quot;,
+        &quot;ParentProductName&quot; : &quot;Cofinoga GFO Refresh&quot;,
+        &quot;ProductCode&quot; : &quot;MetLifeGFOCofinogaRefresh&quot;,
+        &quot;RecordType&quot; : &quot;Direct Marketing Campaign Member&quot;,
+        &quot;Type&quot; : &quot;Telemarketing&quot;,
+        &quot;defaultRefNT&quot; : &quot;12o&quot;
+      },
+      &quot;ExistingAccount&quot; : {
+        &quot;Id&quot; : &quot;0011x00001fl3eIAAQ&quot;,
+        &quot;RecordTypeId&quot; : &quot;0122p000000Yk8vAAC&quot;
+      },
+      &quot;PersonBirthDateMMddYYYY&quot; : &quot;10/05/1957&quot;,
+      &quot;SF11&quot; : {
+        &quot;Address1&quot; : &quot;India&quot;,
+        &quot;BIC&quot; : &quot;PSSTFRPPLIL&quot;,
+        &quot;BankCode&quot; : &quot;20041&quot;,
+        &quot;BirthCity&quot; : &quot;Pune&quot;,
+        &quot;BirthCountry&quot; : &quot;India&quot;,
+        &quot;BirthDepartmentCode&quot; : &quot;122&quot;,
+        &quot;GuichetCode&quot; : &quot;01005&quot;,
+        &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;MethodOfPayment&quot; : &quot;3&quot;,
+        &quot;PaymentFrequency&quot; : &quot;1&quot;,
+        &quot;SF11BTCHPO&quot; : &quot;20220808001BNPPPF&quot;,
+        &quot;SF11BatchNumber&quot; : &quot;20220808001BNPPPF&quot;,
+        &quot;SF11BirthName&quot; : &quot;Test&quot;,
+        &quot;SF11Civility&quot; : &quot;Madame&quot;,
+        &quot;SF11CodeOption&quot; : &quot;1000&quot;,
+        &quot;SF11CodePub&quot; : &quot;FF45SY3789&quot;,
+        &quot;SF11Country&quot; : &quot;India&quot;,
+        &quot;SF11ExternalClientCode&quot; : &quot;0Yx1l000000CfF5CAK&quot;,
+        &quot;SF11Id&quot; : &quot;a991x000000CkB0AAK&quot;,
+        &quot;SF11LeadNumber&quot; : &quot;700004311014&quot;,
+        &quot;SF11PostCode&quot; : &quot;121212&quot;,
+        &quot;SF11RecordType&quot; : &quot;11&quot;,
+        &quot;SF11SalesFlow&quot; : &quot;T11-0009&quot;,
+        &quot;SF11SexCode&quot; : &quot;F&quot;,
+        &quot;SF11Town&quot; : &quot;Pune&quot;,
+        &quot;SF11TypeSubscriber&quot; : &quot;1&quot;,
+        &quot;SalesFlow_13&quot; : &quot;a971x000000ELFTAA4&quot;,
+        &quot;Status&quot; : &quot;Ready SFI&quot;,
+        &quot;SubscriptionDATE&quot; : &quot;05/10/2022&quot;,
+        &quot;SubscriptionDate&quot; : &quot;2022-10-05&quot;,
+        &quot;SubscriptionDateText&quot; : &quot;20221005&quot;,
+        &quot;TSOUPO&quot; : &quot;1&quot;,
+        &quot;cleRIB&quot; : &quot;06&quot;,
+        &quot;firstName&quot; : &quot;Test&quot;,
+        &quot;instanceKey&quot; : &quot;Test Test&quot;,
+        &quot;lastName&quot; : &quot;Test&quot;,
+        &quot;personAgeAtSubscription&quot; : 65,
+        &quot;personBirthDay&quot; : &quot;1957-10-05&quot;
+      },
+      &quot;SF12&quot; : {
+        &quot;ConjointDOB&quot; : &quot;--&quot;
+      },
+      &quot;SF13&quot; : {
+        &quot;DateOfCall&quot; : &quot;20221006&quot;,
+        &quot;Name&quot; : &quot;SalesFlow_13-0009&quot;,
+        &quot;SF13LeadNumber&quot; : &quot;700004311014&quot;,
+        &quot;SF13RecordType&quot; : &quot;11&quot;,
+        &quot;SF13SalesBatchNumber&quot; : &quot;20220808001BNPPPF&quot;,
+        &quot;SaleDate&quot; : &quot;20221005&quot;
+      },
+      &quot;SubscriptionDateMMddyyyy&quot; : &quot;10/05/2022&quot;
+    },
+    &quot;ExtractPolicyDataStatus&quot; : true,
+    &quot;options&quot; : {
+      &quot;chainable&quot; : false,
+      &quot;ignoreCache&quot; : true,
+      &quot;queueableChainable&quot; : false,
+      &quot;resetCache&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false
+    }
+  },
+  &quot;Status&quot; : true,
+  &quot;Type&quot; : &quot;DataRaptor Transform Action&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;metLifeCovDecesTteCauseRefresh.annualCapitalRevaluation&quot; : false,
+  &quot;metLifeCovDecesTteCauseRefresh.gfoBenefitChosen&quot; : &quot;1000&quot;,
+  &quot;metLifeCovDecesTteCauseRefresh.instanceKey&quot; : &quot;Tranche metLifeGFOTrancheInsured&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.instanceKey&quot; : &quot;Amine Bendris&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personBirthDate&quot; : &quot;1957-10-05&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personBirthName&quot; : &quot;Bendris&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personFirstName&quot; : &quot;Amine&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personLastName&quot; : &quot;Bendris&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personRelationship&quot; : &quot;Souscripteur&quot;,
+  &quot;metLifeGFOLifeInsuredRefresh.personTitle&quot; : &quot;Mr.&quot;,
+  &quot;metLifeGFOTrancheInsured.Reduced&quot; : false,
+  &quot;metLifeGFOTrancheInsured.addonIndex&quot; : &quot;1&quot;,
+  &quot;metLifeGFOTrancheInsured.instanceKey&quot; : &quot;Tranche metLifeGFOTrancheInsured&quot;,
+  &quot;metLifeGFOTrancheInsured.premiumAdjustmentRate&quot; : &quot;100&quot;,
+  &quot;metLifeGFOTrancheInsured.premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+  &quot;metLifeGFOTrancheInsured.refNT&quot; : &quot;12o&quot;,
+  &quot;metLifeGFOTrancheInsured.subscriptionDate&quot; : &quot;2022-10-17&quot;,
+  &quot;metLifeGFOTrancheInsured.trancheType&quot; : &quot;base&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TranformGetRatedProduct</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Mr.</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom7823</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.personTitle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Souscripteur</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom1772</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.personRelationship</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom6464</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:lastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.personLastName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom6006</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:firstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.personFirstName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom6039</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.Reduced</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Tranche/\/\/&quot; var:ExtractPolicyData:SF11:instanceKey &quot;/\/\/-/\/\/&quot; &quot;€&quot; var:ExtractPolicyData:SF11:SF11CodeOption CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Tranche &quot;,ExtractPolicyData:SF11:instanceKey,&quot; - &quot;,&quot;€&quot;,ExtractPolicyData:SF11:SF11CodeOption )</formulaExpression>
+        <formulaResultPath>TrancheInstanceKey</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>TranformGetRatedProductCustom0jI1x000000004ZEAQItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>100</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom3286</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.premiumAdjustmentRate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Assuré/\/\/GFO/\/\/Refresh/\/\/-/\/\/&quot; var:ExtractPolicyData:SF11:instanceKey CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Assuré GFO Refresh - &quot;,ExtractPolicyData:SF11:instanceKey )</formulaExpression>
+        <formulaResultPath>AssureInstanceKey</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>TranformGetRatedProductCustom0jI1x000000004ZEAQItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom7222</globalKey>
+        <inputFieldName>TrancheInstanceKey</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.instanceKey</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtractPolicyData:SF11:personBirthDay | TODAY AGEON</formulaConverted>
+        <formulaExpression>AGEON(ExtractPolicyData:SF11:personBirthDay,TODAY())</formulaExpression>
+        <formulaResultPath>personAgeAtSubscription</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TranformGetRatedProductCustom0jI1x000000004ZEAQItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>1</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom993</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.addonIndex</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom92</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:personBirthDay</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.personBirthDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>base</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom6191</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.trancheType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom8179</globalKey>
+        <inputFieldName>AssureInstanceKey</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOLifeInsuredRefresh.instanceKey</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom1545</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SubscriptionDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.subscriptionDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom9464</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11CodeOption</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeCovDecesTteCauseRefresh.gfoBenefitChosen</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom3133</globalKey>
+        <inputFieldName>ExtractPolicyData:Campaign:defaultRefNT</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.refNT</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>false</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom1184</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeCovDecesTteCauseRefresh.annualCapitalRevaluation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TranformGetRatedProductCustom9191</globalKey>
+        <inputFieldName>ExtractPolicyData:Campaign:DefaultpremiumPaymentTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TranformGetRatedProduct</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>metLifeGFOTrancheInsured.premiumPaymentTerm</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CB_IF_codePubErrorStatus&quot; : false,
+  &quot;CB_If_CodeOptionMoreThan8000Status&quot; : false,
+  &quot;CheckExistingLead&quot; : [ ],
+  &quot;CheckExistingLeadStatus&quot; : true,
+  &quot;ContextId&quot; : &quot;a991x000000CkB5AAK&quot;,
+  &quot;ExtractPolicyData&quot; : {
+    &quot;AccountRecordType&quot; : {
+      &quot;RecordTypeId&quot; : &quot;0122p000000Yk8vAAC&quot;
+    },
+    &quot;Campaign&quot; : {
+      &quot;CampaignId&quot; : &quot;7011x000000qyAXAAY&quot;,
+      &quot;CampaignName&quot; : &quot;2022-0607&quot;,
+      &quot;CodePub&quot; : &quot;FF45SY3789&quot;,
+      &quot;DefaultRevalorisation&quot; : false,
+      &quot;DefaultpremiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+      &quot;ParentCampaignId&quot; : &quot;7011x000000qyA9AAI&quot;,
+      &quot;ParentCampaignName&quot; : &quot;2022 Oney&quot;,
+      &quot;ParentClassCode&quot; : &quot;metLifeClasseObsequesRefresh&quot;,
+      &quot;ParentClassId&quot; : &quot;01t1x00000IyN4zAAF&quot;,
+      &quot;ParentClassName&quot; : &quot;MetLife Classe Obsèques Refresh&quot;,
+      &quot;ParentProductName&quot; : &quot;Cofinoga GFO Refresh&quot;,
+      &quot;ProductCode&quot; : &quot;MetLifeGFOCofinogaRefresh&quot;,
+      &quot;RecordType&quot; : &quot;Direct Marketing Campaign Member&quot;,
+      &quot;Type&quot; : &quot;Telemarketing&quot;,
+      &quot;defaultRefNT&quot; : &quot;12o&quot;
+    },
+    &quot;ExistingAccount&quot; : {
+      &quot;Id&quot; : &quot;0011x00001fl3eIAAQ&quot;,
+      &quot;RecordTypeId&quot; : &quot;0122p000000Yk8vAAC&quot;
+    },
+    &quot;PersonBirthDateMMddYYYY&quot; : &quot;10/05/1957&quot;,
+    &quot;SF11&quot; : {
+      &quot;Address1&quot; : &quot;India&quot;,
+      &quot;BIC&quot; : &quot;PSSTFRPPLIL&quot;,
+      &quot;BankCode&quot; : &quot;20041&quot;,
+      &quot;BirthCity&quot; : &quot;Pune&quot;,
+      &quot;BirthCountry&quot; : &quot;India&quot;,
+      &quot;BirthDepartmentCode&quot; : &quot;122&quot;,
+      &quot;GuichetCode&quot; : &quot;01005&quot;,
+      &quot;IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;MethodOfPayment&quot; : &quot;3&quot;,
+      &quot;PaymentFrequency&quot; : &quot;1&quot;,
+      &quot;SF11BTCHPO&quot; : &quot;20220808001BNPPPF&quot;,
+      &quot;SF11BatchNumber&quot; : &quot;20220808001BNPPPF&quot;,
+      &quot;SF11BirthName&quot; : &quot;Test&quot;,
+      &quot;SF11Civility&quot; : &quot;Madame&quot;,
+      &quot;SF11CodeOption&quot; : &quot;1000&quot;,
+      &quot;SF11CodePub&quot; : &quot;FF45SY3789&quot;,
+      &quot;SF11Country&quot; : &quot;India&quot;,
+      &quot;SF11ExternalClientCode&quot; : &quot;0Yx1l000000CfF5CAK&quot;,
+      &quot;SF11Id&quot; : &quot;a991x000000CkB5AAK&quot;,
+      &quot;SF11LeadNumber&quot; : &quot;700004311014&quot;,
+      &quot;SF11PostCode&quot; : &quot;121212&quot;,
+      &quot;SF11RecordType&quot; : &quot;11&quot;,
+      &quot;SF11SalesFlow&quot; : &quot;T11-0010&quot;,
+      &quot;SF11SexCode&quot; : &quot;F&quot;,
+      &quot;SF11Town&quot; : &quot;Pune&quot;,
+      &quot;SF11TypeSubscriber&quot; : &quot;1&quot;,
+      &quot;SalesFlow_13&quot; : &quot;a971x000000ELFYAA4&quot;,
+      &quot;Status&quot; : &quot;Ready SFI&quot;,
+      &quot;SubscriptionDATE&quot; : &quot;05/10/2022&quot;,
+      &quot;SubscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;SubscriptionDateText&quot; : &quot;20221005&quot;,
+      &quot;TSOUPO&quot; : &quot;1&quot;,
+      &quot;cleRIB&quot; : &quot;06&quot;,
+      &quot;firstName&quot; : &quot;Test&quot;,
+      &quot;instanceKey&quot; : &quot;Test Test&quot;,
+      &quot;lastName&quot; : &quot;Test&quot;,
+      &quot;personAgeAtSubscription&quot; : 65,
+      &quot;personBirthDay&quot; : &quot;1957-10-05&quot;
+    },
+    &quot;SF12&quot; : {
+      &quot;ConjointDOB&quot; : &quot;--&quot;
+    },
+    &quot;SF13&quot; : {
+      &quot;DateOfCall&quot; : &quot;20221006&quot;,
+      &quot;Name&quot; : &quot;SalesFlow_13-0010&quot;,
+      &quot;SF13LeadNumber&quot; : &quot;700004311014&quot;,
+      &quot;SF13RecordType&quot; : &quot;11&quot;,
+      &quot;SF13SalesBatchNumber&quot; : &quot;20220808001BNPPPF&quot;,
+      &quot;SaleDate&quot; : &quot;20221005&quot;
+    },
+    &quot;SubscriptionDateMMddyyyy&quot; : &quot;10/05/2022&quot;
+  },
+  &quot;ExtractPolicyDataStatus&quot; : true,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TranformGetRatedProduct_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

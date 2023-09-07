@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLSetSurrenderValue</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom4620</globalKey>
+        <inputFieldName>GroupResults:policies:InsurancePolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom3260</globalKey>
+        <inputFieldName>GroupResults:policies:PaidToDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CashSurrenderValueToDate__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom1677</globalKey>
+        <inputFieldName>GroupResults:tranches:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyAsset</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom2608</globalKey>
+        <inputFieldName>GroupResults:tranches:SurrenderValueResult</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>CashSurrenderValue__c</outputFieldName>
+        <outputObjectName>InsurancePolicyAsset</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom3813</globalKey>
+        <inputFieldName>GroupResults:policies:ReductionValueResult2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ReductionValue__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLSetSurrenderValueCustom6413</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom6265</globalKey>
+        <inputFieldName>GroupResults:policies:SurrenderValueResult2</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CashSurrenderValue</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GroupResults:policies:SurrenderValueResult 0 &lt; 0 var:GroupResults:policies:SurrenderValueResult IF</formulaConverted>
+        <formulaExpression>IF(GroupResults:policies:SurrenderValueResult&lt;0,0,GroupResults:policies:SurrenderValueResult)</formulaExpression>
+        <formulaResultPath>GroupResults:policies:SurrenderValueResult2</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLSetSurrenderValueCustom508</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GroupResults:policies:ReductionValueResult 0 &lt; 0 var:GroupResults:policies:ReductionValueResult IF</formulaConverted>
+        <formulaExpression>IF(GroupResults:policies:ReductionValueResult&lt;0,0,GroupResults:policies:ReductionValueResult)</formulaExpression>
+        <formulaResultPath>GroupResults:policies:ReductionValueResult2</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLSetSurrenderValueCustom2014</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetSurrenderValueCustom6985</globalKey>
+        <inputFieldName>GroupResults:tranches:ReductionValueResult</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ReductionValue__c</outputFieldName>
+        <outputObjectName>InsurancePolicyAsset</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLSetSurrenderValueCustom1351</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLSetSurrenderValue</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyAsset</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CalcumateValeurDeRachat&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;output&quot; : [ {
+      &quot;aggregationResults&quot; : { },
+      &quot;calculationResults&quot; : [ {
+        &quot;ID&quot; : &quot;input&quot;,
+        &quot;PolicyNumber&quot; : 43,
+        &quot;ReductionValueResult&quot; : 1029.62361,
+        &quot;SurrenderValueResult&quot; : 740.24406,
+        &quot;TrancheNumber&quot; : 44
+      } ]
+    } ]
+  },
+  &quot;CalcumateValeurDeRachatStatus&quot; : true,
+  &quot;GetPolicyTranches&quot; : {
+    &quot;Tranches&quot; : {
+      &quot;Id&quot; : &quot;0YW0E00000000ctWAA&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+      &quot;PaidToDate&quot; : &quot;2028-10-04&quot;,
+      &quot;PolicyNumber&quot; : 43,
+      &quot;RefNT&quot; : &quot;12n&quot;,
+      &quot;RevaloText&quot; : false,
+      &quot;SA&quot; : &quot;4000&quot;,
+      &quot;SubscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;TrancheNumber&quot; : 44,
+      &quot;days360us&quot; : 2159,
+      &quot;days360us_tmp&quot; : 2159,
+      &quot;k&quot; : 0.9972222222222222,
+      &quot;kIsNegative&quot; : &quot;No error&quot;,
+      &quot;k_high&quot; : 6,
+      &quot;k_low&quot; : 5,
+      &quot;n&quot; : &quot;99&quot;,
+      &quot;y&quot; : 65
+    }
+  },
+  &quot;GetPolicyTranchesStatus&quot; : true,
+  &quot;GroupResults&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;policies&quot; : [ {
+      &quot;Id&quot; : &quot;0YW0E00000000ctWAA&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+      &quot;PaidToDate&quot; : &quot;2028-10-04&quot;,
+      &quot;PolicyNumber&quot; : 43,
+      &quot;ReductionValueResult&quot; : -2059.24722,
+      &quot;RefNT&quot; : &quot;12n&quot;,
+      &quot;RevaloText&quot; : false,
+      &quot;SA&quot; : &quot;4000&quot;,
+      &quot;SubscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;SurrenderValueResult&quot; : -1480.48812,
+      &quot;TrancheNumber&quot; : 44,
+      &quot;days360us&quot; : 2159,
+      &quot;days360us_tmp&quot; : 2159,
+      &quot;k&quot; : 0.9972222222222222,
+      &quot;kIsNegative&quot; : &quot;No error&quot;,
+      &quot;k_high&quot; : 6,
+      &quot;k_low&quot; : 5,
+      &quot;n&quot; : &quot;99&quot;,
+      &quot;y&quot; : 65
+    } ],
+    &quot;tranches&quot; : [ {
+      &quot;Id&quot; : &quot;0YW0E00000000ctWAA&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFbTWAU&quot;,
+      &quot;PaidToDate&quot; : &quot;2028-10-04&quot;,
+      &quot;PolicyNumber&quot; : 43,
+      &quot;ReductionValueResult&quot; : 2059.24722,
+      &quot;RefNT&quot; : &quot;12n&quot;,
+      &quot;RevaloText&quot; : false,
+      &quot;SA&quot; : &quot;4000&quot;,
+      &quot;SubscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;SurrenderValueResult&quot; : 1480.48812,
+      &quot;TrancheNumber&quot; : 44,
+      &quot;days360us&quot; : 2159,
+      &quot;days360us_tmp&quot; : 2159,
+      &quot;k&quot; : 0.9972222222222222,
+      &quot;kIsNegative&quot; : &quot;No error&quot;,
+      &quot;k_high&quot; : 6,
+      &quot;k_low&quot; : 5,
+      &quot;n&quot; : &quot;99&quot;,
+      &quot;y&quot; : 65
+    } ]
+  },
+  &quot;GroupResultsStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;0YT0E000001gFbTWAU&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  },
+  &quot;persistResults&quot; : true
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLSetSurrenderValue_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

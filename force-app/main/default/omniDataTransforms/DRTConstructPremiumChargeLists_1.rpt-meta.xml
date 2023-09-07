@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;GetUnpaidPremiumCharges&quot; : {
+    &quot;Charge&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : true,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 2170.422056,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-08-07T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2030-09-08T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411 -  - CGFOR003998&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003998&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058FUQAY&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2029-09-08T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2029-12-07&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 68.93544,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QK3QAM&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.333336,
+      &quot;PremiumCharge_TTCAmount&quot; : 69.27,
+      &quot;policyVersions&quot; : 1
+    }, {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 29.324232,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DurmWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;valerie pekres&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;valerie pekres - GFO Oney - CGFOR004090&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR004090&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058RaQAI&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2023-01-04&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 29.21312,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QVGQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.111112,
+      &quot;PremiumCharge_TTCAmount&quot; : 29.32,
+      &quot;policyVersions&quot; : 1
+    }, {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 117.296928,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-30T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DpWZWA0&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-02-28T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;Jhon Starck&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Jhon Starck -  - CGFOR003950&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003953&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q000000585EQAQ&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 94.80696,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QWBQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.666672,
+      &quot;PremiumCharge_TTCAmount&quot; : 95.47,
+      &quot;policyVersions&quot; : 2
+    } ]
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTConstructPremiumChargeLists</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom7663</globalKey>
+        <inputFieldName>ChargesToBepayedBySponsorCard</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesToBepayedBySponsorCard</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom1013</globalKey>
+        <inputFieldName>ChargesToCreatePremimPayment</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesToCreatePremimPayment</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom8536</globalKey>
+        <inputFieldName>ChargesWithoutCheckTask</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesWithoutCheckTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom321</globalKey>
+        <inputFieldName>ChargesToBepayedByDirectDebit</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesToBepayedByDirectDebit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetUnpaidPremiumCharges:Charge LIST &apos;HasCheckPaymentTask/\/\/==/\/\/&quot;true&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetUnpaidPremiumCharges:Charge), &apos;HasCheckPaymentTask == &quot;true&quot;&apos;)</formulaExpression>
+        <formulaResultPath>ChargesThatHasAlreadyCheckTask</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom8997</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;PremiumCharge_Id&quot; | var:ChargesToBepayedByDirectDebit LIST | var:ChargesToBepayedBySponsorCard LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;PremiumCharge_Id&quot;, LIST(ChargesToBepayedByDirectDebit), LIST(ChargesToBepayedBySponsorCard))</formulaExpression>
+        <formulaResultPath>ChargesToCreatePremimPayment</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom5870</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom291</globalKey>
+        <inputFieldName>ChargesThatHasAlreadyCheckTask</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesThatHasAlreadyCheckTask</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTConstructPremiumChargeListsCustom1735</globalKey>
+        <inputFieldName>ChargesToBePayedByCheck</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>ChargesToBePayedByCheck</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ChargesWithoutCheckTask LIST &apos;InsurancePolicy_PaymentMethod_Type/\/\/==/\/\/&quot;Bank/\/\/Account&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ChargesWithoutCheckTask), &apos;InsurancePolicy_PaymentMethod_Type == &quot;Bank Account&quot;&apos;)</formulaExpression>
+        <formulaResultPath>ChargesToBepayedByDirectDebit</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom3399</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ChargesWithoutCheckTask LIST &apos;InsurancePolicy_PaymentMethod_Type/\/\/==/\/\/&quot;Check&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ChargesWithoutCheckTask), &apos;InsurancePolicy_PaymentMethod_Type == &quot;Check&quot;&apos;)</formulaExpression>
+        <formulaResultPath>ChargesToBePayedByCheck</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom5668</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ChargesWithoutCheckTask LIST &apos;InsurancePolicy_PaymentMethod_Type/\/\/==/\/\/&quot;Sponsor/\/\/Card&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ChargesWithoutCheckTask), &apos;InsurancePolicy_PaymentMethod_Type == &quot;Sponsor Card&quot;&apos;)</formulaExpression>
+        <formulaResultPath>ChargesToBepayedBySponsorCard</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom934</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetUnpaidPremiumCharges:Charge LIST &apos;HasCheckPaymentTask/\/\/==/\/\/&quot;false&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetUnpaidPremiumCharges:Charge), &apos;HasCheckPaymentTask == &quot;false&quot;&apos;)</formulaExpression>
+        <formulaResultPath>ChargesWithoutCheckTask</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTConstructPremiumChargeListsCustom2976</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTConstructPremiumChargeLists</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>&quot;GetUnpaidPremiumCharges&quot;</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTConstructPremiumChargeLists_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

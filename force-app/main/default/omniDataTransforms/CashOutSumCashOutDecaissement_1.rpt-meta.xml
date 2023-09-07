@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;DeterminePaymentMethodInput&quot; : [ {
+    &quot;BankAccountNumber&quot; : &quot;FR2536474638933847475665467&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QffQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2019-12-01 au 2020-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000053VmQAI&quot;,
+    &quot;PaymentMethodCreatedDate&quot; : &quot;2022-09-20T06:56:28.000Z&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;SponsorCardToken&quot; : &quot;0987654321&quot;,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QfuQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2021-12-01 au 2022-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000052LMQAY&quot;,
+    &quot;PaymentMethodCreatedDate&quot; : &quot;2022-09-08T13:25:49.000Z&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;SponsorCardToken&quot; : &quot;12345678912345&quot;,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QgdQAE&quot;,
+    &quot;NameRP&quot; : &quot;Annulation Prime 2023-12-01 au 2024-11-30&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CashOutSumCashOutDecaissement</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:BankAccountPolarisedAmount SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:BankAccountPolarisedAmount)</formulaExpression>
+        <formulaResultPath>BankAccountPolarisedAmountSum</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem18</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:BankAccountPolarisedAmountWOTax SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:BankAccountPolarisedAmountWOTax)</formulaExpression>
+        <formulaResultPath>BankAccountPolarisedAmountSumWOTax</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem10</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:BankAccountPolarisedTaxAmount SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:BankAccountPolarisedTaxAmount)</formulaExpression>
+        <formulaResultPath>SumOfBankAccountPolarisedTaxAmount</formulaResultPath>
+        <formulaSequence>14.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:PremiumCancellationBankAccountPresent SUM 0 &lt;&gt;</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:PremiumCancellationBankAccountPresent)&lt;&gt;0</formulaExpression>
+        <formulaResultPath>PremiumCancellationPresentInBankAccount</formulaResultPath>
+        <formulaSequence>20.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem21</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Sponsor/\/\/Card&quot; == var:DeterminePaymentMethodInput:PolarisedTransactionAmountWithoutTax 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Sponsor Card&quot;,DeterminePaymentMethodInput:PolarisedTransactionAmountWithoutTax,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:SponsorCardPolarisedAmountWOTax</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem13</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Sponsor/\/\/Card&quot; == var:DeterminePaymentMethodInput:PolarisedTransactionTax 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Sponsor Card&quot;,DeterminePaymentMethodInput:PolarisedTransactionTax,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:SponsorCardPolarisedTaxAmount</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem11</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| true var:DeterminePaymentMethodInput:Id &apos;&apos; IF</formulaConverted>
+        <formulaExpression>IF(true,DeterminePaymentMethodInput:Id,&apos;&apos;)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:UpdateParentTransactionId</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem15</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:ListOfPremiumCancellationTransactions LIST</formulaConverted>
+        <formulaExpression>LIST(DeterminePaymentMethodInput:ListOfPremiumCancellationTransactions)</formulaExpression>
+        <formulaResultPath>PremiumCancellationTransactionsListToInput</formulaResultPath>
+        <formulaSequence>22.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Bank/\/\/Account&quot; == var:DeterminePaymentMethodInput:PolarisedAmount 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Bank Account&quot;,DeterminePaymentMethodInput:PolarisedAmount,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:BankAccountPolarisedAmount</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem20</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Bank/\/\/Account&quot; == var:DeterminePaymentMethodInput:PolarisedTransactionAmountWithoutTax 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Bank Account&quot;,DeterminePaymentMethodInput:PolarisedTransactionAmountWithoutTax,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:BankAccountPolarisedAmountWOTax</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem14</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Bank/\/\/Account&quot; == var:DeterminePaymentMethodInput:PolarisedTransactionTax 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Bank Account&quot;,DeterminePaymentMethodInput:PolarisedTransactionTax,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:BankAccountPolarisedTaxAmount</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem12</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Sponsor/\/\/Card&quot; == var:DeterminePaymentMethodInput:PolarisedAmount 0 IF</formulaConverted>
+        <formulaExpression>IF(DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Sponsor Card&quot;,DeterminePaymentMethodInput:PolarisedAmount,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:SponsorCardPolarisedAmount</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem19</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:BankAccountPolarisedAmountSumWOTax var:SponsorCardPolarisedAmountSumWOTax +</formulaConverted>
+        <formulaExpression>BankAccountPolarisedAmountSumWOTax+SponsorCardPolarisedAmountSumWOTax</formulaExpression>
+        <formulaResultPath>SumOfCheckedTransactionAmountWOTax</formulaResultPath>
+        <formulaSequence>13.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem35</globalKey>
+        <inputFieldName>SumOfSponsorCardPolarisedTaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumOfSponsorCardPolarisedTaxAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:TypeRC &quot;Premium/\/\/Cancellation&quot; == var:DeterminePaymentMethodInput:TypeRP &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRS &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRN &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Bank/\/\/Account&quot; == &amp;&amp; 1 0 IF</formulaConverted>
+        <formulaExpression>IF(((DeterminePaymentMethodInput:TypeRC==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRP==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRS==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRN==&quot;Premium Cancellation&quot;)&amp;&amp;DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Bank Account&quot;),1,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:PremiumCancellationBankAccountPresent</formulaResultPath>
+        <formulaSequence>17.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:TypeRC &quot;Premium/\/\/Cancellation&quot; == var:DeterminePaymentMethodInput:TypeRP &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRS &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRN &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:CalculatedPaymentMethodType &quot;Sponsor/\/\/Card&quot; == &amp;&amp; 1 0 IF</formulaConverted>
+        <formulaExpression>IF(((DeterminePaymentMethodInput:TypeRC==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRP==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRS==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRN==&quot;Premium Cancellation&quot;)&amp;&amp;DeterminePaymentMethodInput:CalculatedPaymentMethodType==&quot;Sponsor Card&quot;),1,0)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:PremiumCancellationSponsorCardPresent</formulaResultPath>
+        <formulaSequence>18.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:TypeRC &quot;Premium/\/\/Cancellation&quot; == var:DeterminePaymentMethodInput:TypeRP &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRS &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:TypeRN &quot;Premium/\/\/Cancellation&quot; == || var:DeterminePaymentMethodInput:Id var:null IF</formulaConverted>
+        <formulaExpression>IF(((DeterminePaymentMethodInput:TypeRC==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRP==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRS==&quot;Premium Cancellation&quot;||DeterminePaymentMethodInput:TypeRN==&quot;Premium Cancellation&quot;)),DeterminePaymentMethodInput:Id,null)</formulaExpression>
+        <formulaResultPath>DeterminePaymentMethodInput:ListOfPremiumCancellationTransactions</formulaResultPath>
+        <formulaSequence>21.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem34</globalKey>
+        <inputFieldName>SumOfBankAccountPolarisedTaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumOfBankAccountPolarisedTaxAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem30</globalKey>
+        <inputFieldName>SumOfCheckedTransactionAmountWOTax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumOfCheckedTransactionAmountWOTax</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem31</globalKey>
+        <inputFieldName>SumOfCheckedTransactionTaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumOfCheckedTransactionTaxAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:BankAccountPolarisedAmountSum var:SponsorCardPolarisedAmountSum +</formulaConverted>
+        <formulaExpression>BankAccountPolarisedAmountSum+SponsorCardPolarisedAmountSum</formulaExpression>
+        <formulaResultPath>SumOfCheckedTransactions</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem16</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem28</globalKey>
+        <inputFieldName>SumOfCheckedTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SumOfCheckedTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem36</globalKey>
+        <inputFieldName>PremiumCancellationPresentInSponsorCard</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PremiumCancellationPresentInSponsorCard</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem38</globalKey>
+        <inputFieldName>PremiumCancellationTransactionsListToInput</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;String&gt;</outputFieldFormat>
+        <outputFieldName>PremiumCancellationTransactionsListToInput</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem27</globalKey>
+        <inputFieldName>SponsorCardPolarisedAmountSum</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardPolarisedAmountSum</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem33</globalKey>
+        <inputFieldName>SponsorCardPolarisedAmountSumWOTax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardPolarisedAmountSumWOTax</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem37</globalKey>
+        <inputFieldName>DeterminePaymentMethodInput:ListOfPremiumCancellationTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeterminePaymentMethodInput:ListOfPremiumCancellationTransactions</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem25</globalKey>
+        <inputFieldName>DeterminePaymentMethodInput:SponsorCardPolarisedAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeterminePaymentMethodInput:SponsorCardPolarisedAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem29</globalKey>
+        <inputFieldName>DeterminePaymentMethodInput:UpdateParentTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeterminePaymentMethodInput:UpdateParentTransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem22</globalKey>
+        <inputFieldName>PremiumCancellationPresentInBankAccount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PremiumCancellationPresentInBankAccount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem32</globalKey>
+        <inputFieldName>BankAccountPolarisedAmountSumWOTax</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountPolarisedAmountSumWOTax</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem23</globalKey>
+        <inputFieldName>DeterminePaymentMethodInput:BankAccountPolarisedAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeterminePaymentMethodInput:BankAccountPolarisedAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem24</globalKey>
+        <inputFieldName>DeterminePaymentMethodInput:CalculatedPaymentMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DeterminePaymentMethodInput:CalculatedPaymentMethodType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:SumOfBankAccountPolarisedTaxAmount var:SumOfSponsorCardPolarisedTaxAmount +</formulaConverted>
+        <formulaExpression>SumOfBankAccountPolarisedTaxAmount+SumOfSponsorCardPolarisedTaxAmount</formulaExpression>
+        <formulaResultPath>SumOfCheckedTransactionTaxAmount</formulaResultPath>
+        <formulaSequence>16.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem26</globalKey>
+        <inputFieldName>BankAccountPolarisedAmountSum</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountPolarisedAmountSum</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:PremiumCancellationSponsorCardPresent SUM 0 &lt;&gt;</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:PremiumCancellationSponsorCardPresent)&lt;&gt;0</formulaExpression>
+        <formulaResultPath>PremiumCancellationPresentInSponsorCard</formulaResultPath>
+        <formulaSequence>19.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:SponsorCardPolarisedAmount SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:SponsorCardPolarisedAmount)</formulaExpression>
+        <formulaResultPath>SponsorCardPolarisedAmountSum</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem17</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:SponsorCardPolarisedAmountWOTax SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:SponsorCardPolarisedAmountWOTax)</formulaExpression>
+        <formulaResultPath>SponsorCardPolarisedAmountSumWOTax</formulaResultPath>
+        <formulaSequence>12.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DeterminePaymentMethodInput:SponsorCardPolarisedTaxAmount SUM</formulaConverted>
+        <formulaExpression>SUM(DeterminePaymentMethodInput:SponsorCardPolarisedTaxAmount)</formulaExpression>
+        <formulaResultPath>SumOfSponsorCardPolarisedTaxAmount</formulaResultPath>
+        <formulaSequence>15.0</formulaSequence>
+        <globalKey>CashOutSumCashOutDecaissementCustom0jI0E0000004CBxUAMItem6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CashOutSumCashOutDecaissement</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;DeterminePaymentMethodInput&quot; : [ {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YcQAI&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000XvQAI&quot;,
+    &quot;NameRN&quot; : &quot;Prime du 2029-10-05 au 2030-10-04&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YOQAY&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YXQAY&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000Y8QAI&quot;,
+    &quot;NameRN&quot; : &quot;Prime du 2027-10-05 au 2028-10-04&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YSQAY&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YuQAI&quot;,
+    &quot;NameRN&quot; : &quot;Annulation Prime du 2029-10-05 au 2030-10-04&quot;,
+    &quot;PolarisedAmount&quot; : -351.89,
+    &quot;PolarisedAmountRN&quot; : -351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : -350.55744,
+    &quot;PolarisedTransactionTax&quot; : -1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YtQAI&quot;,
+    &quot;NameRN&quot; : &quot;Annulation Prime du 2027-10-05 au 2028-10-04&quot;,
+    &quot;PolarisedAmount&quot; : -351.89,
+    &quot;PolarisedAmountRN&quot; : -351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : -350.55744,
+    &quot;PolarisedTransactionTax&quot; : -1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YsQAI&quot;,
+    &quot;NameRN&quot; : &quot;Annulation Prime du 2028-10-05 au 2029-10-04&quot;,
+    &quot;PolarisedAmount&quot; : -351.89,
+    &quot;PolarisedAmountRN&quot; : -351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : -350.55744,
+    &quot;PolarisedTransactionTax&quot; : -1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YmQAI&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YDQAY&quot;,
+    &quot;NameRN&quot; : &quot;Prime du 2028-10-05 au 2029-10-04&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YhQAI&quot;,
+    &quot;NameRN&quot; : &quot;Prime du  au&quot;,
+    &quot;PolarisedAmount&quot; : 351.89,
+    &quot;PolarisedAmountRN&quot; : 351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : 350.55744,
+    &quot;PolarisedTransactionTax&quot; : 1.333344,
+    &quot;SelectedRN&quot; : false,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000YrQAI&quot;,
+    &quot;NameRN&quot; : &quot;Annulation Prime du 2026-10-05 au 2027-10-04&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000ECL6UAO&quot;,
+    &quot;PaymentMethodCreatedDate&quot; : &quot;02/14/2023&quot;,
+    &quot;PolarisedAmount&quot; : -351.89,
+    &quot;PolarisedAmountRN&quot; : -351.89,
+    &quot;PolarisedTransactionAmountWithoutTax&quot; : -350.55744,
+    &quot;PolarisedTransactionTax&quot; : -1.333344,
+    &quot;SelectedRN&quot; : true,
+    &quot;TotalAmountRN&quot; : 351.89,
+    &quot;TypeRN&quot; : &quot;Premium Cancellation&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>CashOutSumCashOutDecaissement_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

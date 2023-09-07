@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;Step1&quot; : {
+    &quot;Block1&quot; : {
+      &quot;AvanceCapitalReimbursement&quot; : null,
+      &quot;CapitalInterestReimbursement&quot; : null,
+      &quot;EndOfRenuncitationPeriod&quot; : null,
+      &quot;PolicyAmountToCollect&quot; : null,
+      &quot;PolicyEffectiveDate&quot; : null,
+      &quot;PolicyFrequency&quot; : null,
+      &quot;PolicyOriginalEffectiveDate&quot; : null,
+      &quot;PolicyPaidToDate&quot; : null,
+      &quot;PolicyPaymentDueDate&quot; : null,
+      &quot;PolicyTotalPremiumAmount&quot; : null,
+      &quot;ProfitSharing&quot; : null,
+      &quot;ReductionValue&quot; : null,
+      &quot;SurrenderValue&quot; : null
+    },
+    &quot;Block2&quot; : {
+      &quot;CancellationReason&quot; : null,
+      &quot;CancellationReasonType&quot; : null,
+      &quot;NewPolicy&quot; : null,
+      &quot;RachatType&quot; : null,
+      &quot;ReductionType&quot; : null,
+      &quot;ResiliationType&quot; : null
+    },
+    &quot;Radio1&quot; : null,
+    &quot;RenunciationWarning&quot; : null
+  },
+  &quot;Step2&quot; : {
+    &quot;CheckboxDecaissement&quot; : null,
+    &quot;NewSolde&quot; : null,
+    &quot;OldPolicyAmountToCollect&quot; : null,
+    &quot;PolicyEndDate&quot; : null,
+    &quot;PolicyOriginalEffectiveDateVerification&quot; : null,
+    &quot;ResteACouvrir&quot; : null
+  },
+  &quot;Step3&quot; : {
+    &quot;BankAccountReimboursment&quot; : {
+      &quot;Messaging1&quot; : null,
+      &quot;NewBankAccountPM&quot; : null,
+      &quot;NewBankAccountPMRequired&quot; : null,
+      &quot;NewPM&quot; : {
+        &quot;newHolder&quot; : null,
+        &quot;newIBAN&quot; : null
+      },
+      &quot;TypeAhead1-Block&quot; : {
+        &quot;TypeAhead1&quot; : null
+      }
+    },
+    &quot;SponsorCardReimbursment&quot; : {
+      &quot;Text1&quot; : null
+    }
+  },
+  &quot;Step4&quot; : { },
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CreateNewBankAccountPaymentMethod&quot; : null,
+    &quot;PostClientRequestActions&quot; : null,
+    &quot;PrepareDataClientRequest&quot; : null,
+    &quot;PrepareDataForCashout&quot; : null,
+    &quot;SetDefaultValuePaymentBankAccountPM&quot; : null,
+    &quot;SetValues1&quot; : null,
+    &quot;SetValues2&quot; : null,
+    &quot;Step1&quot; : null,
+    &quot;Step2&quot; : null,
+    &quot;Step3&quot; : null,
+    &quot;Step4&quot; : null,
+    &quot;retrieveRequiredData&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreateCashoutBankAccountPM</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPM33090419051219344</globalKey>
+        <inputFieldName>newIBAN</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__BankAccountNumber__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPM7339652208810474</globalKey>
+        <inputFieldName>newHolder</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__CardHolderName__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Bank Account</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPM7737151562837177</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__MethodType__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateCashoutBankAccountPM15163563582300021</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SEPA/\/\/XXXX&quot; | var:concat var:IbanLenth 4 - var:IbanLenth SUBSTRING CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;SEPA XXXX&quot;, SUBSTRING(concat,IbanLenth - 4, IbanLenth))</formulaExpression>
+        <formulaResultPath>name</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLCreateCashoutBankAccountPMCustom2204</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:newIBAN &quot;*&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(newIBAN, &quot;*&quot;)</formulaExpression>
+        <formulaResultPath>concat</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreateCashoutBankAccountPMCustom2173</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:concat &quot;*&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(concat,&quot;*&quot;)</formulaExpression>
+        <formulaResultPath>IbanLenth</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreateCashoutBankAccountPMCustom8121</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPM03180443098088692</globalKey>
+        <inputFieldName>NameInsuredId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__AccountId__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPMCustom4501</globalKey>
+        <inputFieldName>name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>BankAccount</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCashoutBankAccountPM7757554771482207</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>DeveloperName</lookupByFieldName>
+        <lookupObjectName>RecordType</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>DRLCreateCashoutBankAccountPM</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RecordTypeId</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;NameInsuredId&quot; : &quot;001MU000003eqpHYAQ&quot;,
+  &quot;newHolder&quot; : &quot;Aminenene&quot;,
+  &quot;newIBAN&quot; : &quot;FR535367269999&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreateCashoutBankAccountPM_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

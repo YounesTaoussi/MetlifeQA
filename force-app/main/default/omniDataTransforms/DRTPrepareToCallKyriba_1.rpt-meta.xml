@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareToCallKyriba</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom5931</globalKey>
+        <inputFieldName>Today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(yyyy-MM-dd)</outputFieldFormat>
+        <outputFieldName>additionalProp1:apiPushDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom7199</globalKey>
+        <inputFieldName>GetCommissionDetail:SumCommissions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>additionalProp1:amount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY</formulaExpression>
+        <formulaResultPath>Today</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareToCallKyribaCustom3773</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| NOW</formulaConverted>
+        <formulaExpression>NOW()</formulaExpression>
+        <formulaResultPath>Now1</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTPrepareToCallKyribaCustom8395</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Now1 FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(Now1)</formulaExpression>
+        <formulaResultPath>devartDate</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTPrepareToCallKyribaCustom6694</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Now1 DATETIMETOUNIX</formulaConverted>
+        <formulaExpression>DATETIMETOUNIX(Now1)</formulaExpression>
+        <formulaResultPath>Now</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTPrepareToCallKyribaCustom6643</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom7733</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:additionalProp1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>FR1420041010050500013M02606</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom805</globalKey>
+        <inputFieldName>Recap:SelectPaymentMethod-Block:BankAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:Iban</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom6996</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>additionalProp1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>2023-01-23</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom7233</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:value_date</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:Now &quot;REf&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(Now,&quot;REf&quot;)</formulaExpression>
+        <formulaResultPath>Reference</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTPrepareToCallKyribaCustom3813</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>08</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom9436</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>additionalProp1:file_type_code</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>FileName</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom6821</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:file_name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>2022-06-10T24:61:61.999+0000</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom6805</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:fileCreationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>2022-06-10T24:61:61.999+0000</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom6187</globalKey>
+        <inputFieldName>Now1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:devartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom4324</globalKey>
+        <inputFieldName>Now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>additionalProp1:sourceId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom7749</globalKey>
+        <inputFieldName>GetCommissionDetail:ListCommission|1:SponsorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:reference</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>CGFOR314159</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom1281</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:policyNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCallKyribaCustom7075</globalKey>
+        <inputFieldName>GetCommissionDetail:ListCommission|1:SponsorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCallKyriba</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>additionalProp1:nameofbeneficiary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ChoisePeriodAndPaymentMethod&quot; : {
+    &quot;PaymentMethod&quot; : &quot;FluxBancaires&quot;,
+    &quot;StartDate&quot; : &quot;2023-01-01T11:00:00.000Z&quot;
+  },
+  &quot;ContextId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+  &quot;GetCommissionDetail&quot; : {
+    &quot;ConcatBankAccountNumberPMType&quot; : [ {
+      &quot;BankAccountNumber&quot; : &quot;xxxxxxxxx&quot;,
+      &quot;PaymentMethod&quot; : &quot;Bank Account-xxxxxxxxx&quot;,
+      &quot;SponsorPM&quot; : &quot;Bank Account&quot;
+    }, {
+      &quot;BankAccountNumber&quot; : &quot;XXXXXxxxx&quot;,
+      &quot;PaymentMethod&quot; : &quot;Carte Sponsor-XXXXXxxxx&quot;,
+      &quot;SponsorPM&quot; : &quot;Carte Sponsor&quot;
+    } ],
+    &quot;ListCommission&quot; : [ {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;Iban&quot; : &quot;xxxxxxxxxxxxxxxxxx123&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000Cyr7EAC&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CigZAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;MethodType&quot; : &quot;Check&quot;,
+      &quot;PaymentMethod&quot; : &quot;Check&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000D0KyEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 20, 2023 12:00:00 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;AMINE007 AMINE007&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 0,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    }, {
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;IPTId&quot; : &quot;0k91w000000CidRAAS&quot;,
+      &quot;IPTType&quot; : &quot;Premium Payment&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007m3PGAQ&quot;,
+      &quot;IsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;PaymentMethod&quot; : &quot;Flux bancaires&quot;,
+      &quot;PaymentMethodId&quot; : &quot;a6P1w000000CyOeEAK&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TransactionEffectiveDate&quot; : &quot;Jan 5, 2023 9:27:02 AM&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;MARTIN MAR&quot;
+    } ],
+    &quot;SponsorPM&quot; : [ {
+      &quot;AccountNumber&quot; : &quot;xxxxxxxxx&quot;,
+      &quot;SponsorPaymentMethod&quot; : &quot;Bank Account&quot;
+    }, {
+      &quot;AccountNumber&quot; : &quot;XXXXXxxxx&quot;,
+      &quot;SponsorPaymentMethod&quot; : &quot;Carte Sponsor&quot;
+    } ],
+    &quot;SumCommissions&quot; : 93.76
+  },
+  &quot;Recap&quot; : {
+    &quot;Block1&quot; : null,
+    &quot;Block2&quot; : {
+      &quot;Radio1&quot; : &quot;ValidAndPay&quot;
+    },
+    &quot;SelectPaymentMethod-Block&quot; : {
+      &quot;BankAccountNumber&quot; : &quot;12345&quot;,
+      &quot;SelectPaymentMethod&quot; : &quot;Bank Account-xxxxxxxxx&quot;,
+      &quot;SponsorPM&quot; : &quot;Bank Account&quot;
+    }
+  },
+  &quot;elementName&quot; : &quot;ApiCallKyriba&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;omniProcessId&quot; : &quot;0jN1w0000008POYEA2&quot;,
+  &quot;omniScriptId&quot; : &quot;0jN1w0000008POYEA2&quot;,
+  &quot;omniscriptId&quot; : &quot;0jN1w0000008POYEA2&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jN1w0000008POYEA2&quot;,
+  &quot;subType&quot; : &quot;CreateCommissionPayment&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;timeStamp&quot; : &quot;2023-01-26T16:21:47.921Z&quot;,
+  &quot;type&quot; : &quot;metLife&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0051w000008XY0kAAG&quot;,
+  &quot;userName&quot; : &quot;ismail.dine@metlife.fr.4sfidev09&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareToCallKyriba_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

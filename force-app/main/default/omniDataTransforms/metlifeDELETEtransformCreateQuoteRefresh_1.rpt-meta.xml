@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;insuredItems&quot; : { },
+  &quot;productConfigurationDetail&quot; : {
+    &quot;records&quot; : [ ]
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;quotepolicyJson&quot; : {
+    &quot;createOpportunity&quot; : &quot;Boolean&quot;,
+    &quot;effectiveDate&quot; : &quot;Date&quot;,
+    &quot;insuredItems&quot; : {
+      &quot;metLifeGFOLifeInsured&quot; : [ {
+        &quot;additionalFields&quot; : { },
+        &quot;instanceKey&quot; : &quot;Insured&quot;,
+        &quot;isParent&quot; : true,
+        &quot;personAgeAtSubscription&quot; : 60,
+        &quot;personBirthDate&quot; : &quot;1970-11-11&quot;,
+        &quot;personFirstName&quot; : &quot;PERSA&quot;,
+        &quot;personLastName&quot; : &quot;VICTOR THEIDI&quot;,
+        &quot;personRelationship&quot; : &quot;Souscripteur&quot;,
+        &quot;personTitle&quot; : &quot;Mr.&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOLifeInsured&quot;,
+        &quot;productId&quot; : &quot;01t5E000009DqYTQA0&quot;
+      } ]
+    },
+    &quot;term&quot; : &quot;Text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Issued</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh8140825545870276</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:additionalFields:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh6369030556768538</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11Civility</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:additionalFields:SF11_Civility__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh11503592526567696</globalKey>
+        <inputFieldName>QuoteName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:additionalFields:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh6838961561533994</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SubscriptionDATE</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:additionalFields:vlocity_ins__EffectiveDate__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>01sD0000000HL3qIAG</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh8688444688707111</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:Pricebook2Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh2155294083053494</globalKey>
+        <inputFieldName>OpptyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh25314862119297343</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SubscriptionDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:CloseDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh7504464888829956</globalKey>
+        <inputFieldName>ExtractPolicyData:Campaign:CampaignId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:CampaignId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh9768342474795746</globalKey>
+        <inputFieldName>CreateNewBusiness:Account_1|1:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:accountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh5674872145950791</globalKey>
+        <inputFieldName>CheckExistingAccount:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:accountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>New Business</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh9924908312397105</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:Type</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Closed Won</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh6508766784678968</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:StageName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaExpression>GLOBALAUTONUMBER()</formulaExpression>
+        <formulaResultPath>QuoteName</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh7349369949149518</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Opportunité/\/\/Obsèques/\/\/:&quot; &quot;/\/\/&quot; var:ExtractPolicyData:SF11:firstName &quot;/\/\/&quot; var:ExtractPolicyData:SF11:lastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Opportunité Obsèques :&quot;,&quot; &quot;,%ExtractPolicyData:SF11:firstName%,&quot; &quot;,%ExtractPolicyData:SF11:lastName%)</formulaExpression>
+        <formulaResultPath>OpptyName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh8046068829488229</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY 30 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY(TODAY(),30)</formulaExpression>
+        <formulaResultPath>CloseDate</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh1689118342687672</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:productConfigurationDetail:records:Price 12 *</formulaConverted>
+        <formulaExpression>(%productConfigurationDetail:records:Price%)*12</formulaExpression>
+        <formulaResultPath>AnnualAmount</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh3552882364822332</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh04818610321968286</globalKey>
+        <inputFieldName>AnnualAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:Amount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh655696444077781</globalKey>
+        <inputFieldName>CreateNewBusiness:Account_1|1:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh9969459121534738</globalKey>
+        <inputFieldName>AccountIDNew</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:OpportunityDetails:AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtractPolicyData:ExistingAccount:Id &apos;&apos; != var:ExtractPolicyData:ExistingAccount:Id var:CreateNewBusiness:Account_1|1:Id IF</formulaConverted>
+        <formulaExpression>IF(%ExtractPolicyData:ExistingAccount:Id% !=&apos;&apos;,%ExtractPolicyData:ExistingAccount:Id%,%CreateNewBusiness:Account_1|1:Id%)</formulaExpression>
+        <formulaResultPath>AccountIDNew</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh21620884841682297</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Custom</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh9334356988530277</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:term</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh07246926126537656</globalKey>
+        <inputFieldName>productConfigurationDetail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:productConfigurationDetail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh8428889491590492</globalKey>
+        <inputFieldName>SetInsuredItems:insuredItems</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:insuredItems</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEtransformCreateQuoteRefresh9873973800231992</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:instanceKey</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEtransformCreateQuoteRefresh</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>newQuoteJson:instanceKey</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CheckExistingAccount&quot; : {
+    &quot;Id&quot; : &quot;0011l000016dIWXAA2&quot;
+  },
+  &quot;CreateNewBusiness&quot; : {
+    &quot;AccountId&quot; : &quot;0015r00000TC36RAAT&quot;,
+    &quot;OpportunityId&quot; : &quot;0060Q00000L5whIQAR&quot;
+  },
+  &quot;insuredItems&quot; : { },
+  &quot;productConfigurationDetail&quot; : {
+    &quot;records&quot; : [ ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>metlifeDELETEtransformCreateQuoteRefresh_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

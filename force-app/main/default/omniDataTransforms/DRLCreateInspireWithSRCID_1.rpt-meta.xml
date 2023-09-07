@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Create InspireFeedback record with Task ID as IMP_SRC_ID__c</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;FeedbackDateInput&quot; : &quot;2023-06-11&quot;,
+  &quot;bundleName&quot; : &quot;DRLCreateInspireWithSRCID&quot;,
+  &quot;objectList&quot; : {
+    &quot;CallInspire&quot; : {
+      &quot;body&quot; : &quot;Avtnt xml file generated successfully&quot;,
+      &quot;headers&quot; : { },
+      &quot;statusCode&quot; : &quot;OK&quot;,
+      &quot;statusCodeValue&quot; : 200
+    },
+    &quot;DRTDunningLetterXMLMaps&quot; : &quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;&lt;root&gt;&lt;plis&gt;&lt;pli id=\&quot;CGFOR000045\&quot;&gt;&lt;assure_civilite&gt;Female&lt;/assure_civilite&gt;&lt;assure_adresse_pays&gt;France&lt;/assure_adresse_pays&gt;&lt;assure_date_naissance&gt;1957-10-05 00:00:00&lt;/assure_date_naissance&gt;&lt;assure_prenom&gt;SabaTest4&lt;/assure_prenom&gt;&lt;assure_nom&gt;ShrkTest4&lt;/assure_nom&gt;&lt;assure_age&gt;65&lt;/assure_age&gt;&lt;bq_bic&gt;PSSTFRPPLIM&lt;/bq_bic&gt;&lt;souscripteur_prenom&gt;SabaTest4&lt;/souscripteur_prenom&gt;&lt;bq_iban&gt;FR1420041010050500013M02606&lt;/bq_iban&gt;&lt;souscripteur_adresse_pays&gt;France&lt;/souscripteur_adresse_pays&gt;&lt;contrat_periodicite&gt;Annually&lt;/contrat_periodicite&gt;&lt;cpub_libelle_produit&gt;GFO Cetelem&lt;/cpub_libelle_produit&gt;&lt;contrat_prime&gt;29.324232&lt;/contrat_prime&gt;&lt;souscripteur_date_naissance&gt;1957-10-05 00:00:00&lt;/souscripteur_date_naissance&gt;&lt;mode_paiement&gt;Bank Account&lt;/mode_paiement&gt;&lt;souscripteur_nom&gt;ShrkTest4&lt;/souscripteur_nom&gt;&lt;contrat_date_effet&gt;04/10/2022&lt;/contrat_date_effet&gt;&lt;beneficiaire_clause&gt;Date d&apos;effet le 05/10/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&lt;/beneficiaire_clause&gt;&lt;SRC_id&gt;0YT0E000001gFbdWAE&lt;/SRC_id&gt;&lt;contrat_identifiant&gt;CGFOR000045&lt;/contrat_identifiant&gt;&lt;contrat_date_resil&gt;2023-02-15 00:00:00&lt;/contrat_date_resil&gt;&lt;type_doc&gt;LRappel&lt;/type_doc&gt;&lt;nb_ex&gt;1&lt;/nb_ex&gt;&lt;devise_defaut&gt;EUROS&lt;/devise_defaut&gt;&lt;letter_type&gt;AVTNT&lt;/letter_type&gt;&lt;assure_type&gt;P&lt;/assure_type&gt;&lt;contrat_duree&gt;VIE&lt;/contrat_duree&gt;&lt;type_destinataire&gt;souscripteur&lt;/type_destinataire&gt;&lt;souscripteur_type&gt;P&lt;/souscripteur_type&gt;&lt;/pli&gt;&lt;/plis&gt;&lt;/root&gt;&quot;,
+    &quot;EnterDunningTaskId&quot; : {
+      &quot;dunningTaskId&quot; : &quot;00T0E00000N5XnXUAV&quot;
+    },
+    &quot;SendingLetters&quot; : {
+      &quot;InputTaskId-Block&quot; : {
+        &quot;DueDate&quot; : &quot;2023-05-16&quot;,
+        &quot;Id&quot; : &quot;00T0E00000N5XnXUAV&quot;,
+        &quot;InputTaskId&quot; : &quot;00T0E00000N5XnXUAV&quot;,
+        &quot;Label&quot; : &quot;00T0E00000N5XnXUAV MED Lapse&quot;,
+        &quot;PolicyName&quot; : &quot;CGFOR000045&quot;,
+        &quot;SubTaskType&quot; : &quot;MED Lapse&quot;,
+        &quot;Subject&quot; : &quot;Résiliation, rachat ou réduction du contrat pour impayé&quot;,
+        &quot;Type&quot; : &quot;LETTER&quot;
+      }
+    },
+    &quot;TodaysDate&quot; : &quot;2023-06-10T18:30:00.000Z&quot;,
+    &quot;XMLLetterContent&quot; : {
+      &quot;FeedbackDateInput&quot; : &quot;2023-06-11&quot;
+    },
+    &quot;omniProcessId&quot; : &quot;0jN0E0000004CLYUA2&quot;,
+    &quot;timeStamp&quot; : &quot;2023-06-11T14:20:05.103Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+    &quot;userId&quot; : &quot;0050E00000DkPhpQAF&quot;,
+    &quot;userName&quot; : &quot;sshahrukh@salesforce.com.4sfidev07&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : &quot;120&quot;,
+    &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreateInspireWithSRCID</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateInspireWithSRCIDCustom3232</globalKey>
+        <inputFieldName>SendingLetters:InputTaskId-Block:InputTaskId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateInspireWithSRCID</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IMP_SRC_ID__c</outputFieldName>
+        <outputObjectName>SFI_INSPIRE_FEEDBACK__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateInspireWithSRCIDCustom4845</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateInspireWithSRCID</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_INSPIRE_FEEDBACK__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;FeedbackDateInput&quot; : &quot;2023-06-11&quot;,
+  &quot;bundleName&quot; : &quot;DRLCreateInspireWithSRCID&quot;,
+  &quot;objectList&quot; : {
+    &quot;CallInspire&quot; : {
+      &quot;body&quot; : &quot;Avtnt xml file generated successfully&quot;,
+      &quot;headers&quot; : { },
+      &quot;statusCode&quot; : &quot;OK&quot;,
+      &quot;statusCodeValue&quot; : 200
+    },
+    &quot;DRTDunningLetterXMLMaps&quot; : &quot;&lt;?xml version=\&quot;1.0\&quot;?&gt;&lt;root&gt;&lt;plis&gt;&lt;pli id=\&quot;CGFOR000045\&quot;&gt;&lt;assure_civilite&gt;Female&lt;/assure_civilite&gt;&lt;assure_adresse_pays&gt;France&lt;/assure_adresse_pays&gt;&lt;assure_date_naissance&gt;1957-10-05 00:00:00&lt;/assure_date_naissance&gt;&lt;assure_prenom&gt;SabaTest4&lt;/assure_prenom&gt;&lt;assure_nom&gt;ShrkTest4&lt;/assure_nom&gt;&lt;assure_age&gt;65&lt;/assure_age&gt;&lt;bq_bic&gt;PSSTFRPPLIM&lt;/bq_bic&gt;&lt;souscripteur_prenom&gt;SabaTest4&lt;/souscripteur_prenom&gt;&lt;bq_iban&gt;FR1420041010050500013M02606&lt;/bq_iban&gt;&lt;souscripteur_adresse_pays&gt;France&lt;/souscripteur_adresse_pays&gt;&lt;contrat_periodicite&gt;Annually&lt;/contrat_periodicite&gt;&lt;cpub_libelle_produit&gt;GFO Cetelem&lt;/cpub_libelle_produit&gt;&lt;contrat_prime&gt;29.324232&lt;/contrat_prime&gt;&lt;souscripteur_date_naissance&gt;1957-10-05 00:00:00&lt;/souscripteur_date_naissance&gt;&lt;mode_paiement&gt;Bank Account&lt;/mode_paiement&gt;&lt;souscripteur_nom&gt;ShrkTest4&lt;/souscripteur_nom&gt;&lt;contrat_date_effet&gt;04/10/2022&lt;/contrat_date_effet&gt;&lt;beneficiaire_clause&gt;Date d&apos;effet le 05/10/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&lt;/beneficiaire_clause&gt;&lt;SRC_id&gt;0YT0E000001gFbdWAE&lt;/SRC_id&gt;&lt;contrat_identifiant&gt;CGFOR000045&lt;/contrat_identifiant&gt;&lt;contrat_date_resil&gt;2023-02-15 00:00:00&lt;/contrat_date_resil&gt;&lt;type_doc&gt;LRappel&lt;/type_doc&gt;&lt;nb_ex&gt;1&lt;/nb_ex&gt;&lt;devise_defaut&gt;EUROS&lt;/devise_defaut&gt;&lt;letter_type&gt;AVTNT&lt;/letter_type&gt;&lt;assure_type&gt;P&lt;/assure_type&gt;&lt;contrat_duree&gt;VIE&lt;/contrat_duree&gt;&lt;type_destinataire&gt;souscripteur&lt;/type_destinataire&gt;&lt;souscripteur_type&gt;P&lt;/souscripteur_type&gt;&lt;/pli&gt;&lt;/plis&gt;&lt;/root&gt;&quot;,
+    &quot;EnterDunningTaskId&quot; : {
+      &quot;dunningTaskId&quot; : &quot;00T0E00000N5XnXUAV&quot;
+    },
+    &quot;SendingLetters&quot; : {
+      &quot;InputTaskId-Block&quot; : {
+        &quot;DueDate&quot; : &quot;2023-05-16&quot;,
+        &quot;Id&quot; : &quot;00T0E00000N5XnXUAV&quot;,
+        &quot;InputTaskId&quot; : &quot;00T0E00000N5XnXUAV&quot;,
+        &quot;Label&quot; : &quot;00T0E00000N5XnXUAV MED Lapse&quot;,
+        &quot;PolicyName&quot; : &quot;CGFOR000045&quot;,
+        &quot;SubTaskType&quot; : &quot;MED Lapse&quot;,
+        &quot;Subject&quot; : &quot;Résiliation, rachat ou réduction du contrat pour impayé&quot;,
+        &quot;Type&quot; : &quot;LETTER&quot;
+      }
+    },
+    &quot;TodaysDate&quot; : &quot;2023-06-10T18:30:00.000Z&quot;,
+    &quot;XMLLetterContent&quot; : {
+      &quot;FeedbackDateInput&quot; : &quot;2023-06-11&quot;
+    },
+    &quot;omniProcessId&quot; : &quot;0jN0E0000004CLYUA2&quot;,
+    &quot;timeStamp&quot; : &quot;2023-06-11T14:20:05.103Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+    &quot;userId&quot; : &quot;0050E00000DkPhpQAF&quot;,
+    &quot;userName&quot; : &quot;sshahrukh@salesforce.com.4sfidev07&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : &quot;120&quot;,
+    &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreateInspireWithSRCID_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

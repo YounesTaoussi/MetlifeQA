@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>true</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreateProducerCommissionForPremiumPayment</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom9745</globalKey>
+        <inputFieldName>TransactionInfos:ComRateId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionRate__c</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem4</globalKey>
+        <inputFieldName>TransactionInfos:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>CommissionableAmount</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem10</globalKey>
+        <inputFieldName>TransactionInfos:InsurancePolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyId</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionInfos:IsFirstYearPremium &quot;true&quot; = &quot;FY&quot; &quot;REN&quot; IF</formulaConverted>
+        <formulaExpression>IF(TransactionInfos:IsFirstYearPremium=&quot;true&quot;,&quot;FY&quot;,&quot;REN&quot;)</formulaExpression>
+        <formulaResultPath>isFy</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom735</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionInfos:isFirstYearPremium &quot;true&quot; = &quot;Prime/\/\/de/\/\/la/\/\/premiére/\/\/année&quot; &quot;Prime/\/\/&quot; IF</formulaConverted>
+        <formulaExpression>IF(TransactionInfos:isFirstYearPremium=&quot;true&quot;,&quot;Prime de la premiére année&quot;,&quot;Prime &quot;)</formulaExpression>
+        <formulaResultPath>isFirstYear</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom3549</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem9</globalKey>
+        <inputFieldName>TransactionInfos:SponsorId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AccountId__c</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem11</globalKey>
+        <inputFieldName>TransactionInfos:CommissionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CommissionAmount</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:TransactionInfos:Rate 100 /</formulaConverted>
+        <formulaExpression>(TransactionInfos:Rate) / 100</formulaExpression>
+        <formulaResultPath>TransactionInfos:CommissionAmount1</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom5405</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:TransactionInfos:TotalTransactionAmount var:TransactionInfos:CommissionAmount1 *</formulaConverted>
+        <formulaExpression>(TransactionInfos:TotalTransactionAmount) * (TransactionInfos:CommissionAmount1)</formulaExpression>
+        <formulaResultPath>TransactionInfos:CommissionAmount</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionInfos:InsurancePolicyName &quot;/\/\/&quot; var:TransactionInfos:Code &quot;/\/\/&quot; var:TransactionInfos:EffectiveDateName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(TransactionInfos:InsurancePolicyName,&quot; &quot;,TransactionInfos:Code,&quot; &quot;,TransactionInfos:EffectiveDateName)</formulaExpression>
+        <formulaResultPath>TransactionInfos:Name</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom4338</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom804</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>hascommissions__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem16</globalKey>
+        <inputFieldName>TransactionInfos:InsurancePolicyTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem15</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem17</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>hascommissions__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom6801</globalKey>
+        <inputFieldName>TransactionInfos:PaymentTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Pending</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem12</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Commission</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem6</globalKey>
+        <inputFieldName>TransactionInfos:ProducerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ProcessingProducerId</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem8</globalKey>
+        <inputFieldName>TransactionInfos:SponsorId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ProducerId</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem13</globalKey>
+        <inputFieldName>TransactionInfos:InsurancePolicyTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionId</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem14</globalKey>
+        <inputFieldName>isFirstYear</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IsFirstYear__c</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom0jI1w0000008OcvEAEItem7</globalKey>
+        <inputFieldName>TransactionInfos:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateProducerCommissionForPremiumPaymentCustom9624</globalKey>
+        <inputFieldName>TransactionInfos:PaymentTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateProducerCommissionForPremiumPayment</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentTransactionId__c</outputFieldName>
+        <outputObjectName>ProducerCommission</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;TransactionInfos&quot; : [ {
+    &quot;CampaignParentId&quot; : &quot;Any&quot;,
+    &quot;CanaldeVente&quot; : &quot;Principale&quot;,
+    &quot;Code&quot; : &quot;Base&quot;,
+    &quot;ComRateId&quot; : &quot;a9u1w000000ChndAAC&quot;,
+    &quot;Enseigne&quot; : &quot;Any&quot;,
+    &quot;FinalRate&quot; : null,
+    &quot;FirstDay&quot; : &quot;1970-01-08&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007o22GAA&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000Cio4AAC&quot;,
+    &quot;LastDay&quot; : null,
+    &quot;PaymentTransactionId&quot; : &quot;0k91w000000Cio9AAC&quot;,
+    &quot;ProducerCommissionName&quot; : null,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+    &quot;ProductType&quot; : &quot;Obseques&quot;,
+    &quot;Rate&quot; : 20,
+    &quot;SponsorId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+    &quot;TotalTransactionAmount&quot; : 137.87088,
+    &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;,
+    &quot;isFirstYearPremium&quot; : &quot;true&quot;,
+    &quot;isFirstYearPremiumOnly&quot; : &quot;BothFYandNotFY&quot;
+  }, {
+    &quot;CampaignParentId&quot; : &quot;Any&quot;,
+    &quot;CanaldeVente&quot; : &quot;Principale&quot;,
+    &quot;Code&quot; : &quot;Mailing – Base&quot;,
+    &quot;ComRateId&quot; : &quot;a9u1w000000ChncAAC&quot;,
+    &quot;Enseigne&quot; : &quot;Any&quot;,
+    &quot;FinalRate&quot; : null,
+    &quot;FirstDay&quot; : &quot;1970-01-07&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007o22GAA&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000Cio4AAC&quot;,
+    &quot;LastDay&quot; : null,
+    &quot;PaymentTransactionId&quot; : &quot;0k91w000000Cio9AAC&quot;,
+    &quot;ProducerCommissionName&quot; : null,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+    &quot;ProductType&quot; : &quot;Obseques&quot;,
+    &quot;Rate&quot; : 20,
+    &quot;SponsorId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+    &quot;TotalTransactionAmount&quot; : 137.87088,
+    &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;,
+    &quot;isFirstYearPremium&quot; : &quot;true&quot;,
+    &quot;isFirstYearPremiumOnly&quot; : &quot;BothFYandNotFY&quot;
+  }, {
+    &quot;CampaignParentId&quot; : &quot;Any&quot;,
+    &quot;CanaldeVente&quot; : &quot;Principale&quot;,
+    &quot;Code&quot; : &quot;Mailing – FYP&quot;,
+    &quot;ComRateId&quot; : &quot;a9u1w000000ChnaAAC&quot;,
+    &quot;Enseigne&quot; : &quot;Any&quot;,
+    &quot;FinalRate&quot; : null,
+    &quot;FirstDay&quot; : &quot;1970-01-05&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007o22GAA&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000Cio4AAC&quot;,
+    &quot;LastDay&quot; : null,
+    &quot;PaymentTransactionId&quot; : &quot;0k91w000000Cio9AAC&quot;,
+    &quot;ProducerCommissionName&quot; : null,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+    &quot;ProductType&quot; : &quot;Obseques&quot;,
+    &quot;Rate&quot; : 40,
+    &quot;SponsorId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+    &quot;TotalTransactionAmount&quot; : 137.87088,
+    &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;,
+    &quot;isFirstYearPremium&quot; : &quot;true&quot;,
+    &quot;isFirstYearPremiumOnly&quot; : &quot;OnlyFY&quot;
+  }, {
+    &quot;CampaignParentId&quot; : &quot;Any&quot;,
+    &quot;CanaldeVente&quot; : &quot;Blank&quot;,
+    &quot;Code&quot; : &quot;Base&quot;,
+    &quot;ComRateId&quot; : &quot;a9u1w000000ChndAAC&quot;,
+    &quot;Enseigne&quot; : &quot;Any&quot;,
+    &quot;FinalRate&quot; : null,
+    &quot;FirstDay&quot; : &quot;1970-01-08&quot;,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007pTBGAY&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000051&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000Cj4qAAC&quot;,
+    &quot;LastDay&quot; : null,
+    &quot;PaymentTransactionId&quot; : &quot;0k91w000000Cj4vAAC&quot;,
+    &quot;ProducerCommissionName&quot; : null,
+    &quot;ProducerId&quot; : &quot;Blank&quot;,
+    &quot;ProductType&quot; : &quot;Obseques&quot;,
+    &quot;Rate&quot; : 20,
+    &quot;SponsorId&quot; : null,
+    &quot;TotalTransactionAmount&quot; : 87.63936,
+    &quot;TypedeCampagne&quot; : &quot;Blank&quot;,
+    &quot;isFirstYearPremium&quot; : &quot;true&quot;,
+    &quot;isFirstYearPremiumOnly&quot; : &quot;BothFYandNotFY&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreateProducerCommissionForPremiumPayment_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom903</globalKey>
+        <inputFieldName>OfferData:ConcatResult</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConcatOfferData:ConcatResult</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom7635</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubProduitName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom6519</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubCallCenterName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom689</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Revalo</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom888</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom5984</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignEndDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom1436</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PremiumPaymentDuration</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom6373</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PriceTaxFees</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom3038</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignTypeDeCampagne</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom6807</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubProduitParentClassIdEligibilityCriteria</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom1094</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignStartDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom9286</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubProduitSubType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom5902</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubProduitType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;&quot;&apos; var:OfferData:CampaignName &apos;&quot;;&quot;&apos; var:OfferData:CampaignFournisseurLeadName &apos;&quot;;&quot;&apos; var:OfferData:CampaignStartDate &apos;&quot;;&quot;&apos; var:OfferData:CampaignEndDate &apos;&quot;;&quot;&apos; var:OfferData:CampaignCanalDeVente &apos;&quot;;&quot;&apos; var:OfferData:CampaignTypeDeCampagne &apos;&quot;;&quot;&apos; var:OfferData:CampaignGratuite &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubBrandName &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubName &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubProduitName &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePub__cProduitProductCode &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubProduitType &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubProduitSubType &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubCallCenterName &apos;&quot;;&quot;&apos; var:OfferData:ConfigurationCodePubProduitParentClassIdEligibilityCriteria &apos;&quot;;&quot;&apos; var:OfferData:PriceTaxFees &apos;&quot;;&quot;&apos; var:OfferData:gfoBenefitChosen &apos;&quot;;&quot;&apos; var:OfferData:InsuredAgeAtSubscriptionLowest &apos;&quot;;&quot;&apos; var:OfferData:InsuredAgeAtSubscriptionToohigh &apos;&quot;;&quot;&apos; var:OfferData:PremiumPaymentDuration &apos;&quot;;&quot;&apos; var:OfferData:Revalo CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&apos;&quot;&apos;OfferData:CampaignName,&apos;&quot;;&quot;&apos;,OfferData:CampaignFournisseurLeadName,&apos;&quot;;&quot;&apos;,OfferData:CampaignStartDate,&apos;&quot;;&quot;&apos;,OfferData:CampaignEndDate,&apos;&quot;;&quot;&apos;,OfferData:CampaignCanalDeVente,&apos;&quot;;&quot;&apos;,OfferData:CampaignTypeDeCampagne,&apos;&quot;;&quot;&apos;,OfferData:CampaignGratuite,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubBrandName,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubName,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubProduitName,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePub__cProduitProductCode,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubProduitType,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubProduitSubType,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubCallCenterName,&apos;&quot;;&quot;&apos;,OfferData:ConfigurationCodePubProduitParentClassIdEligibilityCriteria,&apos;&quot;;&quot;&apos;,OfferData:PriceTaxFees,&apos;&quot;;&quot;&apos;,OfferData:gfoBenefitChosen,&apos;&quot;;&quot;&apos;,OfferData:InsuredAgeAtSubscriptionLowest,&apos;&quot;;&quot;&apos;,OfferData:InsuredAgeAtSubscriptionToohigh,&apos;&quot;;&quot;&apos;,OfferData:PremiumPaymentDuration,&apos;&quot;;&quot;&apos;,OfferData:Revalo)</formulaExpression>
+        <formulaResultPath>OfferData:ConcatResult</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom4197</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom8032</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsuredAgeAtSubscriptionToohigh</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom2561</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignGratuite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom5718</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignFournisseurLeadName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom9281</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom4577</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>gfoBenefitChosen</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom2662</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsuredAgeAtSubscriptionLowest</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom5379</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CampaignCanalDeVente</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom28</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePub__cProduitProductCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDataToGenerateCSVFromCampaignCustom5767</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDataToGenerateCSVFromCampaign</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ConfigurationCodePubBrandName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;OfferData&quot; : [ {
+    &quot;Revalo&quot; : &quot;false&quot;,
+    &quot;PremiumPaymentDuration&quot; : &quot;wholeLife&quot;,
+    &quot;InsuredAgeAtSubscriptionToohigh&quot; : 65,
+    &quot;InsuredAgeAtSubscriptionLowest&quot; : 45,
+    &quot;gfoBenefitChosen&quot; : 1500,
+    &quot;PriceTaxFees&quot; : 5,
+    &quot;ConfigurationCodePubProduitParentClassIdEligibilityCriteria&quot; : &quot;AGE(metLifeGFOLifeInsured.personBirthDate) &gt;= 45 AND AGE(metLifeGFOLifeInsured.personBirthDate) &lt; 80)&quot;,
+    &quot;ConfigurationCodePubCallCenterName&quot; : &quot;Sitel Casablanca&quot;,
+    &quot;ConfigurationCodePubProduitSubType&quot; : &quot;GFO&quot;,
+    &quot;ConfigurationCodePubProduitType&quot; : &quot;Obseques&quot;,
+    &quot;ConfigurationCodePub__cProduitProductCode&quot; : &quot;GFOY&quot;,
+    &quot;ConfigurationCodePubProduitName&quot; : &quot;GFO ONEY&quot;,
+    &quot;ConfigurationCodePubName&quot; : &quot;N0727A&quot;,
+    &quot;ConfigurationCodePubBrandName&quot; : &quot;Auchan&quot;,
+    &quot;CampaignGratuite&quot; : &quot;2&quot;,
+    &quot;CampaignTypeDeCampagne&quot; : &quot;Acquisition&quot;,
+    &quot;CampaignCanalDeVente&quot; : &quot;Appel sortant (MetLife)&quot;,
+    &quot;CampaignEndDate&quot; : &quot;15/08/2079&quot;,
+    &quot;CampaignStartDate&quot; : &quot;15/08/1981&quot;,
+    &quot;CampaignFournisseurLeadName&quot; : &quot;ONEY BANK&quot;,
+    &quot;CampaignName&quot; : &quot;2022-0727&quot;
+  }, {
+    &quot;Revalo&quot; : &quot;true&quot;,
+    &quot;PremiumPaymentDuration&quot; : &quot;wholeLife&quot;,
+    &quot;InsuredAgeAtSubscriptionToohigh&quot; : 70,
+    &quot;InsuredAgeAtSubscriptionLowest&quot; : 45,
+    &quot;gfoBenefitChosen&quot; : 2000,
+    &quot;PriceTaxFees&quot; : 6,
+    &quot;ConfigurationCodePubProduitParentClassIdEligibilityCriteria&quot; : &quot;AGE(metLifeGFOLifeInsured.personBirthDate) &gt;= 45 AND AGE(metLifeGFOLifeInsured.personBirthDate) &lt; 80)&quot;,
+    &quot;ConfigurationCodePubCallCenterName&quot; : &quot;Sitel Casablanca&quot;,
+    &quot;ConfigurationCodePubProduitSubType&quot; : &quot;GFO&quot;,
+    &quot;ConfigurationCodePubProduitType&quot; : &quot;Obseques&quot;,
+    &quot;ConfigurationCodePub__cProduitProductCode&quot; : &quot;GFOY&quot;,
+    &quot;ConfigurationCodePubProduitName&quot; : &quot;GFO ONEY&quot;,
+    &quot;ConfigurationCodePubName&quot; : &quot;N0727A&quot;,
+    &quot;ConfigurationCodePubBrandName&quot; : &quot;Auchan&quot;,
+    &quot;CampaignGratuite&quot; : &quot;2&quot;,
+    &quot;CampaignTypeDeCampagne&quot; : &quot;Acquisition&quot;,
+    &quot;CampaignCanalDeVente&quot; : &quot;Appel sortant (MetLife)&quot;,
+    &quot;CampaignEndDate&quot; : &quot;15/08/2078&quot;,
+    &quot;CampaignStartDate&quot; : &quot;15/08/1980&quot;,
+    &quot;CampaignFournisseurLeadName&quot; : &quot;ONEY&quot;,
+    &quot;CampaignName&quot; : &quot;2022-0727&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareDataToGenerateCSVFromCampaign_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,25 @@
+{
+    "newQuoteJson": {
+        "OpportunityDetails": {
+            "AccountId": "Text",
+            "Amount": "Text",
+            "CampaignId": "Text",
+            "CloseDate": "Text",
+            "Name": "Text",
+            "StageName": "Text",
+            "Type": "Text"
+        },
+        "accountId": "Text",
+        "additionalFields": {
+            "Name": "Text",
+            "Status": "Text"
+        },
+        "instanceKey": "Text",
+        "insuredItems": "Text",
+        "insuredItemsRelationships": "Text",
+        "productConfigurationDetail": "Text"
+    },
+    "quotepolicyJson": {
+        "term": "Text"
+    }
+}

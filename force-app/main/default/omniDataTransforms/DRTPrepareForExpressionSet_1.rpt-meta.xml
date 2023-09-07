@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;IPT&quot; : [ {
+    &quot;CanalDeVente&quot; : &quot;Principale&quot;,
+    &quot;IFirstYearPremium&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CbOsAAK&quot;,
+    &quot;PolicyType&quot; : &quot;Life&quot;,
+    &quot;ProducerAccName&quot; : &quot;Cetelem&quot;,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+    &quot;TotalTransactionAmount&quot; : 0,
+    &quot;Type&quot; : &quot;Premium Payment&quot;
+  }, {
+    &quot;CanalDeVente&quot; : &quot;Principale&quot;,
+    &quot;IFirstYearPremium&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CbOxAAK&quot;,
+    &quot;PolicyType&quot; : &quot;Life&quot;,
+    &quot;ProducerAccName&quot; : &quot;Cetelem&quot;,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+    &quot;TotalTransactionAmount&quot; : 0
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareForExpressionSet</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet6654445439046124</globalKey>
+        <inputFieldName>IPT:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>IPT:TotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet6124310988872244</globalKey>
+        <inputFieldName>IPTPa:IPT:ProducerAccName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IPT:Sponsor</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet6374336417222559</globalKey>
+        <inputFieldName>IPTPa:IPT:ParentType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IPT:ParentType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Payment Cancellation&quot; : &quot;Premium Cancellation&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet8034385413869307</globalKey>
+        <inputFieldName>IPTPa:IPT:PolicyType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IPT:LOB</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Life&quot; : &quot;Obsèques&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet44734280681019634</globalKey>
+        <inputFieldName>IPTPa:IPT:TypeCompagne</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IPT:TypeCpg</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet2305454752528775</globalKey>
+        <inputFieldName>IPTPa:IPT:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>IPT:TotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSetCustom7774</globalKey>
+        <inputFieldName>IPTPa:IPT</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AllElements</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet06015110462405038</globalKey>
+        <inputFieldName>IPTPa:IPT:IsFirstYearPremium</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>IPT:IsFirstYearPremium</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet6744744147368669</globalKey>
+        <inputFieldName>IPTPa:IPT:InsurancePolicyTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>IPT:InsurancePolicyTransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareForExpressionSet2271100309543277</globalKey>
+        <inputFieldName>IPTPa:IPT:CommissionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareForExpressionSet</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>IPT:CommissionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;IPTPa&quot; : [ {
+    &quot;IPT&quot; : {
+      &quot;CanalDeVente&quot; : &quot;Principale&quot;,
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+      &quot;InsurancePolicyName&quot; : &quot;CGFOR314159&quot;,
+      &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CicIAAS&quot;,
+      &quot;InsurancePolicyTransactionParentId&quot; : &quot;0k91w000000CicIAAS&quot;,
+      &quot;IsFirstYearPremium&quot; : &quot;true&quot;,
+      &quot;ParentType&quot; : &quot;Payment Cancellation&quot;,
+      &quot;PolicyType&quot; : &quot;Life&quot;,
+      &quot;ProducerAccId&quot; : &quot;0011x00001fbwCQAAY&quot;,
+      &quot;ProducerAccName&quot; : &quot;ONEY&quot;,
+      &quot;ProducerId&quot; : &quot;0Yx1x0000008aGbCAI&quot;,
+      &quot;TotalTransactionAmount&quot; : 20,
+      &quot;TransactionEffectiveDate&quot; : &quot;2022/12/22&quot;,
+      &quot;TypeCompagne&quot; : &quot;Acquisition&quot;
+    },
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004pldGAA&quot;,
+    &quot;InsurancePolicyTransactionParentId&quot; : &quot;0k91w000000CicIAAS&quot;,
+    &quot;ParentType&quot; : &quot;Payment Cancellation&quot;,
+    &quot;ProducerAccId&quot; : &quot;0011x00001fbwCQAAY&quot;,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGbCAI&quot;
+  }, {
+    &quot;IPT&quot; : {
+      &quot;CanalDeVente&quot; : &quot;Principale&quot;,
+      &quot;CommissionAmount&quot; : 5.86,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+      &quot;InsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CigeAAC&quot;,
+      &quot;InsurancePolicyTransactionParentId&quot; : &quot;0k91w000000CigeAAC&quot;,
+      &quot;ParentType&quot; : &quot;Premium Cancellation&quot;,
+      &quot;PolicyType&quot; : &quot;Life&quot;,
+      &quot;ProducerAccId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+      &quot;ProducerAccName&quot; : &quot;AON&quot;,
+      &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+      &quot;TypeCompagne&quot; : &quot;Acquisition&quot;
+    },
+    &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAGGAY&quot;,
+    &quot;InsurancePolicyTransactionParentId&quot; : &quot;0k91w000000CigeAAC&quot;,
+    &quot;ParentType&quot; : &quot;Premium Cancellation&quot;,
+    &quot;ProducerAccId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+    &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareForExpressionSet_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

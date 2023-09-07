@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;getNamedInsuredPolicyParticipantId&quot; : [ ],
+  &quot;getNamedInsuredPolicyParticipantIdStatus&quot; : true,
+  &quot;options&quot; : {
+    &quot;useQueueableApexRemoting&quot; : false,
+    &quot;queueableChainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;resetCache&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;setProductCodes&quot; : 0,
+    &quot;setPolicyId&quot; : 0,
+    &quot;readInsuredItemsData&quot; : 279,
+    &quot;readInsurancePolicyData&quot; : 561,
+    &quot;getPolicyNumber&quot; : 273,
+    &quot;OmniScriptSessionToken&quot; : &quot;794fb665-e7e3-4d04-a63a-3d8146034760&quot;
+  },
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;userProfile&quot; : &quot;Administrateur système&quot;,
+  &quot;userName&quot; : &quot;demo.org@insurance-express-personal-lines.1637568002956&quot;,
+  &quot;userId&quot; : &quot;0055f000005QBSGAA4&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;timeStamp&quot; : &quot;2021-12-13T23:44:25.237Z&quot;,
+  &quot;policyInsuredItemProductCode&quot; : &quot;autoVehicle&quot;,
+  &quot;claimWitnessPartyRelationshipCode&quot; : &quot;Witness&quot;,
+  &quot;claimInvolvedVehicleProductCode&quot; : &quot;metLifeClaimFuneral&quot;,
+  &quot;claimInsuredPartyRelationshipCode&quot; : &quot;Insured&quot;,
+  &quot;claimInjuredPersonProductCode&quot; : &quot;claimInjuredPerson&quot;,
+  &quot;claimDamagedPropertyProductCode&quot; : &quot;claimDamagedProperty&quot;,
+  &quot;claimClaimantPartyRelationshipCode&quot; : &quot;Claimant&quot;,
+  &quot;Sponsor&quot; : &quot;MetLife&quot;,
+  &quot;Product&quot; : {
+    &quot;ProductId&quot; : &quot;01t5f000002GFAvAAO&quot;
+  },
+  &quot;PolicyId&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;Policy&quot; : {
+    &quot;PolicyId&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+    &quot;Id&quot; : &quot;0YT5f000000ZuwfGAC&quot;
+  },
+  &quot;Name&quot; : &quot;Garantie Frais d&apos;obsèques&quot;,
+  &quot;LastModifiedDate&quot; : &quot;2021-12-13T14:03:18.000Z&quot;,
+  &quot;InsuredVehicle&quot; : {
+    &quot;Name&quot; : &quot;Fonds Décès - Merelle Léonie&quot;,
+    &quot;Id&quot; : &quot;0YW5f000000YVFLGA4&quot;
+  },
+  &quot;InsuredDamagedItemName&quot; : &quot;Fonds Décès - Merelle Léonie&quot;,
+  &quot;InsurancePolicyNumber&quot; : &quot;Garantie Frais d&apos;obsèques&quot;,
+  &quot;Id&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;Demarches&quot; : {
+    &quot;instructions&quot; : false
+  },
+  &quot;ContextId&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;AccountName&quot; : &quot;Léonie Merelle&quot;,
+  &quot;AccountId&quot; : &quot;0015f00000FD3vZAAT&quot;,
+  &quot;Account&quot; : {
+    &quot;PolicyHolder&quot; : &quot;Léonie Merelle&quot;
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;claimJson&quot; : {
+    &quot;additionalFields&quot; : { },
+    &quot;claimPartyItems&quot; : {
+      &quot;metLifeClaimDeceasedPerson&quot; : [ {
+        &quot;accountId&quot; : &quot;232 Software version and beyond&quot;,
+        &quot;additionalFields&quot; : { },
+        &quot;claimParticipantRoles&quot; : &quot;232 Software version and beyond&quot;,
+        &quot;contactId&quot; : &quot;232 Software version and beyond&quot;,
+        &quot;heldProductRelationshipId&quot; : null,
+        &quot;Id&quot; : null,
+        &quot;insurancePolicyParticipantId&quot; : &quot;232 Software version and beyond&quot;,
+        &quot;personDeathCause&quot; : &quot;illness&quot;,
+        &quot;personDeathDate&quot; : null,
+        &quot;productCode&quot; : &quot;metLifeClaimDeceasedPerson&quot;,
+        &quot;productId&quot; : &quot;01t1x00000KJ9cTAAT&quot;,
+        &quot;productName&quot; : &quot;Défunt&quot;
+      } ]
+    },
+    &quot;lossDate&quot; : null,
+    &quot;policyholderClaimParticipantRole&quot; : &quot;232 Software version and beyond&quot;,
+    &quot;policyholderInsurancePolicyParticipantId&quot; : &quot;232 Software version and beyond&quot;,
+    &quot;policyId&quot; : null,
+    &quot;policyNumber&quot; : null,
+    &quot;productCode&quot; : &quot;metLifeClaimObseques&quot;,
+    &quot;productId&quot; : null,
+    &quot;productName&quot; : &quot;MetLife Sinistre Obsèques&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Funeral</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP08640525587106329</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:ClaimType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP4847482345452361</globalKey>
+        <inputFieldName>DeathDeclaration:DeathCause</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:ClaimReason</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP18405491234383242</globalKey>
+        <inputFieldName>AccountId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:AccountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:condition NOW</formulaConverted>
+        <formulaExpression>NOW(condition)</formulaExpression>
+        <formulaResultPath>Today</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP1771252984103031</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP7330582618377259</globalKey>
+        <inputFieldName>getNamedInsuredPolicyParticipantId:InsurancePolicyParticipantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPartyItems:metLifeClaimDeceasedPerson:insurancePolicyParticipantId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP8394588831906347</globalKey>
+        <inputFieldName>claimInjuredPersonProductCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPartyItems:metLifeClaimDeceasedPerson:productCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP8885496572069891</globalKey>
+        <inputFieldName>claimInsuredPartyRelationshipCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:policyholderClaimParticipantRole</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP3670030051315223</globalKey>
+        <inputFieldName>PolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:policyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP4914206511877961</globalKey>
+        <inputFieldName>DeathDeclaration:DeathDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:lossDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP4821627124543615</globalKey>
+        <inputFieldName>DeathDeclaration:DeathCause</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPartyItems:metLifeClaimDeceasedPerson:personDeathCause</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP47056914045452913</globalKey>
+        <inputFieldName>details:lossLocation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimAttributes:claimDamageLoc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>metLifeClaimObseques</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP665447264235852</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:productCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP2763480354583605</globalKey>
+        <inputFieldName>DeathDeclaration:DeathDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPartyItems:metLifeClaimDeceasedPerson:personDeathDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP46729955502948317</globalKey>
+        <inputFieldName>getNamedInsuredPolicyParticipantId:InsurancePolicyParticipantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:policyholderInsurancePolicyParticipantId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP7384544420306074</globalKey>
+        <inputFieldName>Today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:InitiationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP9405205314151379</globalKey>
+        <inputFieldName>claimClaimantPartyRelationshipCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPartyItems:metLifeClaimDeceasedPerson:claimParticipantRoles</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP1916158776889516</globalKey>
+        <inputFieldName>DeathDeclaration:DeathDescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:Summary</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Initial</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP27776478978620744</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:Status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Total</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP03953249801161651</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:Severity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Death</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>gfoTransCreateFSCClaimCreateClaimIP7190423318746357</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>gfoTransCreateFSCClaimCreateClaimIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:additionalFields:LossType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;getNamedInsuredPolicyParticipantId&quot; : {
+    &quot;InsurancePolicyParticipantId&quot; : &quot;0ao1x0000004bt3AAA&quot;
+  },
+  &quot;getNamedInsuredPolicyParticipantIdStatus&quot; : true,
+  &quot;options&quot; : {
+    &quot;useQueueableApexRemoting&quot; : false,
+    &quot;queueableChainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;resetCache&quot; : false,
+    &quot;chainable&quot; : false
+  },
+  &quot;elementName&quot; : &quot;createClaimProcess3&quot;,
+  &quot;omniScriptId&quot; : &quot;0jN1x00000003WjEAI&quot;,
+  &quot;DeathClaimant&quot; : {
+    &quot;Details&quot; : &quot;aucun détail&quot;,
+    &quot;BenefTelephone&quot; : &quot;7683467635&quot;,
+    &quot;BenefEmail&quot; : &quot;a@b.c&quot;,
+    &quot;BenfFirstName&quot; : &quot;Georgette&quot;,
+    &quot;BenefLastName&quot; : &quot;Formby&quot;,
+    &quot;ClaimantType&quot; : &quot;Notaire&quot;,
+    &quot;RIBCert&quot; : null,
+    &quot;CNICert&quot; : null,
+    &quot;BenefSecuritySocialNumber&quot; : null,
+    &quot;BenefDateOfBirth&quot; : null
+  },
+  &quot;DeathDeclaration&quot; : {
+    &quot;Status&quot; : &quot;In Force&quot;,
+    &quot;GuaranteedDeathBenefit&quot; : 4000,
+    &quot;PolicyNumber&quot; : &quot;CGFOR000083&quot;,
+    &quot;Type&quot; : &quot;Life&quot;,
+    &quot;PolicyName&quot; : &quot;CGFOR000083&quot;,
+    &quot;Policyholder&quot; : &quot;GEORGE FORMBY&quot;,
+    &quot;DeathDescription&quot; : &quot;Il vécut heureux et eut beaucoup d&apos;enfants.&quot;,
+    &quot;DeathCertNumber&quot; : &quot;54325432&quot;,
+    &quot;DeathCoroner&quot; : &quot;Médecin (Hôpital / Clinique)&quot;,
+    &quot;DeathCause&quot; : &quot;Causes Naturelles&quot;,
+    &quot;InceptionDate&quot; : &quot;2020-08-15&quot;,
+    &quot;TodaysDate&quot; : -9,
+    &quot;DeathDateMessage&quot; : true,
+    &quot;DeathDate&quot; : &quot;2023-03-01&quot;
+  },
+  &quot;Demarches&quot; : {
+    &quot;instructions&quot; : false
+  },
+  &quot;InsurancePolicyNumber&quot; : &quot;CGFOR000083&quot;,
+  &quot;AccountId&quot; : &quot;0011x00001kU4uPAAS&quot;,
+  &quot;AccountName&quot; : &quot;GEORGE FORMBY&quot;,
+  &quot;Policy&quot; : {
+    &quot;Id&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+    &quot;PolicyId&quot; : &quot;0YT1x0000004uqZGAQ&quot;
+  },
+  &quot;Account&quot; : {
+    &quot;PolicyHolder&quot; : &quot;GEORGE FORMBY&quot;
+  },
+  &quot;LastModifiedDate&quot; : &quot;2023-03-09T16:46:19.000Z&quot;,
+  &quot;Product&quot; : {
+    &quot;ProductId&quot; : &quot;01t1x00000KJADUAA5&quot;
+  },
+  &quot;Sponsor&quot; : &quot;MetLife&quot;,
+  &quot;Name&quot; : &quot;CGFOR000083&quot;,
+  &quot;Id&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+  &quot;PolicyId&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+  &quot;claimClaimantPartyRelationshipCode&quot; : &quot;Claimant&quot;,
+  &quot;claimDamagedPropertyProductCode&quot; : &quot;claimDamagedProperty&quot;,
+  &quot;claimInjuredPersonProductCode&quot; : &quot;claimInjuredPerson&quot;,
+  &quot;claimInsuredPartyRelationshipCode&quot; : &quot;Insured&quot;,
+  &quot;claimInvolvedVehicleProductCode&quot; : &quot;metLifeClaimFuneral&quot;,
+  &quot;claimWitnessPartyRelationshipCode&quot; : &quot;Witness&quot;,
+  &quot;policyInsuredItemProductCode&quot; : &quot;autoVehicle&quot;,
+  &quot;changeIncrement&quot; : 4,
+  &quot;vlcTimeTracking&quot; : {
+    &quot;DeathDeclaration&quot; : 1926,
+    &quot;Demarches&quot; : 2172,
+    &quot;readInsuredItemsData&quot; : 193,
+    &quot;getPolicyNumber&quot; : 162,
+    &quot;readInsurancePolicyData&quot; : 251,
+    &quot;setPolicyId&quot; : 0,
+    &quot;setProductCodes&quot; : 0,
+    &quot;revision&quot; : 0,
+    &quot;OmniScriptSessionToken&quot; : &quot;a15558dd-8eaa-49f9-b4e4-5953e2ea9d5c&quot;
+  },
+  &quot;omniProcessId&quot; : &quot;0jN1x00000003WjEAI&quot;,
+  &quot;userId&quot; : &quot;0051x00000BhabnAAB&quot;,
+  &quot;userName&quot; : &quot;fcargill@salesforce.com.4sfiqa2&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;timeStamp&quot; : &quot;2023-03-10T13:45:01.981Z&quot;,
+  &quot;subType&quot; : &quot;fileClaim&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;sId&quot; : &quot;0jN1x00000003WjEAI&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;type&quot; : &quot;metLife&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;omniscriptId&quot; : &quot;0jN1x00000003WjEAI&quot;,
+  &quot;ContextId&quot; : &quot;0YT1x0000004uqZGAQ&quot;,
+  &quot;&quot; : &quot;&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>gfoTransCreateFSCClaimCreateClaimIP_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

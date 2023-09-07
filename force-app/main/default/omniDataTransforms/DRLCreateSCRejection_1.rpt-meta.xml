@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;DisplayResult&quot; : {
+    &quot;DirectDebitRjectionResult&quot; : { },
+    &quot;SponsrCardRjectionResult&quot; : { }
+  },
+  &quot;SelectTransaction&quot; : {
+    &quot;CancelationCode&quot; : null,
+    &quot;Cancelationlabel&quot; : null,
+    &quot;PolicyNumber&quot; : null,
+    &quot;SponsorCardNumber&quot; : null,
+    &quot;premiumPayment-Block&quot; : {
+      &quot;InsurancePolicy_AmountToCollect&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaidToDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaymentMethodType&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Status&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_SubStatus&quot; : &quot;Text&quot;,
+      &quot;Label&quot; : &quot;Text&quot;,
+      &quot;Parent&quot; : {
+        &quot;Id&quot; : &quot;Text&quot;,
+        &quot;Name&quot; : &quot;Text&quot;,
+        &quot;Type&quot; : &quot;Text&quot;
+      },
+      &quot;TotalTransactionAmount&quot; : &quot;Text&quot;,
+      &quot;Transaction_Id&quot; : &quot;Text&quot;,
+      &quot;Transaction_Name&quot; : &quot;Text&quot;,
+      &quot;Transaction_PaymentMethodType&quot; : &quot;Text&quot;,
+      &quot;Transaction_SponsorCardNumber&quot; : &quot;Text&quot;
+    }
+  },
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CreateDirectDebitRejection&quot; : null,
+    &quot;CreateSponsorRejection&quot; : null,
+    &quot;DisplayResult&quot; : null,
+    &quot;RunDirectDebitRejectionIP&quot; : null,
+    &quot;RunSponsorCardRejectionIP&quot; : null,
+    &quot;SelectTransaction&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreateSCRejection</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SelectTransaction:SponsorCardNumber ISNOTBLANK var:SelectTransaction:SponsorCardNumber var:SelectTransaction:premiumPayment-Block:Transaction_SponsorCardNumber IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(SelectTransaction:SponsorCardNumber),SelectTransaction:SponsorCardNumber,%SelectTransaction:premiumPayment-Block:Transaction_SponsorCardNumber%)</formulaExpression>
+        <formulaResultPath>SponsorCardNumber</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreateSCRejectionCustom2523</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateSCRejectionCustom3</globalKey>
+        <inputFieldName>SelectTransaction:premiumPayment-Block:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Amount_premium__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateSCRejectionCustom6638</globalKey>
+        <inputFieldName>SelectTransaction:Cancelationlabel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Cancellation_Reason__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateSCRejectionCustom2834</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SelectTransaction:PolicyNumber ISNOTBLANK var:SelectTransaction:PolicyNumber var:SelectTransaction:premiumPayment-Block:InsurancePolicy_Name IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(SelectTransaction:PolicyNumber),SelectTransaction:PolicyNumber,%SelectTransaction:premiumPayment-Block:InsurancePolicy_Name%)</formulaExpression>
+        <formulaResultPath>PolicyNumber</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreateSCRejectionCustom9448</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateSCRejectionCustom3938</globalKey>
+        <inputFieldName>PolicyNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Poliy__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateSCRejectionCustom1173</globalKey>
+        <inputFieldName>SelectTransaction:CancelationCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Rejection_code__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateSCRejectionCustom7392</globalKey>
+        <inputFieldName>SponsorCardNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateSCRejection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sponsor_Card_number__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SelectTransaction&quot; : {
+    &quot;CancelationCode&quot; : &quot;23&quot;,
+    &quot;Cancelationlabel&quot; : &quot;2345&quot;,
+    &quot;PolicyNumber&quot; : null,
+    &quot;SponsorCardNumber&quot; : null,
+    &quot;premiumPayment-Block&quot; : {
+      &quot;InsurancePolicy_AmountToCollect&quot; : 0.006927999999998491,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DwTfWAK&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;CGFOR004777&quot;,
+      &quot;InsurancePolicy_PaidToDate&quot; : &quot;2023-04-04&quot;,
+      &quot;InsurancePolicy_PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;InsurancePolicy_Status&quot; : &quot;In Force&quot;,
+      &quot;InsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+      &quot;Label&quot; : &quot;Sponsor Card - CGFOR004777 - 2023-01-05 (29.32--0k90Q0000008RHyQAM)&quot;,
+      &quot;Parent&quot; : {
+        &quot;Id&quot; : &quot;0k90Q0000008RHtQAM&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-03-05 au 2023-04-04&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;Transaction_Id&quot; : &quot;0k90Q0000008RHyQAM&quot;,
+      &quot;Transaction_Name&quot; : &quot;Sponsor Card - CGFOR004777 - 2023-01-05&quot;,
+      &quot;Transaction_PaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+      &quot;Transaction_SponsorCardNumber&quot; : &quot;12453673744848444&quot;,
+      &quot;premiumPayment&quot; : &quot;Sponsor Card - CGFOR004777 - 2023-01-05 (29.32--0k90Q0000008RHyQAM)&quot;
+    }
+  },
+  &quot;timeStamp&quot; : &quot;2023-01-09T20:13:07.928Z&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0050Q0000076VZzQAM&quot;,
+  &quot;userName&quot; : &quot;abendris@salesforce.com.4sfiqa&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreateSCRejection_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

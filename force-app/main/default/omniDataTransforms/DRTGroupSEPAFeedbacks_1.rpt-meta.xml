@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;SFI_TMW_Sepa_Feedback&quot; : [ {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: XXXXXXXXXXXXXXXXXXX5950XXXX&quot;,
+    &quot;HasActivePolicy&quot; : true,
+    &quot;HasPaymentMethod&quot; : true,
+    &quot;Id&quot; : &quot;a9v1x000000E7uBAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;INIT&quot;,
+    &quot;PaymentMethod&quot; : {
+      &quot;Id&quot; : &quot;a6P1x000000cNQxEAM&quot;,
+      &quot;InsurancePolicy&quot; : {
+        &quot;Id&quot; : &quot;0YT1x000000553UGAQ&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;,
+        &quot;Substatus&quot; : &quot;Active&quot;
+      }
+    }
+  }, {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: XXXXXXXXXXXXXXXXXXX5950XXXX&quot;,
+    &quot;HasActivePolicy&quot; : false,
+    &quot;HasPaymentMethod&quot; : false,
+    &quot;Id&quot; : &quot;a9v1x000000E7uDAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;AMND&quot;
+  }, {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: fr0911611320201202371j52530&quot;,
+    &quot;HasActivePolicy&quot; : false,
+    &quot;HasPaymentMethod&quot; : true,
+    &quot;Id&quot; : &quot;a9v1x000000E7uGAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;AMND&quot;,
+    &quot;PaymentMethod&quot; : {
+      &quot;Id&quot; : &quot;a6P1x000000cNSjEAM&quot;
+    }
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTGroupSEPAFeedbacks</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupSEPAFeedbacksCustom4773</globalKey>
+        <inputFieldName>FeedbacksWithPM</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FeedbacksWithPM</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupSEPAFeedbacksCustom5473</globalKey>
+        <inputFieldName>FeedbacksWithActivePolicy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FeedbacksWithActivePolicy</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SFI_TMW_Sepa_Feedback LIST &apos;HasPaymentMethod&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(SFI_TMW_Sepa_Feedback), &apos;HasPaymentMethod&apos;)</formulaExpression>
+        <formulaResultPath>FeedbacksWithPM</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTGroupSEPAFeedbacksCustom5713</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SFI_TMW_Sepa_Feedback LIST &apos;HasPaymentMethod/\/\/==/\/\/false&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(SFI_TMW_Sepa_Feedback), &apos;HasPaymentMethod == false&apos;)</formulaExpression>
+        <formulaResultPath>FeedbacksWithNoPM</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTGroupSEPAFeedbacksCustom7811</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:FeedbacksWithPM LIST &apos;HasActivePolicy&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(FeedbacksWithPM), &apos;HasActivePolicy&apos;)</formulaExpression>
+        <formulaResultPath>FeedbacksWithActivePolicy</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTGroupSEPAFeedbacksCustom2333</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupSEPAFeedbacksCustom6991</globalKey>
+        <inputFieldName>FeedbacksWithNoPM</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupSEPAFeedbacks</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FeedbacksWithNoPM</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SFI_TMW_Sepa_Feedback&quot; : [ {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: XXXXXXXXXXXXXXXXXXX5950XXXX&quot;,
+    &quot;HasActivePolicy&quot; : true,
+    &quot;HasPaymentMethod&quot; : true,
+    &quot;Id&quot; : &quot;a9v1x000000E7uBAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;INIT&quot;,
+    &quot;PaymentMethod&quot; : {
+      &quot;Id&quot; : &quot;a6P1x000000cNQxEAM&quot;,
+      &quot;InsurancePolicy&quot; : {
+        &quot;Id&quot; : &quot;0YT1x000000553UGAQ&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;,
+        &quot;Substatus&quot; : &quot;Active&quot;
+      }
+    }
+  }, {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: XXXXXXXXXXXXXXXXXXX5950XXXX&quot;,
+    &quot;HasActivePolicy&quot; : false,
+    &quot;HasPaymentMethod&quot; : false,
+    &quot;Id&quot; : &quot;a9v1x000000E7uDAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;AMND&quot;
+  }, {
+    &quot;ErrorCode__c&quot; : &quot;MNDT06&quot;,
+    &quot;ErrorMessage__c&quot; : &quot;Debtor IBAN is invalid: fr0911611320201202371j52530&quot;,
+    &quot;HasActivePolicy&quot; : false,
+    &quot;HasPaymentMethod&quot; : true,
+    &quot;Id&quot; : &quot;a9v1x000000E7uGAAS&quot;,
+    &quot;Mandate_Operation__c&quot; : &quot;AMND&quot;,
+    &quot;PaymentMethod&quot; : {
+      &quot;Id&quot; : &quot;a6P1x000000cNSjEAM&quot;
+    }
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTGroupSEPAFeedbacks_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

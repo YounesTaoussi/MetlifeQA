@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Filters&quot; : {
+    &quot;ChargesToBePayedByCheck&quot; : {
+      &quot;HasCheckPaymentTask&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_AmountToCollect&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_ExpirationDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_FreeMonths&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_OriginalEffectiveDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaidToDate&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaymentMethod_SponsorCardNumber&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_Producer_Name&quot; : &quot;Text&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_Id&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_TTCAmount&quot; : &quot;Text&quot;,
+      &quot;PremiumPayment_Name&quot; : &quot;Text&quot;,
+      &quot;mostRecentPolicyID&quot; : &quot;Text&quot;,
+      &quot;policyVersions&quot; : &quot;Text&quot;
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreateCheckTaskForCollection</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Envoyer/\/\/une/\/\/lettre/\/\/d&apos;echeance/\/\/pour/\/\/le/\/\/paiement/\/\/de/\/\/la/\/\/prime/\/\/pour/\/\/la/\/\/police/\/\/&quot; var:Filters:ChargesToBePayedByCheck:InsurancePolicy_Name &quot;/\/\/,/\/\/la/\/\/transaction/\/\/porte/\/\/le/\/\/nom/\/\/:/\/\/&quot; var:Filters:ChargesToBePayedByCheck:PremiumCharge_Name &quot;/\/\/Pour/\/\/un/\/\/montant/\/\/de/\/\/:/\/\/&quot; var:Filters:ChargesToBePayedByCheck:PremiumCharge_TTCAmount CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Envoyer une lettre d&apos;echeance pour le paiement de la prime pour la police &quot;,Filters:ChargesToBePayedByCheck:InsurancePolicy_Name,&quot; , la transaction porte le nom : &quot;,Filters:ChargesToBePayedByCheck:PremiumCharge_Name,&quot; Pour un montant de : &quot;,Filters:ChargesToBePayedByCheck:PremiumCharge_TTCAmount )</formulaExpression>
+        <formulaResultPath>Filters:ChargesToBePayedByCheck:CheckTask_Description</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom1873</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY</formulaExpression>
+        <formulaResultPath>now</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom2181</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom3256</globalKey>
+        <inputFieldName>now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ActivityDate</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom918</globalKey>
+        <inputFieldName>Filters:ChargesToBePayedByCheck:CheckTask_Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom5395</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>HasCheckTask__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom8687</globalKey>
+        <inputFieldName>Filters:ChargesToBePayedByCheck:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom9111</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Avis d&apos;échéance</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom7149</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SubTaskType__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Envoie d’avis d’échéance</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom8828</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>LETTER</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom9453</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom8686</globalKey>
+        <inputFieldName>Filters:ChargesToBePayedByCheck:InsurancePolicy_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom8023</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom2972</globalKey>
+        <inputFieldName>Filters:ChargesToBePayedByCheck:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransaction__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom7798</globalKey>
+        <inputFieldName>GetUnpaidPremiumCharges:TechnicalUserId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Not Started</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreateCheckTaskForCollectionCustom2322</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreateCheckTaskForCollection</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CreatePremiumDirectDebit&quot; : null,
+    &quot;CreatePremiumSponsorCard&quot; : null,
+    &quot;CreateTaskCheckPayments&quot; : null,
+    &quot;EndProcess&quot; : null,
+    &quot;Filters&quot; : null,
+    &quot;GetUnpaidPremiumCharges&quot; : null,
+    &quot;SumTransactionsByPolicy&quot; : null,
+    &quot;UpdateInsurancePolicy&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreateCheckTaskForCollection_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

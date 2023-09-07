@@ -1,0 +1,38 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SuccessResponse",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "AccountId": "%CreateOrUpdateAccount:Account_1:Id%",
+            "CallTaskId": "%CreateUpdatePM_Tasks:Task_3:Id%",
+            "ConcilId": "%CreateUpdatePM_Tasks:SFI_CONCIL__c_6:Id%",
+            "KitContractTaskId": "%CreateUpdatePM_Tasks:Task_4:Id%",
+            "OpportunityId": "=IF(ISNOTBLANK(%CreateQuoteService:opportunityId%), %CreateQuoteService:opportunityId%, %ConvertLead:OpportunityId%)",
+            "PaymentMethodId": "%CreateUpdatePM_Tasks:%vlocity_namespace%__PaymentMethod__c_1:Id%",
+            "PolicyId": "%CreateUpdatePM_Tasks:InsurancePolicy_2:Id%",
+            "QuoteId": "%CreateQuoteService:quoteId%",
+            "T11Id": "%contextId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues7",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/SuccessResponse"
+}

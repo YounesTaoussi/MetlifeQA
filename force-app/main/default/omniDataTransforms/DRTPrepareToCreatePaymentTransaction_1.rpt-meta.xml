@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareToCreatePaymentTransaction</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Premium Payment</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom4440</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:TransactionType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom8419</globalKey>
+        <inputFieldName>SelectedTransaction:TransactionTaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:TaxAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom8250</globalKey>
+        <inputFieldName>SelectedTransaction:TransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:TransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom1157</globalKey>
+        <inputFieldName>SelectedTransaction:TransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:TransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom4739</globalKey>
+        <inputFieldName>TransactionName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:TransactionName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom9273</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:PaymentId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom10</globalKey>
+        <inputFieldName>Now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:PostedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom824</globalKey>
+        <inputFieldName>SelectedTransactionSize</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:SelectedTransactionSize</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom75</globalKey>
+        <inputFieldName>SumTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:SumTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom60</globalKey>
+        <inputFieldName>PPAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Transaction:PPAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:TransactionAmount var:SelectedTransactionSize /</formulaConverted>
+        <formulaExpression>TransactionAmount / SelectedTransactionSize</formulaExpression>
+        <formulaResultPath>PPAmount</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom1820</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedTransaction LISTSIZE</formulaConverted>
+        <formulaExpression>LISTSIZE(SelectedTransaction)</formulaExpression>
+        <formulaResultPath>SelectedTransactionSize</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom6797</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| NOW</formulaConverted>
+        <formulaExpression>NOW()</formulaExpression>
+        <formulaResultPath>Now</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom6226</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedTransaction:TransactionAmount SUM</formulaConverted>
+        <formulaExpression>SUM(SelectedTransaction:TransactionAmount)</formulaExpression>
+        <formulaResultPath>SumTransactionAmount</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom3799</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:SelectedTransaction:TransactionTaxAmount SUM</formulaConverted>
+        <formulaExpression>SUM(SelectedTransaction:TransactionTaxAmount)</formulaExpression>
+        <formulaResultPath>SumTaxAmount</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom2624</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Encaissement/\/\/-/\/\/&quot; var:SelectedTransaction|1:PolicyName + &quot;/\/\/-/\/\/&quot; + var:TimeNow + + CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Encaissement - &quot;+SelectedTransaction|1:PolicyName+&quot; - &quot;+TimeNow+)</formulaExpression>
+        <formulaResultPath>TransactionName</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom8040</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Encaissement/\/\/-/\/\/&quot; var:SelectedTransaction|1:PolicyName &quot;/\/\/-/\/\/&quot; var:TimeNow CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Encaissement - &quot;SelectedTransaction|1:PolicyName&quot; - &quot;TimeNow)</formulaExpression>
+        <formulaResultPath>TransactionName</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTPrepareToCreatePaymentTransactionCustom8264</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreatePaymentTransaction</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SelectedTransaction&quot; : [ {
+    &quot;Checkbox1&quot; : true,
+    &quot;PolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;TransactionAmount&quot; : 29.32,
+    &quot;TransactionId&quot; : &quot;0k91w000000CigUAAS&quot;,
+    &quot;TransactionName&quot; : &quot;Prime du 2022-12-05 au 2023-01-04&quot;,
+    &quot;TransactionType&quot; : true
+  }, {
+    &quot;Checkbox1&quot; : true,
+    &quot;PolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;TransactionAmount&quot; : 29.32,
+    &quot;TransactionId&quot; : &quot;0k91w000000CigKAAS&quot;,
+    &quot;TransactionName&quot; : &quot;Prime du 2022-11-05 au 2022-12-04&quot;,
+    &quot;TransactionType&quot; : true
+  }, {
+    &quot;Checkbox1&quot; : true,
+    &quot;PolicyName&quot; : &quot;CGFOR000047&quot;,
+    &quot;TransactionAmount&quot; : 29.32,
+    &quot;TransactionId&quot; : &quot;0k91w000000CieOAAS&quot;,
+    &quot;TransactionName&quot; : &quot;Prime du 2022-10-05 au 2022-11-04&quot;,
+    &quot;TransactionType&quot; : true
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareToCreatePaymentTransaction_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

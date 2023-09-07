@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedOutputJson>{
+  &quot;PaymentMethod&quot; : &quot;Text&quot;,
+  &quot;TransactionId&quot; : &quot;Text&quot;,
+  &quot;TransactionType&quot; : &quot;Text&quot;,
+  &quot;isFirstYearPremium&quot; : &quot;Text&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DREGetTransactionDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>Any</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetTransactionDetailsCustom8558</globalKey>
+        <inputFieldName>InsurancePolicyTransaction:PaymentMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>PaymentMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;Bank Transfer&quot; : &quot;Bank Account&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:InsurancePolicyTransaction:Payment_Method__r.vlocity_ins__MethodType__c ISNOTBLANK var:InsurancePolicyTransaction:Payment_Method__r.vlocity_ins__MethodType__c | | var:InsurancePolicyTransaction:Payment__r.PaymentType__c ISNOTBLANK var:InsurancePolicyTransaction:Payment__r.PaymentType__c | | var:InsurancePolicyTransaction:ParentTransaction.Payment_Method__r.vlocity_ins__MethodType__c ISNOTBLANK var:InsurancePolicyTransaction:ParentTransaction.Payment_Method__r.vlocity_ins__MethodType__c | | var:InsurancePolicyTransaction:ParentTransaction.Payment__r.PaymentType__c ISNOTBLANK var:InsurancePolicyTransaction:ParentTransaction.Payment__r.PaymentType__c var:null IF IF IF IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(InsurancePolicyTransaction:Payment_Method__r.vlocity_ins__MethodType__c),InsurancePolicyTransaction:Payment_Method__r.vlocity_ins__MethodType__c,IF(ISNOTBLANK(InsurancePolicyTransaction:Payment__r.PaymentType__c),InsurancePolicyTransaction:Payment__r.PaymentType__c,IF(ISNOTBLANK(InsurancePolicyTransaction:ParentTransaction.Payment_Method__r.vlocity_ins__MethodType__c),InsurancePolicyTransaction:ParentTransaction.Payment_Method__r.vlocity_ins__MethodType__c,IF(ISNOTBLANK(InsurancePolicyTransaction:ParentTransaction.Payment__r.PaymentType__c),InsurancePolicyTransaction:ParentTransaction.Payment__r.PaymentType__c,null))))</formulaExpression>
+        <formulaResultPath>InsurancePolicyTransaction:PaymentMethodType</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DREGetTransactionDetailsCustom2942</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>Transaction:Id</filterValue>
+        <globalKey>DREGetTransactionDetailsCustom5974</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>InsurancePolicyTransaction</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransaction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>NotApplicable</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetTransactionDetailsCustom2007</globalKey>
+        <inputFieldName>InsurancePolicyTransaction:isFirstYearPremium__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>isFirstYearPremium</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;true&quot; : &quot;TRUE&quot;,
+  &quot;false&quot; : &quot;FALSE&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetTransactionDetailsCustom4766</globalKey>
+        <inputFieldName>InsurancePolicyTransaction:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>TransactionType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DREGetTransactionDetailsCustom8644</globalKey>
+        <inputFieldName>InsurancePolicyTransaction:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DREGetTransactionDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Transaction&quot; : [ {
+    &quot;Id&quot; : &quot;0k91x00000005hxAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005ivAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005iKAAQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000004XjAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000003SaAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000003VZAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005YbAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007THAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005umAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TKAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TNAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TQAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TTAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TYAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TbAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007TeAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000003yhAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x0000000406AAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005TSAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009FhAAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009fDAAQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009urAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x0000000A2aAAE&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005i8AAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009F2AAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000006heAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007J7AAI&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000007JAAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009FWAAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000005etAAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x0000000A2pAAE&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009vHAAQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000009txAAA&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DREGetTransactionDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

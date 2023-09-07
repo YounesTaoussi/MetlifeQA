@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AmountToCollect&quot; : 100,
+  &quot;CancellationReasonType&quot; : &quot;Non-Payment&quot;,
+  &quot;ExpirationDate&quot; : &quot;2022-10-02&quot;,
+  &quot;Id&quot; : &quot;0YT0Q000000zng5WAA&quot;,
+  &quot;PaymentDueDate&quot; : &quot;0000-00-00&quot;,
+  &quot;Status&quot; : &quot;Canceled&quot;,
+  &quot;Substatus&quot; : &quot;Surrendered&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess08039722306494901</globalKey>
+        <inputFieldName>Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess7775343343078007</globalKey>
+        <inputFieldName>Substatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Substatus</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess6432644025440215</globalKey>
+        <inputFieldName>ExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExpirationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess7185798534944376</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess3822614487795295</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess10340294816669693</globalKey>
+        <inputFieldName>PaymentDueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentDueDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess9368045827153797</globalKey>
+        <inputFieldName>AmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AmountToCollect__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess918218630586541</globalKey>
+        <inputFieldName>CancellationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CancellationDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DELETEUpdateCancelledPolicyRachatProcess6501690906942876</globalKey>
+        <inputFieldName>CancellationReasonType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DELETEUpdateCancelledPolicyRachatProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CancellationReasonType</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;AmountToCollect&quot; : 100,
+  &quot;CancellationReasonType&quot; : &quot;Non-Payment&quot;,
+  &quot;ExpirationDate&quot; : &quot;2022-10-02&quot;,
+  &quot;Id&quot; : &quot;0YT0Q000000zng5WAA&quot;,
+  &quot;PaymentDueDate&quot; : &quot;0000-00-00&quot;,
+  &quot;Status&quot; : &quot;Canceled&quot;,
+  &quot;Substatus&quot; : &quot;Surrendered&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DELETEUpdateCancelledPolicyRachatProcess_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

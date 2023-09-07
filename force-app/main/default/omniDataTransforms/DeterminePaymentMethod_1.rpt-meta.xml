@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;DeterminePaymentMethodInput&quot; : [ {
+    &quot;BankAccountNumber&quot; : &quot;FR2536474638933847475665467&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QffQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2019-12-01 au 2020-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000053VmQAI&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QfuQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2021-12-01 au 2022-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000052LMQAY&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QgdQAE&quot;,
+    &quot;NameRP&quot; : &quot;Annulation Prime 2023-12-01 au 2024-11-30&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DeterminePaymentMethod</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom6663</globalKey>
+        <inputFieldName>UniqueBankAccounts:PaymentMethod</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom4085</globalKey>
+        <inputFieldName>UniqueBankAccounts:PaymentMethodCreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentMethodCreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom9230</globalKey>
+        <inputFieldName>UniqueBankAccounts:PolarisedAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PolarisedAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom855</globalKey>
+        <inputFieldName>UniqueBankAccounts:SponsorCardToken</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorCardToken</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom4954</globalKey>
+        <inputFieldName>UniqueBankAccounts:PaymentMethod</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaymentMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom237</globalKey>
+        <inputFieldName>UniqueBankAccounts:BankAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom5019</globalKey>
+        <inputFieldName>UniqueBankAccounts:CalculatedPaymentMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CalculatedPaymentMethodType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom6755</globalKey>
+        <inputFieldName>UniqueBankAccounts:CalculatedPaymentMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CalculatedPaymentMethodType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;DeterminePaymentMethodInput:BankAccountNumber&quot; | var:DeterminePaymentMethodInput LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;DeterminePaymentMethodInput:BankAccountNumber&quot;, LIST(DeterminePaymentMethodInput))</formulaExpression>
+        <formulaResultPath>UniqueBankAccounts</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DeterminePaymentMethodCustom4305</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DeterminePaymentMethodCustom2107</globalKey>
+        <inputFieldName>UniqueBankAccounts:BankAccountNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DeterminePaymentMethod</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;DeterminePaymentMethodInput&quot; : [ {
+    &quot;BankAccountNumber&quot; : &quot;FR2536474638933847475665467&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QffQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2019-12-01 au 2020-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000053VmQAI&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Sponsor Card&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QfuQAE&quot;,
+    &quot;NameRP&quot; : &quot;Prime 2021-12-01 au 2022-11-30&quot;,
+    &quot;PaymentMethod&quot; : &quot;a600Q00000052LMQAY&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  }, {
+    &quot;CalculatedPaymentMethodType&quot; : &quot;Bank Account&quot;,
+    &quot;IdRP&quot; : &quot;0k90Q0000008QgdQAE&quot;,
+    &quot;NameRP&quot; : &quot;Annulation Prime 2023-12-01 au 2024-11-30&quot;,
+    &quot;PolarisedAmount&quot; : -277.08,
+    &quot;PolarisedAmountRP&quot; : -277.08,
+    &quot;SelectedRP&quot; : true,
+    &quot;TotalAmountRP&quot; : 277.08,
+    &quot;TypeRP&quot; : &quot;Premium Cancellation&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DeterminePaymentMethod_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;input&quot; : {
+    &quot;claimJson&quot; : {
+      &quot;additionalFields&quot; : { },
+      &quot;claimPartyItems&quot; : {
+        &quot;claimDriver&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;claimCarrier&quot; : null,
+          &quot;claimInjury&quot; : null,
+          &quot;claimInsured&quot; : false,
+          &quot;claimPartyRelationshipTypeId&quot; : null,
+          &quot;claimPartyRelationshipTypeName&quot; : null,
+          &quot;claimPhysician&quot; : null,
+          &quot;claimPolicyNumber&quot; : null,
+          &quot;claimRel&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTestify&quot; : false,
+          &quot;claimTreatLoc&quot; : null,
+          &quot;heldProductRelationshipId&quot; : null,
+          &quot;partyId&quot; : null,
+          &quot;partyName&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persBirthdate&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persFirstName&quot; : null,
+          &quot;persIdJurisdiction&quot; : null,
+          &quot;persIdNumber&quot; : null,
+          &quot;persIdType&quot; : null,
+          &quot;persLastName&quot; : null,
+          &quot;persMiddleName&quot; : null,
+          &quot;persName&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimDriver&quot;,
+          &quot;productId&quot; : &quot;01t3i000000UlWDAA0&quot;,
+          &quot;productName&quot; : &quot;Claim Driver&quot;
+        } ],
+        &quot;claimInjuredPerson&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;claimCarrier&quot; : null,
+          &quot;claimEstimate&quot; : null,
+          &quot;claimInjury&quot; : null,
+          &quot;claimInsuredProp&quot; : false,
+          &quot;claimPartyRelationshipTypeId&quot; : null,
+          &quot;claimPartyRelationshipTypeName&quot; : null,
+          &quot;claimPhysician&quot; : null,
+          &quot;claimPolicyNumber&quot; : null,
+          &quot;claimRel&quot; : null,
+          &quot;claimSeverity&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTreatLoc&quot; : null,
+          &quot;heldProductRelationshipId&quot; : null,
+          &quot;partyId&quot; : null,
+          &quot;partyName&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persBirthdate&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persFirstName&quot; : null,
+          &quot;persLastName&quot; : null,
+          &quot;persMiddleName&quot; : null,
+          &quot;persName&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimInjuredPerson&quot;,
+          &quot;productId&quot; : &quot;01t3i000000UlW4AAK&quot;,
+          &quot;productName&quot; : &quot;Injured Person&quot;
+        } ],
+        &quot;claimWitness&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;claimPartyRelationshipTypeId&quot; : null,
+          &quot;claimPartyRelationshipTypeName&quot; : null,
+          &quot;claimRel&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTestify&quot; : false,
+          &quot;heldProductRelationshipId&quot; : null,
+          &quot;partyId&quot; : null,
+          &quot;partyName&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persBirthdate&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persFirstName&quot; : null,
+          &quot;persLastName&quot; : null,
+          &quot;persMiddleName&quot; : null,
+          &quot;persName&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimWitness&quot;,
+          &quot;productId&quot; : &quot;01t3i000000UlW5AAK&quot;,
+          &quot;productName&quot; : &quot;Witness&quot;
+        } ]
+      },
+      &quot;claimPropertyItems&quot; : {
+        &quot;autoClaimInvolvedVehicle&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;avColor&quot; : null,
+          &quot;avLicNum&quot; : null,
+          &quot;avLicState&quot; : null,
+          &quot;avMake&quot; : null,
+          &quot;avModel&quot; : null,
+          &quot;avVIN&quot; : null,
+          &quot;avYear&quot; : &quot;&quot;,
+          &quot;claimDamage&quot; : null,
+          &quot;claimDamageLoc&quot; : null,
+          &quot;claimDrivable&quot; : false,
+          &quot;claimEstimate&quot; : null,
+          &quot;claimImage&quot; : null,
+          &quot;claimInsuredProp&quot; : false,
+          &quot;claimPartyRelationshipTypeId&quot; : null,
+          &quot;claimPartyRelationshipTypeName&quot; : null,
+          &quot;claimPropertyLoc&quot; : null,
+          &quot;claimSeverity&quot; : null,
+          &quot;claimantPartyId&quot; : null,
+          &quot;claimantPartyName&quot; : null,
+          &quot;insuredItemId&quot; : null,
+          &quot;productCode&quot; : &quot;autoClaimInvolvedVehicle&quot;,
+          &quot;productId&quot; : &quot;01t3i000000VRiZAAW&quot;,
+          &quot;productName&quot; : &quot;Claim Involved Vehicle&quot;
+        } ]
+      },
+      &quot;lossDate&quot; : null,
+      &quot;policyHolderPartyId&quot; : null,
+      &quot;policyHolderPartyName&quot; : null,
+      &quot;policyHolderPartyRelationshipType&quot; : null,
+      &quot;policyHolderPartyRelationshipTypeId&quot; : null,
+      &quot;policyId&quot; : null,
+      &quot;policyNumber&quot; : null,
+      &quot;productCode&quot; : &quot;autoClaimCollision&quot;,
+      &quot;productId&quot; : null,
+      &quot;productName&quot; : &quot;Auto Claim Collision&quot;
+    }
+  },
+  &quot;output&quot; : {
+    &quot;claimId&quot; : &quot;text&quot;,
+    &quot;involvedItems&quot; : [ {
+      &quot;claimantId&quot; : &quot;Text&quot;,
+      &quot;claimantPartyAccountName&quot; : &quot;Text&quot;,
+      &quot;claimantPartyContactName&quot; : &quot;Text&quot;,
+      &quot;claimantPartyId&quot; : &quot;Text&quot;,
+      &quot;insuredItemId&quot; : &quot;Text&quot;,
+      &quot;involvedItemId&quot; : &quot;Text&quot;
+    }, {
+      &quot;claimantId&quot; : &quot;Text&quot;,
+      &quot;claimantPartyAccountName&quot; : &quot;Text&quot;,
+      &quot;claimantPartyContactName&quot; : &quot;Text&quot;,
+      &quot;claimantPartyId&quot; : &quot;Text&quot;,
+      &quot;heldProductRelationshipId&quot; : &quot;Text&quot;,
+      &quot;involvedInjuryId&quot; : &quot;Text&quot;
+    } ]
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;input&quot; : {
+    &quot;claimJson&quot; : {
+      &quot;additionalFields&quot; : { },
+      &quot;claimPartyItems&quot; : {
+        &quot;claimDriver&quot; : [ {
+          &quot;Birthdate&quot; : null,
+          &quot;First Name&quot; : null,
+          &quot;LastName&quot; : null,
+          &quot;MiddleName&quot; : null,
+          &quot;NAME&quot; : null,
+          &quot;additionalFields&quot; : { },
+          &quot;claimCarrier&quot; : null,
+          &quot;claimInjury&quot; : null,
+          &quot;claimInsured&quot; : false,
+          &quot;claimPhysician&quot; : null,
+          &quot;claimPolicyNumber&quot; : null,
+          &quot;claimRel&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTestify&quot; : false,
+          &quot;claimTreatLoc&quot; : null,
+          &quot;insuredPartyId&quot; : null,
+          &quot;perIDNumber&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persIDJuris&quot; : null,
+          &quot;persIDType&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimDriver&quot;,
+          &quot;productId&quot; : &quot;01t3i0000001cWBAAY&quot;,
+          &quot;productName&quot; : &quot;Driver&quot;
+        } ],
+        &quot;claimInjuredPerson&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;claimCarrier&quot; : null,
+          &quot;claimEstimate&quot; : null,
+          &quot;claimInjury&quot; : null,
+          &quot;claimInsuredProp&quot; : false,
+          &quot;claimPhysician&quot; : null,
+          &quot;claimPolicyNumber&quot; : null,
+          &quot;claimRel&quot; : null,
+          &quot;claimSeverity&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTreatLoc&quot; : null,
+          &quot;insuredPartyId&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persBirthdate&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persFirstName&quot; : null,
+          &quot;persLastName&quot; : null,
+          &quot;persMiddleName&quot; : null,
+          &quot;persName&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimInjuredPerson&quot;,
+          &quot;productId&quot; : &quot;01t3i0000001cWEAAY&quot;,
+          &quot;productName&quot; : &quot;Injured Person&quot;
+        } ],
+        &quot;claimWitness&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;claimRel&quot; : null,
+          &quot;claimStatement&quot; : null,
+          &quot;claimTestify&quot; : false,
+          &quot;insuredPartyId&quot; : null,
+          &quot;persAddress&quot; : null,
+          &quot;persBirthdate&quot; : null,
+          &quot;persEmail&quot; : null,
+          &quot;persFirstName&quot; : null,
+          &quot;persLastName&quot; : null,
+          &quot;persMiddleName&quot; : null,
+          &quot;persName&quot; : null,
+          &quot;persPhone&quot; : null,
+          &quot;persSalutation&quot; : null,
+          &quot;productCode&quot; : &quot;claimWitness&quot;,
+          &quot;productId&quot; : &quot;01t3i0000001cWCAAY&quot;,
+          &quot;productName&quot; : &quot;Witness&quot;
+        } ]
+      },
+      &quot;claimPropertyItems&quot; : {
+        &quot;claimVehicle&quot; : [ {
+          &quot;additionalFields&quot; : { },
+          &quot;autoBodyType&quot; : null,
+          &quot;autoColor&quot; : null,
+          &quot;autoLicNum&quot; : null,
+          &quot;autoLicState&quot; : null,
+          &quot;autoMake&quot; : null,
+          &quot;autoModel&quot; : null,
+          &quot;autoVIN&quot; : null,
+          &quot;autoYear&quot; : null,
+          &quot;claimDamage&quot; : null,
+          &quot;claimDamageLoc&quot; : null,
+          &quot;claimDrivable&quot; : false,
+          &quot;claimEstimate&quot; : null,
+          &quot;claimImage&quot; : null,
+          &quot;claimInsuredProp&quot; : false,
+          &quot;claimPropertyLoc&quot; : null,
+          &quot;claimSeverity&quot; : null,
+          &quot;insuredItemId&quot; : null,
+          &quot;productCode&quot; : &quot;claimVehicle&quot;,
+          &quot;productId&quot; : &quot;01t3i0000001cWAAAY&quot;,
+          &quot;productName&quot; : &quot;Damaged Vehicle&quot;
+        } ]
+      },
+      &quot;claimantParty&quot; : null,
+      &quot;claimantPartyId&quot; : null,
+      &quot;claimantPartyRelationshipType&quot; : null,
+      &quot;claimantPartyRelationshipTypeId&quot; : null,
+      &quot;lossDate&quot; : null,
+      &quot;policyId&quot; : null,
+      &quot;policyNumber&quot; : null,
+      &quot;productCode&quot; : &quot;claimPerilAutoCollision&quot;,
+      &quot;productId&quot; : null,
+      &quot;productName&quot; : &quot;Auto Collision&quot;
+    }
+  },
+  &quot;output&quot; : {
+    &quot;claimId&quot; : &quot;text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP9726852301675204</globalKey>
+        <inputFieldName>claimProductCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:productCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP42431522744756967</globalKey>
+        <inputFieldName>VehicleDamage:vehicleLocation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimPropertyLoc</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Claimant</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP9628552978471978</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimParticipantRoles</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP5250393126217396</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimInsuredProp</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP8420585096762434</globalKey>
+        <inputFieldName>VehicleDamage:lossAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimEstimate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>metLifeClaimFuneral</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP8463107767249007</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:productCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP23354828164255026</globalKey>
+        <inputFieldName>InsuredVehicle:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:insuredItemId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP7237982361382105</globalKey>
+        <inputFieldName>getNamedInsuredPolicyParticipantId:InsurancePolicyParticipantId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:insurancePolicyParticipantId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>3000</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP4740589725440987</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:gfo_capital</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP1156546793693618</globalKey>
+        <inputFieldName>claimId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP6701725590548238</globalKey>
+        <inputFieldName>VehicleDamage:insuredVehicleDrivable</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimDrivable</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP7351247424727527</globalKey>
+        <inputFieldName>VehicleDamage:insuredDamageDescription</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:claimDamage</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP954254024838024</globalKey>
+        <inputFieldName>VehicleDamage:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:avModel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP01483082924109791</globalKey>
+        <inputFieldName>VehicleDamage:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>claimJson:claimPropertyItems:metLifeClaimFuneral:additionalFields:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;&quot; : &quot;&quot;,
+  &quot;Account&quot; : {
+    &quot;PolicyHolder&quot; : &quot;Léonie Merelle&quot;
+  },
+  &quot;AccountId&quot; : &quot;0015f00000FD3vZAAT&quot;,
+  &quot;AccountName&quot; : &quot;Léonie Merelle&quot;,
+  &quot;ContextId&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;Demarches&quot; : {
+    &quot;instructions&quot; : false
+  },
+  &quot;Id&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;InsurancePolicyNumber&quot; : &quot;Garantie Frais d&apos;obsèques&quot;,
+  &quot;InsuredDamagedItemName&quot; : &quot;Fonds Décès - Merelle Léonie&quot;,
+  &quot;InsuredVehicle&quot; : {
+    &quot;Id&quot; : &quot;0YW5f000000YVFLGA4&quot;,
+    &quot;Name&quot; : &quot;Fonds Décès - Merelle Léonie&quot;
+  },
+  &quot;LastModifiedDate&quot; : &quot;2021-12-13T14:03:18.000Z&quot;,
+  &quot;Name&quot; : &quot;Garantie Frais d&apos;obsèques&quot;,
+  &quot;Policy&quot; : {
+    &quot;Id&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+    &quot;PolicyId&quot; : &quot;0YT5f000000ZuwfGAC&quot;
+  },
+  &quot;PolicyId&quot; : &quot;0YT5f000000ZuwfGAC&quot;,
+  &quot;Product&quot; : {
+    &quot;ProductId&quot; : &quot;01t5f000002GFAvAAO&quot;
+  },
+  &quot;Sponsor&quot; : &quot;MetLife&quot;,
+  &quot;claimClaimantPartyRelationshipCode&quot; : &quot;Claimant&quot;,
+  &quot;claimDamagedPropertyProductCode&quot; : &quot;claimDamagedProperty&quot;,
+  &quot;claimInjuredPersonProductCode&quot; : &quot;claimInjuredPerson&quot;,
+  &quot;claimInsuredPartyRelationshipCode&quot; : &quot;Insured&quot;,
+  &quot;claimInvolvedVehicleProductCode&quot; : &quot;metLifeClaimFuneral&quot;,
+  &quot;claimWitnessPartyRelationshipCode&quot; : &quot;Witness&quot;,
+  &quot;policyInsuredItemProductCode&quot; : &quot;autoVehicle&quot;,
+  &quot;timeStamp&quot; : &quot;2021-12-13T23:44:25.237Z&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0055f000005QBSGAA4&quot;,
+  &quot;userName&quot; : &quot;demo.org@insurance-express-personal-lines.1637568002956&quot;,
+  &quot;userProfile&quot; : &quot;Administrateur système&quot;,
+  &quot;userTimeZone&quot; : &quot;60&quot;,
+  &quot;vlcTimeTracking&quot; : {
+    &quot;OmniScriptSessionToken&quot; : &quot;794fb665-e7e3-4d04-a63a-3d8146034760&quot;,
+    &quot;getPolicyNumber&quot; : 273,
+    &quot;readInsurancePolicyData&quot; : 561,
+    &quot;readInsuredItemsData&quot; : 279,
+    &quot;setPolicyId&quot; : 0,
+    &quot;setProductCodes&quot; : 0
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>metLifeTransFirstPartyDeathUpdateFSCClaimClaimFirstPartyDeathIP_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

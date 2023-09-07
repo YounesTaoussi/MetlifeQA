@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item8</globalKey>
+        <inputFieldName>InsurancePolicyToIgnore:Now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ActivityDate</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;OpsTeam_queue_Name&quot;</formulaConverted>
+        <formulaExpression>&quot;OpsTeam_queue_Name&quot;</formulaExpression>
+        <formulaResultPath>InsurancePolicyToIgnore:OwnerName</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>InsurancePolicyToIgnore:Now</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:InsurancePolicyToIgnore:Status &quot;Canceled&quot; == var:InsurancePolicyToIgnore:Status &quot;Expired&quot; == || var:InsurancePolicyToIgnore:SubStatus &quot;Reduced&quot; == || &quot;Sponsor/\/\/Rejection/\/\/received/\/\/on/\/\/a/\/\/canceled/\/\/or/\/\/reduced/\/\/policy&quot; &quot;Aucun/\/\/encaissement/\/\/éligible/\/\/au/\/\/rejet/\/\/n&apos;a/\/\/été/\/\/identifié&quot; IF</formulaConverted>
+        <formulaExpression>IF( (InsurancePolicyToIgnore:Status == &quot;Canceled&quot;) || (InsurancePolicyToIgnore:Status == &quot;Expired&quot;) || (InsurancePolicyToIgnore:SubStatus == &quot;Reduced&quot;),&quot;Sponsor Rejection received on a canceled or reduced policy&quot;, &quot;Aucun encaissement éligible au rejet n&apos;a été identifié&quot;)</formulaExpression>
+        <formulaResultPath>InsurancePolicyToIgnore:Subject</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Treated with error</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item12</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Treatment_Status__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item9</globalKey>
+        <inputFieldName>InsurancePolicyToIgnore:Subject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Subject</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>INCOHERENT DATA</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item10</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SubTaskType__c</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Not Started</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Status</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item4</globalKey>
+        <inputFieldName>InsurancePolicyToIgnore:OwnerName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <lookupByFieldName>Name</lookupByFieldName>
+        <lookupObjectName>Group</lookupObjectName>
+        <lookupReturnedFieldName>Id</lookupReturnedFieldName>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>OwnerId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item11</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item13</globalKey>
+        <inputFieldName>InsurancePolicyToIgnore:SponsorRejectionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item3</globalKey>
+        <inputFieldName>InsurancePolicyToIgnore:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>WhatId</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>INCOHERENT DATA</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>CreateTaskWhenPolicyCanceledExpiredOrReducedCustom0jI1w0000008SPBEA2Item6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>CreateTaskWhenPolicyCanceledExpiredOrReduced</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Task</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CanceledRejections&quot; : [ {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a6P1w000000EdHyEAK&quot;,
+    &quot;Impay&quot; : &quot;Y&quot;,
+    &quot;IndChangementCarte&quot; : &quot;N&quot;,
+    &quot;IndChangementStatus&quot; : &quot;N&quot;,
+    &quot;IndChangemetAdresse&quot; : &quot;N&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 0,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT1w0000007mABGAY&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR314159&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0011w00001RPdpTAAT&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2024-01-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a6P1w000000EdHyEAK&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;Canceled&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Final&quot;,
+    &quot;PaymentTransaction&quot; : {
+      &quot;PaymentTransactions_Amount&quot; : 87.636664,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k91w000000Cj55AAC&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Encaissement - CGFOR314159 - 2023-06-15&quot;,
+      &quot;PaymentTransactions_PaymentMethodId&quot; : &quot;a6P1w000000Cz0iEAC&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.333336,
+      &quot;PaymentTransactions_TotalAmount&quot; : 87.97
+    },
+    &quot;Resiliationdate&quot; : &quot;Null&quot;,
+    &quot;SponsorRejection_Amount&quot; : 87.97,
+    &quot;SponsorRejection_Id&quot; : &quot;a9y1w000000Ch94AAC&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR314159&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;0123&quot;,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true,
+    &quot;hasSponsorCard&quot; : false
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a6P1w000000Ed9wEAC&quot;,
+    &quot;Impay&quot; : &quot;Y&quot;,
+    &quot;IndChangementCarte&quot; : &quot;N&quot;,
+    &quot;IndChangementStatus&quot; : &quot;N&quot;,
+    &quot;IndChangemetAdresse&quot; : &quot;N&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 0,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT1w0000007pTBGAY&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR000051&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0011w00001X3q9XAAR&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-05-21&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a6P1w000000Ed9wEAC&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;Canceled&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;Resiliationdate&quot; : &quot;Null&quot;,
+    &quot;SponsorRejection_Amount&quot; : 87.64,
+    &quot;SponsorRejection_Id&quot; : &quot;a9y1w000000Ch95AAC&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR000051&quot;,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true,
+    &quot;hasSponsorCard&quot; : false
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>CreateTaskWhenPolicyCanceledExpiredOrReduced_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

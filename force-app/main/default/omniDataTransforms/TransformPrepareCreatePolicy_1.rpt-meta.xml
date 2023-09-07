@@ -1,0 +1,2926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CheckAccountDuplicateStatus&quot; : true,
+  &quot;CreateOrUpdateAccount&quot; : {
+    &quot;Account_1&quot; : [ {
+      &quot;Id&quot; : &quot;0010Q00001cP1uSQAS&quot;
+    } ],
+    &quot;ActualTime&quot; : 4077,
+    &quot;CpuTime&quot; : 2799,
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreateOrUpdateAccountStatus&quot; : true,
+  &quot;CreateQuoteService&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;opportunityId&quot; : &quot;0060Q00000L7V3YQAV&quot;,
+    &quot;quoteDetail&quot; : {
+      &quot;vlocity_ins__EffectiveDate__c&quot; : &quot;2022-11-14&quot;,
+      &quot;vlocity_ins__PrimaryRootItemId__c&quot; : &quot;0QL0Q000000RFiIWAW&quot;,
+      &quot;vlocity_ins__SourceSystemIdentifier__c&quot; : &quot;e7ef4d03-b896-b688-2608-e7883da1e418&quot;,
+      &quot;vlocity_ins__SourceSystem__c&quot; : &quot;Salesforce&quot;,
+      &quot;vlocity_ins__StandardPremium__c&quot; : 29.21312,
+      &quot;vlocity_ins__Term__c&quot; : null,
+      &quot;Id&quot; : &quot;0Q00Q000000zHKOSA2&quot;,
+      &quot;Name&quot; : &quot;TEEEEEEEEEE&quot;,
+      &quot;OpportunityId&quot; : &quot;0060Q00000L7V3YQAV&quot;,
+      &quot;Pricebook2Id&quot; : &quot;01sD0000000HL3qIAG&quot;,
+      &quot;Status&quot; : &quot;Issued&quot;
+    },
+    &quot;quoteId&quot; : &quot;0Q00Q000000zHKOSA2&quot;
+  },
+  &quot;CreateQuoteServiceStatus&quot; : true,
+  &quot;DataRaptorTransformPrepareCreateQuote&quot; : &quot;DataRaptorTransformPrepareCreateQuote&quot;,
+  &quot;DataRaptorTransformPrepareCreateQuoteStatus&quot; : true,
+  &quot;ErrorAccountHasAlreadyActiveGFOStatus&quot; : false,
+  &quot;ErrorPriceNotCalculatedStatus&quot; : false,
+  &quot;ExtrtactAndBuildData&quot; : {
+    &quot;AccountInfo&quot; : {
+      &quot;AccountType&quot; : &quot;Souscripteur uniquement&quot;,
+      &quot;Address&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;BirthCity&quot; : &quot;PREURE&quot;,
+      &quot;BirthCountry&quot; : &quot;FR&quot;,
+      &quot;BirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;BirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;Country&quot; : &quot;France&quot;,
+      &quot;FirstName&quot; : &quot;DANIELE22222&quot;,
+      &quot;Gender&quot; : &quot;Female&quot;,
+      &quot;LastName&quot; : &quot;DELFORG-78&quot;,
+      &quot;PersonAccountRecordType&quot; : &quot;0121l0000001QHiAAM&quot;,
+      &quot;Title&quot; : &quot;Ms.&quot;
+    },
+    &quot;GetRatedProducts&quot; : {
+      &quot;metLifeCovDecesTteCause.annualCapitalRevaluation&quot; : false,
+      &quot;metLifeCovDecesTteCause.gfoBenefitChosen&quot; : &quot;4000&quot;,
+      &quot;metLifeCovDecesTteCause.instanceKey&quot; : &quot;Tranche 4000&quot;,
+      &quot;metLifeGFOLifeInsured.instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;metLifeGFOLifeInsured.personFirstName&quot; : &quot;DANIELE22222&quot;,
+      &quot;metLifeGFOLifeInsured.personLastName&quot; : &quot;DELFORG-78&quot;,
+      &quot;metLifeGFOLifeInsured.personRelationship&quot; : &quot;Souscripteur&quot;,
+      &quot;metLifeGFOLifeInsured.personTitle&quot; : &quot;Ms.&quot;,
+      &quot;metLifeGFOTrancheInsured.Reduced&quot; : false,
+      &quot;metLifeGFOTrancheInsured.addonIndex&quot; : &quot;01&quot;,
+      &quot;metLifeGFOTrancheInsured.instanceKey&quot; : &quot;Tranche 4000&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumAdjustmentRate&quot; : &quot;100&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+      &quot;metLifeGFOTrancheInsured.refNT&quot; : &quot;12n&quot;,
+      &quot;metLifeGFOTrancheInsured.subscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;metLifeGFOTrancheInsured.trancheType&quot; : &quot;base&quot;
+    },
+    &quot;InsredItems&quot; : {
+      &quot;metLifeGFOLifeInsured&quot; : {
+        &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+        &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+        &quot;personBirthName&quot; : &quot;CHARLIAC&quot;,
+        &quot;personFirstName&quot; : &quot;DANIELE22222&quot;,
+        &quot;personLastName&quot; : &quot;DELFORG-78&quot;,
+        &quot;personRelationship&quot; : &quot;Souscripteur&quot;,
+        &quot;personTitle&quot; : &quot;Ms.&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOLifeInsured&quot;
+      },
+      &quot;metLifeGFOTrancheInsured&quot; : {
+        &quot;Reduced&quot; : &quot;false&quot;,
+        &quot;addonIndex&quot; : &quot;01&quot;,
+        &quot;instanceKey&quot; : &quot;Tranche 4000&quot;,
+        &quot;personAgeAtSubscription&quot; : 65,
+        &quot;premiumAdjustmentRate&quot; : 100,
+        &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+        &quot;refNT&quot; : &quot;12n&quot;,
+        &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+        &quot;trancheType&quot; : &quot;base&quot;
+      }
+    },
+    &quot;OpportunityInfo&quot; : {
+      &quot;CampaignId&quot; : &quot;7010Q000001EphWQAS&quot;,
+      &quot;CloseDate&quot; : &quot;2022-10-05&quot;,
+      &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+      &quot;Stage&quot; : &quot;Closed Won&quot;,
+      &quot;Type&quot; : &quot;New business&quot;
+    },
+    &quot;PaymentMethodInfos&quot; : {
+      &quot;BIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;MethodType&quot; : &quot;3&quot;,
+      &quot;SignatureDate&quot; : &quot;20221006&quot;,
+      &quot;TokenId&quot; : &quot;0500013M026&quot;
+    },
+    &quot;PolicyInfos&quot; : {
+      &quot;BillingFrequency&quot; : &quot;1&quot;,
+      &quot;SalesDate&quot; : &quot;20221005&quot;,
+      &quot;effectiveDate&quot; : &quot;2022-10-05&quot;
+    },
+    &quot;ProductInfo&quot; : {
+      &quot;productCode&quot; : &quot;GFOY&quot;,
+      &quot;productFamilfy&quot; : &quot;Obseques&quot;
+    },
+    &quot;QuoteInfo&quot; : {
+      &quot;CloseDate&quot; : &quot;2022-10-05&quot;,
+      &quot;InstanceKey&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+      &quot;Status&quot; : &quot;Issued&quot;
+    },
+    &quot;TaskCallInfos&quot; : {
+      &quot;CallDuration&quot; : &quot;60&quot;,
+      &quot;Date&quot; : &quot;20221006&quot;,
+      &quot;Status&quot; : &quot;Closed&quot;
+    },
+    &quot;TaskKitContractInfos&quot; : {
+      &quot;Date&quot; : &quot;2022-11-14&quot;,
+      &quot;RecordType&quot; : &quot;0120Q0000006Q6MQAU&quot;,
+      &quot;Status&quot; : &quot;New&quot;
+    },
+    &quot;insuredItemsRelationships&quot; : {
+      &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+      &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;
+    }
+  },
+  &quot;ExtrtactAndBuildDataStatus&quot; : true,
+  &quot;GetRatedProducts&quot; : &quot;GetRatedProducts&quot;,
+  &quot;GetRatedProductsStatus&quot; : true,
+  &quot;SetValuesForCheck&quot; : {
+    &quot;FirstElement&quot; : &quot;&quot;,
+    &quot;policiesSize&quot; : 1
+  },
+  &quot;SetValuesForCheckStatus&quot; : true,
+  &quot;SetValuesTechStatus&quot; : true,
+  &quot;contextId&quot; : &quot;a8x0Q000000MB4IQAW&quot;,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;quotepolicyJson&quot; : {
+    &quot;accountId&quot; : &quot;Text&quot;,
+    &quot;additionalFields&quot; : {
+      &quot;PolicyType&quot; : &quot;Text&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Text&quot;,
+      &quot;PremiumPaymentType&quot; : &quot;Text&quot;,
+      &quot;SaleDate&quot; : &quot;Text&quot;,
+      &quot;SourceQuoteId&quot; : &quot;Text&quot;,
+      &quot;Substatus&quot; : &quot;Text&quot;,
+      &quot;status&quot; : &quot;Text&quot;
+    },
+    &quot;effectiveDate&quot; : &quot;Text&quot;,
+    &quot;insuredItems&quot; : &quot;Text&quot;,
+    &quot;productConfigurationDetail&quot; : &quot;Text&quot;,
+    &quot;term&quot; : &quot;Text&quot;
+  }
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TransformPrepareCreatePolicy</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom8052</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:ExternalClientId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuotePolicyJSON:AdditionalFields:externalClientId__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:CreateQuoteService:opportunityId ISBLANK var:ConvertLead:OpportunityId var:CreateQuoteService:opportunityId IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(CreateQuoteService:opportunityId), ConvertLead:OpportunityId, CreateQuoteService:opportunityId)</formulaExpression>
+        <formulaResultPath>oppId</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom4701</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetQuoteDetail:productConfigurationDetail:records:taxAmount var:GetQuoteDetail:productConfigurationDetail:records:Price +</formulaConverted>
+        <formulaExpression>GetQuoteDetail:productConfigurationDetail:records:taxAmount + GetQuoteDetail:productConfigurationDetail:records:Price</formulaExpression>
+        <formulaResultPath>monthlyTTC</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom9250</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtrtactAndBuildData:ProductInfo:productSubType &quot;000&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(ExtrtactAndBuildData:ProductInfo:productSubType , &quot;000&quot;)</formulaExpression>
+        <formulaResultPath>prefix</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom4128</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtrtactAndBuildData:PolicyInfos:Name &quot;/\/\/-/\/\/&quot; var:policyNumber CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(ExtrtactAndBuildData:PolicyInfos:Name,&quot; - &quot;, policyNumber)</formulaExpression>
+        <formulaResultPath>PolicyName</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom3581</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtrtactAndBuildData:PolicyInfos:effectiveDate &quot;Europe/Paris&quot; &quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ&quot; FORMATDATETIMEGMT</formulaConverted>
+        <formulaExpression>FORMATDATETIMEGMT(ExtrtactAndBuildData:PolicyInfos:effectiveDate,&quot;Europe/Paris&quot;,&quot;yyyy-MM-dd&apos;T&apos;HH:mm:ss.SSSZ&quot;)</formulaExpression>
+        <formulaResultPath>effictiveDate</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom6492</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetQuoteDetail:productConfigurationDetail:records:attributeCategories:records:productAttributes:records LIST &apos;code/\/\/==/\/\/&quot;beneficiaryClauseByDefault&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetQuoteDetail:productConfigurationDetail:records:attributeCategories:records:productAttributes:records), &apos;code == &quot;beneficiaryClauseByDefault&quot;&apos;)</formulaExpression>
+        <formulaResultPath>DefaultClauseBeneficiaire</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom5913</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Date/\/\/d&apos;effet/\/\/le/\/\/&quot; | var:ExtrtactAndBuildData:PolicyInfos:effectiveDate &quot;dd/MM/yyyy&quot; FORMATDATETIME &quot;./\/\/&quot; var:DefaultClauseBeneficiaire:userValues CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Date d&apos;effet le &quot;,FORMATDATETIME(ExtrtactAndBuildData:PolicyInfos:effectiveDate,&quot;dd/MM/yyyy&quot;),&quot;. &quot;,DefaultClauseBeneficiaire:userValues)</formulaExpression>
+        <formulaResultPath>clauseBeneficiary</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom5964</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:prefix 0 3 SUBSTRING var:SetValuesTech:UniqueNumber CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(SUBSTRING(prefix,0,3), SetValuesTech:UniqueNumber)</formulaExpression>
+        <formulaResultPath>policyNumber</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>TransformPrepareCreatePolicyCustom1228</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2260</globalKey>
+        <inputFieldName>effictiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:effectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom3100</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:Status</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:status</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2469</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:term</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:term</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom4124</globalKey>
+        <inputFieldName>GetQuoteDetail:productConfigurationDetail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:productConfigurationDetail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2220</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:InsredItems</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:insuredItems</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom9773</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:CampaignType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:Type_de_campagne__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2366</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:GetRatedProducts:metLifeCovDecesTteCause.gfoBenefitChosen</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>quotepolicyJson:additionalFields:TotalSumInsured</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom622</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:TermPremiumAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom7723</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:SubStatus</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:Substatus</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom128</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:PaymentMethodTiming</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PremiumPaymentType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom807</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:BillingFrequency</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PremiumFrequency</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Modal</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom1974</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PremiumCalculationMethod</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom5164</globalKey>
+        <inputFieldName>monthlyTTC</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PremiumAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom4330</globalKey>
+        <inputFieldName>CreateQuoteService:quoteId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:SourceQuoteId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom7024</globalKey>
+        <inputFieldName>oppId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:SourceOpportunityId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom6781</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:SalesDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:SaleDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom7793</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:Producer:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:ProducerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom9144</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PaidToDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom8680</globalKey>
+        <inputFieldName>effictiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:OriginalEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom3056</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:FreeMonths</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:OfferedMonths__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2111</globalKey>
+        <inputFieldName>policyNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:Name</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom956</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PolicyType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2246</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:term</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PolicyTerm</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom1699</globalKey>
+        <inputFieldName>PolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom5761</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:dueDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:PaymentDueDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom5863</globalKey>
+        <inputFieldName>monthlyTTC</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:vlocity_ins_fsc__MonthlyPremium__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom2153</globalKey>
+        <inputFieldName>CreateOrUpdateAccount:Account_1:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:accountId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>2199-12-31</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:ExpirationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom4919</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:OriginalCodePub</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:CodePubOriginal__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom5901</globalKey>
+        <inputFieldName>clauseBeneficiary</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:Clause_beneficiaire__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TransformPrepareCreatePolicyCustom3945</globalKey>
+        <inputFieldName>ExtrtactAndBuildData:PolicyInfos:SalesChanel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TransformPrepareCreatePolicy</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quotepolicyJson:additionalFields:Canal_de_vente__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CheckAccountDuplicate&quot; : [ {
+    &quot;AccountID&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+    &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+    &quot;PoliciesHolded&quot; : [ {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZclWAE&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdeWAE&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZcvWAE&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdZWAU&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010Zd5WAE&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdPWAU&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdUWAU&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    } ]
+  }, {
+    &quot;AccountID&quot; : &quot;0010Q00001cP1uqQAC&quot;,
+    &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;
+  } ],
+  &quot;CheckAccountDuplicateStatus&quot; : true,
+  &quot;CreateOrUpdateAccount&quot; : {
+    &quot;Account_1&quot; : [ {
+      &quot;vlocity_ins__Gender__pc&quot; : &quot;Female&quot;,
+      &quot;BillingCountry&quot; : &quot;France&quot;,
+      &quot;BillingStreet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;Birth_Name__pc&quot; : &quot;CHARLIAC&quot;,
+      &quot;FirstName&quot; : &quot;DANIELE22222&quot;,
+      &quot;Id&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;LastName&quot; : &quot;DELFORG-78&quot;,
+      &quot;Naissance_Address__City__ps&quot; : &quot;PREURE&quot;,
+      &quot;Naissance_Address__CountryCode__ps&quot; : &quot;FR&quot;,
+      &quot;PersonBirthdate&quot; : &quot;1957-10-05&quot;,
+      &quot;PersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;RecordTypeId&quot; : &quot;0121l0000001QHiAAM&quot;,
+      &quot;Type&quot; : &quot;Souscripteur uniquement&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;ActualTime&quot; : 4399,
+    &quot;CpuTime&quot; : 3004,
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreateOrUpdateAccountStatus&quot; : true,
+  &quot;CreatePolicyInput&quot; : {
+    &quot;newQuoteJson&quot; : {
+      &quot;CalculatedPriceData&quot; : {
+        &quot;ID&quot; : &quot;0&quot;,
+        &quot;amountAssured&quot; : 4000,
+        &quot;insuredAgeAtSubscription&quot; : 65,
+        &quot;insuredCovAssistancePremium&quot; : 0.55556,
+        &quot;insuredCovDecesPremium&quot; : 28.65756
+      },
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;IsConfigurable__c&quot; : true,
+      &quot;IsRecommended__c&quot; : false,
+      &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;OpportunityDetails&quot; : {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;CampaignId&quot; : &quot;7010Q000001EphWQAS&quot;,
+        &quot;CloseDate&quot; : &quot;2022-10-05&quot;,
+        &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+        &quot;StageName&quot; : &quot;Closed Won&quot;,
+        &quot;Type&quot; : &quot;New business&quot;
+      },
+      &quot;ParentClassCode__c&quot; : &quot;metLifeClasseObseques&quot;,
+      &quot;ParentClassId__c&quot; : &quot;01t0Q00000AdsMTQAZ&quot;,
+      &quot;Price&quot; : 29.21312,
+      &quot;PricingFormula__c&quot; : &quot;SUM(insuredCovAssistancePremium + insuredCovDecesPremium)&quot;,
+      &quot;ProductCode&quot; : &quot;GFOY&quot;,
+      &quot;RawPriceData&quot; : [ {
+        &quot;aggregationResults&quot; : null,
+        &quot;calculationResults&quot; : [ {
+          &quot;ID&quot; : &quot;0&quot;,
+          &quot;amountAssured&quot; : 4000,
+          &quot;insuredAgeAtSubscription&quot; : 65,
+          &quot;insuredCovAssistancePremium&quot; : 0.55556,
+          &quot;insuredCovDecesPremium&quot; : 28.65756
+        } ]
+      } ],
+      &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+      &quot;TotalInsuredFormula__c&quot; : &quot;SUM(amountAssured)&quot;,
+      &quot;Type__c&quot; : &quot;Obseques&quot;,
+      &quot;accountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;currencyCode&quot; : &quot;EUR&quot;,
+      &quot;currencySymbol&quot; : &quot;€&quot;,
+      &quot;insuredItemSpec&quot; : {
+        &quot;Tranche 4000&quot; : {
+          &quot;Id&quot; : &quot;01t0Q00000ANQDcQAP&quot;,
+          &quot;Price&quot; : 29.21312,
+          &quot;ProductCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+          &quot;childProducts&quot; : {
+            &quot;actions&quot; : { },
+            &quot;data&quot; : {
+              &quot;actions&quot; : { },
+              &quot;dataMap&quot; : { },
+              &quot;messages&quot; : [ ],
+              &quot;totalSize&quot; : null
+            },
+            &quot;description&quot; : null,
+            &quot;messages&quot; : [ ],
+            &quot;name&quot; : null,
+            &quot;records&quot; : [ {
+              &quot;actions&quot; : { },
+              &quot;displaySequence&quot; : 1,
+              &quot;fields&quot; : {
+                &quot;Family&quot; : &quot;Obseques&quot;,
+                &quot;Id&quot; : &quot;01t0Q00000AdvQbQAJ&quot;,
+                &quot;IsConfigurable__c&quot; : true,
+                &quot;IsRecommended__c&quot; : false,
+                &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+                &quot;Name&quot; : &quot;Capital en cas de décès&quot;,
+                &quot;Price&quot; : 28.65756,
+                &quot;PricingSource__c&quot; : &quot;insuredCovDecesPremium&quot;,
+                &quot;ProductCode&quot; : &quot;metLifeCovDecesTteCause&quot;,
+                &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+                &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+                &quot;Term__c&quot; : &quot;Annual&quot;,
+                &quot;Type__c&quot; : &quot;Obseques&quot;,
+                &quot;isOptional&quot; : false,
+                &quot;isSelected&quot; : true,
+                &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+                &quot;pciId&quot; : &quot;a6Q0Q000000HDnXUAW&quot;,
+                &quot;productId&quot; : &quot;01t0Q00000AdvQbQAJ&quot;
+              },
+              &quot;messages&quot; : [ ],
+              &quot;nameResult&quot; : {
+                &quot;attributeCategories&quot; : {
+                  &quot;actions&quot; : { },
+                  &quot;data&quot; : {
+                    &quot;actions&quot; : { },
+                    &quot;dataMap&quot; : { },
+                    &quot;messages&quot; : [ ],
+                    &quot;totalSize&quot; : null
+                  },
+                  &quot;description&quot; : null,
+                  &quot;messages&quot; : [ ],
+                  &quot;name&quot; : null,
+                  &quot;records&quot; : [ {
+                    &quot;actions&quot; : { },
+                    &quot;displaySequence&quot; : 1602,
+                    &quot;fields&quot; : {
+                      &quot;Code__c&quot; : &quot;metLifeGFOCov&quot;,
+                      &quot;Name&quot; : &quot;MetLife GFO Coverages&quot;,
+                      &quot;id&quot; : &quot;a2G1l0000007uCDEAY&quot;
+                    },
+                    &quot;messages&quot; : [ ],
+                    &quot;nameResult&quot; : {
+                      &quot;productAttributes&quot; : {
+                        &quot;actions&quot; : { },
+                        &quot;data&quot; : {
+                          &quot;actions&quot; : { },
+                          &quot;dataMap&quot; : { },
+                          &quot;messages&quot; : [ ],
+                          &quot;totalSize&quot; : null
+                        },
+                        &quot;description&quot; : null,
+                        &quot;messages&quot; : [ ],
+                        &quot;name&quot; : null,
+                        &quot;records&quot; : [ {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiWUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;gfoBenefitChosen&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : &quot;Capital décès assuré choisi par le souscripteur au moment de la souscription&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 0,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;dropdown&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Capital choisi&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;4000&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;0&quot;,
+                            &quot;label&quot; : &quot;€1.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;1000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;1&quot;,
+                            &quot;label&quot; : &quot;€1.500,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;1500&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;2&quot;,
+                            &quot;label&quot; : &quot;€2.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;2000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;3&quot;,
+                            &quot;label&quot; : &quot;€3.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;3000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;4&quot;,
+                            &quot;label&quot; : &quot;€4.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;4000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;5&quot;,
+                            &quot;label&quot; : &quot;€5.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;5000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;6&quot;,
+                            &quot;label&quot; : &quot;€6.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;6000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;7&quot;,
+                            &quot;label&quot; : &quot;€7.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;7000&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;8&quot;,
+                            &quot;label&quot; : &quot;€8.000,00&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;8000&quot;
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiQUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;benefitAnnualRevisionRate&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;percentage&quot;,
+                          &quot;description&quot; : &quot;Si l&apos;option de revalorisation est choisi, ce taux (base 100%) est issu de la Note Technique en vigueur au moment de la souscription&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 1,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : true,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Taux de revalorisation annuel du capital&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : 100
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiSUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;deathBenefitIllness&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;currency&quot;,
+                          &quot;description&quot; : &quot;Valorisé lors d&apos;un sinistre ou lors d&apos;une réduction avec le montant du bénéfice décès en cas de maladie (incluant la participation aux bénéfices et déduction faite d&apos;éventuelles avances, intérêts et rachat)&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 2,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Capital Garanti (Maladie)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : null,
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiTUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;deathBenefitIllnessWhileWaiting&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;currency&quot;,
+                          &quot;description&quot; : &quot;Valorisé lors d&apos;un sinistre ou lors d&apos;une réduction avec le montant du bénéfice décès en cas de maladie pendant la période de carence (par exemple le montant de remboursement de primes, déduction faite d&apos;éventuelles avances, intérêts et rachat)&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 3,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Capital Garanti (Maladie Carence)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : null,
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiRUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;deathBenefitAccident&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;currency&quot;,
+                          &quot;description&quot; : &quot;Valorisé lors d&apos;un sinistre ou lors d&apos;une réduction avec le montant du bénéfice décès en cas d&apos;accident (incluant la PB et déduction faite d&apos;éventuelles avances, intérêts et rachat, et l&apos;éventuelle majoration pour décès accidentel)&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 4,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Capital Garanti (Accident)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : null,
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiVUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;endOfWaitingPeriodIllness&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;date&quot;,
+                          &quot;description&quot; : &quot;Renseigné à la souscription, selon la date de souscription et le délai de carence Maladie&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 5,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;date&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Fin de carence le (Maladie)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : null,
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiUUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;endOfWaitingPeriodAccident&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;date&quot;,
+                          &quot;description&quot; : &quot;Renseigné à la souscription, selon la date de souscription et le délai de carence Accident&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 6,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;date&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Fin de carence le (Accident)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : null,
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiYUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;maxDeathAgeIllness&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;number&quot;,
+                          &quot;description&quot; : &quot;Configuré au produit (si prévu aux CG), et utilisé comme condition de refus de sinistre&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 7,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Âge limite décès (Maladie)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwiXUAS&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;maxDeathAgeAccident&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;number&quot;,
+                          &quot;description&quot; : &quot;Configuré au produit (si prévu aux CG), et utilisé comme condition de refus de sinistre&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 8,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : true,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Âge limite décès (Accident)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002HTyhUAG&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;waitingPeriodDurationMonthsIllness&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;number&quot;,
+                          &quot;description&quot; : &quot;Configuré au produit (si prévu aux CG), et utilisé pour calculer la date de fin de carence&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 10,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Délai de carence en mois (Maladie)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : 24
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002HTymUAG&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;waitingPeriodDurationMonthsAccident&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;number&quot;,
+                          &quot;description&quot; : &quot;Configuré au produit (si prévu aux CG), et utilisé pour calculer la date de fin de carence&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 11,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;number&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Délai de carence en mois (Accident)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : 0
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002HTyrUAG&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;premiumCancellationIfIllnessInWaiting&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 13,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;checkbox&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Remboursement Prime (Maladie Carence)&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : true
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        } ],
+                        &quot;totalSize&quot; : 12
+                      }
+                    },
+                    &quot;uiStates&quot; : { }
+                  }, {
+                    &quot;actions&quot; : { },
+                    &quot;displaySequence&quot; : 1605,
+                    &quot;fields&quot; : {
+                      &quot;Code__c&quot; : &quot;metLifePolicy&quot;,
+                      &quot;Name&quot; : &quot;MetLife Policy&quot;,
+                      &quot;id&quot; : &quot;a2G5E000000gQZyUAM&quot;
+                    },
+                    &quot;messages&quot; : [ ],
+                    &quot;nameResult&quot; : {
+                      &quot;productAttributes&quot; : {
+                        &quot;actions&quot; : { },
+                        &quot;data&quot; : {
+                          &quot;actions&quot; : { },
+                          &quot;dataMap&quot; : { },
+                          &quot;messages&quot; : [ ],
+                          &quot;totalSize&quot; : null
+                        },
+                        &quot;description&quot; : null,
+                        &quot;messages&quot; : [ ],
+                        &quot;name&quot; : null,
+                        &quot;records&quot; : [ {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002GO5PUAW&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;annualCapitalRevaluation&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : &quot;Choisi lors de la souscription, et ayant un impact sur l&apos;attribution d&apos;une Note Technique&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 9,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;checkbox&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Revalorisation Annuelle du Capital&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : false
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002H8olUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;Reduced&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : &quot;Valorisé par l&apos;acte de gestion &apos;Réduction&apos; pour indiquer que les primes ne sont plus dues sur la garantie, et que le capital garanti est figé sur la base de la provision mathématique calculée en fonction des primes déjà payées&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 12,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;checkbox&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Tranche réduite&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : false
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        } ],
+                        &quot;totalSize&quot; : 2
+                      }
+                    },
+                    &quot;uiStates&quot; : { }
+                  } ],
+                  &quot;totalSize&quot; : 2
+                }
+              },
+              &quot;uiStates&quot; : { }
+            }, {
+              &quot;actions&quot; : { },
+              &quot;displaySequence&quot; : 2,
+              &quot;fields&quot; : {
+                &quot;Family&quot; : &quot;Obseques&quot;,
+                &quot;Id&quot; : &quot;01t5E000009DqYQQA0&quot;,
+                &quot;IsConfigurable__c&quot; : false,
+                &quot;IsRecommended__c&quot; : false,
+                &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+                &quot;Name&quot; : &quot;Assistance au moment du décès&quot;,
+                &quot;Price&quot; : 0.55556,
+                &quot;PricingSource__c&quot; : &quot;insuredCovAssistancePremium&quot;,
+                &quot;ProductCode&quot; : &quot;metLifeCovAssistFuneral&quot;,
+                &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+                &quot;Term__c&quot; : &quot;Annual&quot;,
+                &quot;Type__c&quot; : &quot;Property&quot;,
+                &quot;defaultSelectedCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+                &quot;eligibilityCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+                &quot;isOptional&quot; : false,
+                &quot;isSelected&quot; : true,
+                &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+                &quot;pciId&quot; : &quot;a6Q0Q000000HDnYUAW&quot;,
+                &quot;productId&quot; : &quot;01t5E000009DqYQQA0&quot;,
+                &quot;requiredCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+                &quot;taxAmount&quot; : 0.111112,
+                &quot;taxesAndFees&quot; : [ {
+                  &quot;Amount__c&quot; : null,
+                  &quot;Condition__c&quot; : null,
+                  &quot;Id&quot; : &quot;a6C0Q0000000XAqUAM&quot;,
+                  &quot;IsRefundable__c&quot; : true,
+                  &quot;JurisdictionId__c&quot; : null,
+                  &quot;Name&quot; : &quot;Taxe sur la Valeur Ajoutée&quot;,
+                  &quot;Percent__c&quot; : 20,
+                  &quot;ProcedureFormula__c&quot; : null,
+                  &quot;ProcedureName__c&quot; : null,
+                  &quot;ProcedureSource__c&quot; : null,
+                  &quot;RatingType__c&quot; : &quot;Percent&quot;,
+                  &quot;Type__c&quot; : &quot;Tax&quot;,
+                  &quot;calculatedAmount&quot; : 0.111112,
+                  &quot;currencyCode&quot; : &quot;EUR&quot;,
+                  &quot;currencySymbol&quot; : &quot;€&quot;
+                } ],
+                &quot;totalTaxFeeAmount&quot; : 0.111112
+              },
+              &quot;messages&quot; : [ ],
+              &quot;nameResult&quot; : { },
+              &quot;uiStates&quot; : { }
+            }, {
+              &quot;actions&quot; : { },
+              &quot;displaySequence&quot; : 2,
+              &quot;fields&quot; : {
+                &quot;Family&quot; : &quot;Obseques&quot;,
+                &quot;Id&quot; : &quot;01t0Q00000AdsNvQAJ&quot;,
+                &quot;IsConfigurable__c&quot; : true,
+                &quot;IsRecommended__c&quot; : false,
+                &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+                &quot;Name&quot; : &quot;Assuré GFO&quot;,
+                &quot;ProductCode&quot; : &quot;metLifeGFOLifeInsured&quot;,
+                &quot;RecordTypeName__c&quot; : &quot;InsuredPartySpec&quot;,
+                &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+                &quot;Term__c&quot; : &quot;Annual&quot;,
+                &quot;Type__c&quot; : &quot;Obseques&quot;,
+                &quot;maxQuantity&quot; : 1,
+                &quot;minQuantity&quot; : 1,
+                &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+                &quot;pciId&quot; : &quot;a6Q0Q000000HDnWUAW&quot;,
+                &quot;productId&quot; : &quot;01t0Q00000AdsNvQAJ&quot;
+              },
+              &quot;messages&quot; : [ ],
+              &quot;nameResult&quot; : {
+                &quot;attributeCategories&quot; : {
+                  &quot;actions&quot; : { },
+                  &quot;data&quot; : {
+                    &quot;actions&quot; : { },
+                    &quot;dataMap&quot; : { },
+                    &quot;messages&quot; : [ ],
+                    &quot;totalSize&quot; : null
+                  },
+                  &quot;description&quot; : null,
+                  &quot;messages&quot; : [ ],
+                  &quot;name&quot; : null,
+                  &quot;records&quot; : [ {
+                    &quot;actions&quot; : { },
+                    &quot;displaySequence&quot; : 1603,
+                    &quot;fields&quot; : {
+                      &quot;Code__c&quot; : &quot;metLifeGFOPerson&quot;,
+                      &quot;Name&quot; : &quot;MetLife GFO Person&quot;,
+                      &quot;id&quot; : &quot;a2G1l0000007uE8EAI&quot;
+                    },
+                    &quot;messages&quot; : [ ],
+                    &quot;nameResult&quot; : {
+                      &quot;productAttributes&quot; : {
+                        &quot;actions&quot; : { },
+                        &quot;data&quot; : {
+                          &quot;actions&quot; : { },
+                          &quot;dataMap&quot; : { },
+                          &quot;messages&quot; : [ ],
+                          &quot;totalSize&quot; : null
+                        },
+                        &quot;description&quot; : null,
+                        &quot;messages&quot; : [ ],
+                        &quot;name&quot; : null,
+                        &quot;records&quot; : [ {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwigUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personTitle&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 0,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;dropdown&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Civilité&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;Ms.&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;0&quot;,
+                            &quot;label&quot; : &quot;Madame&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;Ms.&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;1&quot;,
+                            &quot;label&quot; : &quot;Monsieur&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;Mr.&quot;
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwieUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personLastName&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 1,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;text&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Nom&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;DELFORG-78&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwidUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personFirstName&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 2,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;text&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Prénom&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;DANIELE22222&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwicUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personBirthDate&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;date&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 3,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;date&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Date de naissance&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;1957-10-05&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H5E000001KwifUAC&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personRelationship&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : null,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 4,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;dropdown&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Lien au Souscripteur&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;Souscripteur&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;0&quot;,
+                            &quot;label&quot; : &quot;Souscripteur&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;Souscripteur&quot;
+                          }, {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : &quot;1&quot;,
+                            &quot;label&quot; : &quot;Conjoint(e)&quot;,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : &quot;Conjoint(e)&quot;
+                          } ]
+                        }, {
+                          &quot;actions&quot; : { },
+                          &quot;attributeConfigurable&quot; : null,
+                          &quot;attributeId&quot; : &quot;a2H0Q000002HTyXUAW&quot;,
+                          &quot;autocomplete&quot; : null,
+                          &quot;cacheable&quot; : null,
+                          &quot;cloneable&quot; : true,
+                          &quot;code&quot; : &quot;personBirthName&quot;,
+                          &quot;customTemplate&quot; : null,
+                          &quot;dataType&quot; : &quot;text&quot;,
+                          &quot;description&quot; : &quot;Name (surname / family name) of the person when they were born; useful in case they changed their name later on in life (most often at time of marriage or remarriage)&quot;,
+                          &quot;disabled&quot; : false,
+                          &quot;displaySequence&quot; : 5,
+                          &quot;fields&quot; : { },
+                          &quot;filterable&quot; : true,
+                          &quot;formatMask&quot; : null,
+                          &quot;hasRules&quot; : false,
+                          &quot;hidden&quot; : false,
+                          &quot;inputType&quot; : &quot;text&quot;,
+                          &quot;isConfigurable&quot; : null,
+                          &quot;isNotAssetizable&quot; : null,
+                          &quot;isNotTranslatable&quot; : false,
+                          &quot;isRatingAttribute&quot; : null,
+                          &quot;label&quot; : &quot;Nom de naissance&quot;,
+                          &quot;max&quot; : null,
+                          &quot;maxLongValue&quot; : null,
+                          &quot;maxlength&quot; : null,
+                          &quot;messages&quot; : [ ],
+                          &quot;min&quot; : null,
+                          &quot;minLongValue&quot; : null,
+                          &quot;minlength&quot; : null,
+                          &quot;multiselect&quot; : false,
+                          &quot;nameResult&quot; : { },
+                          &quot;pattern&quot; : null,
+                          &quot;placeholder&quot; : null,
+                          &quot;readonly&quot; : false,
+                          &quot;required&quot; : false,
+                          &quot;rules&quot; : [ ],
+                          &quot;step&quot; : null,
+                          &quot;uiStates&quot; : { },
+                          &quot;userValues&quot; : {
+                            &quot;value&quot; : &quot;CHARLIAC&quot;
+                          },
+                          &quot;values&quot; : [ {
+                            &quot;defaultSelected&quot; : null,
+                            &quot;defaultValue&quot; : null,
+                            &quot;disabled&quot; : false,
+                            &quot;displaySequence&quot; : null,
+                            &quot;id&quot; : null,
+                            &quot;label&quot; : null,
+                            &quot;name&quot; : null,
+                            &quot;readonly&quot; : false,
+                            &quot;rules&quot; : [ ],
+                            &quot;selected&quot; : null,
+                            &quot;value&quot; : null
+                          } ]
+                        } ],
+                        &quot;totalSize&quot; : 6
+                      }
+                    },
+                    &quot;uiStates&quot; : { }
+                  } ],
+                  &quot;totalSize&quot; : 1
+                }
+              },
+              &quot;uiStates&quot; : { }
+            } ],
+            &quot;totalSize&quot; : 3
+          },
+          &quot;instanceKey&quot; : &quot;Tranche 4000&quot;,
+          &quot;pciId&quot; : &quot;a6Q0Q000000HDnVUAW&quot;,
+          &quot;productId&quot; : &quot;01t0Q00000ANQDcQAP&quot;,
+          &quot;productName&quot; : &quot;Tranche GFO&quot;,
+          &quot;recordType&quot; : &quot;InsuredItemSpec&quot;,
+          &quot;selectedValues&quot; : {
+            &quot;Reduced&quot; : false,
+            &quot;addonIndex&quot; : &quot;01&quot;,
+            &quot;premiumAdjustmentRate&quot; : &quot;100&quot;,
+            &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+            &quot;refNT&quot; : &quot;12n&quot;,
+            &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+            &quot;trancheType&quot; : &quot;base&quot;
+          },
+          &quot;taxAmount&quot; : 0.111112
+        }
+      },
+      &quot;insuredItems&quot; : {
+        &quot;metLifeGFOLifeInsured&quot; : {
+          &quot;Price&quot; : 29.21312,
+          &quot;Reduced&quot; : false,
+          &quot;addonIndex&quot; : &quot;01&quot;,
+          &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+          &quot;pciId&quot; : null,
+          &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+          &quot;personBirthName&quot; : &quot;CHARLIAC&quot;,
+          &quot;personFirstName&quot; : &quot;DANIELE22222&quot;,
+          &quot;personLastName&quot; : &quot;DELFORG-78&quot;,
+          &quot;personRelationship&quot; : &quot;Souscripteur&quot;,
+          &quot;personTitle&quot; : &quot;Ms.&quot;,
+          &quot;premiumAdjustmentRate&quot; : &quot;100&quot;,
+          &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+          &quot;productCode&quot; : &quot;metLifeGFOLifeInsured&quot;,
+          &quot;refNT&quot; : &quot;12n&quot;,
+          &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+          &quot;taxAmount&quot; : 0.111112,
+          &quot;trancheType&quot; : &quot;base&quot;
+        },
+        &quot;metLifeGFOTrancheInsured&quot; : {
+          &quot;Price&quot; : 29.21312,
+          &quot;ProductCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+          &quot;Reduced&quot; : false,
+          &quot;addonIndex&quot; : &quot;01&quot;,
+          &quot;instanceKey&quot; : &quot;Tranche 4000&quot;,
+          &quot;pciId&quot; : &quot;a6Q0Q000000HDnVUAW&quot;,
+          &quot;personAgeAtSubscription&quot; : 65,
+          &quot;premiumAdjustmentRate&quot; : &quot;100&quot;,
+          &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+          &quot;productCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+          &quot;productName&quot; : &quot;Tranche GFO&quot;,
+          &quot;refNT&quot; : &quot;12n&quot;,
+          &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+          &quot;taxAmount&quot; : 0.111112,
+          &quot;trancheType&quot; : &quot;base&quot;
+        }
+      },
+      &quot;insuredItemsRelationships&quot; : {
+        &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+        &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;
+      },
+      &quot;opportunityId&quot; : &quot;0060Q00000L7VxMQAV&quot;,
+      &quot;productId&quot; : &quot;01t0Q00000AfmJlQAJ&quot;,
+      &quot;recordType&quot; : &quot;Product&quot;,
+      &quot;selectedValues&quot; : {
+        &quot;beneficiaryClauseByDefault&quot; : &quot;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+        &quot;beneficiaryHasLegallyAccepted&quot; : false,
+        &quot;coolingOffPeriodDurationInDays&quot; : 90,
+        &quot;indemnityType&quot; : &quot;lumpSum&quot;,
+        &quot;productName&quot; : &quot;Garantie Obsèques Oney&quot;,
+        &quot;refCG&quot; : &quot;CGKJZ23&quot;,
+        &quot;saleChannel&quot; : &quot;Acq&quot;,
+        &quot;sourceProductCode&quot; : &quot;850&quot;
+      },
+      &quot;taxAmount&quot; : 0.111112,
+      &quot;totalSumInsured&quot; : 4000,
+      &quot;totalTaxFeeAmount&quot; : 0.111112
+    },
+    &quot;quotepolicyJson&quot; : {
+      &quot;term&quot; : &quot;Annual&quot;
+    }
+  },
+  &quot;CreateQuoteService&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;opportunityId&quot; : &quot;0060Q00000L7VxMQAV&quot;,
+    &quot;quoteDetail&quot; : {
+      &quot;vlocity_ins__EffectiveDate__c&quot; : &quot;2022-11-14&quot;,
+      &quot;vlocity_ins__PrimaryRootItemId__c&quot; : &quot;0QL0Q000000RFp4WAG&quot;,
+      &quot;vlocity_ins__SourceSystemIdentifier__c&quot; : &quot;d569e8b6-5417-a418-9fd7-0c2ea578c24d&quot;,
+      &quot;vlocity_ins__SourceSystem__c&quot; : &quot;Salesforce&quot;,
+      &quot;vlocity_ins__StandardPremium__c&quot; : 29.21312,
+      &quot;vlocity_ins__Term__c&quot; : null,
+      &quot;Id&quot; : &quot;0Q00Q000000zHPsSAM&quot;,
+      &quot;Name&quot; : &quot;TEEEEEEEEEE&quot;,
+      &quot;OpportunityId&quot; : &quot;0060Q00000L7VxMQAV&quot;,
+      &quot;Pricebook2Id&quot; : &quot;01sD0000000HL3qIAG&quot;,
+      &quot;Status&quot; : &quot;Issued&quot;
+    },
+    &quot;quoteId&quot; : &quot;0Q00Q000000zHPsSAM&quot;
+  },
+  &quot;CreateQuoteServiceStatus&quot; : true,
+  &quot;DataRaptorTransformPrepareCreateQuoteStatus&quot; : true,
+  &quot;ErrorPriceNotCalculatedStatus&quot; : false,
+  &quot;ExtrtactAndBuildData&quot; : {
+    &quot;AccountInfo&quot; : {
+      &quot;AccountType&quot; : &quot;Souscripteur uniquement&quot;,
+      &quot;Address&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;BirthCity&quot; : &quot;PREURE&quot;,
+      &quot;BirthCountry&quot; : &quot;FR&quot;,
+      &quot;BirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;BirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;Country&quot; : &quot;France&quot;,
+      &quot;FirstName&quot; : &quot;DANIELE22222&quot;,
+      &quot;Gender&quot; : &quot;Female&quot;,
+      &quot;LastName&quot; : &quot;DELFORG-78&quot;,
+      &quot;PersonAccountRecordType&quot; : &quot;0121l0000001QHiAAM&quot;,
+      &quot;Title&quot; : &quot;Ms.&quot;
+    },
+    &quot;GetRatedProducts&quot; : {
+      &quot;metLifeCovDecesTteCause.annualCapitalRevaluation&quot; : false,
+      &quot;metLifeCovDecesTteCause.gfoBenefitChosen&quot; : &quot;4000&quot;,
+      &quot;metLifeCovDecesTteCause.instanceKey&quot; : &quot;Tranche 4000&quot;,
+      &quot;metLifeGFOLifeInsured.instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthName&quot; : &quot;CHARLIAC&quot;,
+      &quot;metLifeGFOLifeInsured.personFirstName&quot; : &quot;DANIELE22222&quot;,
+      &quot;metLifeGFOLifeInsured.personLastName&quot; : &quot;DELFORG-78&quot;,
+      &quot;metLifeGFOLifeInsured.personRelationship&quot; : &quot;Souscripteur&quot;,
+      &quot;metLifeGFOLifeInsured.personTitle&quot; : &quot;Ms.&quot;,
+      &quot;metLifeGFOTrancheInsured.Reduced&quot; : false,
+      &quot;metLifeGFOTrancheInsured.addonIndex&quot; : &quot;01&quot;,
+      &quot;metLifeGFOTrancheInsured.instanceKey&quot; : &quot;Tranche 4000&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumAdjustmentRate&quot; : &quot;100&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+      &quot;metLifeGFOTrancheInsured.refNT&quot; : &quot;12n&quot;,
+      &quot;metLifeGFOTrancheInsured.subscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;metLifeGFOTrancheInsured.trancheType&quot; : &quot;base&quot;
+    },
+    &quot;InsredItems&quot; : {
+      &quot;metLifeGFOLifeInsured&quot; : {
+        &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+        &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+        &quot;personBirthName&quot; : &quot;CHARLIAC&quot;,
+        &quot;personFirstName&quot; : &quot;DANIELE22222&quot;,
+        &quot;personLastName&quot; : &quot;DELFORG-78&quot;,
+        &quot;personRelationship&quot; : &quot;Souscripteur&quot;,
+        &quot;personTitle&quot; : &quot;Ms.&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOLifeInsured&quot;
+      },
+      &quot;metLifeGFOTrancheInsured&quot; : {
+        &quot;Reduced&quot; : &quot;false&quot;,
+        &quot;addonIndex&quot; : &quot;01&quot;,
+        &quot;instanceKey&quot; : &quot;Tranche 4000&quot;,
+        &quot;personAgeAtSubscription&quot; : 65,
+        &quot;premiumAdjustmentRate&quot; : 100,
+        &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+        &quot;refNT&quot; : &quot;12n&quot;,
+        &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+        &quot;trancheType&quot; : &quot;base&quot;
+      }
+    },
+    &quot;OpportunityInfo&quot; : {
+      &quot;CampaignId&quot; : &quot;7010Q000001EphWQAS&quot;,
+      &quot;CloseDate&quot; : &quot;2022-10-05&quot;,
+      &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+      &quot;Stage&quot; : &quot;Closed Won&quot;,
+      &quot;Type&quot; : &quot;New business&quot;
+    },
+    &quot;PaymentMethodInfos&quot; : {
+      &quot;BIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;MethodType&quot; : &quot;Bank Account&quot;,
+      &quot;SignatureDate&quot; : &quot;20221006&quot;,
+      &quot;TokenId&quot; : &quot;0500013M026&quot;
+    },
+    &quot;PaymentMethodRecordTypes&quot; : [ {
+      &quot;DeveloperName&quot; : &quot;Prelevement_bancaire&quot;,
+      &quot;Id&quot; : &quot;0120Q0000006TPlQAM&quot;
+    }, {
+      &quot;DeveloperName&quot; : &quot;Carte_Sponsor&quot;,
+      &quot;Id&quot; : &quot;0120Q0000006TPqQAM&quot;
+    }, {
+      &quot;DeveloperName&quot; : &quot;Ch_que&quot;,
+      &quot;Id&quot; : &quot;0120Q0000006TPvQAM&quot;
+    } ],
+    &quot;PolicyInfos&quot; : {
+      &quot;BillingFrequency&quot; : &quot;Monthly&quot;,
+      &quot;PaymentMethodTiming&quot; : &quot;Advance&quot;,
+      &quot;SalesDate&quot; : &quot;20221005&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;,
+      &quot;SubStatus&quot; : &quot;Active&quot;,
+      &quot;Type&quot; : &quot;Life&quot;,
+      &quot;effectiveDate&quot; : &quot;2022-10-05&quot;,
+      &quot;term&quot; : &quot;Custom&quot;
+    },
+    &quot;ProductInfo&quot; : {
+      &quot;productCode&quot; : &quot;GFOY&quot;,
+      &quot;productFamilfy&quot; : &quot;Obseques&quot;
+    },
+    &quot;QuoteInfo&quot; : {
+      &quot;CloseDate&quot; : &quot;2022-10-05&quot;,
+      &quot;InstanceKey&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+      &quot;Status&quot; : &quot;Issued&quot;
+    },
+    &quot;TaskCallInfos&quot; : {
+      &quot;CallDuration&quot; : &quot;60&quot;,
+      &quot;Date&quot; : &quot;20221006&quot;,
+      &quot;Status&quot; : &quot;Closed&quot;
+    },
+    &quot;TaskKitContractInfos&quot; : {
+      &quot;Date&quot; : &quot;2022-11-14&quot;,
+      &quot;RecordType&quot; : &quot;0120Q0000006Q6MQAU&quot;,
+      &quot;Status&quot; : &quot;New&quot;
+    },
+    &quot;insuredItemsRelationships&quot; : {
+      &quot;instanceKey&quot; : &quot;Assuré DANIELE22222 DELFORG-78&quot;,
+      &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;
+    }
+  },
+  &quot;ExtrtactAndBuildDataStatus&quot; : true,
+  &quot;GetRatedProducts&quot; : {
+    &quot;records&quot; : [ {
+      &quot;CalculatedPriceData&quot; : {
+        &quot;ID&quot; : &quot;0&quot;,
+        &quot;amountAssured&quot; : 4000,
+        &quot;insuredAgeAtSubscription&quot; : 65,
+        &quot;insuredCovAssistancePremium&quot; : 0.55556,
+        &quot;insuredCovDecesPremium&quot; : 28.65756
+      },
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Id&quot; : &quot;01t0Q00000AfmJlQAJ&quot;,
+      &quot;IsConfigurable__c&quot; : true,
+      &quot;IsRecommended__c&quot; : false,
+      &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;ParentClassCode__c&quot; : &quot;metLifeClasseObseques&quot;,
+      &quot;ParentClassId__c&quot; : &quot;01t0Q00000AdsMTQAZ&quot;,
+      &quot;Price&quot; : 29.21312,
+      &quot;PricingFormula__c&quot; : &quot;SUM(insuredCovAssistancePremium + insuredCovDecesPremium)&quot;,
+      &quot;ProductCode&quot; : &quot;GFOY&quot;,
+      &quot;RawPriceData&quot; : [ {
+        &quot;aggregationResults&quot; : null,
+        &quot;calculationResults&quot; : [ {
+          &quot;ID&quot; : &quot;0&quot;,
+          &quot;amountAssured&quot; : 4000,
+          &quot;insuredAgeAtSubscription&quot; : 65,
+          &quot;insuredCovAssistancePremium&quot; : 0.55556,
+          &quot;insuredCovDecesPremium&quot; : 28.65756
+        } ]
+      } ],
+      &quot;RecordTypeName__c&quot; : &quot;Product&quot;,
+      &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+      &quot;TotalInsuredFormula__c&quot; : &quot;SUM(amountAssured)&quot;,
+      &quot;Type__c&quot; : &quot;Obseques&quot;,
+      &quot;attributeCategories&quot; : {
+        &quot;records&quot; : [ {
+          &quot;Code__c&quot; : &quot;metLifeProduct&quot;,
+          &quot;Name&quot; : &quot;MetLife Product&quot;,
+          &quot;displaySequence&quot; : 1604,
+          &quot;id&quot; : &quot;a2G5E000000gQZzUAM&quot;,
+          &quot;productAttributes&quot; : {
+            &quot;records&quot; : [ { }, { }, { }, { }, { } ],
+            &quot;totalSize&quot; : 5
+          }
+        }, {
+          &quot;Code__c&quot; : &quot;metLifePolicy&quot;,
+          &quot;Name&quot; : &quot;MetLife Policy&quot;,
+          &quot;displaySequence&quot; : 1605,
+          &quot;id&quot; : &quot;a2G5E000000gQZyUAM&quot;,
+          &quot;productAttributes&quot; : {
+            &quot;records&quot; : [ { }, { }, { }, { } ],
+            &quot;totalSize&quot; : 4
+          }
+        } ],
+        &quot;totalSize&quot; : 2
+      },
+      &quot;childProducts&quot; : {
+        &quot;records&quot; : [ {
+          &quot;Family&quot; : &quot;Obseques&quot;,
+          &quot;Id&quot; : &quot;01t0Q00000ANQDcQAP&quot;,
+          &quot;IsConfigurable__c&quot; : true,
+          &quot;IsRecommended__c&quot; : false,
+          &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+          &quot;Name&quot; : &quot;Tranche GFO&quot;,
+          &quot;Price&quot; : 29.21312,
+          &quot;PricingFormula__c&quot; : &quot;insuredCovAssistancePremium + insuredCovDecesPremium&quot;,
+          &quot;ProductCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+          &quot;RecordTypeName__c&quot; : &quot;InsuredItemSpec&quot;,
+          &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+          &quot;Term__c&quot; : &quot;Annual&quot;,
+          &quot;Type__c&quot; : &quot;Obseques&quot;,
+          &quot;attributeCategories&quot; : {
+            &quot;records&quot; : [ {
+              &quot;Code__c&quot; : &quot;metLifePolicy&quot;,
+              &quot;Name&quot; : &quot;MetLife Policy&quot;,
+              &quot;displaySequence&quot; : 1605,
+              &quot;id&quot; : &quot;a2G5E000000gQZyUAM&quot;,
+              &quot;productAttributes&quot; : {
+                &quot;records&quot; : [ { }, { }, { }, { }, { }, { }, { } ],
+                &quot;totalSize&quot; : 7
+              }
+            }, {
+              &quot;Code__c&quot; : &quot;metLifeGFOPerson&quot;,
+              &quot;Name&quot; : &quot;MetLife GFO Person&quot;,
+              &quot;displaySequence&quot; : 1603,
+              &quot;id&quot; : &quot;a2G1l0000007uE8EAI&quot;,
+              &quot;productAttributes&quot; : {
+                &quot;records&quot; : [ { } ],
+                &quot;totalSize&quot; : 1
+              }
+            } ],
+            &quot;totalSize&quot; : 2
+          },
+          &quot;childProducts&quot; : {
+            &quot;records&quot; : [ {
+              &quot;Family&quot; : &quot;Obseques&quot;,
+              &quot;Id&quot; : &quot;01t0Q00000AdvQbQAJ&quot;,
+              &quot;IsConfigurable__c&quot; : true,
+              &quot;IsRecommended__c&quot; : false,
+              &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+              &quot;Name&quot; : &quot;Capital en cas de décès&quot;,
+              &quot;Price&quot; : 28.65756,
+              &quot;PricingSource__c&quot; : &quot;insuredCovDecesPremium&quot;,
+              &quot;ProductCode&quot; : &quot;metLifeCovDecesTteCause&quot;,
+              &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+              &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+              &quot;Term__c&quot; : &quot;Annual&quot;,
+              &quot;Type__c&quot; : &quot;Obseques&quot;,
+              &quot;attributeCategories&quot; : {
+                &quot;records&quot; : [ {
+                  &quot;Code__c&quot; : &quot;metLifeGFOCov&quot;,
+                  &quot;Name&quot; : &quot;MetLife GFO Coverages&quot;,
+                  &quot;displaySequence&quot; : 1602,
+                  &quot;id&quot; : &quot;a2G1l0000007uCDEAY&quot;,
+                  &quot;productAttributes&quot; : {
+                    &quot;records&quot; : [ { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { }, { } ],
+                    &quot;totalSize&quot; : 12
+                  }
+                }, {
+                  &quot;Code__c&quot; : &quot;metLifePolicy&quot;,
+                  &quot;Name&quot; : &quot;MetLife Policy&quot;,
+                  &quot;displaySequence&quot; : 1605,
+                  &quot;id&quot; : &quot;a2G5E000000gQZyUAM&quot;,
+                  &quot;productAttributes&quot; : {
+                    &quot;records&quot; : [ { }, { } ],
+                    &quot;totalSize&quot; : 2
+                  }
+                } ],
+                &quot;totalSize&quot; : 2
+              },
+              &quot;displaySequence&quot; : 1,
+              &quot;isOptional&quot; : false,
+              &quot;isSelected&quot; : true,
+              &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+              &quot;pciId&quot; : &quot;a6Q0Q000000HDnXUAW&quot;,
+              &quot;productId&quot; : &quot;01t0Q00000AdvQbQAJ&quot;
+            }, {
+              &quot;Family&quot; : &quot;Obseques&quot;,
+              &quot;Id&quot; : &quot;01t5E000009DqYQQA0&quot;,
+              &quot;IsConfigurable__c&quot; : false,
+              &quot;IsRecommended__c&quot; : false,
+              &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+              &quot;Name&quot; : &quot;Assistance au moment du décès&quot;,
+              &quot;Price&quot; : 0.55556,
+              &quot;PricingSource__c&quot; : &quot;insuredCovAssistancePremium&quot;,
+              &quot;ProductCode&quot; : &quot;metLifeCovAssistFuneral&quot;,
+              &quot;RecordTypeName__c&quot; : &quot;CoverageSpec&quot;,
+              &quot;Term__c&quot; : &quot;Annual&quot;,
+              &quot;Type__c&quot; : &quot;Property&quot;,
+              &quot;defaultSelectedCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+              &quot;displaySequence&quot; : 2,
+              &quot;eligibilityCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+              &quot;isOptional&quot; : false,
+              &quot;isSelected&quot; : true,
+              &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+              &quot;pciId&quot; : &quot;a6Q0Q000000HDnYUAW&quot;,
+              &quot;productId&quot; : &quot;01t5E000009DqYQQA0&quot;,
+              &quot;requiredCriteria&quot; : &quot;metLifeGFOTrancheInsured.Reduced != true&quot;,
+              &quot;taxAmount&quot; : 0.111112,
+              &quot;taxesAndFees&quot; : [ {
+                &quot;Amount__c&quot; : null,
+                &quot;Condition__c&quot; : null,
+                &quot;Id&quot; : &quot;a6C0Q0000000XAqUAM&quot;,
+                &quot;IsRefundable__c&quot; : true,
+                &quot;JurisdictionId__c&quot; : null,
+                &quot;Name&quot; : &quot;Taxe sur la Valeur Ajoutée&quot;,
+                &quot;Percent__c&quot; : 20,
+                &quot;ProcedureFormula__c&quot; : null,
+                &quot;ProcedureName__c&quot; : null,
+                &quot;ProcedureSource__c&quot; : null,
+                &quot;RatingType__c&quot; : &quot;Percent&quot;,
+                &quot;Type__c&quot; : &quot;Tax&quot;,
+                &quot;calculatedAmount&quot; : 0.111112,
+                &quot;currencyCode&quot; : &quot;EUR&quot;,
+                &quot;currencySymbol&quot; : &quot;€&quot;
+              } ],
+              &quot;totalTaxFeeAmount&quot; : 0.111112
+            }, {
+              &quot;Family&quot; : &quot;Obseques&quot;,
+              &quot;Id&quot; : &quot;01t0Q00000AdsNvQAJ&quot;,
+              &quot;IsConfigurable__c&quot; : true,
+              &quot;IsRecommended__c&quot; : false,
+              &quot;LineOfBusiness__c&quot; : &quot;DirectToConsumer&quot;,
+              &quot;Name&quot; : &quot;Assuré GFO&quot;,
+              &quot;ProductCode&quot; : &quot;metLifeGFOLifeInsured&quot;,
+              &quot;RecordTypeName__c&quot; : &quot;InsuredPartySpec&quot;,
+              &quot;SubType__c&quot; : &quot;GarantieFraisObseques&quot;,
+              &quot;Term__c&quot; : &quot;Annual&quot;,
+              &quot;Type__c&quot; : &quot;Obseques&quot;,
+              &quot;attributeCategories&quot; : {
+                &quot;records&quot; : [ {
+                  &quot;Code__c&quot; : &quot;metLifeGFOPerson&quot;,
+                  &quot;Name&quot; : &quot;MetLife GFO Person&quot;,
+                  &quot;displaySequence&quot; : 1603,
+                  &quot;id&quot; : &quot;a2G1l0000007uE8EAI&quot;,
+                  &quot;productAttributes&quot; : {
+                    &quot;records&quot; : [ { }, { }, { }, { }, { }, { } ],
+                    &quot;totalSize&quot; : 6
+                  }
+                } ],
+                &quot;totalSize&quot; : 1
+              },
+              &quot;displaySequence&quot; : 2,
+              &quot;maxQuantity&quot; : 1,
+              &quot;minQuantity&quot; : 1,
+              &quot;parentInstanceKey&quot; : &quot;Tranche 4000&quot;,
+              &quot;pciId&quot; : &quot;a6Q0Q000000HDnWUAW&quot;,
+              &quot;productId&quot; : &quot;01t0Q00000AdsNvQAJ&quot;
+            } ],
+            &quot;totalSize&quot; : 3
+          },
+          &quot;displaySequence&quot; : 1,
+          &quot;instanceKey&quot; : &quot;Tranche 4000&quot;,
+          &quot;maxQuantity&quot; : 6,
+          &quot;minQuantity&quot; : 1,
+          &quot;pciId&quot; : &quot;a6Q0Q000000HDnVUAW&quot;,
+          &quot;productId&quot; : &quot;01t0Q00000ANQDcQAP&quot;,
+          &quot;taxAmount&quot; : 0.111112,
+          &quot;totalTaxFeeAmount&quot; : 0.111112
+        } ],
+        &quot;totalSize&quot; : 1
+      },
+      &quot;currencyCode&quot; : &quot;EUR&quot;,
+      &quot;currencySymbol&quot; : &quot;€&quot;,
+      &quot;displaySequence&quot; : -1,
+      &quot;productId&quot; : &quot;01t0Q00000AfmJlQAJ&quot;,
+      &quot;taxAmount&quot; : 0.111112,
+      &quot;totalSumInsured&quot; : 4000,
+      &quot;totalTaxFeeAmount&quot; : 0.111112
+    } ],
+    &quot;totalSize&quot; : 1
+  },
+  &quot;GetRatedProductsStatus&quot; : true,
+  &quot;MergePoliciesIfAccountsReturned&quot; : {
+    &quot;Policies&quot; : {
+      &quot;result&quot; : [ {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZclWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdeWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZcvWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdZWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010Zd5WAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdPWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdUWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      } ]
+    }
+  },
+  &quot;MergePoliciesIfAccountsReturnedStatus&quot; : true,
+  &quot;SetValuesForCheck&quot; : {
+    &quot;FirstElement&quot; : {
+      &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Family&quot; : &quot;Obseques&quot;,
+      &quot;Name&quot; : &quot;GFO Oney&quot;,
+      &quot;PolicyId&quot; : &quot;0YT0Q0000010ZclWAE&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    },
+    &quot;policiesSize&quot; : 7
+  },
+  &quot;SetValuesForCheckStatus&quot; : true,
+  &quot;SetValuesTech&quot; : {
+    &quot;DuplicatesRes&quot; : [ {
+      &quot;AccountID&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+      &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;,
+      &quot;PoliciesHolded&quot; : [ {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZclWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdeWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZcvWAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdZWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010Zd5WAE&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdPWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      }, {
+        &quot;AccountId&quot; : &quot;0010Q00001cP1uSQAS&quot;,
+        &quot;Family&quot; : &quot;Obseques&quot;,
+        &quot;Name&quot; : &quot;GFO Oney&quot;,
+        &quot;PolicyId&quot; : &quot;0YT0Q0000010ZdUWAU&quot;,
+        &quot;Status&quot; : &quot;In Force&quot;
+      } ]
+    }, {
+      &quot;AccountID&quot; : &quot;0010Q00001cP1uqQAC&quot;,
+      &quot;Name&quot; : &quot;DANIELE22222 DELFORG-78&quot;
+    } ]
+  },
+  &quot;SetValuesTechStatus&quot; : true,
+  &quot;contextId&quot; : &quot;a8x0Q000000MB4IQAW&quot;,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TransformPrepareCreatePolicy_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

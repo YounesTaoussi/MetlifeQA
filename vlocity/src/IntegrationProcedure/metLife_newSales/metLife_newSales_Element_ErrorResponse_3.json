@@ -1,0 +1,51 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ErrorResponse_3",
+    "OmniProcessId": {
+        "Name": "SaleFileIntegration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ErrorOnPolicyCreation",
+        "OmniProcessId": {
+            "Name": "SaleFileIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/metLife/newSales/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorOnPolicyCreation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ErrorOnPolicyCreation",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "BatchPO": "%ExtrtactAndBuildData:MemberInfo:BatchPO%",
+            "CodePub": "%ExtrtactAndBuildData:PolicyInfos:OriginalCodePub%",
+            "ConcilErrorCode": 954,
+            "ConcilErrorMessage": "The policy hasn't been created properly",
+            "DateVente": "%ExtrtactAndBuildData:PolicyInfos:SalesDate%",
+            "EffectriveDate": "%ExtrtactAndBuildData:PolicyInfos:effectiveDate%",
+            "LeadNumber": "%ExtrtactAndBuildData:MemberInfo:LeadPO%",
+            "T11Id": "%contextId%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues6",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/metLife/newSales/Procedure/ErrorResponse_3"
+}

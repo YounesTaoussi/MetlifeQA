@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;userInputs&quot; : {
+    &quot;Availability__c&quot; : null,
+    &quot;MetLifeGFOCofinoga.policySubscriptionDate&quot; : &quot;2022-03-28&quot;,
+    &quot;ParentClassCode__c&quot; : &quot;metLifeClasseObseques&quot;,
+    &quot;ParentClassId__c&quot; : &quot;01t8c00000MPmg9AAD&quot;,
+    &quot;SubType__c&quot; : &quot;GFO&quot;,
+    &quot;Type__c&quot; : &quot;Life Insurance&quot;,
+    &quot;faceAmountAssured&quot; : &quot;3000&quot;,
+    &quot;insuredBirthDate&quot; : &quot;1971-03-29&quot;,
+    &quot;insuredRelationship&quot; : &quot;Souscripteur&quot;,
+    &quot;metLifeCovDecesTteCause.gfoBenefitChosen&quot; : 3000,
+    &quot;metLifeGFOLifeInsured.instanceKey&quot; : &quot;InsuredName InsuredSurname&quot;,
+    &quot;metLifeGFOLifeInsured.isPrimary&quot; : true,
+    &quot;metLifeGFOLifeInsured.personAgeAtSubscription&quot; : 40,
+    &quot;metLifeGFOLifeInsured.personBirthDate&quot; : &quot;1970-03-29&quot;,
+    &quot;metLifeGFOLifeInsured.personFirstName&quot; : &quot;InsuredName&quot;,
+    &quot;metLifeGFOLifeInsured.personLastName&quot; : &quot;InsuredSurname&quot;,
+    &quot;metLifeGFOLifeInsured.personRelationship&quot; : &quot;Souscripteur&quot;,
+    &quot;metLifeGFOLifeInsured.personTitle&quot; : &quot;Mr.&quot;,
+    &quot;policySubscriptionDate&quot; : &quot;2022-03-28&quot;,
+    &quot;refNT&quot; : &quot;12o&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact615878059436632</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:BirthDepartmentCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Birth_department_code__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact1702072360131177</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11BirthName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Birth_Name__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact17171892956279455</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:BirthCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Birth_City_Name__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact7831270376294925</globalKey>
+        <inputFieldName>CompleteAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact722712030282088</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:BirthCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Naissance_Address__CountryCode__ps</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact5008179055191608</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:lastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LastName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact8204414896423222</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact2676999507225193</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:firstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>FirstName</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtractPolicyData:SF11:firstName var:ExtractPolicyData:SF11:lastName CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(ExtractPolicyData:SF11:firstName, ExtractPolicyData:SF11:lastName)</formulaExpression>
+        <formulaResultPath>OpportunityName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact9202529636026218</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtractPolicyData:SF11:Address1 &quot;,&quot; var:ExtractPolicyData:SF11:Address2 &quot;,&quot; var:ExtractPolicyData:SF11:Address3 CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(%ExtractPolicyData:SF11:Address1%,&quot;,&quot;,%ExtractPolicyData:SF11:Address2%,&quot;,&quot;,%ExtractPolicyData:SF11:Address3%)</formulaExpression>
+        <formulaResultPath>CompleteAddress</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact22089553375265636</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY 1 ADDMONTH</formulaConverted>
+        <formulaExpression>ADDMONTH(TODAY(),1)</formulaExpression>
+        <formulaResultPath>CloseDate</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact5479317197644364</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact16710583839948656</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11PostCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact3481747541835609</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11Town</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact1741340411633281</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11SexCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>vlocity_ins__Gender__pc</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ExtractPolicyData:SF11:SF11TypeSubscriber &quot;0&quot; == &quot;Souscripteur/\/\/uniquement&quot; | var:ExtractPolicyData:SF11:SF11TypeSubscriber &quot;1&quot; == &quot;Souscripteur/\/\/Assuré&quot; var:null IF IF</formulaConverted>
+        <formulaExpression>IF((ExtractPolicyData:SF11:SF11TypeSubscriber==&quot;0&quot;), &quot;Souscripteur uniquement&quot;,IF((ExtractPolicyData:SF11:SF11TypeSubscriber==&quot;1&quot; ),&quot;Souscripteur Assuré&quot;,null))</formulaExpression>
+        <formulaResultPath>AccType</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact9490494886080068</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact2507188639570377</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11Civility</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonTitle</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact593448290377879</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:EmailId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonEmail</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact575513987530335</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:personBirthDay</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PersonBirthdate</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact09078552482896685</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11SubPlan</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Nombre_d_enfants__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact8307723404346834</globalKey>
+        <inputFieldName>AccType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact2933963634007515</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11SexCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Statut_Marital__c</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>metlifeDELETEcreateNewBusinessWithAccountONLYContact12491020943219255</globalKey>
+        <inputFieldName>ExtractPolicyData:SF11:SF11MobilePhoneNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>metlifeDELETEcreateNewBusinessWithAccountONLYContact</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Phone</outputFieldName>
+        <outputObjectName>Account</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;SF11&quot; : {
+    &quot;AccountType&quot; : &quot;&quot;,
+    &quot;Address1&quot; : &quot;123 street&quot;,
+    &quot;BTCHPO&quot; : &quot;4567fr45edrt5678fswe3&quot;,
+    &quot;BankCode&quot; : &quot;&quot;,
+    &quot;BankSortCode&quot; : &quot;&quot;,
+    &quot;CCAMPO&quot; : &quot;Dx78&quot;,
+    &quot;CLNTPO&quot; : &quot;78665443333333222222&quot;,
+    &quot;CODEPUB&quot; : &quot;FF45SY3789&quot;,
+    &quot;CSEXPO&quot; : &quot;M&quot;,
+    &quot;CodeOption&quot; : &quot;7000&quot;,
+    &quot;EmailId&quot; : &quot;FRTTT&quot;,
+    &quot;GuichetCode&quot; : &quot;&quot;,
+    &quot;IBAN&quot; : &quot;32AJKHJKHHJGH6786785676GH45&quot;,
+    &quot;LeadNumber&quot; : &quot;200130254079&quot;,
+    &quot;MethodOfPayment&quot; : &quot;C&quot;,
+    &quot;NPORPO&quot; : &quot;5643567899&quot;,
+    &quot;NTELPO&quot; : &quot;3456789087&quot;,
+    &quot;POSTPO&quot; : &quot;123445677&quot;,
+    &quot;PaymentFrequency&quot; : &quot;1&quot;,
+    &quot;RCTYPO&quot; : &quot;47&quot;,
+    &quot;SalesFlow_13&quot; : &quot;a8v0Q0000004jXnQAI&quot;,
+    &quot;SalesFlow_T12&quot; : &quot;a8y0Q0000014fVOQAY&quot;,
+    &quot;Status&quot; : &quot;Reject&quot;,
+    &quot;SubscriptionDate&quot; : &quot;&quot;,
+    &quot;TITLPO&quot; : &quot;MADAME&quot;,
+    &quot;TOWNPO&quot; : &quot;Chennai&quot;,
+    &quot;TSOUPO&quot; : &quot;0&quot;,
+    &quot;cleRIB&quot; : &quot;&quot;,
+    &quot;effectiveDate&quot; : &quot;2022-06-01&quot;,
+    &quot;firstName&quot; : &quot;JANU5&quot;,
+    &quot;instanceKey&quot; : &quot;JANU5 SREEE3&quot;,
+    &quot;lastName&quot; : &quot;SREEE38&quot;,
+    &quot;personBirthDay&quot; : &quot;1970-04-04&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>metlifeDELETEcreateNewBusinessWithAccountONLYContact_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

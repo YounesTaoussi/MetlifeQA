@@ -1,0 +1,1905 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CalculateValeurDerachat&quot; : {
+    &quot;output&quot; : [ {
+      &quot;calculationResults&quot; : [ {
+        &quot;ID&quot; : &quot;0&quot;,
+        &quot;InsurancePolicyCalculated&quot; : &quot;000039&quot;,
+        &quot;RachatValue1stYear&quot; : 120,
+        &quot;RachatValue2ndYear&quot; : 244,
+        &quot;RachatValue3rdYear&quot; : 368,
+        &quot;RachatValue4thYear&quot; : 492,
+        &quot;RachatValue5thYear&quot; : 616,
+        &quot;RachatValue6thYear&quot; : 740,
+        &quot;RachatValue7thYear&quot; : 864,
+        &quot;RachatValue8thYear&quot; : 988,
+        &quot;SumPayments1stYear&quot; : 351.84,
+        &quot;SumPayments2ndYear&quot; : 703.68,
+        &quot;SumPayments3rdYear&quot; : 1055.52,
+        &quot;SumPayments4thYear&quot; : 1407.36,
+        &quot;SumPayments5thYear&quot; : 1759.2,
+        &quot;SumPayments6thYear&quot; : 2111.04,
+        &quot;SumPayments7thYear&quot; : 2462.88,
+        &quot;SumPayments8thYear&quot; : 2814.72
+      }, {
+        &quot;ID&quot; : &quot;1&quot;,
+        &quot;InsurancePolicyCalculated&quot; : &quot;000040&quot;,
+        &quot;RachatValue1stYear&quot; : 120,
+        &quot;RachatValue2ndYear&quot; : 244,
+        &quot;RachatValue3rdYear&quot; : 368,
+        &quot;RachatValue4thYear&quot; : 492,
+        &quot;RachatValue5thYear&quot; : 616,
+        &quot;RachatValue6thYear&quot; : 740,
+        &quot;RachatValue7thYear&quot; : 864,
+        &quot;RachatValue8thYear&quot; : 988,
+        &quot;SumPayments1stYear&quot; : 351.84,
+        &quot;SumPayments2ndYear&quot; : 703.68,
+        &quot;SumPayments3rdYear&quot; : 1055.52,
+        &quot;SumPayments4thYear&quot; : 1407.36,
+        &quot;SumPayments5thYear&quot; : 1759.2,
+        &quot;SumPayments6thYear&quot; : 2111.04,
+        &quot;SumPayments7thYear&quot; : 2462.88,
+        &quot;SumPayments8thYear&quot; : 2814.72
+      } ]
+    } ]
+  },
+  &quot;GetPolicyDetailsKIT&quot; : {
+    &quot;KitContracts&quot; : {
+      &quot;PolicyName&quot; : &quot;Text&quot;,
+      &quot;SponsorName&quot; : &quot;Text&quot;,
+      &quot;SponsorPhone&quot; : &quot;Text&quot;,
+      &quot;TotalSumInsured&quot; : &quot;Text&quot;,
+      &quot;accountName&quot; : &quot;Text&quot;,
+      &quot;accountPhone&quot; : &quot;Text&quot;,
+      &quot;beneficiaryClause&quot; : &quot;Text&quot;,
+      &quot;codePub&quot; : &quot;Text&quot;,
+      &quot;codePubDescription&quot; : &quot;Text&quot;,
+      &quot;coderefCG&quot; : &quot;Text&quot;,
+      &quot;effectiveDate&quot; : &quot;Text&quot;,
+      &quot;expirationDate&quot; : &quot;Text&quot;,
+      &quot;gratuite&quot; : &quot;Text&quot;,
+      &quot;monthlyPremium&quot; : &quot;Text&quot;,
+      &quot;originalEffectiveDate&quot; : &quot;Text&quot;,
+      &quot;paymentDueDate&quot; : &quot;Text&quot;,
+      &quot;paymentMethodType&quot; : &quot;Text&quot;,
+      &quot;personBillingAddress&quot; : &quot;Text&quot;,
+      &quot;personBillingCity&quot; : &quot;Text&quot;,
+      &quot;personBillingCountry&quot; : &quot;Text&quot;,
+      &quot;personBillingPostalCode&quot; : &quot;Text&quot;,
+      &quot;personBillingSrteet&quot; : &quot;Text&quot;,
+      &quot;personBirthDate&quot; : &quot;Text&quot;,
+      &quot;personEmail&quot; : &quot;Text&quot;,
+      &quot;personFirstName&quot; : &quot;Text&quot;,
+      &quot;personLastName&quot; : &quot;Text&quot;,
+      &quot;personTitle&quot; : &quot;Text&quot;,
+      &quot;policyAutoNumber&quot; : &quot;Text&quot;,
+      &quot;policyId&quot; : &quot;Text&quot;,
+      &quot;policyTerm&quot; : &quot;Text&quot;,
+      &quot;premiumFrequency&quot; : &quot;Text&quot;,
+      &quot;productName&quot; : &quot;Text&quot;,
+      &quot;refNT&quot; : &quot;Text&quot;,
+      &quot;saleDate&quot; : &quot;Text&quot;,
+      &quot;sponsorCode&quot; : &quot;Text&quot;,
+      &quot;sponsorNomContact&quot; : &quot;Text&quot;,
+      &quot;sponsorRoleContact&quot; : &quot;Text&quot;,
+      &quot;taskId&quot; : &quot;Text&quot;,
+      &quot;totalAmount&quot; : &quot;Text&quot;
+    },
+    &quot;RachatCalculationInput&quot; : {
+      &quot;contratDuration&quot; : &quot;Text&quot;,
+      &quot;faceAmountAssured&quot; : &quot;Text&quot;,
+      &quot;insurancePolicyId&quot; : &quot;Text&quot;,
+      &quot;insuredBirthDate&quot; : &quot;Text&quot;,
+      &quot;monthlyPremiumAmount&quot; : &quot;Text&quot;,
+      &quot;refNT&quot; : &quot;Text&quot;,
+      &quot;revalo&quot; : &quot;Text&quot;,
+      &quot;subscriptionDate&quot; : &quot;Text&quot;
+    }
+  },
+  &quot;SetTechValuesValues&quot; : {
+    &quot;CoveragesTable&quot; : [ {
+      &quot;Coverage&quot; : 1
+    }, {
+      &quot;Coverage&quot; : 2
+    } ],
+    &quot;YearsTable&quot; : [ {
+      &quot;year&quot; : 1
+    }, {
+      &quot;year&quot; : 2
+    }, {
+      &quot;year&quot; : 3
+    }, {
+      &quot;year&quot; : 4
+    }, {
+      &quot;year&quot; : 5
+    }, {
+      &quot;year&quot; : 6
+    }, {
+      &quot;year&quot; : 7
+    }, {
+      &quot;year&quot; : 8
+    } ]
+  },
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;00TMU000001lK712AE&quot;
+  }, {
+    &quot;Id&quot; : &quot;00TMU000001lK892AE&quot;
+  } ]
+}</expectedInputJson>
+    <expectedOutputXml>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;root&gt;
+    &lt;plis&gt;
+        &lt;pli id=&quot;Releve BatchXMLtest - GFO Oney - CGFOR004778&quot;&gt;
+            &lt;contrat_periodicite&gt;Bank Account&lt;/contrat_periodicite&gt;
+            &lt;destinataire_adresse_codepostal&gt;90000&lt;/destinataire_adresse_codepostal&gt;
+            &lt;contrat_duree&gt;VIE ENTIERE&lt;/contrat_duree&gt;
+            &lt;assure_date_naissance&gt;05/10/1957&lt;/assure_date_naissance&gt;
+            &lt;conjoint_contrat_prime&gt;0.0&lt;/conjoint_contrat_prime&gt;
+            &lt;conjoint_date_naissance&gt;99/99/9999&lt;/conjoint_date_naissance&gt;
+            &lt;contrat_identifiant&gt;CGFOR004778&lt;/contrat_identifiant&gt;
+            &lt;contrat_date_souscription&gt;01/01/1970&lt;/contrat_date_souscription&gt;
+            &lt;contrat_dateeffet&gt;05/10/2022&lt;/contrat_dateeffet&gt;
+            &lt;destinataire_adresse_ville&gt;paris&lt;/destinataire_adresse_ville&gt;
+            &lt;destinataire_pays&gt;France&lt;/destinataire_pays&gt;
+            &lt;sponsor_code&gt;Releve BatchXMLtest&lt;/sponsor_code&gt;
+            &lt;sponsor_raisonsociale&gt;Releve BatchXMLtest&lt;/sponsor_raisonsociale&gt;
+            &lt;contrat_recouvrement&gt;Bank Account&lt;/contrat_recouvrement&gt;
+            &lt;funecap&gt;oui&lt;/funecap&gt;
+            &lt;contrat_nom&gt;Garantie Obsèques Oney&lt;/contrat_nom&gt;
+            &lt;beneficiaire_clause&gt;En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&lt;/beneficiaire_clause&gt;
+            &lt;destinataire_adresse_complement&gt;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE 90000 paris France&lt;/destinataire_adresse_complement&gt;
+            &lt;SRC_id&gt;00T0Q00000KYB9ZUAX&lt;/SRC_id&gt;
+            &lt;sponsor_num_tel&gt; appel gratuit en France depuis un poste fixe&lt;/sponsor_num_tel&gt;
+            &lt;contrat_prime&gt;29.32&lt;/contrat_prime&gt;
+            &lt;contrat_jourpaiement&gt;05&lt;/contrat_jourpaiement&gt;
+            &lt;gratuite_date_debut&gt;05/10/2022&lt;/gratuite_date_debut&gt;
+            &lt;plan&gt;
+                &lt;annee id=&quot;1&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;351.89&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;120&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;2&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;703.78&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;244.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;3&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;1055.67&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;368.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;4&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;1407.56&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;492.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;5&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;1759.45&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;616.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;6&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;2111.34&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;740.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;7&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;2463.24&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;864.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+                &lt;annee id=&quot;8&quot;&gt;
+                    &lt;annee_cotisationscumul&gt;2815.13&lt;/annee_cotisationscumul&gt;
+                    &lt;annee_valeurrachat&gt;988.00&lt;/annee_valeurrachat&gt;
+                &lt;/annee&gt;
+            &lt;/plan&gt;
+            &lt;rider&gt;
+                &lt;garanties&gt;
+                    &lt;garantie id=&quot;1&quot;&gt;
+                        &lt;garantie_libelle&gt;Garantie Décès toute cause&lt;/garantie_libelle&gt;
+                        &lt;garantie_capital&gt;4000&lt;/garantie_capital&gt;
+                    &lt;/garantie&gt;
+                    &lt;garantie id=&quot;2&quot;&gt;
+                        &lt;garantie_libelle&gt;Garantie Assistance&lt;/garantie_libelle&gt;
+                        &lt;garantie_capital&gt;0.0&lt;/garantie_capital&gt;
+                    &lt;/garantie&gt;
+                &lt;/garanties&gt;
+            &lt;/rider&gt;
+            &lt;letter_type&gt;KIT&lt;/letter_type&gt;
+            &lt;contrat_nature&gt;Contrat&lt;/contrat_nature&gt;
+            &lt;contrat_dateterme&gt;&lt;/contrat_dateterme&gt;
+            &lt;contrat_coordonnees_bic&gt;&lt;/contrat_coordonnees_bic&gt;
+            &lt;conjoint_contrat_identifiant&gt;&lt;/conjoint_contrat_identifiant&gt;
+            &lt;destinataire_adresse_voie1&gt;&lt;/destinataire_adresse_voie1&gt;
+            &lt;contrat_coordonnees_paiement&gt;&lt;/contrat_coordonnees_paiement&gt;
+            &lt;destinataire_adresse_voie&gt;&lt;/destinataire_adresse_voie&gt;
+            &lt;conjoint_adresse_mail&gt;&lt;/conjoint_adresse_mail&gt;
+            &lt;assure_prenom&gt;&lt;/assure_prenom&gt;
+            &lt;assure_genre&gt;&lt;/assure_genre&gt;
+            &lt;conjoint_civilite&gt;&lt;/conjoint_civilite&gt;
+            &lt;conjoint_prenom&gt;&lt;/conjoint_prenom&gt;
+            &lt;destinataire_adresse_mail&gt;&lt;/destinataire_adresse_mail&gt;
+            &lt;conjoint_nom&gt;&lt;/conjoint_nom&gt;
+            &lt;assure_nom&gt;&lt;/assure_nom&gt;
+            &lt;code_produit&gt;&lt;/code_produit&gt;
+            &lt;sponsor_nom_contact&gt;&lt;/sponsor_nom_contact&gt;
+            &lt;conjoint_contrat_code_pub&gt;&lt;/conjoint_contrat_code_pub&gt;
+            &lt;conjoint_num_tel&gt;&lt;/conjoint_num_tel&gt;
+            &lt;contrat_option&gt;&lt;/contrat_option&gt;
+            &lt;contrat_code_pub&gt;&lt;/contrat_code_pub&gt;
+            &lt;contrat_cg&gt;&lt;/contrat_cg&gt;
+            &lt;destinataire_genre_abr&gt;&lt;/destinataire_genre_abr&gt;
+            &lt;destinataire_nom&gt;&lt;/destinataire_nom&gt;
+            &lt;destinataire_prenom&gt;&lt;/destinataire_prenom&gt;
+            &lt;contrat_duplicata&gt;Non&lt;/contrat_duplicata&gt;
+            &lt;destinataire_adresse_cedex&gt;&lt;/destinataire_adresse_cedex&gt;
+            &lt;sponsor_role_contact&gt;&lt;/sponsor_role_contact&gt;
+            &lt;gratuite_date_fin&gt;&lt;/gratuite_date_fin&gt;
+            &lt;assure_adresse_mail&gt;&lt;/assure_adresse_mail&gt;
+            &lt;contrat_code_pub_libelle&gt;&lt;/contrat_code_pub_libelle&gt;
+        &lt;/pli&gt;
+    &lt;/plis&gt;
+&lt;/root&gt;</expectedOutputXml>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBuildKitContartXML</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7814</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_genre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6699</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_voie1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom9209</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personBillingAddress</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_voie</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom145</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personBillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_ville:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7714</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_genre_abr</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8141</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_cedex</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5699</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:paymentMethodType</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_recouvrement:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5004</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:totalAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_prime:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7886</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:premiumFrequency</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_periodicite:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5971</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_mail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom2006</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_lieu_dit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7247</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_complement:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3560</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personBillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_codepostal:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom247</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:PolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_identifiant:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3950</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:policyTerm</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_duree:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{
+  &quot;wholeLife&quot; : &quot;VIE ENTIERE&quot;
+}</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7622</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:sponsorRoleContact</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_role_contact</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Non</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom634</globalKey>
+        <inputFieldName>duplicata</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_duplicata:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3412</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:SponsorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_raisonsociale:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&quot;99/99/9999&quot;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom9781</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:expirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_dateterme</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom2483</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_option</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8176</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:productName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_nom:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>contrat</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6832</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_nature:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom1480</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:effectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_jourpaiement:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;3&quot;</formulaConverted>
+        <formulaExpression>&quot;3&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E3:Id</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom8795</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;7&quot;</formulaConverted>
+        <formulaExpression>&quot;7&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E7:Id</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom8992</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;6&quot;</formulaConverted>
+        <formulaExpression>&quot;6&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E6:Id</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom8451</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;5&quot;</formulaConverted>
+        <formulaExpression>&quot;5&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E5:Id</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom8560</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;4&quot;</formulaConverted>
+        <formulaExpression>&quot;4&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E4:Id</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom7366</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;2&quot;</formulaConverted>
+        <formulaExpression>&quot;2&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R2:Id</formulaResultPath>
+        <formulaSequence>30.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom5771</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;2&quot;</formulaConverted>
+        <formulaExpression>&quot;2&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E2:Id</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom5345</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;1&quot;</formulaConverted>
+        <formulaExpression>&quot;1&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R1:Id</formulaResultPath>
+        <formulaSequence>29.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom5166</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;1&quot;</formulaConverted>
+        <formulaExpression>&quot;1&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E1:Id</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom3654</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:coverage2Name</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:coverage2Name</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R2:CoverageName</formulaResultPath>
+        <formulaSequence>33.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom1358</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:coverage1Name</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:coverage1Name</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R1:CoverageName</formulaResultPath>
+        <formulaSequence>31.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom987</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Id&quot; | var:GetPolicyDetailsKIT:KitContracts:R1 LIST | var:GetPolicyDetailsKIT:KitContracts:R2 LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;Id&quot;, LIST(GetPolicyDetailsKIT:KitContracts:R1),LIST(GetPolicyDetailsKIT:KitContracts:R2))</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:Riders</formulaResultPath>
+        <formulaSequence>35.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom6980</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Id&quot; | var:GetPolicyDetailsKIT:KitContracts:E1 LIST | var:GetPolicyDetailsKIT:KitContracts:E2 LIST | var:GetPolicyDetailsKIT:KitContracts:E3 LIST | var:GetPolicyDetailsKIT:KitContracts:E4 LIST | var:GetPolicyDetailsKIT:KitContracts:E5 LIST | var:GetPolicyDetailsKIT:KitContracts:E6 LIST | var:GetPolicyDetailsKIT:KitContracts:E7 LIST | var:GetPolicyDetailsKIT:KitContracts:E8 LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;Id&quot;, LIST(GetPolicyDetailsKIT:KitContracts:E1),LIST(GetPolicyDetailsKIT:KitContracts:E2),LIST(GetPolicyDetailsKIT:KitContracts:E3),LIST(GetPolicyDetailsKIT:KitContracts:E4),LIST(GetPolicyDetailsKIT:KitContracts:E5),LIST(GetPolicyDetailsKIT:KitContracts:E6),LIST(GetPolicyDetailsKIT:KitContracts:E7),LIST(GetPolicyDetailsKIT:KitContracts:E8))</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:RachatValueList</formulaResultPath>
+        <formulaSequence>26.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom7603</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetPolicyDetailsKIT:KitContracts:carrier ISNOTBLANK &quot;OUI&quot; &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(GetPolicyDetailsKIT:KitContracts:carrier), &quot;OUI&quot;, &quot;&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:funecap</formulaResultPath>
+        <formulaSequence>28.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom9880</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GetPolicyDetailsKIT:KitContracts:gratuite 1 &gt;= | var:GetPolicyDetailsKIT:KitContracts:effectiveDate var:GetPolicyDetailsKIT:KitContracts:gratuite ADDMONTH var:GetPolicyDetailsKIT:KitContracts:effectiveDate IF</formulaConverted>
+        <formulaExpression>IF(GetPolicyDetailsKIT:KitContracts:gratuite &gt;= 1, ADDMONTH(GetPolicyDetailsKIT:KitContracts:effectiveDate, GetPolicyDetailsKIT:KitContracts:gratuite), GetPolicyDetailsKIT:KitContracts:effectiveDate)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:dateFinGratuite</formulaResultPath>
+        <formulaSequence>27.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom5821</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5547</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:Riders:CapitalGaranti</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>root:plis:pli:rider:garanties:garantie:garantie_capital:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>TROUVER LE CHAMPS A UTILISER</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom4266</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:productComercialName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_code_pub_libelle</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6344</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:Riders:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:rider:garanties:garantie:@id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom9471</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:SponsorPhone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_num_tel:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom2565</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:effectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_dateeffet:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3097</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:sponsorNomContact</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_nom_contact</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom4603</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:saleDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:contrat_date_souscription:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8344</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:sponsorCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:sponsor_code:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5305</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_coordonnees_paiement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6293</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:Riders:CoverageName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:rider:garanties:garantie:garantie_libelle:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom1385</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_coordonnees_bic</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments7thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments7thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E7:Total</formulaResultPath>
+        <formulaSequence>24.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom7700</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom1808</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:coderefCG</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_cg</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3212</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:RachatValueList:Rachat</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:plan:annee:annee_valeurrachat:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments6thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments6thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E6:Total</formulaResultPath>
+        <formulaSequence>23.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom4485</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom4014</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_prenom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom2992</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:RachatValueList:Total</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:plan:annee:annee_cotisationscumul:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments5thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments5thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E5:Total</formulaResultPath>
+        <formulaSequence>22.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom3961</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom395</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_num_tel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6121</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:RachatValueList:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:plan:annee:@id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments4thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments4thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E4:Total</formulaResultPath>
+        <formulaSequence>21.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom6930</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3127</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_nom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:TotalSumInsured</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:TotalSumInsured</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R1:CapitalGaranti</formulaResultPath>
+        <formulaSequence>32.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom4834</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments8thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments8thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E8:Total</formulaResultPath>
+        <formulaSequence>25.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom1814</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8301</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:codePub</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:contrat_code_pub</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom9499</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_prenom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue7thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue7thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E7:Rachat</formulaResultPath>
+        <formulaSequence>17.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom2960</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3395</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_civilite</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6390</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personBillingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_pays:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue6thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue6thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E6:Rachat</formulaResultPath>
+        <formulaSequence>16.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom9400</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3597</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_adresse_mail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom843</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_nom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue5thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue5thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E5:Rachat</formulaResultPath>
+        <formulaSequence>15.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom9258</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8162</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:productCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:code_produit</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue4thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue4thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E4:Rachat</formulaResultPath>
+        <formulaSequence>14.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom159</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom9710</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:beneficiaryClause</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:beneficiaire_clause:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>KIT</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8817</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:letter_type:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments3rdYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments3rdYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E3:Total</formulaResultPath>
+        <formulaSequence>20.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom7403</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>99/99/9999</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5495</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_date_naissance:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7262</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:dateFinGratuite</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:gratuite_date_fin</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments2ndYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments2ndYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E2:Total</formulaResultPath>
+        <formulaSequence>19.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom8328</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0.0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8586</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_contrat_prime:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5989</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:effectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:gratuite_date_debut:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments1stYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:SumPayments1stYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E1:Total</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom5225</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom8563</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_contrat_identifiant</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom1840</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:funecap</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:funecap:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue8thYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue8thYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E8:Rachat</formulaResultPath>
+        <formulaSequence>18.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom780</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom415</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:conjoint_contrat_code_pub</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>0</formulaConverted>
+        <formulaExpression>0</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:R2:CapitalGaranti</formulaResultPath>
+        <formulaSequence>34.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom7060</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom6780</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personEmail</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_adresse_mail</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom3898</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:policyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:SRC_id:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom7197</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:PolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:@id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;8&quot;</formulaConverted>
+        <formulaExpression>&quot;8&quot;</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E8:Id</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom4330</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue3rdYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue3rdYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E3:Rachat</formulaResultPath>
+        <formulaSequence>13.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom926</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5693</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personFirstName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_prenom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue2ndYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue2ndYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E2:Rachat</formulaResultPath>
+        <formulaSequence>12.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom6755</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom2246</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personLastName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_nom</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue1stYear</formulaConverted>
+        <formulaExpression>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated:RachatValue1stYear</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:E1:Rachat</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom3113</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom5206</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personTitle</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:assure_genre</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:CalculateValeurDerachat:output|1:calculationResults LIST &apos;InsurancePolicyCalculated/\/\/==/\/\/&quot;&apos; var:GetPolicyDetailsKIT:KitContracts:policyAutoNumber + &apos;&quot;&apos; + FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(CalculateValeurDerachat:output|1:calculationResults), &apos;InsurancePolicyCalculated == &quot;&apos;+ GetPolicyDetailsKIT:KitContracts:policyAutoNumber +&apos;&quot;&apos;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:RachatValueNonFormated</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTBuildKitContartXMLCustom4199</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildKitContartXMLCustom4586</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:personBirthDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildKitContartXML</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(dd/MM/yyyy)</outputFieldFormat>
+        <outputFieldName>root:plis:pli:assure_date_naissance:#text</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>XML</outputType>
+    <previewJsonData>{
+  &quot;CalculateValeurDerachat&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;output&quot; : [ {
+      &quot;aggregationResults&quot; : { },
+      &quot;calculationResults&quot; : [ {
+        &quot;ID&quot; : &quot;0&quot;,
+        &quot;InsurancePolicyCalculated&quot; : &quot;000039&quot;,
+        &quot;RachatValue1stYear&quot; : 120,
+        &quot;RachatValue2ndYear&quot; : 244,
+        &quot;RachatValue3rdYear&quot; : 368,
+        &quot;RachatValue4thYear&quot; : 492,
+        &quot;RachatValue5thYear&quot; : 616,
+        &quot;RachatValue6thYear&quot; : 740,
+        &quot;RachatValue7thYear&quot; : 864,
+        &quot;RachatValue8thYear&quot; : 988,
+        &quot;SumPayments1stYear&quot; : 351.84,
+        &quot;SumPayments2ndYear&quot; : 703.68,
+        &quot;SumPayments3rdYear&quot; : 1055.52,
+        &quot;SumPayments4thYear&quot; : 1407.36,
+        &quot;SumPayments5thYear&quot; : 1759.2,
+        &quot;SumPayments6thYear&quot; : 2111.04,
+        &quot;SumPayments7thYear&quot; : 2462.88,
+        &quot;SumPayments8thYear&quot; : 2814.72
+      }, {
+        &quot;ID&quot; : &quot;1&quot;,
+        &quot;InsurancePolicyCalculated&quot; : &quot;000040&quot;,
+        &quot;RachatValue1stYear&quot; : 120,
+        &quot;RachatValue2ndYear&quot; : 244,
+        &quot;RachatValue3rdYear&quot; : 368,
+        &quot;RachatValue4thYear&quot; : 492,
+        &quot;RachatValue5thYear&quot; : 616,
+        &quot;RachatValue6thYear&quot; : 740,
+        &quot;RachatValue7thYear&quot; : 864,
+        &quot;RachatValue8thYear&quot; : 988,
+        &quot;SumPayments1stYear&quot; : 351.84,
+        &quot;SumPayments2ndYear&quot; : 703.68,
+        &quot;SumPayments3rdYear&quot; : 1055.52,
+        &quot;SumPayments4thYear&quot; : 1407.36,
+        &quot;SumPayments5thYear&quot; : 1759.2,
+        &quot;SumPayments6thYear&quot; : 2111.04,
+        &quot;SumPayments7thYear&quot; : 2462.88,
+        &quot;SumPayments8thYear&quot; : 2814.72
+      } ]
+    } ]
+  },
+  &quot;CalculateValeurDerachatStatus&quot; : true,
+  &quot;GetPolicyDetailsKIT&quot; : {
+    &quot;KitContracts&quot; : [ {
+      &quot;PolicyName&quot; : &quot;CGFOR000039&quot;,
+      &quot;TotalSumInsured&quot; : 4000,
+      &quot;accountName&quot; : &quot;TestDEV061 TestDEV061&quot;,
+      &quot;beneficiaryClause&quot; : &quot;Date d&apos;effet le 05/10/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;codePub&quot; : &quot;N0727A&quot;,
+      &quot;codePubDescription&quot; : &quot;FIELD TO BE CREATED SOMEWHERE&quot;,
+      &quot;coderefCG&quot; : &quot;DGCF17A&quot;,
+      &quot;effectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;gratuite&quot; : &quot;0&quot;,
+      &quot;monthlyPremium&quot; : 29.32,
+      &quot;originalEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;paymentDueDate&quot; : &quot;2022-11-05T00:00:00.000Z&quot;,
+      &quot;paymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;personBillingAddress&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE,   France&quot;,
+      &quot;personBillingCountry&quot; : &quot;France&quot;,
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;personFirstName&quot; : &quot;TestDEV061&quot;,
+      &quot;personLastName&quot; : &quot;TestDEV061&quot;,
+      &quot;personTitle&quot; : &quot;Ms.&quot;,
+      &quot;policyAutoNumber&quot; : &quot;000039&quot;,
+      &quot;policyId&quot; : &quot;0YTMU00000000014AA&quot;,
+      &quot;policyTerm&quot; : &quot;wholeLife&quot;,
+      &quot;productName&quot; : &quot;01t1x00000IyOEFAA3&quot;,
+      &quot;refNT&quot; : &quot;12n&quot;,
+      &quot;saleDate&quot; : &quot;1970-01-01T06:37:01.000Z&quot;,
+      &quot;taskId&quot; : &quot;00TMU000001lK712AE&quot;,
+      &quot;totalAmount&quot; : 29.32
+    }, {
+      &quot;PolicyName&quot; : &quot;CGFOR000040&quot;,
+      &quot;TotalSumInsured&quot; : 4000,
+      &quot;accountName&quot; : &quot;Test2999 test20000&quot;,
+      &quot;beneficiaryClause&quot; : &quot;Date d&apos;effet le 05/10/2022. En l’absence de désignation d’un Bénéficiaire ou en cas de décès de l’ensemble des Bénéficiaires désignés, le capital garanti sera versé au conjoint de l’Assuré, non séparé, non divorcé, ou à son partenaire de pacte civil de solidarité ou à son concubin&quot;,
+      &quot;codePub&quot; : &quot;N0727A&quot;,
+      &quot;codePubDescription&quot; : &quot;FIELD TO BE CREATED SOMEWHERE&quot;,
+      &quot;coderefCG&quot; : &quot;DGCF17A&quot;,
+      &quot;effectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;gratuite&quot; : &quot;0&quot;,
+      &quot;monthlyPremium&quot; : 29.32,
+      &quot;originalEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;paymentDueDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;paymentMethodType&quot; : &quot;Bank Account&quot;,
+      &quot;personBillingAddress&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE,   France&quot;,
+      &quot;personBillingCountry&quot; : &quot;France&quot;,
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;,
+      &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;personFirstName&quot; : &quot;Test2999&quot;,
+      &quot;personLastName&quot; : &quot;test20000&quot;,
+      &quot;personTitle&quot; : &quot;Ms.&quot;,
+      &quot;policyAutoNumber&quot; : &quot;000040&quot;,
+      &quot;policyId&quot; : &quot;0YTMU00000000064AA&quot;,
+      &quot;policyTerm&quot; : &quot;wholeLife&quot;,
+      &quot;productName&quot; : &quot;01t1x00000IyOEFAA3&quot;,
+      &quot;refNT&quot; : &quot;12n&quot;,
+      &quot;saleDate&quot; : &quot;1970-01-01T06:37:01.000Z&quot;,
+      &quot;taskId&quot; : &quot;00TMU000001lK892AE&quot;,
+      &quot;totalAmount&quot; : 29.32
+    } ],
+    &quot;RachatCalculationInput&quot; : [ {
+      &quot;contratDuration&quot; : &quot;wholeLife&quot;,
+      &quot;faceAmountAssured&quot; : &quot;4000&quot;,
+      &quot;insurancePolicyId&quot; : &quot;000039&quot;,
+      &quot;insuredBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;monthlyPremiumAmount&quot; : 29.32,
+      &quot;refNT&quot; : &quot;12n&quot;,
+      &quot;revalo&quot; : false,
+      &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;
+    }, {
+      &quot;contratDuration&quot; : &quot;wholeLife&quot;,
+      &quot;faceAmountAssured&quot; : &quot;4000&quot;,
+      &quot;insurancePolicyId&quot; : &quot;000040&quot;,
+      &quot;insuredBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;monthlyPremiumAmount&quot; : 29.32,
+      &quot;refNT&quot; : &quot;12n&quot;,
+      &quot;revalo&quot; : false,
+      &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;
+    } ]
+  },
+  &quot;GetPolicyDetailsKITStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;00TMU000001lK712AE&quot;
+  }, {
+    &quot;Id&quot; : &quot;00TMU000001lK892AE&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBuildKitContartXML_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+    <xmlOutputTagsOrder>[&quot;root&quot;,&quot;root:plis&quot;,&quot;root:plis:pli&quot;,&quot;root:plis:pli:@id&quot;,&quot;root:plis:pli:contrat_periodicite&quot;,&quot;root:plis:pli:contrat_periodicite:#text&quot;,&quot;root:plis:pli:destinataire_adresse_codepostal&quot;,&quot;root:plis:pli:destinataire_adresse_codepostal:#text&quot;,&quot;root:plis:pli:contrat_duree&quot;,&quot;root:plis:pli:contrat_duree:#text&quot;,&quot;root:plis:pli:assure_date_naissance&quot;,&quot;root:plis:pli:assure_date_naissance:#text&quot;,&quot;root:plis:pli:conjoint_contrat_prime&quot;,&quot;root:plis:pli:conjoint_contrat_prime:#text&quot;,&quot;root:plis:pli:conjoint_date_naissance&quot;,&quot;root:plis:pli:conjoint_date_naissance:#text&quot;,&quot;root:plis:pli:contrat_identifiant&quot;,&quot;root:plis:pli:contrat_identifiant:#text&quot;,&quot;root:plis:pli:contrat_date_souscription&quot;,&quot;root:plis:pli:contrat_date_souscription:#text&quot;,&quot;root:plis:pli:contrat_dateeffet&quot;,&quot;root:plis:pli:contrat_dateeffet:#text&quot;,&quot;root:plis:pli:destinataire_adresse_ville&quot;,&quot;root:plis:pli:destinataire_adresse_ville:#text&quot;,&quot;root:plis:pli:destinataire_pays&quot;,&quot;root:plis:pli:destinataire_pays:#text&quot;,&quot;root:plis:pli:sponsor_code&quot;,&quot;root:plis:pli:sponsor_code:#text&quot;,&quot;root:plis:pli:sponsor_raisonsociale&quot;,&quot;root:plis:pli:sponsor_raisonsociale:#text&quot;,&quot;root:plis:pli:contrat_recouvrement&quot;,&quot;root:plis:pli:contrat_recouvrement:#text&quot;,&quot;root:plis:pli:funecap&quot;,&quot;root:plis:pli:funecap:#text&quot;,&quot;root:plis:pli:contrat_nom&quot;,&quot;root:plis:pli:contrat_nom:#text&quot;,&quot;root:plis:pli:beneficiaire_clause&quot;,&quot;root:plis:pli:beneficiaire_clause:#text&quot;,&quot;root:plis:pli:destinataire_adresse_complement&quot;,&quot;root:plis:pli:destinataire_adresse_complement:#text&quot;,&quot;root:plis:pli:SRC_id&quot;,&quot;root:plis:pli:SRC_id:#text&quot;,&quot;root:plis:pli:sponsor_num_tel&quot;,&quot;root:plis:pli:sponsor_num_tel:#text&quot;,&quot;root:plis:pli:contrat_prime&quot;,&quot;root:plis:pli:contrat_prime:#text&quot;,&quot;root:plis:pli:contrat_jourpaiement&quot;,&quot;root:plis:pli:contrat_jourpaiement:#text&quot;,&quot;root:plis:pli:gratuite_date_debut&quot;,&quot;root:plis:pli:gratuite_date_debut:#text&quot;,&quot;root:plis:pli:plan&quot;,&quot;root:plis:pli:plan:annee&quot;,&quot;root:plis:pli:plan:annee:@id&quot;,&quot;root:plis:pli:plan:annee:annee_cotisationscumul&quot;,&quot;root:plis:pli:plan:annee:annee_cotisationscumul:#text&quot;,&quot;root:plis:pli:plan:annee:annee_valeurrachat&quot;,&quot;root:plis:pli:plan:annee:annee_valeurrachat:#text&quot;,&quot;root:plis:pli:rider&quot;,&quot;root:plis:pli:rider:garanties&quot;,&quot;root:plis:pli:rider:garanties:garantie&quot;,&quot;root:plis:pli:rider:garanties:garantie:@id&quot;,&quot;root:plis:pli:rider:garanties:garantie:garantie_libelle&quot;,&quot;root:plis:pli:rider:garanties:garantie:garantie_libelle:#text&quot;,&quot;root:plis:pli:rider:garanties:garantie:garantie_capital&quot;,&quot;root:plis:pli:rider:garanties:garantie:garantie_capital:#text&quot;,&quot;root:plis:pli:letter_type&quot;,&quot;root:plis:pli:letter_type:#text&quot;,&quot;root:plis:pli:contrat_nature&quot;,&quot;root:plis:pli:contrat_nature:#text&quot;,&quot;root:plis:pli:contrat_dateterme&quot;,&quot;root:plis:pli:contrat_coordonnees_bic&quot;,&quot;root:plis:pli:conjoint_contrat_identifiant&quot;,&quot;root:plis:pli:destinataire_adresse_voie1&quot;,&quot;root:plis:pli:contrat_coordonnees_paiement&quot;,&quot;root:plis:pli:destinataire_adresse_voie&quot;,&quot;root:plis:pli:conjoint_adresse_mail&quot;,&quot;root:plis:pli:assure_prenom&quot;,&quot;root:plis:pli:assure_genre&quot;,&quot;root:plis:pli:conjoint_civilite&quot;,&quot;root:plis:pli:conjoint_prenom&quot;,&quot;root:plis:pli:destinataire_adresse_mail&quot;,&quot;root:plis:pli:conjoint_nom&quot;,&quot;root:plis:pli:assure_nom&quot;,&quot;root:plis:pli:code_produit&quot;,&quot;root:plis:pli:sponsor_nom_contact&quot;,&quot;root:plis:pli:conjoint_contrat_code_pub&quot;,&quot;root:plis:pli:conjoint_num_tel&quot;,&quot;root:plis:pli:contrat_option&quot;,&quot;root:plis:pli:contrat_code_pub&quot;,&quot;root:plis:pli:contrat_cg&quot;,&quot;root:plis:pli:destinataire_genre_abr&quot;,&quot;root:plis:pli:destinataire_nom&quot;,&quot;root:plis:pli:destinataire_prenom&quot;,&quot;root:plis:pli:contrat_duplicata&quot;,&quot;root:plis:pli:contrat_duplicata:#text&quot;,&quot;root:plis:pli:destinataire_adresse_cedex&quot;,&quot;root:plis:pli:sponsor_role_contact&quot;,&quot;root:plis:pli:gratuite_date_fin&quot;,&quot;root:plis:pli:assure_adresse_mail&quot;,&quot;root:plis:pli:contrat_code_pub_libelle&quot;]</xmlOutputTagsOrder>
+</OmniDataTransform>

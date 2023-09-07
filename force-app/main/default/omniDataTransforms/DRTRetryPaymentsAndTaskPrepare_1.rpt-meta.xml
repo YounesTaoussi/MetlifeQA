@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;CreateCheckPaymentMethodsStatus&quot; : false,
+  &quot;CreatePremiumPaymentCancelation&quot; : {
+    &quot;vlocity_ins__PaymentMethod__c_4&quot; : [ {
+      &quot;Id&quot; : &quot;a600Q00000059bsQAA&quot;,
+      &quot;NumberOfConsecutiveFailures__c&quot; : 1,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;Id&quot; : &quot;a600Q0000005A6tQAE&quot;,
+      &quot;NumberOfConsecutiveFailures__c&quot; : 1,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;ActualTime&quot; : 1867,
+    &quot;CpuTime&quot; : 824,
+    &quot;InsurancePolicyTransaction_1&quot; : [ {
+      &quot;Cancellation_Code__c&quot; : &quot;Error&quot;,
+      &quot;Cancellation_Libell__c&quot; : &quot;Error Test&quot;,
+      &quot;Id&quot; : &quot;0k90Q0000008R5TQAU&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DveAWAS&quot;,
+      &quot;Name&quot; : &quot;Annulation Direct Debit - CGFOR004187 - 2022-12-13&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k90Q0000008QuVQAU&quot;,
+      &quot;Payment_Method__c&quot; : &quot;a600Q00000059bsQAA&quot;,
+      &quot;Sent_to_TMW__c&quot; : true,
+      &quot;TransactionAmount&quot; : 22.97848,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-02T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2023-01-02T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.111112,
+      &quot;Type&quot; : &quot;Payment Cancellation&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;Cancellation_Code__c&quot; : &quot;Error&quot;,
+      &quot;Cancellation_Libell__c&quot; : &quot;Error Test&quot;,
+      &quot;Id&quot; : &quot;0k90Q0000008R5UQAU&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT0Q000001DvpVWAS&quot;,
+      &quot;Name&quot; : &quot;Annulation Direct Debit - CGFOR004194 - 2022-12-14&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k90Q0000008QxoQAE&quot;,
+      &quot;Payment_Method__c&quot; : &quot;a600Q0000005A6tQAE&quot;,
+      &quot;Sent_to_TMW__c&quot; : true,
+      &quot;TransactionAmount&quot; : 413.61264,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-02T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2023-01-02T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 2.000016,
+      &quot;Type&quot; : &quot;Payment Cancellation&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;InsurancePolicyTransaction_3&quot; : [ ],
+    &quot;InsurancePolicy_2&quot; : [ {
+      &quot;AmountToCollect__c&quot; : -207.810408,
+      &quot;Id&quot; : &quot;0YT0Q000001DveAWAS&quot;,
+      &quot;Payment_Method__c&quot; : &quot;a600Q00000059bxQAA&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Quarterly&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;AmountToCollect__c&quot; : -3324.874688,
+      &quot;Id&quot; : &quot;0YT0Q000001DvpVWAS&quot;,
+      &quot;Payment_Method__c&quot; : &quot;a600Q0000005A6yQAE&quot;,
+      &quot;PremiumFrequency&quot; : &quot;Annually&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreatePremiumPaymentCancelationStatus&quot; : true,
+  &quot;FilterPoliciesWhitoutCheck&quot; : {
+    &quot;InurancePoliciesWhithoutCheck&quot; : null
+  },
+  &quot;FilterPoliciesWhitoutCheckStatus&quot; : true,
+  &quot;GetRejectedDDPayments&quot; : [ {
+    &quot;CheckPaymentMethods&quot; : {
+      &quot;CheckPaymentMethod_Id&quot; : &quot;a600Q00000059bxQAA&quot;
+    },
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR004187&quot;,
+    &quot;LatestVersionInsurancePolicy&quot; : {
+      &quot;LatestVersionInsurancePolicy_AmountToCollect&quot; : -184.720408,
+      &quot;LatestVersionInsurancePolicy_Id&quot; : &quot;0YT0Q000001DveAWAS&quot;,
+      &quot;LatestVersionInsurancePolicy_PaidToDate&quot; : &quot;2020-12-07&quot;,
+      &quot;LatestVersionInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000059bxQAA&quot;,
+      &quot;LatestVersionInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;LatestVersionInsurancePolicy_PremiumFrequency&quot; : &quot;Quarterly&quot;,
+      &quot;LatestVersionInsurancePolicy_Status&quot; : &quot;In Force&quot;
+    },
+    &quot;PaymentTransaction_Amount&quot; : 22.97848,
+    &quot;PaymentTransaction_Id&quot; : &quot;0k90Q0000008QuVQAU&quot;,
+    &quot;PaymentTransaction_Name&quot; : &quot;Direct Debit - CGFOR004187 - 2022-12-13&quot;,
+    &quot;PaymentTransaction_PaymentMethod_IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;PaymentTransaction_PaymentMethod_Id&quot; : &quot;a600Q00000059bsQAA&quot;,
+    &quot;PaymentTransaction_PaymentMethod_Mandate&quot; : &quot;CGFOR004187-2022-10-06&quot;,
+    &quot;PaymentTransaction_Policy_AccountId&quot; : &quot;0010Q00001dLjFyQAK&quot;,
+    &quot;PaymentTransaction_TaxAmount&quot; : 0.111112,
+    &quot;PaymentTransaction_TotalAmount&quot; : 23.09,
+    &quot;PaymentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;RetryPayment&quot; : false,
+    &quot;TMWCollectionFeedback_ErrorCode&quot; : &quot;Error&quot;,
+    &quot;TMWCollectionFeedback_ErrorMessage&quot; : &quot;Error Test&quot;,
+    &quot;TMWCollectionFeedback_Id&quot; : &quot;a8z0Q0000008aflQAA&quot;,
+    &quot;hasCharges&quot; : false,
+    &quot;hasCheck&quot; : true,
+    &quot;isPMChanged&quot; : true
+  }, {
+    &quot;CheckPaymentMethods&quot; : {
+      &quot;CheckPaymentMethod_Id&quot; : &quot;a600Q0000005A6yQAE&quot;
+    },
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR004194&quot;,
+    &quot;LatestVersionInsurancePolicy&quot; : {
+      &quot;LatestVersionInsurancePolicy_AmountToCollect&quot; : -2909.264688,
+      &quot;LatestVersionInsurancePolicy_Id&quot; : &quot;0YT0Q000001DvpVWAS&quot;,
+      &quot;LatestVersionInsurancePolicy_PaidToDate&quot; : &quot;2020-12-06&quot;,
+      &quot;LatestVersionInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005A6yQAE&quot;,
+      &quot;LatestVersionInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;LatestVersionInsurancePolicy_PremiumFrequency&quot; : &quot;Annually&quot;,
+      &quot;LatestVersionInsurancePolicy_Status&quot; : &quot;In Force&quot;
+    },
+    &quot;PaymentTransaction_Amount&quot; : 413.61264,
+    &quot;PaymentTransaction_Id&quot; : &quot;0k90Q0000008QxoQAE&quot;,
+    &quot;PaymentTransaction_Name&quot; : &quot;Direct Debit - CGFOR004194 - 2022-12-14&quot;,
+    &quot;PaymentTransaction_PaymentMethod_IBAN&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;PaymentTransaction_PaymentMethod_Id&quot; : &quot;a600Q0000005A6tQAE&quot;,
+    &quot;PaymentTransaction_PaymentMethod_Mandate&quot; : &quot;CGFOR004194-2022-10-06&quot;,
+    &quot;PaymentTransaction_Policy_AccountId&quot; : &quot;0010Q00001dMBogQAG&quot;,
+    &quot;PaymentTransaction_TaxAmount&quot; : 2.000016,
+    &quot;PaymentTransaction_TotalAmount&quot; : 415.61,
+    &quot;PaymentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;RetryPayment&quot; : false,
+    &quot;TMWCollectionFeedback_ErrorCode&quot; : &quot;Error&quot;,
+    &quot;TMWCollectionFeedback_ErrorMessage&quot; : &quot;Error Test&quot;,
+    &quot;TMWCollectionFeedback_Id&quot; : &quot;a8z0Q0000008agKQAQ&quot;,
+    &quot;hasCharges&quot; : false,
+    &quot;hasCheck&quot; : true,
+    &quot;isPMChanged&quot; : true
+  } ],
+  &quot;GetRejectedDDPaymentsStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;a8z0Q0000008aflQAA&quot;
+  }, {
+    &quot;Id&quot; : &quot;a8z0Q0000008agKQAQ&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTRetryPaymentsAndTaskPrepare</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetRejectedDDPayments LIST &apos;hasCharges/\/\/==/\/\/true/\/\/&amp;&amp;/\/\/RetryPayment/\/\/==/\/\/true/\/\/&amp;&amp;/\/\/retrayablePolicyStatus/\/\/==/\/\/true/\/\/&amp;&amp;/\/\/alreadyCanceledTransaction/\/\/==/\/\/false&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetRejectedDDPayments), &apos;hasCharges == true &amp;&amp; RetryPayment == true &amp;&amp; retrayablePolicyStatus == true &amp;&amp; alreadyCanceledTransaction == false&apos; )</formulaExpression>
+        <formulaResultPath>TransactionsToRetry</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTRetryPaymentsAndTaskPrepareCustom9932</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTRetryPaymentsAndTaskPrepare</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTRetryPaymentsAndTaskPrepareCustom4796</globalKey>
+        <inputFieldName>TransactionsForMED</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTRetryPaymentsAndTaskPrepare</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsForMED</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTRetryPaymentsAndTaskPrepareCustom94</globalKey>
+        <inputFieldName>TransactionsToRetry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTRetryPaymentsAndTaskPrepare</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsToRetry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTRetryPaymentsAndTaskPrepareCustom6975</globalKey>
+        <inputFieldName>TransactionsToRetry:PremiumCharges:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTRetryPaymentsAndTaskPrepare</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>data:PremiumChargeId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetRejectedDDPayments LIST &apos;RetryPayment/\/\/==/\/\/false/\/\/&amp;&amp;/\/\/MEDTaskCanBeCreated/\/\/==/\/\/true/\/\/&amp;&amp;/\/\/alreadyCanceledTransaction/\/\/==/\/\/false&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(GetRejectedDDPayments), &apos;RetryPayment == false &amp;&amp; MEDTaskCanBeCreated == true &amp;&amp; alreadyCanceledTransaction == false&apos;)</formulaExpression>
+        <formulaResultPath>TransactionsForMED</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTRetryPaymentsAndTaskPrepareCustom142</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTRetryPaymentsAndTaskPrepare</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;GetRejectedDDPayments&quot; : [ {
+    &quot;Id&quot; : 1,
+    &quot;LatestVersionInsurancePolicy&quot; : {
+      &quot;LatestVersionInsurancePolicy_Status&quot; : &quot;In Force&quot;
+    },
+    &quot;PremiumCharges&quot; : {
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_Id&quot; : 1,
+      &quot;PremiumCharge_PeriodEndDate&quot; : &quot;Text&quot;
+    },
+    &quot;RetryPayment&quot; : true,
+    &quot;hasCharges&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;isPMChanged&quot; : true
+  }, {
+    &quot;Id&quot; : 2,
+    &quot;LatestVersionInsurancePolicy&quot; : [ {
+      &quot;LatestVersionInsurancePolicy_Status&quot; : &quot;In Force&quot;
+    }, {
+      &quot;LatestVersionInsurancePolicy_Status&quot; : &quot;In Forceddd&quot;
+    } ],
+    &quot;PremiumCharges&quot; : [ {
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_Id&quot; : 2,
+      &quot;PremiumCharge_PeriodEndDate&quot; : &quot;Text&quot;
+    }, {
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;Text&quot;,
+      &quot;PremiumCharge_Id&quot; : 3,
+      &quot;PremiumCharge_PeriodEndDate&quot; : &quot;Text&quot;
+    } ],
+    &quot;RetryPayment&quot; : true,
+    &quot;hasCharges&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;isPMChanged&quot; : true
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTRetryPaymentsAndTaskPrepare_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,52 @@
+{
+    "CheckAccountDuplicate": [
+    ],
+    "CheckAccountDuplicateStatus": true,
+    "ErrorAccountHasAlreadyActiveGFOStatus": false,
+    "ErrorPriceNotCalculatedStatus": false,
+    "ExtrtactAndBuildData": {
+        "AccountInfo": {
+            "AccountType": "Souscripteur uniquement",
+            "Address": "LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE",
+            "BirthCity": "PREURE",
+            "BirthCountry": "FR",
+            "BirthDate": "1957-10-05",
+            "BirthDepartmentCode": "",
+            "BirthName": "CHARLIAC",
+            "Country": "France",
+            "FirstName": "DANIELE12",
+            "Gender": "F",
+            "LastName": "DELFORGE12",
+            "PersonAccountRecordType": "0121l0000001QHiAAM",
+            "Title": "Ms."
+        }
+    },
+    "ExtrtactAndBuildDataStatus": true,
+    "GetRatedProducts": "GetRatedProducts",
+    "GetRatedProductsStatus": true,
+    "MergePoliciesIfAccountsReturned": {
+        "Policies": {
+            "result": [
+            ]
+        }
+    },
+    "MergePoliciesIfAccountsReturnedStatus": true,
+    "SetValuesForCheck": {
+        "FirstElement": "",
+        "policiesSize": 1
+    },
+    "SetValuesForCheckStatus": true,
+    "SetValuesTech": {
+        "DuplicatesRes": [
+        ]
+    },
+    "SetValuesTechStatus": true,
+    "contextId": "a8x0Q000000MB4IQAW",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    }
+}

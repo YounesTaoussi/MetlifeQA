@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom882</globalKey>
+        <inputFieldName>newPaidToDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PaidToDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetTransactions:InsurancePolicy:PaidToDate ISNOTBLANK | var:GetTransactions:InsurancePolicy:PaidToDate -1 var:TranformAndFilter:PriodToDeduce * ADDMONTH var:null IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(GetTransactions:InsurancePolicy:PaidToDate), ADDMONTH(GetTransactions:InsurancePolicy:PaidToDate, (-1 * TranformAndFilter:PriodToDeduce)),null)</formulaExpression>
+        <formulaResultPath>newPaidToDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom2513</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:newAmountToCollect1 ABS 0.05 &lt; 0 var:newAmountToCollect1 IF</formulaConverted>
+        <formulaExpression>IF(ABS(newAmountToCollect1) &lt; 0.05, 0 , newAmountToCollect1 )</formulaExpression>
+        <formulaResultPath>newAmountToCollect</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom9763</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom5467</globalKey>
+        <inputFieldName>newAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AmountToCollect__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetTransactions:InsurancePolicy:AmountToCollect ISNOTBLANK var:GetTransactions:InsurancePolicy:AmountToCollect var:TranformAndFilter:TotalAmountToReduceFormAmountToCollect - -1 var:TranformAndFilter:TotalAmountToReduceFormAmountToCollect * IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(GetTransactions:InsurancePolicy:AmountToCollect), GetTransactions:InsurancePolicy:AmountToCollect - TranformAndFilter:TotalAmountToReduceFormAmountToCollect , -1 * TranformAndFilter:TotalAmountToReduceFormAmountToCollect)</formulaExpression>
+        <formulaResultPath>newAmountToCollect1</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom649</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom4106</globalKey>
+        <inputFieldName>GetTransactions:InsurancePolicy:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLUpdatePolicyAfterTransactionCancelationCustom7914</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLUpdatePolicyAfterTransactionCancelation</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CreateCancelTransactionsWithParent&quot; : {
+    &quot;ActualTime&quot; : 361,
+    &quot;CpuTime&quot; : 324,
+    &quot;InsurancePolicyTransaction_1&quot; : [ {
+      &quot;CanceledTransaction__c&quot; : &quot;0k91x00000001zGAAQ&quot;,
+      &quot;Id&quot; : &quot;0k9MU0000004C9IYAU&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Annulation Prime du 2022-10-05 au 2023-01-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k91x00000001zGAAQ&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-01-04&quot;,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2023-02-23T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;CanceledTransaction__c&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;Id&quot; : &quot;0k9MU0000004C9JYAU&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Annulation Direct Debit - CGFOR000048 -&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionPostedDate&quot; : &quot;2023-02-23T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;UpsertSuccess&quot; : true
+    }, {
+      &quot;CanceledTransaction__c&quot; : &quot;0k91x00000001zQAAQ&quot;,
+      &quot;Id&quot; : &quot;0k9MU0000004C9KYAU&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Annulation Prime du 2023-01-05 au 2023-04-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k91x00000001zQAAQ&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-04-04&quot;,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;TransactionPostedDate&quot; : &quot;2023-02-23T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;UpsertSuccess&quot; : true
+    } ],
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;responseType&quot; : &quot;SObject&quot;
+  },
+  &quot;CreateCancelTransactionsWithParentStatus&quot; : true,
+  &quot;CreateCancelTransactionsWithoutParentStatus&quot; : false,
+  &quot;GetTransactions&quot; : {
+    &quot;InsurancePolicy&quot; : {
+      &quot;AmountToCollect&quot; : 87.972696,
+      &quot;Id&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;CGFOR000048&quot;
+    },
+    &quot;Transaction&quot; : [ {
+      &quot;ChargeDurationInMonths&quot; : 3,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zGAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Prime du 2022-10-05 au 2023-01-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-01-04&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;
+    }, {
+      &quot;ChargeDurationInMonths&quot; : 0,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Direct Debit - CGFOR000048 -&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k9MU0000004C93YAE&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Payment&quot;
+    }, {
+      &quot;ChargeDurationInMonths&quot; : 3,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zQAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-04-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k9MU0000004C94YAE&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-04-04&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;
+    } ]
+  },
+  &quot;GetTransactionsStatus&quot; : true,
+  &quot;LatestPolicyVersionId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+  &quot;TranformAndFilter&quot; : {
+    &quot;PriodToDeduce&quot; : 6,
+    &quot;TotalAmountToReduceFormAmountToCollect&quot; : 263.90999999999997,
+    &quot;TransactionsWithParent&quot; : [ {
+      &quot;ChargeDurationInMonths&quot; : 3,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zGAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Prime du 2022-10-05 au 2023-01-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-01-04&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;
+    }, {
+      &quot;ChargeDurationInMonths&quot; : 0,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zLAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Direct Debit - CGFOR000048 -&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k9MU0000004C93YAE&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Payment&quot;
+    }, {
+      &quot;ChargeDurationInMonths&quot; : 3,
+      &quot;HasParent&quot; : true,
+      &quot;Id&quot; : &quot;0k91x00000001zQAAQ&quot;,
+      &quot;InFavorOfClient&quot; : false,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+      &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-04-04&quot;,
+      &quot;ParentTransactionId&quot; : &quot;0k9MU0000004C94YAE&quot;,
+      &quot;ParentTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;Period_End_Date__c&quot; : &quot;2023-04-04&quot;,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionAmount&quot; : 87.63936,
+      &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;TransactionTaxAmount&quot; : 0.333336,
+      &quot;Type&quot; : &quot;Premium Charge&quot;
+    } ]
+  },
+  &quot;TranformAndFilterStatus&quot; : true,
+  &quot;Transactions&quot; : [ {
+    &quot;Id&quot; : &quot;0k91x00000001zLAAQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000001zQAAQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k91x00000001zGAAQ&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLUpdatePolicyAfterTransactionCancelation_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

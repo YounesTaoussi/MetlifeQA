@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "metLife_AccountPoliciesDuplicate_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AccountPoliciesDuplicate",
+    "OmniProcessElement": [
+        "metLife_AccountPoliciesDuplicate_Element_BirthNameAndProductFamilyProvided.json",
+        "metLife_AccountPoliciesDuplicate_Element_BirthNameProvidedAndNoProductFamily.json",
+        "metLife_AccountPoliciesDuplicate_Element_NoBirthNameButProductFamilyProvided.json",
+        "metLife_AccountPoliciesDuplicate_Element_NoBirthNameAndProductFamilyProvided.json",
+        "metLife_AccountPoliciesDuplicate_Element_FilterResult.json",
+        "metLife_AccountPoliciesDuplicate_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "metLife_AccountPoliciesDuplicate",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "metLife_AccountPoliciesDuplicate_PropertySetConfig.json",
+    "SubType": "AccountPoliciesDuplicate",
+    "Type": "metLife",
+    "UniqueName": "metLife_AccountPoliciesDuplicate_Procedure_9",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/metLife/AccountPoliciesDuplicate/Procedure",
+    "WebComponentKey": "32f4ae24-fb09-1606-4c28-50c98fbbbedf"
+}

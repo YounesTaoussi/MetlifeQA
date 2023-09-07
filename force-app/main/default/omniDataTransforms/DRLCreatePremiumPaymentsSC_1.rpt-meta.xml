@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Filters&quot; : {
+    &quot;ChargesThatHasAlreadyCheckTask&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : true,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 2170.422056,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-08-07T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2030-09-08T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411 -  - CGFOR003998&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003998&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058FUQAY&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2029-09-08T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2029-12-07&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 68.93544,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QK3QAM&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.333336,
+      &quot;PremiumCharge_TTCAmount&quot; : 69.27,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    } ],
+    &quot;ChargesToBePayedByCheck&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : true,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 2170.422056,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-08-07T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2030-09-08T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411 -  - CGFOR003998&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003998&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058FUQAY&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2029-09-08T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2029-12-07&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 68.93544,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QK3QAM&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.333336,
+      &quot;PremiumCharge_TTCAmount&quot; : 69.27,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    } ],
+    &quot;ChargesToBepayedByDirectDebit&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 29.324232,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DurmWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;valerie pekres&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;valerie pekres - GFO Oney - CGFOR004090&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR004090&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058RaQAI&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2023-01-04&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 29.21312,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QVGQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.111112,
+      &quot;PremiumCharge_TTCAmount&quot; : 29.32,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    }, {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 117.296928,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-30T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DpWZWA0&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-02-28T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;Jhon Starck&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Jhon Starck -  - CGFOR003950&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003953&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q000000585EQAQ&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 94.80696,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QWBQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.666672,
+      &quot;PremiumCharge_TTCAmount&quot; : 95.47,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 2
+    } ],
+    &quot;ChargesToBepayedBySponsorCard&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : true,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 2170.422056,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-08-07T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DstyWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2030-09-08T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;TestFirstName12411 TESTLASTNAME12411 -  - CGFOR003998&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003998&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058FUQAY&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2029-09-08T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2029-12-07&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 68.93544,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QK3QAM&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.333336,
+      &quot;PremiumCharge_TTCAmount&quot; : 69.27,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    } ],
+    &quot;ChargesToCreatePremimPayment&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 29.324232,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DurmWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;valerie pekres&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;valerie pekres - GFO Oney - CGFOR004090&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR004090&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058RaQAI&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2023-01-04&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 29.21312,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QVGQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.111112,
+      &quot;PremiumCharge_TTCAmount&quot; : 29.32,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    }, {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 117.296928,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-30T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DpWZWA0&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-02-28T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;Jhon Starck&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Jhon Starck -  - CGFOR003950&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003953&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q000000585EQAQ&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 94.80696,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QWBQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.666672,
+      &quot;PremiumCharge_TTCAmount&quot; : 95.47,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 2
+    } ],
+    &quot;ChargesWithoutCheckTask&quot; : [ {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 29.324232,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DurmWAC&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;valerie pekres&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;valerie pekres - GFO Oney - CGFOR004090&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR004090&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q00000058RaQAI&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_EffectiveDate&quot; : &quot;2022-12-05T00:00:00.000Z&quot;,
+      &quot;PremiumCharge_EndDate&quot; : &quot;2023-01-04&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 29.21312,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QVGQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.111112,
+      &quot;PremiumCharge_TTCAmount&quot; : 29.32,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 1
+    }, {
+      &quot;HasCheckPaymentTask&quot; : false,
+      &quot;InsurancePolicy_AmountToCollect&quot; : 117.296928,
+      &quot;InsurancePolicy_CodeProduit&quot; : &quot;GFOY&quot;,
+      &quot;InsurancePolicy_EffectiveDate&quot; : &quot;2022-10-30T22:00:00.000Z&quot;,
+      &quot;InsurancePolicy_Id&quot; : &quot;0YT0Q000001DpWZWA0&quot;,
+      &quot;InsurancePolicy_InsurancePolicy_PaymentDueDate&quot; : &quot;2023-02-28T00:00:00.000Z&quot;,
+      &quot;InsurancePolicy_InsuredAccount_Name&quot; : &quot;Jhon Starck&quot;,
+      &quot;InsurancePolicy_Name&quot; : &quot;Jhon Starck -  - CGFOR003950&quot;,
+      &quot;InsurancePolicy_Number&quot; : &quot;CGFOR003953&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q000000585EQAQ&quot;,
+      &quot;InsurancePolicy_PaymentMethod_Type&quot; : &quot;Bank Account&quot;,
+      &quot;InsurancePolicy_Producer_AccountId&quot; : &quot;0011l000017B0b1AAC&quot;,
+      &quot;InsurancePolicy_Producer_Id&quot; : &quot;0Yx0Q000000CeiQSAS&quot;,
+      &quot;InsurancePolicy_ProductName&quot; : &quot;GFO Oney&quot;,
+      &quot;PremiumCharge_HTAmount&quot; : 94.80696,
+      &quot;PremiumCharge_Id&quot; : &quot;0k90Q0000008QWBQA2&quot;,
+      &quot;PremiumCharge_TAXAmount&quot; : 0.666672,
+      &quot;PremiumCharge_TTCAmount&quot; : 95.47,
+      &quot;PremiumPayment_Name&quot; : &quot;Direct Debit - CGFOR003953 - 2022-11-30&quot;,
+      &quot;policyVersions&quot; : 2
+    } ]
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreatePremiumPaymentsSC</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom7163</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_Producer_Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Sponsor_Nom__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>F</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom9484</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Type_facturation__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom5761</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>PremiumPaymentTransactions__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom585</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Premium_Charge_Transaction__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom1801</globalKey>
+        <inputFieldName>Filters:ChargesToBePayedBySponsorCard:InsurancePolicy_OriginalEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Prime_premier_debut_date__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom1812</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Source_ID__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom8283</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_ProductName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Libelle_produit__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom7008</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_TTCAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Montant__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom1551</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_PaymentMethod_SponsorCardNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Numero_du_sponsor_carte__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom9251</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_Number</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Police__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom3802</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_EffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Fact_Debut_date__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom7808</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_EndDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Fact_fin_date__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom60</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_EffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Facturation_date__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom3348</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom3806</globalKey>
+        <inputFieldName>BatchNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Batch_number__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom2589</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_InsuredAccount_Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Client_nom_complet__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom1741</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_CodeProduit</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Code_produit__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom4109</globalKey>
+        <inputFieldName>now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Date_compta__c</outputFieldName>
+        <outputObjectName>SFI_Sponsor_Flux_Facturation__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem12</globalKey>
+        <inputFieldName>Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem16</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem14</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem15</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ParentTransactionId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem6</globalKey>
+        <inputFieldName>nowPlus11days</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionEffectiveDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem11</globalKey>
+        <inputFieldName>now</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionPostedDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem10</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_TAXAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionTaxAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem13</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SourcePremiumCharge__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem5</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumCharge_HTAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem4</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem9</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:PremiumPayment_Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem7</globalKey>
+        <inputFieldName>Filters:ChargesToBepayedBySponsorCard:InsurancePolicy_PaymentMethod_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_Method__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | TODAY YEAR | | TODAY MONTH | | TODAY DAY &quot;001&quot; CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(YEAR(TODAY),MONTH(TODAY),DAY(TODAY),&quot;001&quot;)</formulaExpression>
+        <formulaResultPath>BatchNumber</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentsSCCustom8827</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | TODAY 11 ADDDAY &quot;yyyy-MM-dd&quot; &quot;Europe/Paris&quot; FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(ADDDAY(TODAY,11),&quot;yyyy-MM-dd&quot;,&quot;Europe/Paris&quot;)</formulaExpression>
+        <formulaResultPath>nowPlus11days</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY &quot;yyyy-MM-dd&quot; &quot;Europe/Paris&quot; FORMATDATETIME</formulaConverted>
+        <formulaExpression>FORMATDATETIME(TODAY,&quot;yyyy-MM-dd&quot;,&quot;Europe/Paris&quot;)</formulaExpression>
+        <formulaResultPath>now</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>&quot;Premium/\/\/Payment&quot;</formulaConverted>
+        <formulaExpression>&quot;Premium Payment&quot;</formulaExpression>
+        <formulaResultPath>Type</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentsSCCustoma3P0Q000002swCtUAIItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentsSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CreatePremiumPaymentTaskSponsor&quot; : null,
+    &quot;End&quot; : null,
+    &quot;Filters&quot; : null,
+    &quot;GetUnpaidPremiumCharges&quot; : null,
+    &quot;GroupChargesByPolicies&quot; : null,
+    &quot;UpdateInsurancePolicy&quot; : null,
+    &quot;UpdatePremiumCharge&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreatePremiumPaymentsSC_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

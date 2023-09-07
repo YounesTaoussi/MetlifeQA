@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Create New Contact for FNOL</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ElapsedTime&quot; : 510,
+  &quot;ElapsedTimeCPU&quot; : 245,
+  &quot;Input&quot; : {
+    &quot;AccountId&quot; : &quot;0013t00001Yzp8mAAB&quot;,
+    &quot;AccountSearch-Block&quot; : {
+      &quot;Name&quot; : &quot;Tom Plumbing&quot;
+    },
+    &quot;Address&quot; : &quot;&quot;,
+    &quot;ContactOrAccount&quot; : &quot;searchExistingAccounts&quot;,
+    &quot;ContextId&quot; : &quot;&quot;,
+    &quot;Email&quot; : &quot;&quot;,
+    &quot;FirstName&quot; : &quot;&quot;,
+    &quot;LastName&quot; : &quot;&quot;,
+    &quot;ParticipantRole&quot; : &quot;Claimant&quot;,
+    &quot;Phone&quot; : &quot;&quot;,
+    &quot;claimId&quot; : &quot;a2b3t000001EHcrAAG&quot;,
+    &quot;createContactStatus&quot; : false,
+    &quot;getParticipantRole&quot; : {
+      &quot;InsuredRelationshipTypeId&quot; : &quot;a3f3t0000037PMtAAM&quot;
+    },
+    &quot;getParticipantRoleStatus&quot; : true,
+    &quot;getPartyByAccountId&quot; : {
+      &quot;AccountPartyId&quot; : &quot;a3h3t00000I4wONAAZ&quot;,
+      &quot;AccountPartyName&quot; : &quot;Tom Plumbing&quot;
+    },
+    &quot;getPartyByAccountIdStatus&quot; : true,
+    &quot;getPartyByContactIdStatus&quot; : false,
+    &quot;id&quot; : &quot;a3F3t000001q1heEAA&quot;,
+    &quot;isdtp&quot; : &quot;p1&quot;,
+    &quot;layout&quot; : &quot;newport&quot;,
+    &quot;newParticipant&quot; : {
+      &quot;AccountSearch-Block&quot; : {
+        &quot;AccountSearch&quot; : &quot;Tom Plumbing&quot;,
+        &quot;Id&quot; : &quot;0013t00001Yzp8mAAB&quot;
+      },
+      &quot;claimParticipantRole&quot; : &quot;Claimant&quot;,
+      &quot;contactAddress&quot; : null,
+      &quot;contactEmail&quot; : null,
+      &quot;contactFirstName&quot; : null,
+      &quot;contactLastName&quot; : null,
+      &quot;contactOrAccount&quot; : &quot;searchExistingAccounts&quot;,
+      &quot;contactPhone&quot; : null
+    },
+    &quot;options&quot; : {
+      &quot;chainable&quot; : false,
+      &quot;ignoreCache&quot; : true,
+      &quot;queueableChainable&quot; : false,
+      &quot;resetCache&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false
+    },
+    &quot;setClaimParticipantInfo&quot; : {
+      &quot;AccountId&quot; : &quot;0013t00001Yzp8mAAB&quot;,
+      &quot;AccountPartyName&quot; : &quot;Tom Plumbing&quot;,
+      &quot;ContactId&quot; : &quot;&quot;,
+      &quot;ParticipantRoleTypeId&quot; : &quot;a3f3t0000037PMtAAM&quot;
+    },
+    &quot;setClaimParticipantInfoStatus&quot; : true,
+    &quot;sfdcIFrameHost&quot; : &quot;web&quot;,
+    &quot;sfdcIFrameOrigin&quot; : &quot;https://digital-digital-31502--vlocity-ins.visualforce.com&quot;,
+    &quot;timeStamp&quot; : &quot;2020-08-04T23:24:51.471Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+    &quot;userId&quot; : &quot;0053t000007e6oQAAQ&quot;,
+    &quot;userName&quot; : &quot;postberg-8955669133@vlocityapps.com&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : -420,
+    &quot;vlcPersistentComponent&quot; : { },
+    &quot;vlcTimeTracking&quot; : {
+      &quot;OmniScriptSessionToken&quot; : &quot;ab177518-26d5-4738-b59c-3812e8995ec7&quot;,
+      &quot;newParticipant&quot; : 10321,
+      &quot;setClaimId&quot; : 10,
+      &quot;transformSerValuesExistingAccount&quot; : 2,
+      &quot;transformSetValuesNewContact&quot; : 26
+    }
+  },
+  &quot;Status&quot; : false,
+  &quot;Type&quot; : &quot;DataRaptor Post Action&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs7148294193299642</globalKey>
+        <inputFieldName>claimId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ClaimId</outputFieldName>
+        <outputObjectName>ClaimParticipant</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs16346758799841088</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs33680581238855356</globalKey>
+        <inputFieldName>setClaimParticipantInfo:ContactId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Contact</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs4081714684026705</globalKey>
+        <inputFieldName>ParticipantRole</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Roles</outputFieldName>
+        <outputObjectName>ClaimParticipant</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs8640375954478785</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedFieldName>Id</linkedFieldName>
+        <linkedObjectSequence>1.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>ParticipantContactId</outputFieldName>
+        <outputObjectName>ClaimParticipant</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>insClaimsPostParticipantAsContactToFSCClaimClaimIPs768400234904473</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>insClaimsPostParticipantAsContactToFSCClaimClaimIPs</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ClaimParticipant</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;ElapsedTime&quot; : 510,
+  &quot;ElapsedTimeCPU&quot; : 245,
+  &quot;Input&quot; : {
+    &quot;AccountId&quot; : &quot;0013t00001Yzp8mAAB&quot;,
+    &quot;AccountSearch-Block&quot; : {
+      &quot;Name&quot; : &quot;Tom Plumbing&quot;
+    },
+    &quot;Address&quot; : &quot;&quot;,
+    &quot;ContactOrAccount&quot; : &quot;searchExistingAccounts&quot;,
+    &quot;ContextId&quot; : &quot;&quot;,
+    &quot;Email&quot; : &quot;&quot;,
+    &quot;FirstName&quot; : &quot;&quot;,
+    &quot;LastName&quot; : &quot;&quot;,
+    &quot;ParticipantRole&quot; : &quot;Claimant&quot;,
+    &quot;Phone&quot; : &quot;&quot;,
+    &quot;claimId&quot; : &quot;a2b3t000001EHcrAAG&quot;,
+    &quot;createContactStatus&quot; : false,
+    &quot;getParticipantRole&quot; : {
+      &quot;InsuredRelationshipTypeId&quot; : &quot;a3f3t0000037PMtAAM&quot;
+    },
+    &quot;getParticipantRoleStatus&quot; : true,
+    &quot;getPartyByAccountId&quot; : {
+      &quot;AccountPartyId&quot; : &quot;a3h3t00000I4wONAAZ&quot;,
+      &quot;AccountPartyName&quot; : &quot;Tom Plumbing&quot;
+    },
+    &quot;getPartyByAccountIdStatus&quot; : true,
+    &quot;getPartyByContactIdStatus&quot; : false,
+    &quot;id&quot; : &quot;a3F3t000001q1heEAA&quot;,
+    &quot;isdtp&quot; : &quot;p1&quot;,
+    &quot;layout&quot; : &quot;newport&quot;,
+    &quot;newParticipant&quot; : {
+      &quot;AccountSearch-Block&quot; : {
+        &quot;AccountSearch&quot; : &quot;Tom Plumbing&quot;,
+        &quot;Id&quot; : &quot;0013t00001Yzp8mAAB&quot;
+      },
+      &quot;claimParticipantRole&quot; : &quot;Claimant&quot;,
+      &quot;contactAddress&quot; : null,
+      &quot;contactEmail&quot; : null,
+      &quot;contactFirstName&quot; : null,
+      &quot;contactLastName&quot; : null,
+      &quot;contactOrAccount&quot; : &quot;searchExistingAccounts&quot;,
+      &quot;contactPhone&quot; : null
+    },
+    &quot;options&quot; : {
+      &quot;chainable&quot; : false,
+      &quot;ignoreCache&quot; : true,
+      &quot;queueableChainable&quot; : false,
+      &quot;resetCache&quot; : false,
+      &quot;useQueueableApexRemoting&quot; : false
+    },
+    &quot;setClaimParticipantInfo&quot; : {
+      &quot;AccountId&quot; : &quot;0013t00001Yzp8mAAB&quot;,
+      &quot;AccountPartyName&quot; : &quot;Tom Plumbing&quot;,
+      &quot;ContactId&quot; : &quot;&quot;,
+      &quot;ParticipantRoleTypeId&quot; : &quot;a3f3t0000037PMtAAM&quot;
+    },
+    &quot;setClaimParticipantInfoStatus&quot; : true,
+    &quot;sfdcIFrameHost&quot; : &quot;web&quot;,
+    &quot;sfdcIFrameOrigin&quot; : &quot;https://digital-digital-31502--vlocity-ins.visualforce.com&quot;,
+    &quot;timeStamp&quot; : &quot;2020-08-04T23:24:51.471Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+    &quot;userId&quot; : &quot;0053t000007e6oQAAQ&quot;,
+    &quot;userName&quot; : &quot;postberg-8955669133@vlocityapps.com&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : -420,
+    &quot;vlcPersistentComponent&quot; : { },
+    &quot;vlcTimeTracking&quot; : {
+      &quot;OmniScriptSessionToken&quot; : &quot;ab177518-26d5-4738-b59c-3812e8995ec7&quot;,
+      &quot;newParticipant&quot; : 10321,
+      &quot;setClaimId&quot; : 10,
+      &quot;transformSerValuesExistingAccount&quot; : 2,
+      &quot;transformSetValuesNewContact&quot; : 26
+    }
+  },
+  &quot;Status&quot; : false,
+  &quot;Type&quot; : &quot;DataRaptor Post Action&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>insClaimsPostParticipantAsContactToFSCClaimClaimIPs_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

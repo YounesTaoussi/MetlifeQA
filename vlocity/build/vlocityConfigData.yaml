@@ -1,0 +1,12 @@
+projectPath: ./vlocity
+expansionPath: src
+autoUpdateSettings: true
+compileOnBuild: true
+reactivateOmniScriptsWhenEmbeddedTemplateFound: false
+autoRetryErrors: true
+addSourceKeys: false
+separateMatrixVersions: true
+gitCheck: true
+gitCheckKey: vlocity
+manifest:
+  - IntegrationProcedure/metLife_newSales

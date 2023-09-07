@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>[ {
+  &quot;EffectiveDate&quot; : &quot;2022-06-01T00:00:00.000+0000&quot;,
+  &quot;Id&quot; : &quot;0YT0Q0000011RWMWA2&quot;,
+  &quot;PolicyName&quot; : &quot;Cofinoga GFO&quot;,
+  &quot;PolicyTerm&quot; : &quot;Monthly&quot;,
+  &quot;StandardPremiumAmount&quot; : 11.67,
+  &quot;TermPremiumAmount&quot; : -61.07,
+  &quot;attributes&quot; : {
+    &quot;type&quot; : &quot;InsurancePolicy&quot;,
+    &quot;url&quot; : &quot;/services/data/v55.0/sobjects/InsurancePolicy/0YT0Q0000011RWMWA2&quot;
+  }
+} ]</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>ConvertStringToNumber</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ConvertStringToNumberCustom9811</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertStringToNumber</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:DR_Input DESERIALIZE</formulaConverted>
+        <formulaExpression>DESERIALIZE(%DR_Input%)</formulaExpression>
+        <formulaResultPath>DR_Output</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>ConvertStringToNumberCustom4651</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>ConvertStringToNumber</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>[ {
+  &quot;EffectiveDate&quot; : &quot;2022-06-01T00:00:00.000+0000&quot;,
+  &quot;Id&quot; : &quot;0YT0Q0000011RWMWA2&quot;,
+  &quot;PolicyName&quot; : &quot;Cofinoga GFO&quot;,
+  &quot;PolicyTerm&quot; : &quot;Monthly&quot;,
+  &quot;StandardPremiumAmount&quot; : 11.67,
+  &quot;TermPremiumAmount&quot; : -61.07,
+  &quot;attributes&quot; : {
+    &quot;type&quot; : &quot;InsurancePolicy&quot;,
+    &quot;url&quot; : &quot;/services/data/v55.0/sobjects/InsurancePolicy/0YT0Q0000011RWMWA2&quot;
+  }
+} ]</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>ConvertStringToNumber_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

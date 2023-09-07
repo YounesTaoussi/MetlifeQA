@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBuildUpsellStructure</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom8065</globalKey>
+        <inputFieldName>metLifeGFOTrancheInsured</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>insuredItems:metLifeGFOTrancheInsured</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom790</globalKey>
+        <inputFieldName>GetInsureditems:insuredItems:metLifeGFOLifeInsured</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>insuredItems:metLifeGFOLifeInsured</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom7406</globalKey>
+        <inputFieldName>GetRatedProducts</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>GetRatedProducts</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;parentInstanceKey&quot; | var:GetNecessaryDataForUpsell:insuredItemsRelationshipsNew LIST | var:GetNecessaryDataForUpsell:insuredItemsRelationshipsExisting LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;parentInstanceKey&quot;, LIST(GetNecessaryDataForUpsell:insuredItemsRelationshipsNew), LIST(GetNecessaryDataForUpsell:insuredItemsRelationshipsExisting))</formulaExpression>
+        <formulaResultPath>insuredItemsRelationships</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTBuildUpsellStructureCustom818</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom1500</globalKey>
+        <inputFieldName>GetNecessaryDataForUpsell:insuredItemsRelationshipsNew</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>List&lt;Map&gt;</outputFieldFormat>
+        <outputFieldName>newInsuredItemsRelationships_Remove</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom5543</globalKey>
+        <inputFieldName>metLifeGFOTrancheInsuredNoadd</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>modifiedItems:metLifeGFOTrancheInsured</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom7664</globalKey>
+        <inputFieldName>GetInsureditems:insuredItems:metLifeGFOLifeInsured</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>modifiedItems:metLifeGFOLifeInsured</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildUpsellStructureCustom3950</globalKey>
+        <inputFieldName>insuredItemsRelationships</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>insuredItemsRelationships</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;metLifeGFOTrancheInsured.instanceKey&quot; | var:GetNecessaryDataForUpsell:GetRatedProductsExisting LIST | var:GetNecessaryDataForUpsell:GetRatedProductsNew LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;metLifeGFOTrancheInsured.instanceKey&quot;, LIST(GetNecessaryDataForUpsell:GetRatedProductsExisting), LIST(GetNecessaryDataForUpsell:GetRatedProductsNew))</formulaExpression>
+        <formulaResultPath>GetRatedProducts</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTBuildUpsellStructureCustom7863</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;instanceKey&quot; | var:GetInsureditems:insuredItems:metLifeGFOTrancheInsured LIST | var:GetNecessaryDataForUpsell:aditionalTranche LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;instanceKey&quot;, LIST(GetInsureditems:insuredItems:metLifeGFOTrancheInsured), LIST(GetNecessaryDataForUpsell:aditionalTranche))</formulaExpression>
+        <formulaResultPath>metLifeGFOTrancheInsured</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTBuildUpsellStructureCustom4624</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;instanceKey&quot; | var:GetInsureditems:insuredItems:metLifeGFOTrancheInsured LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;instanceKey&quot;, LIST(GetInsureditems:insuredItems:metLifeGFOTrancheInsured))</formulaExpression>
+        <formulaResultPath>metLifeGFOTrancheInsuredNoadd</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTBuildUpsellStructureCustom732</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildUpsellStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Data&quot; : [ {
+    &quot;Id&quot; : &quot;a991x000000DUK2AAO&quot;
+  } ],
+  &quot;GetInsureditems&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;insuredItems&quot; : {
+      &quot;metLifeGFOLifeInsured&quot; : [ {
+        &quot;Id&quot; : &quot;0ao1x0000004mujAAA&quot;,
+        &quot;instanceKey&quot; : &quot;Assuré GFO Upsell 001 Upsell 001&quot;,
+        &quot;personBirthDate&quot; : &quot;1957-10-05&quot;,
+        &quot;personBirthName&quot; : &quot;Upsell 001&quot;,
+        &quot;personFirstName&quot; : &quot;Upsell 001&quot;,
+        &quot;personLastName&quot; : &quot;Upsell 001&quot;,
+        &quot;personRelationship&quot; : &quot;Souscripteur&quot;,
+        &quot;personTitle&quot; : &quot;Ms.&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOLifeInsured&quot;
+      } ],
+      &quot;metLifeGFOTrancheInsured&quot; : [ {
+        &quot;Id&quot; : &quot;0YW1x000000CcATGA0&quot;,
+        &quot;Reduced&quot; : &quot;false&quot;,
+        &quot;addonIndex&quot; : &quot;00&quot;,
+        &quot;instanceKey&quot; : &quot;Tranche - base-00 €4000&quot;,
+        &quot;personAgeAtSubscription&quot; : 65,
+        &quot;premiumAdjustmentRate&quot; : 100,
+        &quot;premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+        &quot;productCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+        &quot;refNT&quot; : &quot;12n&quot;,
+        &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+        &quot;trancheType&quot; : &quot;base&quot;
+      } ]
+    }
+  },
+  &quot;GetInsureditemsStatus&quot; : true,
+  &quot;GetNecessaryDataForUpsell&quot; : {
+    &quot;GetRatedProductsExisting&quot; : {
+      &quot;metLifeCovDecesTteCause.annualCapitalRevaluation&quot; : false,
+      &quot;metLifeCovDecesTteCause.gfoBenefitChosen&quot; : &quot;4000&quot;,
+      &quot;metLifeCovDecesTteCause.instanceKey&quot; : &quot;Tranche - base-00 €4000&quot;,
+      &quot;metLifeGFOLifeInsured.instanceKey&quot; : &quot;Assuré GFO Upsell 001 Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personFirstName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personLastName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personRelationship&quot; : &quot;Souscripteur&quot;,
+      &quot;metLifeGFOLifeInsured.personTitle&quot; : &quot;Ms.&quot;,
+      &quot;metLifeGFOTrancheInsured.Reduced&quot; : &quot;false&quot;,
+      &quot;metLifeGFOTrancheInsured.addonIndex&quot; : &quot;00&quot;,
+      &quot;metLifeGFOTrancheInsured.instanceKey&quot; : &quot;Tranche - base-00 €4000&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumAdjustmentRate&quot; : 100,
+      &quot;metLifeGFOTrancheInsured.premiumPaymentTerm&quot; : &quot;wholeLife&quot;,
+      &quot;metLifeGFOTrancheInsured.refNT&quot; : &quot;12n&quot;,
+      &quot;metLifeGFOTrancheInsured.subscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;metLifeGFOTrancheInsured.trancheType&quot; : &quot;base&quot;
+    },
+    &quot;GetRatedProductsNew&quot; : {
+      &quot;metLifeCovDecesTteCause.annualCapitalRevaluation&quot; : false,
+      &quot;metLifeCovDecesTteCause.gfoBenefitChosen&quot; : &quot;4000&quot;,
+      &quot;metLifeCovDecesTteCause.instanceKey&quot; : &quot;Tranche - addon-01 €4000&quot;,
+      &quot;metLifeGFOLifeInsured.instanceKey&quot; : &quot;Assuré GFO Upsell 001 Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;metLifeGFOLifeInsured.personBirthName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personFirstName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personLastName&quot; : &quot;Upsell 001&quot;,
+      &quot;metLifeGFOLifeInsured.personRelationship&quot; : &quot;Souscripteur&quot;,
+      &quot;metLifeGFOLifeInsured.personTitle&quot; : &quot;Ms.&quot;,
+      &quot;metLifeGFOTrancheInsured.Reduced&quot; : false,
+      &quot;metLifeGFOTrancheInsured.addonIndex&quot; : &quot;01&quot;,
+      &quot;metLifeGFOTrancheInsured.instanceKey&quot; : &quot;Tranche - addon-01 €4000&quot;,
+      &quot;metLifeGFOTrancheInsured.premiumAdjustmentRate&quot; : 100,
+      &quot;metLifeGFOTrancheInsured.premiumPaymentTerm&quot; : 15,
+      &quot;metLifeGFOTrancheInsured.refNT&quot; : &quot;12n&quot;,
+      &quot;metLifeGFOTrancheInsured.subscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;metLifeGFOTrancheInsured.trancheType&quot; : &quot;addon&quot;
+    },
+    &quot;MostRecentPolicy&quot; : {
+      &quot;Id&quot; : &quot;0YT1x0000005HpXGAU&quot;,
+      &quot;Status&quot; : &quot;In Force&quot;
+    },
+    &quot;Tranche&quot; : {
+      &quot;Amount&quot; : &quot;4000&quot;
+    },
+    &quot;aditionalTranche&quot; : {
+      &quot;Reduced&quot; : false,
+      &quot;addonIndex&quot; : &quot;01&quot;,
+      &quot;instanceKey&quot; : &quot;Tranche - addon-01 €4000&quot;,
+      &quot;premiumAdjustmentRate&quot; : 100,
+      &quot;premiumPaymentTerm&quot; : 15,
+      &quot;productCode&quot; : &quot;metLifeGFOTrancheInsured&quot;,
+      &quot;refNT&quot; : &quot;12n&quot;,
+      &quot;subscriptionDate&quot; : &quot;2022-10-05&quot;,
+      &quot;trancheType&quot; : &quot;addon&quot;
+    }
+  },
+  &quot;GetNecessaryDataForUpsellStatus&quot; : true,
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBuildUpsellStructure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

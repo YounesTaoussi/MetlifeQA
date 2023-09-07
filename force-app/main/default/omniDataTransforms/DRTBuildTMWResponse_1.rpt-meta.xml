@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CallTMW&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;LoadDirectDebitPaymentMethods&quot; : null,
+    &quot;MergeElements&quot; : null,
+    &quot;ResponseAction1&quot; : null,
+    &quot;StaticValues&quot; : null,
+    &quot;TransformAMND&quot; : null,
+    &quot;TransformINIT&quot; : null,
+    &quot;TransformMergedList&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBuildTMWResponse</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:statusCodeValue 200 &lt;&gt; false true IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:statusCodeValue &lt;&gt; 200, false , true)</formulaExpression>
+        <formulaResultPath>ErrorOntheCall</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom3877</globalKey>
+        <inputFieldName>CallTMW:body</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CallTMW:body</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:statusCodeValue &quot;200&quot; &lt;&gt; var:null | TODAY IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:statusCodeValue &lt;&gt; &quot;200&quot;,null, TODAY())</formulaExpression>
+        <formulaResultPath>today</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item7</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom1678</globalKey>
+        <inputFieldName>uniqueList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>uniqueList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:uniqueList:status &quot;Failure&quot; == | &quot;CustomFunctionImplementation&quot; &quot;get225Message&quot; var:CallTMW:statusCodeValue &quot;Error&quot; var:uniqueList:ErrorMessageFull FUNCTION &quot;Success&quot; IF</formulaConverted>
+        <formulaExpression>IF(uniqueList:status == &quot;Failure&quot;, FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;get225Message&quot;, CallTMW:statusCodeValue, &quot;Error&quot;, uniqueList:ErrorMessageFull) , &quot;Success&quot;)</formulaExpression>
+        <formulaResultPath>uniqueList:ErrorMessage</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:uniqueList:status &quot;Failure&quot; == &quot;papapapapapap&quot; &quot;Success&quot; IF</formulaConverted>
+        <formulaExpression>IF(uniqueList:status == &quot;Failure&quot;, &quot;papapapapapap&quot; , &quot;Success&quot;)</formulaExpression>
+        <formulaResultPath>uniqueList:ErrorMessageFull</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:statusCodeValue 200 &lt;&gt; | &quot;CustomFunctionImplementation&quot; &quot;get225Message&quot; var:CallTMW:statusCodeValue var:CallTMW:statusCode var:CallTMW:body FUNCTION var:null IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:statusCodeValue &lt;&gt; 200, FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;get225Message&quot;, CallTMW:statusCodeValue, CallTMW:statusCode, CallTMW:body) , null)</formulaExpression>
+        <formulaResultPath>Message</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item11</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>p:Sepa_Mandate_Registration_Date__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:MergeElements:sourceId 0 18 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(MergeElements:sourceId, 0, 18)</formulaExpression>
+        <formulaResultPath>MergeElements:PlicyId</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item12</globalKey>
+        <inputFieldName>uniqueList:ErrorMessageFull</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>p:Error_Message__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item9</globalKey>
+        <inputFieldName>uniqueList:SourceId_unique</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>p:Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item8</globalKey>
+        <inputFieldName>uniqueList:ErrorMessage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>p:Payment_error__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:uniqueList:status &quot;Success&quot; == &quot;S&quot; &quot;F&quot; IF</formulaConverted>
+        <formulaExpression>IF(uniqueList:status == &quot;Success&quot;, &quot;S&quot;, &quot;F&quot;)</formulaExpression>
+        <formulaResultPath>uniqueList:ErrorMessagessss</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom8991</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:uniqueListTmp LIST</formulaConverted>
+        <formulaExpression>LIST(uniqueListTmp)</formulaExpression>
+        <formulaResultPath>uniqueList</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom7497</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;SourceId_unique&quot; | var:CallTMW:body LIST LISTMERGE</formulaConverted>
+        <formulaExpression>LISTMERGE(&quot;SourceId_unique&quot;, LIST(CallTMW:body))</formulaExpression>
+        <formulaResultPath>uniqueListTmp</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:body:sourceId 0 18 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(CallTMW:body:sourceId, 0, 18)</formulaExpression>
+        <formulaResultPath>CallTMW:body:SourceId_unique</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTBuildTMWResponseCustom0jIMU0000004CBE2A2Item2</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildTMWResponse</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CallTMW&quot; : {
+    &quot;body&quot; : [ {
+      &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002A2AQA23320&quot;,
+      &quot;status&quot; : &quot;Success&quot;
+    }, {
+      &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002B2AQA23320&quot;,
+      &quot;status&quot; : &quot;Failssssure1&quot;
+    }, {
+      &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU0000004CCv2AMA23320&quot;,
+      &quot;status&quot; : &quot;Faissslur23&quot;
+    }, {
+      &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002A2AQI23320&quot;,
+      &quot;status&quot; : &quot;Success&quot;
+    }, {
+      &quot;errors&quot; : [ &quot;The field debtorAddrStatePrvnceCntry is required&quot; ],
+      &quot;sourceId&quot; : &quot;a6PMU000000002O2AQA23321&quot;,
+      &quot;status&quot; : &quot;Failure&quot;
+    }, {
+      &quot;errors&quot; : [ &quot;The field debtorAddrStatePrvnceCntry is required&quot; ],
+      &quot;sourceId&quot; : &quot;a6PMU000000002O2AQI23321&quot;,
+      &quot;status&quot; : &quot;Failure&quot;
+    } ],
+    &quot;statusCode&quot; : &quot;OK&quot;,
+    &quot;statusCodeValue&quot; : 200
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBuildTMWResponse_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

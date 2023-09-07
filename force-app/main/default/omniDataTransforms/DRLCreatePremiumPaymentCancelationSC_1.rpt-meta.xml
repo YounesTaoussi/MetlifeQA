@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;TransactionsToReject&quot; : [ {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BXgQAM&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.332696,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwOGWA0&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004762&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0010Q00001ddc0YQAQ&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-03-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfxQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : [ {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-02-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-03-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RIEQA2&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-02-05 au 2023-03-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RIFQA2&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RIFQA2&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004762 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    }, {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RIDQA2&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004762 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    } ],
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099qsUAA&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004762&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;00009999&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BYAQA2&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.328463999999997,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwPdWAK&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004765&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0010Q00001ddliNQAQ&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-02-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfsQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RI3QAM&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004765 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    },
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099rIUAQ&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004765&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;202888773737&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLCreatePremiumPaymentCancelationSC</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom7237</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentError</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Payment_error__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom9652</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>&apos;&apos;</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem30</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>ParentTransactionId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem29</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem31</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:Parents:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>3.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem24</globalKey>
+        <inputFieldName>TransactionsToReject:newFrequency</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PremiumFrequency</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom5156</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_PaymentMethodId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>5.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Treated</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem37</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Treatment_Status__c</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem35</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem36</globalKey>
+        <inputFieldName>TransactionsToReject:SponsorRejection_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>4.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem26</globalKey>
+        <inputFieldName>TransactionsToReject:NewAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>AmountToCollect__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>Payment Cancellation</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem13</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Type</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem14</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_TaxAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionTaxAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem12</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionPostedDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem25</globalKey>
+        <inputFieldName>TransactionsToReject:createdCheck</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Payment_Method__c</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem28</globalKey>
+        <inputFieldName>TransactionsToReject:NewPaidTodate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>PaidToDate</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem23</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem27</globalKey>
+        <inputFieldName>TransactionsToReject:LatestInsurancePolicy_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicy</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem11</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_Amount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionAmount</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem16</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionEffectiveDate</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem18</globalKey>
+        <inputFieldName>TransactionsToReject:LatestInsurancePolicy_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem10</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem20</globalKey>
+        <inputFieldName>TransactionsToReject:SponsorRejection_Libele</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Cancellation_Libell__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem22</globalKey>
+        <inputFieldName>TransactionsToReject:SponsorRejection_Code</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Cancellation_Code__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem15</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sent_to_TMW__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem19</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_PaymentMethodId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_Method__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem17</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ParentTransactionId</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem21</globalKey>
+        <inputFieldName>TransactionsToReject:CancelationName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionsToReject:LatestInsurancePolicy_Frequency &quot;Monthly&quot; = &quot;Quarterly&quot; var:TransactionsToReject:LatestInsurancePolicy_Frequency IF</formulaConverted>
+        <formulaExpression>IF(TransactionsToReject:LatestInsurancePolicy_Frequency = &quot;Monthly&quot;, &quot;Quarterly&quot;, TransactionsToReject:LatestInsurancePolicy_Frequency)</formulaExpression>
+        <formulaResultPath>TransactionsToReject:newFrequency</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:TransactionsToReject:Account_PaymentMethodCheck_Id ISNOTBLANK var:TransactionsToReject:Account_PaymentMethodCheck_Id var:TransactionsToReject:createdCheckObject|1:Id IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(TransactionsToReject:Account_PaymentMethodCheck_Id),TransactionsToReject:Account_PaymentMethodCheck_Id,TransactionsToReject:createdCheckObject|1:Id)</formulaExpression>
+        <formulaResultPath>TransactionsToReject:createdCheck</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom8879</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;CalculateNewPaidToDate&quot; | var:TransactionsToReject:PaymentTransactionNotCanceledParent|1:ParentCharges LIST var:TransactionsToReject:paidToDate FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;,&quot;CalculateNewPaidToDate&quot;, LIST(TransactionsToReject:PaymentTransactionNotCanceledParent|1:ParentCharges), TransactionsToReject:paidToDate)</formulaExpression>
+        <formulaResultPath>TransactionsToReject:NewPaidTodate</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;Annulation/\/\/&quot; var:TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_Name CONCAT</formulaConverted>
+        <formulaExpression>CONCAT(&quot;Annulation &quot;,TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_Name)</formulaExpression>
+        <formulaResultPath>TransactionsToReject:CancelationName</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem9</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom6620</globalKey>
+        <inputFieldName>TransactionsToReject:PaymentTransactionNotCanceledParent|1:PaymentTransactions_Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CanceledTransaction__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:TransactionsToReject:LatestInsurancePolicy_AmountToCollect var:TransactionsToReject:SponsorRejection_Amount +</formulaConverted>
+        <formulaExpression>TransactionsToReject:LatestInsurancePolicy_AmountToCollect + TransactionsToReject:SponsorRejection_Amount</formulaExpression>
+        <formulaResultPath>TransactionsToReject:NewAmountToCollect</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>today</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionsToReject:hasCheck var:TransactionsToReject:Account_PaymentMethodCheck_Id | | var:NewCheckPM:vlocity_ins__PaymentMethod__c_1 LIST &apos;vlocity_ins__AccountId__c/\/\/==/\/\/&quot;&apos; var:TransactionsToReject:LatestInsurancePolicy_NameInsuredId + &apos;&quot;&apos; + FILTER IF</formulaConverted>
+        <formulaExpression>IF(TransactionsToReject:hasCheck,TransactionsToReject:Account_PaymentMethodCheck_Id,FILTER(LIST(NewCheckPM:vlocity_ins__PaymentMethod__c_1), &apos;vlocity_ins__AccountId__c == &quot;&apos;+ TransactionsToReject:LatestInsurancePolicy_NameInsuredId +&apos;&quot;&apos;))</formulaExpression>
+        <formulaResultPath>TransactionsToReject:createdCheckObject</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:TransactionsToReject:SponsorRejection_Code &quot;/\/\/-/\/\/&quot; var:TransactionsToReject:SponsorRejection_Libele CONCAT</formulaConverted>
+        <formulaExpression>CONCAT( TransactionsToReject:SponsorRejection_Code , &quot; - &quot;,TransactionsToReject:SponsorRejection_Libele)</formulaExpression>
+        <formulaResultPath>TransactionsToReject:PaymentError</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustom9877</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>$Vlocity.NULL</formulaConverted>
+        <formulaExpression>$Vlocity.NULL</formulaExpression>
+        <formulaResultPath>NullValue</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRLCreatePremiumPaymentCancelationSCCustoma3P0Q000002tavAUAQItem3</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLCreatePremiumPaymentCancelationSC</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;NewCheckPM&quot; : &quot;&quot;,
+  &quot;TransactionsToReject&quot; : {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a6P1x000000cNopEAE&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.32,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT1x0000005FTsGAM&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;GFO000504&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0011x00001q51uaAAA&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a6P1x000000cNopEAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : [ {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : true,
+      &quot;ParentCharges&quot; : [ {
+        &quot;EffectiveDate&quot; : &quot;2023-06-15&quot;,
+        &quot;EndDate&quot; : &quot;2023-07-14&quot;,
+        &quot;Id&quot; : &quot;0k91x0000000A6iAAE&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-06-15 au 2023-07-14&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k91x0000000A6mAAE&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      } ],
+      &quot;Parents&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-06-15&quot;,
+        &quot;EndDate&quot; : &quot;2023-07-14&quot;,
+        &quot;Id&quot; : &quot;0k91x0000000A6iAAE&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-06-15 au 2023-07-14&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k91x0000000A6mAAE&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k91x0000000A6mAAE&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;X Carte Sponsor - GFO000504 - 2023-08-14&quot;,
+      &quot;PaymentTransactions_PaymentMethodId&quot; : &quot;a6P1x000000cNoGEAU&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    }, {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : true,
+      &quot;ParentCharges&quot; : [ {
+        &quot;EffectiveDate&quot; : &quot;2023-05-14&quot;,
+        &quot;EndDate&quot; : &quot;2023-06-14&quot;,
+        &quot;Id&quot; : &quot;0k91x0000000A6YAAU&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-05-15 au 2023-06-14&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k91x0000000A6hAAE&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      } ],
+      &quot;Parents&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-05-14&quot;,
+        &quot;EndDate&quot; : &quot;2023-06-14&quot;,
+        &quot;Id&quot; : &quot;0k91x0000000A6YAAU&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-05-15 au 2023-06-14&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k91x0000000A6hAAE&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k91x0000000A6hAAE&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Carte Sponsor - GFO000504 - 2023-08-14&quot;,
+      &quot;PaymentTransactions_PaymentMethodId&quot; : &quot;a6P1x000000cNoGEAU&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    } ],
+    &quot;SponsorRejectionName&quot; : &quot;SFISponsorflux-0006&quot;,
+    &quot;SponsorRejection_Amount&quot; : 29.32,
+    &quot;SponsorRejection_Code&quot; : &quot;Masse&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;aA51x000000DLsbCAG&quot;,
+    &quot;SponsorRejection_Libele&quot; : &quot;GFO000504 Masse&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;GFO000504&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;20202678912345&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true,
+    &quot;hasTask&quot; : &quot;true&quot;,
+    &quot;paidToDate&quot; : &quot;2023-07-14&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>true</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLCreatePremiumPaymentCancelationSC_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;Rejections&quot; : [ {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BXgQAM&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.332696,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwOGWA0&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004762&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-03-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfxQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RIDQA2&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004762 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    },
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099qsUAA&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004762&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;00009999&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BaLQAU&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.324232,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwTBWA0&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004776&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2022-12-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BaLQAU&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099r8UAA&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004776&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;22020244132432467&quot;,
+    &quot;TransactionsFound&quot; : false,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BYAQA2&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.328463999999997,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwPdWAK&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004765&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-02-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfsQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RI3QAM&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004765 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    },
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099rIUAQ&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004765&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;202888773737&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099rZUAQ&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;ACC046026&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;22020241863221754&quot;,
+    &quot;TransactionsFound&quot; : false,
+    &quot;hasCheck&quot; : false,
+    &quot;hasPolicy&quot; : false
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTBuildResponseFinal</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:TransactionsToReject LIST &apos;hasCheck/\/\/==/\/\/&quot;false&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(TransactionsToReject), &apos;hasCheck == &quot;false&quot;&apos; )</formulaExpression>
+        <formulaResultPath>TransactionsWithNoCheckPM</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTBuildResponseFinalCustom5940</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildResponseFinalCustom2099</globalKey>
+        <inputFieldName>NoTransactionToreject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>NoTransactionToreject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Rejections LIST &apos;TransactionsFound/\/\/==/\/\/&quot;false&quot;/\/\/||/\/\/hasPolicy/\/\/==/\/\/&quot;false&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Rejections), &apos;TransactionsFound == &quot;false&quot; || hasPolicy == &quot;false&quot;&apos; )</formulaExpression>
+        <formulaResultPath>NoTransactionToreject</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTBuildResponseFinalCustom5610</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Rejections LIST &apos;TransactionsFound/\/\/==/\/\/&quot;true&quot;/\/\/&amp;&amp;/\/\/hasPolicy/\/\/==/\/\/&quot;true&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Rejections), &apos;TransactionsFound == &quot;true&quot; &amp;&amp; hasPolicy == &quot;true&quot;&apos; )</formulaExpression>
+        <formulaResultPath>TransactionsToReject</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTBuildResponseFinalCustom9401</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildResponseFinalCustom7655</globalKey>
+        <inputFieldName>TransactionsToReject</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsToReject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTBuildResponseFinalCustom3523</globalKey>
+        <inputFieldName>TransactionsWithNoCheckPM</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTBuildResponseFinal</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsWithNoCheckPM</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;Rejections&quot; : [ {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BXgQAM&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.332696,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwOGWA0&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004762&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-03-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfxQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RIDQA2&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RIIQA2&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004762 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    },
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099qsUAA&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004762&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;00009999&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BaLQAU&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.324232,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwTBWA0&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004776&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2022-12-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BaLQAU&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Check&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099r8UAA&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004776&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;22020244132432467&quot;,
+    &quot;TransactionsFound&quot; : false,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a600Q0000005BYAQA2&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 29.328463999999997,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Monthly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT0Q000001DwPdWAK&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR004765&quot;,
+    &quot;LatestInsurancePolicy_PaidToDate&quot; : &quot;2023-02-04&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Id&quot; : &quot;a600Q0000005BfsQAE&quot;,
+    &quot;LatestInsurancePolicy_PaymentMethod_Type&quot; : &quot;Sponsor Card&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransactionNotCanceledParent&quot; : {
+      &quot;HasCancelations&quot; : false,
+      &quot;HasCharges&quot; : true,
+      &quot;HasOther&quot; : false,
+      &quot;ParentCharges&quot; : {
+        &quot;EffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+        &quot;EndDate&quot; : &quot;2023-02-04&quot;,
+        &quot;Id&quot; : &quot;0k90Q0000008RI3QAM&quot;,
+        &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+        &quot;ParentTransactionId&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+        &quot;Type&quot; : &quot;Premium Charge&quot;
+      },
+      &quot;PaymentTransactions_Amount&quot; : 29.21312,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k90Q0000008RI8QAM&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Sponsor Card - CGFOR004765 - 2023-01-06&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.111112,
+      &quot;PaymentTransactions_TotalAmount&quot; : 29.32
+    },
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099rIUAQ&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR004765&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;202888773737&quot;,
+    &quot;TransactionsFound&quot; : true,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true
+  }, {
+    &quot;SponsorRejection_Code&quot; : &quot;1&quot;,
+    &quot;SponsorRejection_Id&quot; : &quot;a9B0Q00000099rZUAQ&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;ACC046026&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;22020241863221754&quot;,
+    &quot;TransactionsFound&quot; : false,
+    &quot;hasCheck&quot; : false,
+    &quot;hasPolicy&quot; : false
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTBuildResponseFinal_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

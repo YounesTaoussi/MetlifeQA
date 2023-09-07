@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;uniqueList&quot; : [ {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000001x2AA&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000001x2AAI23322&quot;,
+    &quot;status&quot; : &quot;Success&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU00000000222AA&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU00000000222AAI23322&quot;,
+    &quot;status&quot; : &quot;Success&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002A2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002A2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002B2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002B2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002C2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002C2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002D2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002D2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002S2AQ&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002S2AQI23322&quot;,
+    &quot;status&quot; : &quot;Success&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002q2AA&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002q2AAI23322&quot;,
+    &quot;status&quot; : &quot;Success&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU0000004CCv2AM&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU0000004CCv2AMI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLUpdatePaymentMethodSepaRegistration</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom4981</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sepa_Mandate_Registration_Date__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>today</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom6820</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom7154</globalKey>
+        <inputFieldName>uniqueList:SourceId_unique</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom2756</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom3821</globalKey>
+        <inputFieldName>uniqueList:MessageRegistration255</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_error__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;get225Message&quot; | var:uniqueList:status &quot;Failure&quot; == 999 200 IF &quot;&quot; var:uniqueList:MessageRegistration FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;get225Message&quot;,IF(uniqueList:status == &quot;Failure&quot;, 999, 200), &quot;&quot;, uniqueList:MessageRegistration)</formulaExpression>
+        <formulaResultPath>uniqueList:MessageRegistration255</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom1904</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:uniqueList:status &quot;Failure&quot; == | | var:uniqueList:message ISNOTBLANK var:uniqueList:message | var:uniqueList:errors &quot;/\/\/&quot; CONCAT IF &quot;Success&quot; IF</formulaConverted>
+        <formulaExpression>IF(uniqueList:status == &quot;Failure&quot;, IF(ISNOTBLANK(uniqueList:message), uniqueList:message, CONCAT(uniqueList:errors, &quot; &quot;)), &quot;Success&quot;)</formulaExpression>
+        <formulaResultPath>uniqueList:MessageRegistration</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLUpdatePaymentMethodSepaRegistrationCustom6887</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePaymentMethodSepaRegistration</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;uniqueList&quot; : [ {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000001x2AA&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000001x2AAI23322&quot;,
+    &quot;status&quot; : &quot;Success&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU00000000222AA&quot;,
+    &quot;message&quot; : &quot;The soudddddrceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU00000000222AAI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002A2AQ&quot;,
+    &quot;message&quot; : &quot;The sour11111ceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002A2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002B2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceI2222d is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002B2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002C2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceI3333d is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002C2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002D2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002D2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002S2AQ&quot;,
+    &quot;message&quot; : &quot;The sourceId 4444is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002S2AQI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU000000002q2AA&quot;,
+    &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002q2AAI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  }, {
+    &quot;SourceId_unique&quot; : &quot;a6PMU0000004CCv2AM&quot;,
+    &quot;errors&quot; : [ &quot;papapapapapa&quot;, &quot;mamamamamamm&quot; ],
+    &quot;sourceId&quot; : &quot;a6PMU0000004CCv2AMI23322&quot;,
+    &quot;status&quot; : &quot;Failure&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLUpdatePaymentMethodSepaRegistration_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

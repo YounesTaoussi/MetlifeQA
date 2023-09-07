@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;getSponsorCardBankAccount_DataRaptorExtractAction2Output&quot; : {
+    &quot;BankAccount&quot; : {
+      &quot;BankAccountId&quot; : &quot;a600Q0000005BZwQAM&quot;,
+      &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;DefaultBankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentError&quot; : &quot;Error Test&quot;
+    },
+    &quot;Policy&quot; : {
+      &quot;OriginalPolicyAmountToCollect&quot; : -6.407531,
+      &quot;PolicyDefaultPaymentMethod&quot; : &quot;a600Q0000005Ba1QAE&quot;
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>BankAccountListForTypeAhead</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>60f8a347-9776-4385-8612-1e6e30ed7c80</globalKey>
+        <inputFieldName>BankAccountList</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>BankAccountListForTypeAhead</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BankAccountList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:getSponsorCardBankAccount_DataRaptorExtractAction2Output:BankAccount LIST</formulaConverted>
+        <formulaExpression>LIST(getSponsorCardBankAccount_DataRaptorExtractAction2Output:BankAccount)</formulaExpression>
+        <formulaResultPath>BankAccountList</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>b32aa910-acde-45d2-9d0c-c13e50886db8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>BankAccountListForTypeAhead</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;getSponsorCardBankAccount_DataRaptorExtractAction2Output&quot; : {
+    &quot;BankAccount&quot; : {
+      &quot;BankAccountId&quot; : &quot;a600Q0000005BZwQAM&quot;,
+      &quot;BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;DefaultBankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentError&quot; : &quot;Error Test&quot;
+    },
+    &quot;Policy&quot; : {
+      &quot;OriginalPolicyAmountToCollect&quot; : -6.407531,
+      &quot;PolicyDefaultPaymentMethod&quot; : &quot;a600Q0000005Ba1QAE&quot;
+    }
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>BankAccountListForTypeAhead_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

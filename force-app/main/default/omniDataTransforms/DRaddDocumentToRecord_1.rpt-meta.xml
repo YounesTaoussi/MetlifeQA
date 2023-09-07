@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;&quot; : &quot;&quot;,
+  &quot;ConfirmationAndRules&quot; : {
+    &quot;ClaimantCni&quot; : null,
+    &quot;ClaimantRib&quot; : null,
+    &quot;acteDeces&quot; : null
+  },
+  &quot;ContextId&quot; : null,
+  &quot;DeathClaimant&quot; : {
+    &quot;BenefDateOfBirth&quot; : null,
+    &quot;BenefEmail&quot; : null,
+    &quot;BenefLastName&quot; : null,
+    &quot;BenefSecuritySocialNumber&quot; : null,
+    &quot;BenefTelephone&quot; : null,
+    &quot;BenfFirstName&quot; : null,
+    &quot;CNICert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ],
+    &quot;ClaimantType&quot; : null,
+    &quot;Details&quot; : null,
+    &quot;RIBCert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ]
+  },
+  &quot;DeathDeclaration&quot; : {
+    &quot;DeathCause&quot; : null,
+    &quot;DeathCert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ],
+    &quot;DeathCertNumber&quot; : null,
+    &quot;DeathCoroner&quot; : null,
+    &quot;DeathDate&quot; : null,
+    &quot;DeathDescription&quot; : null,
+    &quot;GuaranteedDeathBenefit&quot; : null,
+    &quot;InceptionDate&quot; : null,
+    &quot;PolicyName&quot; : null,
+    &quot;PolicyNumber&quot; : null,
+    &quot;Policyholder&quot; : null,
+    &quot;Status&quot; : null,
+    &quot;Type&quot; : null
+  },
+  &quot;Demarches&quot; : {
+    &quot;instructions&quot; : null
+  },
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;AttachDocuments&quot; : null,
+    &quot;ConfirmationAndRules&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;DeathClaimant&quot; : null,
+    &quot;DeathDeclaration&quot; : null,
+    &quot;Demarches&quot; : null,
+    &quot;createClaimProcess&quot; : null,
+    &quot;evaluateClaimProductRules&quot; : null,
+    &quot;getClaimNumber&quot; : null,
+    &quot;getPolicyNumber&quot; : null,
+    &quot;readInsurancePolicyData&quot; : null,
+    &quot;readInsuredItemsData&quot; : null,
+    &quot;setClaimName&quot; : null,
+    &quot;setPolicyId&quot; : null,
+    &quot;setProductCodes&quot; : null,
+    &quot;setTrueRules&quot; : null,
+    &quot;updateClaimName&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRaddDocumentToRecord</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <defaultValue>I</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRaddDocumentToRecord1641955167093614</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRaddDocumentToRecord</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ShareType</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRaddDocumentToRecord19364719192576008</globalKey>
+        <inputFieldName>recordId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRaddDocumentToRecord</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>LinkedEntityId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRaddDocumentToRecord7839245278047642</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRaddDocumentToRecord</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRaddDocumentToRecord6058649814643078</globalKey>
+        <inputFieldName>data</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRaddDocumentToRecord</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ContentDocumentId</outputFieldName>
+        <outputObjectName>ContentDocumentLink</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;&quot; : &quot;&quot;,
+  &quot;ConfirmationAndRules&quot; : {
+    &quot;ClaimantCni&quot; : null,
+    &quot;ClaimantRib&quot; : null,
+    &quot;acteDeces&quot; : null
+  },
+  &quot;ContextId&quot; : null,
+  &quot;DeathClaimant&quot; : {
+    &quot;BenefDateOfBirth&quot; : null,
+    &quot;BenefEmail&quot; : null,
+    &quot;BenefLastName&quot; : null,
+    &quot;BenefSecuritySocialNumber&quot; : null,
+    &quot;BenefTelephone&quot; : null,
+    &quot;BenfFirstName&quot; : null,
+    &quot;CNICert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ],
+    &quot;ClaimantType&quot; : null,
+    &quot;Details&quot; : null,
+    &quot;RIBCert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ]
+  },
+  &quot;DeathDeclaration&quot; : {
+    &quot;DeathCause&quot; : null,
+    &quot;DeathCert&quot; : [ {
+      &quot;data&quot; : null,
+      &quot;filename&quot; : null,
+      &quot;size&quot; : null
+    } ],
+    &quot;DeathCertNumber&quot; : null,
+    &quot;DeathCoroner&quot; : null,
+    &quot;DeathDate&quot; : null,
+    &quot;DeathDescription&quot; : null,
+    &quot;GuaranteedDeathBenefit&quot; : null,
+    &quot;InceptionDate&quot; : null,
+    &quot;PolicyName&quot; : null,
+    &quot;PolicyNumber&quot; : null,
+    &quot;Policyholder&quot; : null,
+    &quot;Status&quot; : null,
+    &quot;Type&quot; : null
+  },
+  &quot;Demarches&quot; : {
+    &quot;instructions&quot; : null
+  },
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;AttachDocuments&quot; : null,
+    &quot;ConfirmationAndRules&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;DeathClaimant&quot; : null,
+    &quot;DeathDeclaration&quot; : null,
+    &quot;Demarches&quot; : null,
+    &quot;createClaimProcess&quot; : null,
+    &quot;evaluateClaimProductRules&quot; : null,
+    &quot;getClaimNumber&quot; : null,
+    &quot;getPolicyNumber&quot; : null,
+    &quot;readInsurancePolicyData&quot; : null,
+    &quot;readInsuredItemsData&quot; : null,
+    &quot;setClaimName&quot; : null,
+    &quot;setPolicyId&quot; : null,
+    &quot;setProductCodes&quot; : null,
+    &quot;setTrueRules&quot; : null,
+    &quot;updateClaimName&quot; : null
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>-1.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRaddDocumentToRecord_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

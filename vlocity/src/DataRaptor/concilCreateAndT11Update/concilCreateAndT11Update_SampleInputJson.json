@@ -1,0 +1,19 @@
+{
+    "ContextId": null,
+    "ErrorPriceNotCalculated": {
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CheckAccountDuplicate": null,
+        "ErrorPriceNotCalculated": null,
+        "ExtrtactAndBuildData": null,
+        "GetRatedProducts": null,
+        "ResponseAction": null
+    }
+}

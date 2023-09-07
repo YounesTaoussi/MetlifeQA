@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;InsurancePolicy&quot; : {
+    &quot;Id&quot; : &quot;0YTMU00000000014AA&quot;,
+    &quot;Name&quot; : &quot;CGFOR000039&quot;,
+    &quot;PaidToDate&quot; : &quot;2022-12-04&quot;
+  },
+  &quot;Transaction&quot; : [ {
+    &quot;ChargeDurationInMonths&quot; : 3,
+    &quot;HasParent&quot; : true,
+    &quot;Id&quot; : &quot;0k91x00000001zGAAQ&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+    &quot;Name&quot; : &quot;Prime du 2022-10-05 au 2023-01-04&quot;,
+    &quot;ParentTransactionId&quot; : &quot;0k91x00000001zLAAQ&quot;,
+    &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;Period_End_Date__c&quot; : &quot;2023-01-04&quot;,
+    &quot;TotalTransactionAmount&quot; : 87.97,
+    &quot;TransactionAmount&quot; : 87.63936,
+    &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+    &quot;TransactionTaxAmount&quot; : 0.333336,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;ChargeDurationInMonths&quot; : 0,
+    &quot;HasParent&quot; : false,
+    &quot;Id&quot; : &quot;0k91x00000001zLAAQ&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+    &quot;Name&quot; : &quot;Direct Debit - CGFOR000048 -&quot;,
+    &quot;TotalTransactionAmount&quot; : 87.97,
+    &quot;TransactionAmount&quot; : 87.63936,
+    &quot;TransactionTaxAmount&quot; : 0.333336,
+    &quot;Type&quot; : &quot;Premium Payment&quot;
+  }, {
+    &quot;ChargeDurationInMonths&quot; : 3,
+    &quot;HasParent&quot; : false,
+    &quot;Id&quot; : &quot;0k91x00000001zQAAQ&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk4GAA&quot;,
+    &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-04-04&quot;,
+    &quot;Period_End_Date__c&quot; : &quot;2023-04-04&quot;,
+    &quot;TotalTransactionAmount&quot; : 87.97,
+    &quot;TransactionAmount&quot; : 87.63936,
+    &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+    &quot;TransactionTaxAmount&quot; : 0.333336,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTCancelPremiumChargesTransform</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCancelPremiumChargesTransformCustom9609</globalKey>
+        <inputFieldName>TransactionsWithoutParent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsWithoutParent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:TransactionsWithParent LIST &quot;ChargeDurationInMonths&quot; FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(TransactionsWithParent), &quot;ChargeDurationInMonths&quot;)</formulaExpression>
+        <formulaResultPath>PriodToDeduce</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTCancelPremiumChargesTransformCustom6906</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:Transaction LIST &quot;TotalTransactionAmount&quot; FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(Transaction), &quot;TotalTransactionAmount&quot;)</formulaExpression>
+        <formulaResultPath>TotalAmountToReduceFormAmountToCollect</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTCancelPremiumChargesTransformCustom4368</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transaction LIST &apos;HasParent&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Transaction), &apos;HasParent&apos;)</formulaExpression>
+        <formulaResultPath>TransactionsWithParent</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTCancelPremiumChargesTransformCustom5609</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transaction LIST &apos;HasParent/\/\/==/\/\/false&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Transaction), &apos;HasParent == false&apos;)</formulaExpression>
+        <formulaResultPath>TransactionsWithoutParent</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTCancelPremiumChargesTransformCustom3749</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCancelPremiumChargesTransformCustom3602</globalKey>
+        <inputFieldName>TransactionsWithParent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsWithParent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCancelPremiumChargesTransformCustom3545</globalKey>
+        <inputFieldName>TotalAmountToReduceFormAmountToCollect</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TotalAmountToReduceFormAmountToCollect</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTCancelPremiumChargesTransformCustom6598</globalKey>
+        <inputFieldName>PriodToDeduce</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTCancelPremiumChargesTransform</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>PriodToDeduce</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;InsurancePolicy&quot; : {
+    &quot;AmountToCollect&quot; : 29.32,
+    &quot;Id&quot; : &quot;0YT1x0000005Fc2GAE&quot;,
+    &quot;Name&quot; : &quot;GFO000511&quot;,
+    &quot;PaidToDate&quot; : &quot;2023-08-08&quot;
+  },
+  &quot;Transaction&quot; : [ {
+    &quot;ChargeDurationInMonths&quot; : 1,
+    &quot;HasParent&quot; : true,
+    &quot;Id&quot; : &quot;0k91x0000000Df6AAE&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000005Fc2GAE&quot;,
+    &quot;Name&quot; : &quot;Prime du 2022-12-05 au 2023-01-04&quot;,
+    &quot;ParentTransactionId&quot; : &quot;0k91x0000000De4AAE&quot;,
+    &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;Period_End_Date__c&quot; : &quot;2023-01-04&quot;,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TransactionAmount&quot; : 29.21312,
+    &quot;TransactionEffectiveDate&quot; : &quot;2022-12-04T23:00:00.000Z&quot;,
+    &quot;TransactionTaxAmount&quot; : 0.111112,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;ChargeDurationInMonths&quot; : 1,
+    &quot;HasParent&quot; : true,
+    &quot;Id&quot; : &quot;0k91x0000000DfBAAU&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000005Fc2GAE&quot;,
+    &quot;Name&quot; : &quot;Prime du 2023-01-05 au 2023-02-04&quot;,
+    &quot;ParentTransactionId&quot; : &quot;0k91x0000000DfGAAU&quot;,
+    &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;Period_End_Date__c&quot; : &quot;2023-02-04&quot;,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TransactionAmount&quot; : 29.21312,
+    &quot;TransactionEffectiveDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+    &quot;TransactionTaxAmount&quot; : 0.111112,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;ChargeDurationInMonths&quot; : 1,
+    &quot;HasParent&quot; : false,
+    &quot;Id&quot; : &quot;0k91x0000000DfHAAU&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000005Fc2GAE&quot;,
+    &quot;Name&quot; : &quot;Prime du 2023-02-05 au 2023-03-04&quot;,
+    &quot;ParentTransactionId&quot; : &quot;0k91x0000000DfQAAU&quot;,
+    &quot;ParentTransaction_Type&quot; : &quot;Premium Cancellation&quot;,
+    &quot;Period_End_Date__c&quot; : &quot;2023-03-04&quot;,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TransactionAmount&quot; : 29.21312,
+    &quot;TransactionEffectiveDate&quot; : &quot;2023-02-05T00:00:00.000Z&quot;,
+    &quot;TransactionTaxAmount&quot; : 0.111112,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTCancelPremiumChargesTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

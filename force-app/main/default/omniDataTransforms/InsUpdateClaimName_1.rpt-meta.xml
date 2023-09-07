@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;bundleName&quot; : &quot;Update Claim Name&quot;,
+  &quot;objectList&quot; : {
+    &quot;&quot; : &quot;&quot;,
+    &quot;AccountId&quot; : &quot;0014x000005i3BMAAY&quot;,
+    &quot;ConfirmationAndRules&quot; : { },
+    &quot;ContextId&quot; : &quot;0YT4x000000YRbVGAW&quot;,
+    &quot;InsurancePolicyNumber&quot; : &quot;000818&quot;,
+    &quot;InsuredDamagedItemName&quot; : &quot;2015 Honda Accord&quot;,
+    &quot;InsuredVehicle&quot; : {
+      &quot;InsuredItemId&quot; : &quot;0YW4x000000Y00SGAS&quot;,
+      &quot;VehicleName&quot; : &quot;2015 Honda Accord&quot;
+    },
+    &quot;PolicyId&quot; : &quot;0YT4x000000YRbVGAW&quot;,
+    &quot;Product&quot; : {
+      &quot;ProductId&quot; : &quot;01t4x000001OaUPAA0&quot;
+    },
+    &quot;SelectVehicle&quot; : {
+      &quot;InsuredVehicle&quot; : {
+        &quot;selectedInsuredId&quot; : &quot;0YW4x000000Y00SGAS&quot;
+      }
+    },
+    &quot;VehicleDamage&quot; : {
+      &quot;damageSeverity&quot; : &quot;Minor&quot;,
+      &quot;insuredVehicleDrivable&quot; : &quot;yes&quot;,
+      &quot;rentalCar&quot; : null,
+      &quot;rentalCarDays&quot; : null,
+      &quot;towing&quot; : null,
+      &quot;vehicleLocation&quot; : &quot;BodyShop&quot;
+    },
+    &quot;claimClaimantPartyRelationshipCode&quot; : &quot;Claimant&quot;,
+    &quot;claimDamagedPropertyProductCode&quot; : &quot;claimDamagedProperty&quot;,
+    &quot;claimId&quot; : &quot;0Zk4x000000XruPCAS&quot;,
+    &quot;claimInjuredPersonProductCode&quot; : &quot;claimInjuredPerson&quot;,
+    &quot;claimInsuredPartyRelationshipCode&quot; : &quot;Insured&quot;,
+    &quot;claimInvolvedVehicleProductCode&quot; : &quot;autoClaimInvolvedVehicle&quot;,
+    &quot;claimWitnessPartyRelationshipCode&quot; : &quot;Witness&quot;,
+    &quot;contextId&quot; : &quot;0YT4x000000YRbVGAW&quot;,
+    &quot;details&quot; : {
+      &quot;dateToday&quot; : &quot;2021-06-19T18:30:00.000Z&quot;,
+      &quot;lossDateTime&quot; : &quot;2021-06-01T06:30:00.000Z&quot;,
+      &quot;lossDriver&quot; : &quot;insured&quot;,
+      &quot;lossInjuries&quot; : &quot;yes&quot;,
+      &quot;lossSource&quot; : null,
+      &quot;otherVehicles&quot; : false
+    },
+    &quot;inforceCoverage&quot; : {
+      &quot;fileClaim&quot; : &quot;yes&quot;
+    },
+    &quot;injuries&quot; : {
+      &quot;injuredParties&quot; : null,
+      &quot;partiesInjured&quot; : &quot;no&quot;
+    },
+    &quot;involvedVehicles&quot; : {
+      &quot;otherInvolvedVehicle&quot; : null,
+      &quot;otherVehiclesInvolved&quot; : &quot;no&quot;
+    },
+    &quot;perilCodes&quot; : {
+      &quot;ClaimProduct&quot; : &quot;autoClaimProduct&quot;,
+      &quot;Incident&quot; : &quot;isFalse&quot;,
+      &quot;damagedVehicle&quot; : &quot;isTrue&quot;,
+      &quot;injuredPerson&quot; : &quot;isTrue&quot;,
+      &quot;lawsuit&quot; : &quot;isFalse&quot;,
+      &quot;report&quot; : &quot;isTrue&quot;,
+      &quot;responsibleParty&quot; : &quot;isFalse&quot;,
+      &quot;witness&quot; : &quot;isTrue&quot;
+    },
+    &quot;policholderPolicyParticipantId&quot; : &quot;0ao4x000000XqnIAAS&quot;,
+    &quot;policyInsuredItemProductCode&quot; : &quot;autoVehicle&quot;,
+    &quot;policyholderClaimantId&quot; : &quot;0aS4x000000XiTREA0&quot;,
+    &quot;policyholderInjuryItemId&quot; : &quot;0dq4x00000004TrAAI&quot;,
+    &quot;queueableJobId&quot; : &quot;7074x00001Zwce3AAB&quot;,
+    &quot;report&quot; : {
+      &quot;authorityInvestigation&quot; : &quot;no&quot;,
+      &quot;uploadReport&quot; : null
+    },
+    &quot;result&quot; : {
+      &quot;Coverages&quot; : [ {
+        &quot;Name&quot; : &quot;IPC-00003688&quot;,
+        &quot;ProductCode&quot; : &quot;autoBIPD&quot;,
+        &quot;ProductName&quot; : &quot;Bodily Injury &amp; Property Damage&quot;,
+        &quot;StandardPremiumAmount&quot; : 40.98,
+        &quot;autoBIPDLimit&quot; : &quot;50000/100000/100000&quot;,
+        &quot;autoBIPDLimit.autoBILimClm&quot; : 100000,
+        &quot;autoBIPDLimit.autoBILimClmCov&quot; : 50000,
+        &quot;autoBIPDLimit.autoPDLimClm&quot; : 100000,
+        &quot;insPolicyCoverageId&quot; : &quot;0cY4x000000XsgqEAC&quot;
+      }, {
+        &quot;Name&quot; : &quot;IPC-00003689&quot;,
+        &quot;ProductCode&quot; : &quot;autoCollision&quot;,
+        &quot;ProductName&quot; : &quot;Collision&quot;,
+        &quot;StandardPremiumAmount&quot; : 380.19,
+        &quot;autoCollDedClmCov&quot; : 1000,
+        &quot;insPolicyCoverageId&quot; : &quot;0cY4x000000XsgrEAC&quot;
+      }, {
+        &quot;Name&quot; : &quot;IPC-00003690&quot;,
+        &quot;ProductCode&quot; : &quot;autoComp&quot;,
+        &quot;ProductName&quot; : &quot;Comprehensive&quot;,
+        &quot;StandardPremiumAmount&quot; : 214.73,
+        &quot;autoCompDedClmCov&quot; : 100,
+        &quot;insPolicyCoverageId&quot; : &quot;0cY4x000000XsgsEAC&quot;
+      }, {
+        &quot;Name&quot; : &quot;IPC-00003691&quot;,
+        &quot;ProductCode&quot; : &quot;autoMedical&quot;,
+        &quot;ProductName&quot; : &quot;Medical Payments&quot;,
+        &quot;StandardPremiumAmount&quot; : 40.35,
+        &quot;autoMedPayLimClmCov&quot; : 1000,
+        &quot;insPolicyCoverageId&quot; : &quot;0cY4x000000XsgtEAC&quot;
+      }, {
+        &quot;Name&quot; : &quot;IPC-00003692&quot;,
+        &quot;ProductCode&quot; : &quot;autoUM&quot;,
+        &quot;ProductName&quot; : &quot;Uninsured Motorist&quot;,
+        &quot;StandardPremiumAmount&quot; : 68.22,
+        &quot;autoUMLimit&quot; : &quot;50/100&quot;,
+        &quot;insPolicyCoverageId&quot; : &quot;0cY4x000000XsguEAC&quot;
+      } ],
+      &quot;InsuredItem&quot; : {
+        &quot;ProductCode&quot; : &quot;autoVehicle&quot;,
+        &quot;ProductName&quot; : &quot;Vehicle&quot;,
+        &quot;avAltFuel&quot; : false,
+        &quot;avAntiTheft&quot; : true,
+        &quot;avBodyType&quot; : null,
+        &quot;avBrakes&quot; : false,
+        &quot;avClaimFreq&quot; : &quot;&quot;,
+        &quot;avClaimSev&quot; : &quot;&quot;,
+        &quot;avColor&quot; : &quot;Black&quot;,
+        &quot;avGaragePostalCode&quot; : &quot;94043&quot;,
+        &quot;avHistoric&quot; : false,
+        &quot;avLicNum&quot; : null,
+        &quot;avLicState&quot; : null,
+        &quot;avMake&quot; : &quot;Honda&quot;,
+        &quot;avMileage&quot; : 21000,
+        &quot;avModel&quot; : &quot;Accord&quot;,
+        &quot;avRatedDriver-BIPD&quot; : &quot;&quot;,
+        &quot;avRatedDriver-COLL&quot; : &quot;&quot;,
+        &quot;avRatedDriver-COMP&quot; : &quot;&quot;,
+        &quot;avRatedDriver-MED&quot; : &quot;&quot;,
+        &quot;avRatedDriver-UM&quot; : &quot;&quot;,
+        &quot;avRatedDriverName&quot; : null,
+        &quot;avRestraints&quot; : true,
+        &quot;avStabilization&quot; : false,
+        &quot;avStyle&quot; : null,
+        &quot;avSymbol&quot; : null,
+        &quot;avVIN&quot; : null,
+        &quot;avValue&quot; : 21000,
+        &quot;avYear&quot; : &quot;2015&quot;,
+        &quot;insuredItemId&quot; : &quot;0YW4x000000Y00SGAS&quot;
+      },
+      &quot;Name&quot; : &quot;000818&quot;,
+      &quot;ProductCode&quot; : &quot;autoMulti&quot;,
+      &quot;ProductName&quot; : &quot;Multi Auto&quot;,
+      &quot;Status&quot; : &quot;InForce&quot;,
+      &quot;UniversalPolicyNumber&quot; : &quot;271fabd6-586b-0672-187a-8db79c23eaa9&quot;,
+      &quot;covered&quot; : true,
+      &quot;policyHolderAccountId&quot; : &quot;0014x000005i3BMAAY&quot;,
+      &quot;policyHolderContactId&quot; : &quot;0034x000004frIjAAI&quot;,
+      &quot;policyHolderPartyId&quot; : &quot;a3h4x0000008gDpAAI&quot;,
+      &quot;policyId&quot; : &quot;0YT4x000000YRbVGAW&quot;
+    },
+    &quot;selectPeril&quot; : {
+      &quot;peril&quot; : &quot;Collision&quot;
+    },
+    &quot;timeStamp&quot; : &quot;2021-06-20T11:05:55.105Z&quot;,
+    &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+    &quot;userId&quot; : &quot;0054x000001DRYjAAO&quot;,
+    &quot;userName&quot; : &quot;ine-v230-pkg1@pc.com&quot;,
+    &quot;userProfile&quot; : &quot;System Administrator&quot;,
+    &quot;userTimeZone&quot; : &quot;-420&quot;,
+    &quot;vlcTimeTracking&quot; : {
+      &quot;OmniScriptSessionToken&quot; : &quot;88ed86cd-c5b0-4d33-8891-b531f7ea947e&quot;,
+      &quot;SelectVehicle&quot; : 2514,
+      &quot;VehicleDamage&quot; : 5540,
+      &quot;VerifyCoverage&quot; : 531,
+      &quot;createClaimProcess&quot; : 1666,
+      &quot;createDamageVehicle&quot; : 684,
+      &quot;details&quot; : 4519,
+      &quot;extractInsuredAuto&quot; : 453,
+      &quot;getPolicyNumber&quot; : 468,
+      &quot;getPolicyVehicleProductId&quot; : 445,
+      &quot;inforceCoverage&quot; : 1597,
+      &quot;injuries&quot; : 834,
+      &quot;involvedVehicles&quot; : 7780,
+      &quot;lookupClaimElements&quot; : 420,
+      &quot;readVehicleData&quot; : 449,
+      &quot;report&quot; : 981,
+      &quot;selectPeril&quot; : 1196,
+      &quot;setPolicyId&quot; : 0,
+      &quot;setProductCodes&quot; : 0
+    },
+    &quot;witnesses&quot; : {
+      &quot;personWitness&quot; : null,
+      &quot;witness?&quot; : &quot;no&quot;
+    }
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>InsUpdateClaimName</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>InsUpdateClaimName8092157705398544</globalKey>
+        <inputFieldName>ClaimName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>InsUpdateClaimName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Name</outputFieldName>
+        <outputObjectName>Claim</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>InsUpdateClaimName7921371262964945</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>InsUpdateClaimName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Claim</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>InsUpdateClaimName9026116276688647</globalKey>
+        <inputFieldName>claimId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>InsUpdateClaimName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>Claim</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;claimId&quot; : &quot;0Zk4x000000XryqCAC&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>InsUpdateClaimName_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

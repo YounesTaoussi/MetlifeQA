@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : null,
+  &quot;timeStamp&quot; : null,
+  &quot;userId&quot; : null,
+  &quot;userName&quot; : null,
+  &quot;userProfile&quot; : null,
+  &quot;userTimeZone&quot; : null,
+  &quot;vlcPersistentComponent&quot; : { },
+  &quot;vlcTimeTracking&quot; : {
+    &quot;CallTMW&quot; : null,
+    &quot;DataRaptorPostAction1&quot; : null,
+    &quot;LoadDirectDebitPaymentMethods&quot; : null,
+    &quot;MergeElements&quot; : null,
+    &quot;ResponseAction1&quot; : null,
+    &quot;StaticValues&quot; : null,
+    &quot;TransformAMND&quot; : null,
+    &quot;TransformINIT&quot; : null,
+    &quot;TransformMergedList&quot; : null
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLUpdatePMSentToTMW</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:statusCodeValue &quot;200&quot; &lt;&gt; var:null | TODAY IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:statusCodeValue &lt;&gt; &quot;200&quot;,null, TODAY())</formulaExpression>
+        <formulaResultPath>today</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLUpdatePMSentToTMWCustom1231</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:statusCodeValue 200 &lt;&gt; | &quot;CustomFunctionImplementation&quot; &quot;get225Message&quot; var:CallTMW:statusCodeValue var:CallTMW:statusCode var:CallTMW:body FUNCTION var:null IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:statusCodeValue &lt;&gt; 200, FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;get225Message&quot;, CallTMW:statusCodeValue, CallTMW:statusCode, CallTMW:body) , null)</formulaExpression>
+        <formulaResultPath>Message</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLUpdatePMSentToTMWCustom6390</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePMSentToTMWCustom7416</globalKey>
+        <inputFieldName>Message</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Payment_error__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLUpdatePMSentToTMWCustom6564</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePMSentToTMWCustom6468</globalKey>
+        <inputFieldName>MergeElements:PlicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:MergeElements:sourceId 0 18 SUBSTRING</formulaConverted>
+        <formulaExpression>SUBSTRING(MergeElements:sourceId, 0, 18)</formulaExpression>
+        <formulaResultPath>MergeElements:PlicyId</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLUpdatePMSentToTMWCustom9602</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdatePMSentToTMWCustom9493</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdatePMSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sepa_Mandate_Registration_Date__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;CallTMW&quot; : {
+    &quot;body&quot; : &quot;Exception: Input details passed for the SepaMandatService has invalid datas. Please correct the input datas &amp; execute it again. Validation failed for classes [fr.metlife.sfdcservice.entity.SfiMandat] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n\tConstraintViolationImpl{interpolatedMessage=&apos;debtorAddrStatePrvnceCntry field must be alphanumeric &amp; Special characters are not allowed&apos;, propertyPath=debtorAddrStatePrvnceCntry, rootBeanClass=class fr.metlife.sfdcservice.entity.SfiMandat, messageTemplate=&apos;debtorAddrStatePrvnceCntry field must be alphanumeric &amp; Special characters are not allowed&apos;}\n]&quot;,
+    &quot;headers&quot; : { },
+    &quot;statusCode&quot; : &quot;BAD_REQUEST&quot;,
+    &quot;statusCodeValue&quot; : 400
+  },
+  &quot;CallTMWInfo&quot; : {
+    &quot;Access-Control-Allow-Methods&quot; : &quot;POST&quot;,
+    &quot;Access-Control-Allow-Origin&quot; : &quot;*&quot;,
+    &quot;Access-Control-Expose-Headers&quot; : &quot;APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID&quot;,
+    &quot;Connection&quot; : &quot;Keep-Alive&quot;,
+    &quot;Content-Language&quot; : &quot;fr-FR&quot;,
+    &quot;Content-Type&quot; : &quot;application/json&quot;,
+    &quot;Date&quot; : &quot;Thu, 19 Jan 2023 14:49:53 GMT&quot;,
+    &quot;Transfer-Encoding&quot; : &quot;chunked&quot;,
+    &quot;Vary&quot; : &quot;Origin,Access-Control-Request-Method,Access-Control-Request-Headers&quot;,
+    &quot;X-Backside-Transport&quot; : &quot;OK OK&quot;,
+    &quot;X-Global-Transaction-ID&quot; : &quot;7b39349563c958901a06ac92&quot;,
+    &quot;X-Powered-By&quot; : &quot;Servlet/3.0&quot;,
+    &quot;status&quot; : &quot;OK&quot;,
+    &quot;statusCode&quot; : 200
+  },
+  &quot;CallTMWStatus&quot; : true,
+  &quot;LoadDirectDebitPaymentMethods&quot; : {
+    &quot;MetfifeIBANS&quot; : [ {
+      &quot;CreditorCode&quot; : &quot;51&quot;,
+      &quot;FileName&quot; : &quot;METSEPA1.007549815-core.genericmncsv&quot;,
+      &quot;FileType&quot; : &quot;AIG&quot;,
+      &quot;IBAN&quot; : &quot;LU100670006550207774&quot;,
+      &quot;Id&quot; : &quot;m0f1x000000CitsAAC&quot;,
+      &quot;OriginatorName&quot; : &quot;AIG&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandat&quot;
+    }, {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBNV&quot;,
+      &quot;IBAN&quot; : &quot;FR7611111111111111111111148&quot;,
+      &quot;Id&quot; : &quot;m0f1x000000CitwAAC&quot;,
+      &quot;OriginatorName&quot; : &quot;NV&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    }, {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBGB&quot;,
+      &quot;IBAN&quot; : &quot;FR7630004008280001624765376&quot;,
+      &quot;Id&quot; : &quot;m0f1x000000CitvAAC&quot;,
+      &quot;OriginatorName&quot; : &quot;GB&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    }, {
+      &quot;FileName&quot; : &quot;METLIFE EUROPE DESIGNATED ACTIVITY COMPANY&quot;,
+      &quot;FileType&quot; : &quot;RIBDM&quot;,
+      &quot;IBAN&quot; : &quot;FR7630004008280001610312376&quot;,
+      &quot;Id&quot; : &quot;m0f1x000000CituAAC&quot;,
+      &quot;OriginatorName&quot; : &quot;DM&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandate&quot;
+    }, {
+      &quot;CreditorCode&quot; : &quot;52&quot;,
+      &quot;FileName&quot; : &quot;METSEPA1.007543911-core.genericmncsv&quot;,
+      &quot;FileType&quot; : &quot;METLIFE&quot;,
+      &quot;IBAN&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;Id&quot; : &quot;m0f1x000000CittAAC&quot;,
+      &quot;OriginatorName&quot; : &quot;METLIFE&quot;,
+      &quot;SourceApplication&quot; : &quot;SFI&quot;,
+      &quot;Type&quot; : &quot;Mandat&quot;
+    } ],
+    &quot;PM&quot; : [ {
+      &quot;Account_BillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;Account_BillingCountry&quot; : &quot;France&quot;,
+      &quot;Account_BillingCountryCode&quot; : &quot;Need to be filled&quot;,
+      &quot;Account_BillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;Account_BillingState&quot; : &quot;B-a&quot;,
+      &quot;Account_BillingStreet&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+      &quot;Account_Id&quot; : &quot;001MU000002zV1aYAE&quot;,
+      &quot;Account_Name&quot; : &quot;Kamil01 Kamil01&quot;,
+      &quot;Account_PersonBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;Account_PersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethod_BIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentMethod_Id&quot; : &quot;a6PMU000000002O2AQ&quot;,
+      &quot;PaymentMethod_SepaMandateSignatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;PaymentMethod_SepaMandateUMR&quot; : &quot;000079221006&quot;,
+      &quot;Policy_Id&quot; : &quot;0YTMU00000000114AA&quot;,
+      &quot;Policy_Name&quot; : &quot;CGFOR000079&quot;,
+      &quot;Producer_Id&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+      &quot;Producer_Name&quot; : &quot;Cetelem&quot;,
+      &quot;Product_CarrierName&quot; : &quot;Metlife&quot;,
+      &quot;Product_Id&quot; : &quot;01t1x00000IyOEFAA3&quot;,
+      &quot;Product_Name&quot; : &quot;GFO Cetelem&quot;
+    }, {
+      &quot;Account_BillingCity&quot; : &quot;MEDIS&quot;,
+      &quot;Account_BillingCountry&quot; : &quot;France&quot;,
+      &quot;Account_BillingCountryCode&quot; : &quot;Need to be filled&quot;,
+      &quot;Account_BillingPostalCode&quot; : &quot;17600&quot;,
+      &quot;Account_BillingState&quot; : &quot;B-a&quot;,
+      &quot;Account_BillingStreet&quot; : &quot;LOT 1 MUSSON&quot;,
+      &quot;Account_Id&quot; : &quot;001MU000002zUzpYAE&quot;,
+      &quot;Account_Name&quot; : &quot;ISSAC01 ISSAC01&quot;,
+      &quot;Account_PersonBirthDate&quot; : &quot;1957-10-05&quot;,
+      &quot;Account_PersonTitle&quot; : &quot;Ms.&quot;,
+      &quot;PaymentMethod_BIC&quot; : &quot;PSSTFRPPLIM&quot;,
+      &quot;PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;PaymentMethod_Id&quot; : &quot;a6PMU000000002P2AQ&quot;,
+      &quot;PaymentMethod_SepaMandateSignatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;PaymentMethod_SepaMandateUMR&quot; : &quot;000080221006&quot;,
+      &quot;Policy_Id&quot; : &quot;0YTMU00000000124AA&quot;,
+      &quot;Policy_Name&quot; : &quot;CGFOR000080&quot;,
+      &quot;Producer_Id&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+      &quot;Producer_Name&quot; : &quot;Cetelem&quot;,
+      &quot;Product_CarrierName&quot; : &quot;Metlife&quot;,
+      &quot;Product_Id&quot; : &quot;01t1x00000IyOEFAA3&quot;,
+      &quot;Product_Name&quot; : &quot;GFO Cetelem&quot;
+    } ]
+  },
+  &quot;LoadDirectDebitPaymentMethodsStatus&quot; : true,
+  &quot;MergeElements&quot; : [ {
+    &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+    &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+    &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;domesticBankCode&quot; : &quot;20041&quot;,
+    &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;fileTypeCode&quot; : &quot;52&quot;,
+    &quot;language&quot; : &quot;FR&quot;,
+    &quot;mandateDescription&quot; : &quot;SFI&quot;,
+    &quot;mandateOperation&quot; : &quot;AMND&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+    &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;mandateType&quot; : &quot;FRST&quot;,
+    &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+    &quot;originatorName&quot; : &quot;METLIFE&quot;,
+    &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002O2AQA23119&quot;
+  }, {
+    &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+    &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+    &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;domesticBankCode&quot; : &quot;20041&quot;,
+    &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;fileTypeCode&quot; : &quot;52&quot;,
+    &quot;language&quot; : &quot;FR&quot;,
+    &quot;mandateDescription&quot; : &quot;SFI&quot;,
+    &quot;mandateOperation&quot; : &quot;AMND&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+    &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;mandateType&quot; : &quot;FRST&quot;,
+    &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+    &quot;originatorName&quot; : &quot;METLIFE&quot;,
+    &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002P2AQA23119&quot;
+  }, {
+    &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+    &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+    &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;domesticBankCode&quot; : &quot;20041&quot;,
+    &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;fileTypeCode&quot; : &quot;52&quot;,
+    &quot;language&quot; : &quot;FR&quot;,
+    &quot;mandateDescription&quot; : &quot;SFI&quot;,
+    &quot;mandateOperation&quot; : &quot;INIT&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+    &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;mandateType&quot; : &quot;FRST&quot;,
+    &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+    &quot;originatorName&quot; : &quot;METLIFE&quot;,
+    &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002O2AQI23119&quot;
+  }, {
+    &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+    &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+    &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+    &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+    &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+    &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+    &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+    &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;domesticBankCode&quot; : &quot;20041&quot;,
+    &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+    &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;fileTypeCode&quot; : &quot;52&quot;,
+    &quot;language&quot; : &quot;FR&quot;,
+    &quot;mandateDescription&quot; : &quot;SFI&quot;,
+    &quot;mandateOperation&quot; : &quot;INIT&quot;,
+    &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+    &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;mandateType&quot; : &quot;FRST&quot;,
+    &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+    &quot;originatorName&quot; : &quot;METLIFE&quot;,
+    &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+    &quot;sourceId&quot; : &quot;a6PMU000000002P2AQI23119&quot;
+  } ],
+  &quot;MergeElementsStatus&quot; : true,
+  &quot;StaticValues&quot; : {
+    &quot;ApiPushDate&quot; : &quot;2023-01-19&quot;,
+    &quot;DebtorAddressCountry&quot; : &quot;FR&quot;,
+    &quot;DomesticAccountCountry&quot; : &quot;FR&quot;,
+    &quot;DomesticMandateCountry&quot; : &quot;FR&quot;,
+    &quot;Language&quot; : &quot;FR&quot;,
+    &quot;MandateDescription&quot; : &quot;SFI&quot;,
+    &quot;MandateSchemaType&quot; : &quot;CORE&quot;,
+    &quot;Size&quot; : 2
+  },
+  &quot;StaticValuesStatus&quot; : true,
+  &quot;TransformAMND&quot; : {
+    &quot;Registrations&quot; : [ {
+      &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+      &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+      &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+      &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+      &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+      &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+      &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+      &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+      &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+      &quot;domesticBankCode&quot; : &quot;20041&quot;,
+      &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+      &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+      &quot;fileTypeCode&quot; : &quot;52&quot;,
+      &quot;language&quot; : &quot;FR&quot;,
+      &quot;mandateDescription&quot; : &quot;SFI&quot;,
+      &quot;mandateOperation&quot; : &quot;AMND&quot;,
+      &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+      &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+      &quot;mandateType&quot; : &quot;FRST&quot;,
+      &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;originatorName&quot; : &quot;METLIFE&quot;,
+      &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002O2AQA23119&quot;
+    }, {
+      &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+      &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+      &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+      &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+      &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+      &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+      &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+      &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+      &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+      &quot;domesticBankCode&quot; : &quot;20041&quot;,
+      &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+      &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+      &quot;fileTypeCode&quot; : &quot;52&quot;,
+      &quot;language&quot; : &quot;FR&quot;,
+      &quot;mandateDescription&quot; : &quot;SFI&quot;,
+      &quot;mandateOperation&quot; : &quot;AMND&quot;,
+      &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+      &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+      &quot;mandateType&quot; : &quot;FRST&quot;,
+      &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;originatorName&quot; : &quot;METLIFE&quot;,
+      &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002P2AQA23119&quot;
+    } ]
+  },
+  &quot;TransformAMNDStatus&quot; : true,
+  &quot;TransformINIT&quot; : {
+    &quot;Registrations&quot; : [ {
+      &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+      &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+      &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+      &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+      &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+      &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+      &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+      &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+      &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+      &quot;domesticBankCode&quot; : &quot;20041&quot;,
+      &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+      &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+      &quot;fileTypeCode&quot; : &quot;52&quot;,
+      &quot;language&quot; : &quot;FR&quot;,
+      &quot;mandateDescription&quot; : &quot;SFI&quot;,
+      &quot;mandateOperation&quot; : &quot;INIT&quot;,
+      &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+      &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+      &quot;mandateType&quot; : &quot;FRST&quot;,
+      &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;originatorName&quot; : &quot;METLIFE&quot;,
+      &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002O2AQI23119&quot;
+    }, {
+      &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+      &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+      &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+      &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+      &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+      &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+      &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+      &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+      &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+      &quot;domesticBankCode&quot; : &quot;20041&quot;,
+      &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+      &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+      &quot;fileTypeCode&quot; : &quot;52&quot;,
+      &quot;language&quot; : &quot;FR&quot;,
+      &quot;mandateDescription&quot; : &quot;SFI&quot;,
+      &quot;mandateOperation&quot; : &quot;INIT&quot;,
+      &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+      &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+      &quot;mandateType&quot; : &quot;FRST&quot;,
+      &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+      &quot;originatorName&quot; : &quot;METLIFE&quot;,
+      &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+      &quot;sourceId&quot; : &quot;a6PMU000000002P2AQI23119&quot;
+    } ]
+  },
+  &quot;TransformINITStatus&quot; : true,
+  &quot;TransformMergedList&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;hasErrors&quot; : false,
+    &quot;mergedList&quot; : [ {
+      &quot;additionalProp1&quot; : {
+        &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+        &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+        &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+        &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+        &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+        &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+        &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+        &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+        &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+        &quot;domesticBankCode&quot; : &quot;20041&quot;,
+        &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+        &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+        &quot;fileTypeCode&quot; : &quot;52&quot;,
+        &quot;language&quot; : &quot;FR&quot;,
+        &quot;mandateDescription&quot; : &quot;SFI&quot;,
+        &quot;mandateOperation&quot; : &quot;AMND&quot;,
+        &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+        &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+        &quot;mandateType&quot; : &quot;FRST&quot;,
+        &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+        &quot;originatorName&quot; : &quot;METLIFE&quot;,
+        &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+        &quot;sourceId&quot; : &quot;a6PMU000000002O2AQA23119&quot;
+      }
+    }, {
+      &quot;additionalProp1&quot; : {
+        &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+        &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+        &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+        &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+        &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+        &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+        &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+        &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+        &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+        &quot;domesticBankCode&quot; : &quot;20041&quot;,
+        &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+        &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+        &quot;fileTypeCode&quot; : &quot;52&quot;,
+        &quot;language&quot; : &quot;FR&quot;,
+        &quot;mandateDescription&quot; : &quot;SFI&quot;,
+        &quot;mandateOperation&quot; : &quot;AMND&quot;,
+        &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+        &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+        &quot;mandateType&quot; : &quot;FRST&quot;,
+        &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+        &quot;originatorName&quot; : &quot;METLIFE&quot;,
+        &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+        &quot;sourceId&quot; : &quot;a6PMU000000002P2AQA23119&quot;
+      }
+    }, {
+      &quot;additionalProp1&quot; : {
+        &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+        &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+        &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+        &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+        &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON ABC IMPASSE DE LA BELERIE&quot;,
+        &quot;debtorName&quot; : &quot;Kamil01 Kamil01&quot;,
+        &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+        &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+        &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+        &quot;domesticBankCode&quot; : &quot;20041&quot;,
+        &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+        &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+        &quot;fileTypeCode&quot; : &quot;52&quot;,
+        &quot;language&quot; : &quot;FR&quot;,
+        &quot;mandateDescription&quot; : &quot;SFI&quot;,
+        &quot;mandateOperation&quot; : &quot;INIT&quot;,
+        &quot;mandateSEPARefUmr&quot; : &quot;000079221006&quot;,
+        &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+        &quot;mandateType&quot; : &quot;FRST&quot;,
+        &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+        &quot;originatorName&quot; : &quot;METLIFE&quot;,
+        &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+        &quot;sourceId&quot; : &quot;a6PMU000000002O2AQI23119&quot;
+      }
+    }, {
+      &quot;additionalProp1&quot; : {
+        &quot;debtorAccountIban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;debtorAddrCityTown&quot; : &quot;MEDIS&quot;,
+        &quot;debtorAddrPOCode&quot; : &quot;17600&quot;,
+        &quot;debtorAddrStatePrvnceCntry&quot; : &quot;B-a&quot;,
+        &quot;debtorAddressCountry&quot; : &quot;FR&quot;,
+        &quot;debtorAddressLine1&quot; : &quot;LOT 1 MUSSON&quot;,
+        &quot;debtorName&quot; : &quot;ISSAC01 ISSAC01&quot;,
+        &quot;domesticAccChecksum&quot; : &quot;06&quot;,
+        &quot;domesticAccNum&quot; : &quot;00013M026&quot;,
+        &quot;domesticAccountCountry&quot; : &quot;FR&quot;,
+        &quot;domesticBankCode&quot; : &quot;20041&quot;,
+        &quot;domesticBranchCode&quot; : &quot;01005&quot;,
+        &quot;domesticMandateCountry&quot; : &quot;FR&quot;,
+        &quot;fileTypeCode&quot; : &quot;52&quot;,
+        &quot;language&quot; : &quot;FR&quot;,
+        &quot;mandateDescription&quot; : &quot;SFI&quot;,
+        &quot;mandateOperation&quot; : &quot;INIT&quot;,
+        &quot;mandateSEPARefUmr&quot; : &quot;000080221006&quot;,
+        &quot;mandateSchemaType&quot; : &quot;CORE&quot;,
+        &quot;mandateType&quot; : &quot;FRST&quot;,
+        &quot;originatorAccIban&quot; : &quot;IE34CHAS93090379607969&quot;,
+        &quot;originatorName&quot; : &quot;METLIFE&quot;,
+        &quot;signatureDate&quot; : &quot;2022-10-06&quot;,
+        &quot;sourceId&quot; : &quot;a6PMU000000002P2AQI23119&quot;
+      }
+    } ]
+  },
+  &quot;TransformMergedListStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;a6PMU000000002P2AQ&quot;
+  }, {
+    &quot;Id&quot; : &quot;a6PMU000000002O2AQ&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLUpdatePMSentToTMW_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

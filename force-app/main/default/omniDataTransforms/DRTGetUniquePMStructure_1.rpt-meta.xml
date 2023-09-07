@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR345678973838838383&quot;,
+  &quot;Id&quot; : &quot;a6PMU0000004CG42AM&quot;,
+  &quot;Label&quot; : &quot;Actuellement utilisé par le client sur la police CGFOR000146&quot;,
+  &quot;inUseForCurrentPolicy&quot; : true
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR345678973838838383&quot;,
+  &quot;Id&quot; : &quot;a6PMU0000004CG42AM&quot;,
+  &quot;Label&quot; : &quot;Actuellement utilisé par le client sur la police CGFOR000146&quot;,
+  &quot;NewLabel&quot; : &quot;text&quot;,
+  &quot;inUseForCurrentPolicy&quot; : true
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTGetUniquePMStructure</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:DefaultBankAccountPMLabel</formulaConverted>
+        <formulaExpression>DefaultBankAccountPMLabel</formulaExpression>
+        <formulaResultPath>DefaultTypeAheadBlock:TypeAhead1</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom2921</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ListUniquePM LIST &apos;inUseForCurrentPolicyFormula&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(ListUniquePM), &apos;inUseForCurrentPolicyFormula&apos;)</formulaExpression>
+        <formulaResultPath>policyPM</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom3287</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:DefaultBankAccountPMId</formulaConverted>
+        <formulaExpression>DefaultBankAccountPMId</formulaExpression>
+        <formulaResultPath>DefaultTypeAheadBlock:Id</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom1100</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom4914</globalKey>
+        <inputFieldName>ListUniquePM:NewLabel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List:NewLabel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom7198</globalKey>
+        <inputFieldName>ListUniquePM:Payment_error__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List:Payment_error__c</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom392</globalKey>
+        <inputFieldName>ListUniquePM:inUseForCurrentPolicyFormula</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List:inUseForCurrentPolicyFormula</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom3452</globalKey>
+        <inputFieldName>DefaultBankAccountPMLabel</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DefaultBankAccountPMLabel</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom2612</globalKey>
+        <inputFieldName>DefaultTypeAheadBlock</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DefaultTypeAheadBlock</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom2936</globalKey>
+        <inputFieldName>ListUniquePM:HasError</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List:HasError</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom3215</globalKey>
+        <inputFieldName>ListUniquePM:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>List:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ListUniquePM:Label ISNOTBLANK var:ListUniquePM:Label var:ListUniquePM:vlocity_ins__BankAccountNumber__c IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(ListUniquePM:Label), ListUniquePM:Label, ListUniquePM:vlocity_ins__BankAccountNumber__c)</formulaExpression>
+        <formulaResultPath>ListUniquePM:NewLabel</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom641</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:ListUniquePM:inUseForCurrentPolicy ISNOTBLANK var:ListUniquePM:inUseForCurrentPolicy false IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(ListUniquePM:inUseForCurrentPolicy), ListUniquePM:inUseForCurrentPolicy, false)</formulaExpression>
+        <formulaResultPath>ListUniquePM:inUseForCurrentPolicyFormula</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom9223</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:ListUniquePM:Payment_error__c ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(ListUniquePM:Payment_error__c)</formulaExpression>
+        <formulaResultPath>ListUniquePM:HasError</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom9674</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGetUniquePMStructureCustom4372</globalKey>
+        <inputFieldName>DefaultBankAccountPMId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>DefaultBankAccountPMId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:policyPM:Id ISBLANK var:ListUniquePM|1 var:policyPM IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(policyPM:Id), ListUniquePM|1, policyPM )</formulaExpression>
+        <formulaResultPath>DefaultTypeAheadBlock</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom274</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:policyPM:Id ISBLANK var:ListUniquePM|1:Id var:policyPM:Id IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(policyPM:Id), ListUniquePM|1:Id, policyPM:Id )</formulaExpression>
+        <formulaResultPath>DefaultBankAccountPMId</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom4965</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:policyPM:NewLabel ISBLANK var:ListUniquePM|1:NewLabel var:policyPM:NewLabel IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(policyPM:NewLabel), ListUniquePM|1:NewLabel, policyPM:NewLabel )</formulaExpression>
+        <formulaResultPath>DefaultBankAccountPMLabel</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTGetUniquePMStructureCustom6433</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGetUniquePMStructure</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ListUniquePM&quot; : [ {
+    &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR345678973838838383&quot;,
+    &quot;Id&quot; : &quot;a6PMU0000004CG42AM&quot;,
+    &quot;Label&quot; : &quot;Actuellement utilisé par le client sur la police CGFOR000146&quot;,
+    &quot;inUseForCurrentPolicy&quot; : false
+  }, {
+    &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;Id&quot; : &quot;a6PMU0000004CFk2AM&quot;,
+    &quot;Payment_error__c&quot; : &quot;Erreur Test&quot;,
+    &quot;inUseForCurrentPolicy&quot; : true
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTGetUniquePMStructure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

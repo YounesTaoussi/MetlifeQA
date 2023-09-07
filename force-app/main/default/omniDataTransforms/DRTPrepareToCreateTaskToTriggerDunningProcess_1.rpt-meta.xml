@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareToCreateTaskToTriggerDunningProcess</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareToCreateTaskToTriggerDunningProcessCustom2769</globalKey>
+        <inputFieldName>NoTaskPolicy</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreateTaskToTriggerDunningProcess</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TransactionsToReject</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:TransactionsToReject LIST &apos;hasTask/\/\/==/\/\/&quot;false&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(TransactionsToReject),&apos;hasTask == &quot;false&quot;&apos;)</formulaExpression>
+        <formulaResultPath>NoTaskPolicy</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareToCreateTaskToTriggerDunningProcessCustom5611</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareToCreateTaskToTriggerDunningProcess</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;TransactionsToReject&quot; : [ {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a6P1w000000EdHyEAK&quot;,
+    &quot;Impay&quot; : &quot;Y&quot;,
+    &quot;IndChangementCarte&quot; : &quot;N&quot;,
+    &quot;IndChangementStatus&quot; : &quot;N&quot;,
+    &quot;IndChangemetAdresse&quot; : &quot;N&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 175.94,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT1w0000007mABGAY&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR314159&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0011w00001RPdpTAAT&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Final&quot;,
+    &quot;PaymentTransaction&quot; : {
+      &quot;PaymentTransactions_Amount&quot; : 87.636664,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k91w000000Cj55AAC&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Encaissement - CGFOR314159 - 2023-06-15&quot;,
+      &quot;PaymentTransactions_PaymentMethodId&quot; : &quot;a6P1w000000Cz0iEAC&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.333336,
+      &quot;PaymentTransactions_TotalAmount&quot; : 87.97
+    },
+    &quot;Resiliationdate&quot; : &quot;Null&quot;,
+    &quot;SponsorRejection_Amount&quot; : 87.97,
+    &quot;SponsorRejection_Id&quot; : &quot;a9y1w000000Ch94AAC&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR314159&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;0123&quot;,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true,
+    &quot;hasSponsorCard&quot; : false,
+    &quot;hasTask&quot; : &quot;false&quot;
+  }, {
+    &quot;Account_PaymentMethodCheck_Id&quot; : &quot;a6P1w000000Ed9wEAC&quot;,
+    &quot;Impay&quot; : &quot;Y&quot;,
+    &quot;IndChangementCarte&quot; : &quot;N&quot;,
+    &quot;IndChangementStatus&quot; : &quot;N&quot;,
+    &quot;IndChangemetAdresse&quot; : &quot;N&quot;,
+    &quot;LatestInsurancePolicy_AmountToCollect&quot; : 175.94,
+    &quot;LatestInsurancePolicy_Frequency&quot; : &quot;Quarterly&quot;,
+    &quot;LatestInsurancePolicy_Id&quot; : &quot;0YT1w0000007pTBGAY&quot;,
+    &quot;LatestInsurancePolicy_Name&quot; : &quot;CGFOR000051&quot;,
+    &quot;LatestInsurancePolicy_NameInsuredId&quot; : &quot;0011w00001X3q9XAAR&quot;,
+    &quot;LatestInsurancePolicy_Status&quot; : &quot;In Force&quot;,
+    &quot;LatestInsurancePolicy_SubStatus&quot; : &quot;Active&quot;,
+    &quot;PaymentTransaction&quot; : {
+      &quot;PaymentTransactions_Amount&quot; : 87.636664,
+      &quot;PaymentTransactions_Id&quot; : &quot;0k91w000000Cj4vAAC&quot;,
+      &quot;PaymentTransactions_Name&quot; : &quot;Encaissement - CGFOR000051 - 2023-05-10&quot;,
+      &quot;PaymentTransactions_PaymentMethodId&quot; : &quot;a6P1w000000Cz0iEAC&quot;,
+      &quot;PaymentTransactions_TaxAmount&quot; : 0.333336,
+      &quot;PaymentTransactions_TotalAmount&quot; : 87.97
+    },
+    &quot;Resiliationdate&quot; : &quot;Null&quot;,
+    &quot;SponsorRejection_Amount&quot; : 87.97,
+    &quot;SponsorRejection_Id&quot; : &quot;a9y1w000000Ch95AAC&quot;,
+    &quot;SponsorRejection_PolicyNumber&quot; : &quot;CGFOR000051&quot;,
+    &quot;SponsorRejection_SponsorCardNumber&quot; : &quot;0123&quot;,
+    &quot;hasCheck&quot; : true,
+    &quot;hasPolicy&quot; : true,
+    &quot;hasSponsorCard&quot; : false,
+    &quot;hasTask&quot; : &quot;false&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareToCreateTaskToTriggerDunningProcess_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

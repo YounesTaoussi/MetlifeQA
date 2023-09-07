@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLSetTransactionToSentToTMW</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:body:status &quot;Success&quot; == var:null var:CallTMW:body:message IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:body:status == &quot;Success&quot;, null, CallTMW:body:message)</formulaExpression>
+        <formulaResultPath>CallTMW:body:ErrorMessage</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRLSetTransactionToSentToTMWCustom6</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:CallTMW:body:status &quot;Success&quot; == true false IF</formulaConverted>
+        <formulaExpression>IF(CallTMW:body:status == &quot;Success&quot;, true, false)</formulaExpression>
+        <formulaResultPath>CallTMW:body:SentToTmW</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRLSetTransactionToSentToTMWCustom7071</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>today</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRLSetTransactionToSentToTMWCustom4372</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLSetTransactionToSentToTMWCustom5929</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>true</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom6718</globalKey>
+        <inputFieldName>CallTMW:body:SentToTmW</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sent_to_TMW__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom1837</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Date_of_latest_collection__c</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom1812</globalKey>
+        <inputFieldName>GetTransactionsToSentToTMW:Update:PaymentMethodId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>2.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>vlocity_ins__PaymentMethod__c</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom3056</globalKey>
+        <inputFieldName>CallTMW:body:ErrorMessage</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Dernier_code_rejet_paiement__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom86</globalKey>
+        <inputFieldName>CallTMW:body:sourceId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLSetTransactionToSentToTMWCustom9756</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLSetTransactionToSentToTMWCustom9647</globalKey>
+        <inputFieldName>today</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLSetTransactionToSentToTMW</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Sent_to_TMW_Date__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;BuildTMWFormat&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;hasErrors&quot; : false,
+    &quot;mergedList&quot; : [ {
+      &quot;additionalProp1&quot; : {
+        &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;amount&quot; : 29.32,
+        &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+        &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+        &quot;file_type_code&quot; : &quot;52&quot;,
+        &quot;nameofbeneficiary&quot; : &quot;Amine0000052 Amine000005&quot;,
+        &quot;policyNumber&quot; : &quot;CGFOR000062&quot;,
+        &quot;reference&quot; : &quot;CGFOR000062/0k9MU0000004CwHYAU&quot;,
+        &quot;sourceId&quot; : &quot;0k9MU0000004CwHYAU&quot;,
+        &quot;value_date&quot; : &quot;2023-04-14&quot;
+      }
+    }, {
+      &quot;additionalProp1&quot; : {
+        &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;amount&quot; : 29.32,
+        &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+        &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+        &quot;file_type_code&quot; : &quot;52&quot;,
+        &quot;nameofbeneficiary&quot; : &quot;Amine0000077 Amine000007&quot;,
+        &quot;policyNumber&quot; : &quot;CGFOR000063&quot;,
+        &quot;reference&quot; : &quot;CGFOR000063/0k9MU0000004CwIYAU&quot;,
+        &quot;sourceId&quot; : &quot;0k9MU0000004CwIYAU&quot;,
+        &quot;value_date&quot; : &quot;2023-04-14&quot;
+      }
+    } ]
+  },
+  &quot;BuildTMWFormatStatus&quot; : true,
+  &quot;CallTMW&quot; : {
+    &quot;body&quot; : [ {
+      &quot;message&quot; : &quot;The sourceId is duplicate&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwHYAU&quot;,
+      &quot;status&quot; : &quot;Failure&quot;
+    }, {
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwIYAU&quot;,
+      &quot;status&quot; : &quot;Success&quot;
+    } ],
+    &quot;headers&quot; : { },
+    &quot;statusCode&quot; : &quot;OK&quot;,
+    &quot;statusCodeValue&quot; : 200
+  },
+  &quot;CallTMWInfo&quot; : {
+    &quot;Access-Control-Allow-Methods&quot; : &quot;POST&quot;,
+    &quot;Access-Control-Allow-Origin&quot; : &quot;*&quot;,
+    &quot;Access-Control-Expose-Headers&quot; : &quot;APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID&quot;,
+    &quot;Connection&quot; : &quot;Keep-Alive&quot;,
+    &quot;Content-Language&quot; : &quot;fr-FR&quot;,
+    &quot;Content-Type&quot; : &quot;application/json&quot;,
+    &quot;Date&quot; : &quot;Tue, 04 Apr 2023 13:06:38 GMT&quot;,
+    &quot;Transfer-Encoding&quot; : &quot;chunked&quot;,
+    &quot;Vary&quot; : &quot;Origin,Access-Control-Request-Method,Access-Control-Request-Headers&quot;,
+    &quot;X-Backside-Transport&quot; : &quot;OK OK&quot;,
+    &quot;X-Global-Transaction-ID&quot; : &quot;7b393495642c20de27c8f792&quot;,
+    &quot;X-Powered-By&quot; : &quot;Servlet/3.0&quot;,
+    &quot;status&quot; : &quot;OK&quot;,
+    &quot;statusCode&quot; : 200
+  },
+  &quot;CallTMWStatus&quot; : true,
+  &quot;GetTransactionsToSentToTMW&quot; : {
+    &quot;API&quot; : [ {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000052 Amine000005&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000062&quot;,
+      &quot;reference&quot; : &quot;CGFOR000062/0k9MU0000004CwHYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwHYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    }, {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000077 Amine000007&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000063&quot;,
+      &quot;reference&quot; : &quot;CGFOR000063/0k9MU0000004CwIYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwIYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    } ],
+    &quot;Update&quot; : [ {
+      &quot;PaymentMethodId&quot; : &quot;a6PMU00000000242AA&quot;,
+      &quot;TransactionId&quot; : &quot;0k9MU0000004CwHYAU&quot;
+    }, {
+      &quot;PaymentMethodId&quot; : &quot;a6PMU00000000252AA&quot;,
+      &quot;TransactionId&quot; : &quot;0k9MU0000004CwIYAU&quot;
+    } ]
+  },
+  &quot;GetTransactionsToSentToTMWStatus&quot; : true,
+  &quot;TransformToList&quot; : {
+    &quot;ListTransacrions&quot; : [ {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000052 Amine000005&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000062&quot;,
+      &quot;reference&quot; : &quot;CGFOR000062/0k9MU0000004CwHYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwHYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    }, {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000077 Amine000007&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000063&quot;,
+      &quot;reference&quot; : &quot;CGFOR000063/0k9MU0000004CwIYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwIYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    } ]
+  },
+  &quot;TransformToListStatus&quot; : true,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;0k9MU0000004CwHYAU&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k9MU0000004CwIYAU&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLSetTransactionToSentToTMW_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

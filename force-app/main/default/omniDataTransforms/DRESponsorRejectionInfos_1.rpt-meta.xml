@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRESponsorRejectionInfos</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRESponsorRejectionInfos016686423781756554</globalKey>
+        <inputFieldName>SponsorRejection:Resiliation_date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorRejection:ResiliationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRESponsorRejectionInfos1300900236864302</globalKey>
+        <inputFieldName>SponsorRejection:ListWithoutResiliationDate:Resiliation_date__c</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorRejection:ListWithoutResiliationDate:ResiliationDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRESponsorRejectionInfos6609559150715272</globalKey>
+        <inputFieldName>SponsorRejection:ListWithoutResiliationDate:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorRejection:ListWithoutResiliationDate:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRESponsorRejectionInfos7455372068940185</globalKey>
+        <inputFieldName>SponsorRejection:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SponsorRejection:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:SponsorRejection LIST &apos;ISBLANK(Resiliation_date__c)&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(SponsorRejection),&apos;ISBLANK(Resiliation_date__c)&apos;)</formulaExpression>
+        <formulaResultPath>SponsorRejection:ListWithoutResiliationDate</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRESponsorRejectionInfos9481722451318739</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <filterValue>data:Id</filterValue>
+        <globalKey>DRESponsorRejectionInfos5785956515017023</globalKey>
+        <inputFieldName>Id</inputFieldName>
+        <inputObjectName>SFI_Custom_Sponsor_flux_Incoming__c</inputObjectName>
+        <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRESponsorRejectionInfos</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>SponsorRejection</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;aA51x000000DLsgCAG&quot;
+  }, {
+    &quot;Id&quot; : &quot;aA51x000000DLs7CAG&quot;
+  }, {
+    &quot;Id&quot; : &quot;aA51x000000DLslCAG&quot;
+  }, {
+    &quot;Id&quot; : &quot;aA51x000000DLsqCAG&quot;
+  }, {
+    &quot;Id&quot; : &quot;aA51x000000DLsvCAG&quot;
+  }, {
+    &quot;Id&quot; : &quot;aA51x000000DLt0CAG&quot;
+  } ]
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Extract</type>
+    <uniqueName>DRESponsorRejectionInfos_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

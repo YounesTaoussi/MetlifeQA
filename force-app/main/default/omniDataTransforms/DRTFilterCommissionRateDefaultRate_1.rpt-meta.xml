@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTFilterCommissionRateDefaultRate</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:TotalTransactionAmount 100 /</formulaConverted>
+        <formulaExpression>(FilterTransactionsByRate:InsurancePolicyTransactionInfos:TotalTransactionAmount) / 100</formulaExpression>
+        <formulaResultPath>FilterTransactionsByRate:InsurancePolicyTransactionInfos:test1</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom1872</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:test1 12 *</formulaConverted>
+        <formulaExpression>(FilterTransactionsByRate:InsurancePolicyTransactionInfos:test1)*12</formulaExpression>
+        <formulaResultPath>FilterTransactionsByRate:InsurancePolicyTransactionInfos:test</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom662</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom4816</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:ProducerId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:ProducerId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom8439</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:InsurancePolicyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:InsurancePolicyName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom985</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:InsurancePolicyTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:InsurancePolicyTransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom7154</globalKey>
+        <inputFieldName>InsurancePolicyTransactionInfos:OriginalEffective</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:OriginalEffective</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2537</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos::PaymentTransactionId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:PaymentTransactionId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2966</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:EffectiveDateName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:EffectiveDateName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom3041</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:SponsorName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:SponsorName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom4344</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:FinalRate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:FinalRate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom9773</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:TotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2764</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:InsurancePolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:InsurancePolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom9454</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:TypedeCampagne</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:TypedeCampagne</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom957</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:InsurancePolicyId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:InsurancePolicyId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2927</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:isFirstYearPremium</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:isFirstYearPremium</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:OriginalEffectiveDate DATETIMETOUNIX 100000000 /</formulaConverted>
+        <formulaExpression>DATETIMETOUNIX(FilterTransactionsByRate:InsurancePolicyTransactionInfos:OriginalEffectiveDate) /100000000</formulaExpression>
+        <formulaResultPath>FilterTransactionsByRate:InsurancePolicyTransactionInfos:OriginalEffective</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom0jI1w0000008OdAEAUItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:CommissionRateDefaultRate LIST &apos;/\/\/TypedeCampagne==&quot;&apos; var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:TypedeCampagne + &apos;&quot;/\/\/&amp;&amp;/\/\/CanaldeVente==&quot;&apos; + var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:CanaldeVente + &apos;&quot;/\/\/&amp;&amp;/\/\/FirstDayUnix/\/\/&lt;=/\/\/&quot;&apos; + var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:OriginalDateUnix + &apos;&quot;&apos; + FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(CommissionRateDefaultRate),&apos; TypedeCampagne==&quot;&apos;+FilterTransactionsByRate:InsurancePolicyTransactionInfos:TypedeCampagne+&apos;&quot; &amp;&amp; CanaldeVente==&quot;&apos;+FilterTransactionsByRate:InsurancePolicyTransactionInfos:CanaldeVente+&apos;&quot; &amp;&amp; FirstDayUnix &lt;= &quot;&apos;+FilterTransactionsByRate:InsurancePolicyTransactionInfos:OriginalDateUnix+&apos;&quot;&apos;  )</formulaExpression>
+        <formulaResultPath>FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom0jI1w0000008OdAEAUItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom5275</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateFY</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:RateFY</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:isFirstYearPremium &quot;true&quot; = var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateFY var:FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateRen IF</formulaConverted>
+        <formulaExpression>IF(FilterTransactionsByRate:InsurancePolicyTransactionInfos:isFirstYearPremium =&quot;true&quot;,FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateFY,FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateRen)</formulaExpression>
+        <formulaResultPath>FilterTransactionsByRate:InsurancePolicyTransactionInfos:FinalRate</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2942</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom5170</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:FiltreSponsor|1:RateRen</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:RateRen</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom2324</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:CanaldeVente</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:CanaldeVente</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTFilterCommissionRateDefaultRateCustom9401</globalKey>
+        <inputFieldName>FilterTransactionsByRate:InsurancePolicyTransactionInfos:SponsorId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTFilterCommissionRateDefaultRate</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InsurancePolicyTransactionInfos:SponsorId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;CommissionRateDefaultRate&quot; : [ {
+    &quot;CanaldeVente&quot; : &quot;Principale&quot;,
+    &quot;FirstDay&quot; : &quot;2020-12-01&quot;,
+    &quot;FirstDayUnix&quot; : 16067.808,
+    &quot;RateFY&quot; : 27,
+    &quot;RateRen&quot; : 20,
+    &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;
+  }, {
+    &quot;CanaldeVente&quot; : &quot;Appel sortant (MetLife)&quot;,
+    &quot;DefaultRate&quot; : true,
+    &quot;FirstDay&quot; : &quot;2020-12-01&quot;,
+    &quot;FirstDayUnix&quot; : 16067.808,
+    &quot;RateFY&quot; : 27,
+    &quot;RateRen&quot; : 17,
+    &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;
+  } ],
+  &quot;FilterTransactionsByRate&quot; : {
+    &quot;InsurancePolicyTransactionInfos&quot; : [ {
+      &quot;CanaldeVente&quot; : &quot;Principale&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007mAVGAY&quot;,
+      &quot;InsurancePolicyName&quot; : &quot;CGFOR000043&quot;,
+      &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CigpAAC&quot;,
+      &quot;OriginalDateUnix&quot; : 16333.92,
+      &quot;OriginalEffective&quot; : 16521.408,
+      &quot;OriginalEffectiveDate&quot; : &quot;10/05/2022 00:00:00&quot;,
+      &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+      &quot;RateFY&quot; : &quot;Null&quot;,
+      &quot;SponsorId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;,
+      &quot;isFirstYearPremium&quot; : &quot;true&quot;
+    }, {
+      &quot;CanaldeVente&quot; : &quot;Appel sortant (MetLife)&quot;,
+      &quot;EffectiveDateName&quot; : &quot;2018-10-05&quot;,
+      &quot;InsurancePolicyId&quot; : &quot;0YT1w0000007o22GAA&quot;,
+      &quot;InsurancePolicyName&quot; : &quot;CGFOR000047&quot;,
+      &quot;InsurancePolicyTransactionId&quot; : &quot;0k91w000000CinpAAC&quot;,
+      &quot;OriginalDateUnix&quot; : 15386.976,
+      &quot;OriginalEffective&quot; : 15259.104,
+      &quot;OriginalEffectiveDate&quot; : &quot;10/05/2018 00:00:00&quot;,
+      &quot;PaymentTransactionId&quot; : &quot;0k91w000000CinuAAC&quot;,
+      &quot;ProducerId&quot; : &quot;0Yx1x0000008aGaCAI&quot;,
+      &quot;RateFY&quot; : &quot;Null&quot;,
+      &quot;SponsorId&quot; : &quot;0011x00001fbpxOAAQ&quot;,
+      &quot;SponsorName&quot; : &quot;AON&quot;,
+      &quot;TotalTransactionAmount&quot; : 138.54,
+      &quot;TypedeCampagne&quot; : &quot;Acquisition&quot;,
+      &quot;isFirstYearPremium&quot; : &quot;true&quot;
+    } ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTFilterCommissionRateDefaultRate_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

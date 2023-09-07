@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRLUpdateTransactionOnTMWServiceFailure</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdateTransactionOnTMWServiceFailureCustom6575</globalKey>
+        <inputFieldName>GetTransactionsToSentToTMW:API:sourceId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdateTransactionOnTMWServiceFailure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>true</requiredForUpsert>
+        <upsertKey>true</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>true</disabled>
+        <filterGroup>0.0</filterGroup>
+        <filterOperator>=</filterOperator>
+        <globalKey>DRLUpdateTransactionOnTMWServiceFailureCustom6776</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <migrationValue>FAKEMAPPING</migrationValue>
+        <name>DRLUpdateTransactionOnTMWServiceFailure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRLUpdateTransactionOnTMWServiceFailureCustom162</globalKey>
+        <inputFieldName>ErrorCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRLUpdateTransactionOnTMWServiceFailure</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Dernier_code_rejet_paiement__c</outputFieldName>
+        <outputObjectName>InsurancePolicyTransaction</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>SObject</outputType>
+    <previewJsonData>{
+  &quot;BuildTMWFormat&quot; : {
+    &quot;error&quot; : &quot;OK&quot;,
+    &quot;errorCode&quot; : &quot;INVOKE-200&quot;,
+    &quot;hasErrors&quot; : false,
+    &quot;mergedList&quot; : [ {
+      &quot;additionalProp1&quot; : {
+        &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;amount&quot; : 29.32,
+        &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+        &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+        &quot;file_type_code&quot; : &quot;52&quot;,
+        &quot;nameofbeneficiary&quot; : &quot;Amine0000041 Amine000004&quot;,
+        &quot;policyNumber&quot; : &quot;CGFOR000064&quot;,
+        &quot;reference&quot; : &quot;CGFOR000064/0k9MU0000004CwJYAU&quot;,
+        &quot;sourceId&quot; : &quot;0k9MU0000004CwJYAU&quot;,
+        &quot;value_date&quot; : &quot;2023-04-14&quot;
+      }
+    }, {
+      &quot;additionalProp1&quot; : {
+        &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+        &quot;amount&quot; : 29.32,
+        &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+        &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+        &quot;file_type_code&quot; : &quot;52&quot;,
+        &quot;nameofbeneficiary&quot; : &quot;eleven eleven&quot;,
+        &quot;policyNumber&quot; : &quot;CGFOR-XXXX-&quot;,
+        &quot;reference&quot; : &quot;CGFOR-XXXX-/0k9MU0000004CwUYAU&quot;,
+        &quot;sourceId&quot; : &quot;0k9MU0000004CwUYAU&quot;,
+        &quot;value_date&quot; : &quot;2023-04-14&quot;
+      }
+    } ]
+  },
+  &quot;BuildTMWFormatStatus&quot; : true,
+  &quot;CallTMW&quot; : {
+    &quot;body&quot; : &quot;Exception: Input details passed for the TmwDdCollectionsService has invalid datas. Please correct the input datas &amp; execute it again. Validation failed for classes [fr.metlife.sfdcservice.entity.SfiPrelevement] during persist time for groups [javax.validation.groups.Default, ]\nList of constraint violations:[\n\tConstraintViolationImpl{interpolatedMessage=&apos;policyNumber field must be alphanumeric &amp; Special characters are not allowed&apos;, propertyPath=policyNo, rootBeanClass=class fr.metlife.sfdcservice.entity.SfiPrelevement, messageTemplate=&apos;policyNumber field must be alphanumeric &amp; Special characters are not allowed&apos;}\n]&quot;,
+    &quot;headers&quot; : { },
+    &quot;statusCode&quot; : &quot;BAD_REQUEST&quot;,
+    &quot;statusCodeValue&quot; : 400
+  },
+  &quot;CallTMWInfo&quot; : {
+    &quot;Access-Control-Allow-Methods&quot; : &quot;POST&quot;,
+    &quot;Access-Control-Allow-Origin&quot; : &quot;*&quot;,
+    &quot;Access-Control-Expose-Headers&quot; : &quot;APIm-Debug-Trans-Id, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-Global-Transaction-ID&quot;,
+    &quot;Connection&quot; : &quot;Keep-Alive&quot;,
+    &quot;Content-Language&quot; : &quot;fr-FR&quot;,
+    &quot;Content-Type&quot; : &quot;application/json&quot;,
+    &quot;Date&quot; : &quot;Tue, 04 Apr 2023 13:33:36 GMT&quot;,
+    &quot;Transfer-Encoding&quot; : &quot;chunked&quot;,
+    &quot;Vary&quot; : &quot;Origin,Access-Control-Request-Method,Access-Control-Request-Headers&quot;,
+    &quot;X-Backside-Transport&quot; : &quot;OK OK&quot;,
+    &quot;X-Global-Transaction-ID&quot; : &quot;7b393495642c273019a60623&quot;,
+    &quot;X-Powered-By&quot; : &quot;Servlet/3.0&quot;,
+    &quot;status&quot; : &quot;OK&quot;,
+    &quot;statusCode&quot; : 200
+  },
+  &quot;CallTMWStatus&quot; : true,
+  &quot;ErrorCode&quot; : &quot;400: BAD_REQUEST ... anumeric &amp; Special characters are not allowed&apos;, propertyPath=policyNo, rootBeanClass=class fr.metlife.sfdcservice.entity.SfiPrelevement, messageTemplate=&apos;policyNumber field must be alphanumeric &amp; Special characters are not allowed&apos;}\n]&quot;,
+  &quot;GetTransactionsToSentToTMW&quot; : {
+    &quot;API&quot; : [ {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000041 Amine000004&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000064&quot;,
+      &quot;reference&quot; : &quot;CGFOR000064/0k9MU0000004CwJYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwJYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    }, {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;eleven eleven&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR-XXXX-&quot;,
+      &quot;reference&quot; : &quot;CGFOR-XXXX-/0k9MU0000004CwUYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwUYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    } ],
+    &quot;Update&quot; : [ {
+      &quot;PaymentMethodId&quot; : &quot;a6PMU00000000262AA&quot;,
+      &quot;TransactionId&quot; : &quot;0k9MU0000004CwJYAU&quot;
+    }, {
+      &quot;PaymentMethodId&quot; : &quot;a6P1x000000DZJ4EAO&quot;,
+      &quot;TransactionId&quot; : &quot;0k9MU0000004CwUYAU&quot;
+    } ]
+  },
+  &quot;GetTransactionsToSentToTMWStatus&quot; : true,
+  &quot;TransformToList&quot; : {
+    &quot;ListTransacrions&quot; : [ {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;Amine0000041 Amine000004&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR000064&quot;,
+      &quot;reference&quot; : &quot;CGFOR000064/0k9MU0000004CwJYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwJYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    }, {
+      &quot;Iban&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;amount&quot; : 29.32,
+      &quot;apiPushDate&quot; : &quot;2023-04-04&quot;,
+      &quot;devartDate&quot; : &quot;2023-04-14&quot;,
+      &quot;file_type_code&quot; : &quot;52&quot;,
+      &quot;nameofbeneficiary&quot; : &quot;eleven eleven&quot;,
+      &quot;policyNumber&quot; : &quot;CGFOR-XXXX-&quot;,
+      &quot;reference&quot; : &quot;CGFOR-XXXX-/0k9MU0000004CwUYAU&quot;,
+      &quot;sourceId&quot; : &quot;0k9MU0000004CwUYAU&quot;,
+      &quot;value_date&quot; : &quot;2023-04-14&quot;
+    } ]
+  },
+  &quot;TransformToListStatus&quot; : true,
+  &quot;UpdateTransactionAndPolicyStatus&quot; : false,
+  &quot;data&quot; : [ {
+    &quot;Id&quot; : &quot;0k9MU0000004CwUYAU&quot;
+  }, {
+    &quot;Id&quot; : &quot;0k9MU0000004CwJYAU&quot;
+  } ],
+  &quot;options&quot; : {
+    &quot;chainable&quot; : false,
+    &quot;ignoreCache&quot; : true,
+    &quot;queueableChainable&quot; : false,
+    &quot;resetCache&quot; : false,
+    &quot;useQueueableApexRemoting&quot; : false
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Load</type>
+    <uniqueName>DRLUpdateTransactionOnTMWServiceFailure_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

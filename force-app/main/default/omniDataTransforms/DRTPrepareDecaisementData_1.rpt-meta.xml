@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;ContextId&quot; : &quot;0YT0E000001gFclWAE&quot;,
+  &quot;NoTransactionToRefundStep1&quot; : null,
+  &quot;PrepareDataForDecaisementRachatOutput&quot; : {
+    &quot;AmountToCollect&quot; : 6777.935904,
+    &quot;DefaultPMId&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+    &quot;DefaultPMLabel&quot; : &quot;TestBankTest344343345&quot;,
+    &quot;DefaultTypeAheadBlock&quot; : {
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+      &quot;TypeAhead1&quot; : &quot;TestBankTest344343345&quot;
+    },
+    &quot;HasBankAccounts&quot; : true,
+    &quot;ListTransactions&quot; : [ {
+      &quot;Id&quot; : &quot;0k90E00000000guQAA&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    }, {
+      &quot;Id&quot; : &quot;0k90E00000000iHQAQ&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    } ],
+    &quot;ListTransactionsBankAccount&quot; : [ {
+      &quot;Id&quot; : &quot;0k90E00000000guQAA&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    }, {
+      &quot;Id&quot; : &quot;0k90E00000000iHQAQ&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    } ],
+    &quot;ListUniquePM&quot; : {
+      &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;TestBankTest344343345&quot;,
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;
+    },
+    &quot;SumSponsorSigned&quot; : 0,
+    &quot;SumSponsorSignedABS&quot; : 0,
+    &quot;SumbankAccountSigned&quot; : -1168.38,
+    &quot;SumbankAccountSignedABS&quot; : 1168.38,
+    &quot;TotalToReimbourse&quot; : -1168.38,
+    &quot;TotalToReimbourseABS&quot; : 1168.38,
+    &quot;UniqueBankAccountPMs&quot; : [ {
+      &quot;HasError&quot; : false,
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+      &quot;NewLabel&quot; : &quot;TestBankTest344343345&quot;,
+      &quot;inUseForCurrentPolicyFormula&quot; : false
+    } ],
+    &quot;concatmetlifeInvalidIbans&quot; : &quot;-LU100670006550207774-|-FR7611111111111111111111148-|-FR7630004008280001624765376-|-FR7630004008280001610312376-|-IE34CHAS93090379607969-|&quot;,
+    &quot;hasBankAccountTransactions&quot; : true,
+    &quot;hasSponsorCardTransactions&quot; : false,
+    &quot;rachat&quot; : [ {
+      &quot;Id&quot; : &quot;0k90E00000000guQAA&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    }, {
+      &quot;Id&quot; : &quot;0k90E00000000iHQAQ&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    } ],
+    &quot;typeReimbursement&quot; : &quot;Rachat&quot;
+  },
+  &quot;PrepareDataForDecaisementRemPrimeOutput&quot; : {
+    &quot;AmountToCollect&quot; : 6777.935904,
+    &quot;DefaultPMId&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+    &quot;DefaultPMLabel&quot; : &quot;TestBankTest344343345&quot;,
+    &quot;DefaultTypeAheadBlock&quot; : {
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+      &quot;TypeAhead1&quot; : &quot;TestBankTest344343345&quot;
+    },
+    &quot;HasBankAccounts&quot; : true,
+    &quot;ListTransactions&quot; : [ {
+      &quot;Id&quot; : &quot;0k90E00000001HEQAY&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.333336,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionName&quot; : &quot;Prime du 2022-10-05 au 2023-01-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -87.63936,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -87.97
+    } ],
+    &quot;ListTransactionsBankAccount&quot; : {
+      &quot;Id&quot; : &quot;0k90E00000001HEQAY&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.333336,
+      &quot;TotalTransactionAmount&quot; : 87.97,
+      &quot;TransactionName&quot; : &quot;Prime du 2022-10-05 au 2023-01-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -87.63936,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -87.97
+    },
+    &quot;ListUniquePM&quot; : {
+      &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;TestBankTest344343345&quot;,
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;
+    },
+    &quot;SumSponsorSigned&quot; : 0,
+    &quot;SumSponsorSignedABS&quot; : 0,
+    &quot;SumbankAccountSigned&quot; : -87.97,
+    &quot;SumbankAccountSignedABS&quot; : 87.97,
+    &quot;TotalToReimbourse&quot; : -87.97,
+    &quot;TotalToReimbourseABS&quot; : 87.97,
+    &quot;UniqueBankAccountPMs&quot; : [ {
+      &quot;HasError&quot; : false,
+      &quot;Id&quot; : &quot;a6P0E000000ECu6UAG&quot;,
+      &quot;NewLabel&quot; : &quot;TestBankTest344343345&quot;,
+      &quot;inUseForCurrentPolicyFormula&quot; : false
+    } ],
+    &quot;concatmetlifeInvalidIbans&quot; : &quot;-LU100670006550207774-|-FR7611111111111111111111148-|-FR7630004008280001624765376-|-FR7630004008280001610312376-|-IE34CHAS93090379607969-|&quot;,
+    &quot;hasBankAccountTransactions&quot; : true,
+    &quot;hasSponsorCardTransactions&quot; : false,
+    &quot;rachat&quot; : [ {
+      &quot;Id&quot; : &quot;0k90E00000000guQAA&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    }, {
+      &quot;Id&quot; : &quot;0k90E00000000iHQAQ&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 584.19,
+      &quot;TransactionName&quot; : &quot;Rachat 2023-02-21&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -584.18592,
+      &quot;canceledParentEffectiveDate&quot; : 31562134000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -584.19
+    } ],
+    &quot;typeReimbursement&quot; : &quot;RemPrime&quot;
+  },
+  &quot;Step1&quot; : { },
+  &quot;TransactionsToRefund&quot; : { },
+  &quot;contextId&quot; : &quot;0YT0E000001gFclWAE&quot;,
+  &quot;omniProcessId&quot; : &quot;0jN0E0000004COsUAM&quot;,
+  &quot;timeStamp&quot; : &quot;2023-07-03T08:17:15.384Z&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0050E00000DkPhpQAF&quot;,
+  &quot;userName&quot; : &quot;sshahrukh@salesforce.com.4sfidev07&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;120&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTPrepareDecaisementData</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom9150</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ReimbursementPremiumList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom3838</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRachatOutput:ListTransactions:TransactionName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatTransactionList:TransactionName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom8026</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRachatOutput:ListTransactions:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatTransactionList:TotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom5861</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRachatOutput:ListTransactions:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatTransactionList:TotalRachatAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom7346</globalKey>
+        <inputFieldName>RembPrimePresent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RembPrimePresent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom6096</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions:TransactionName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatRembPrimeList:RachatRembPrimeTransactionName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom4648</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatRembPrimeList:RachatRembPrimeTotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom7643</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatRembPrimeList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom1336</globalKey>
+        <inputFieldName>RachatPresent</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatPresent</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom1472</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRachatOutput:ListTransactions:TransactionName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatTransactionList:RachatName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom2333</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRachatOutput:ListTransactions</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatTransactionList</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom6035</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions:TransactionName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatRembPrimeList:TransactionName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTPrepareDecaisementDataCustom591</globalKey>
+        <inputFieldName>PrepareDataForDecaisementRemPrimeOutput:ListTransactions:TotalTransactionAmount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>RachatRembPrimeList:TotalTransactionAmount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:PrepareDataForDecaisementRemPrimeOutput:ListTransactions:Id ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(PrepareDataForDecaisementRemPrimeOutput:ListTransactions:Id)</formulaExpression>
+        <formulaResultPath>RembPrimePresent</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTPrepareDecaisementDataCustom8222</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:PrepareDataForDecaisementRachatOutput:ListTransactions:Id ISNOTBLANK</formulaConverted>
+        <formulaExpression>ISNOTBLANK(PrepareDataForDecaisementRachatOutput:ListTransactions:Id)</formulaExpression>
+        <formulaResultPath>RachatPresent</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTPrepareDecaisementDataCustom1813</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTPrepareDecaisementData</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;ContextId&quot; : &quot;0YTMT0000004C9I4AU&quot;,
+  &quot;DisplayOutputStep&quot; : { },
+  &quot;InsurancePolicyInfo&quot; : [ {
+    &quot;Id&quot; : &quot;0YTMT0000004C9I4AU&quot;,
+    &quot;NameInsured&quot; : {
+      &quot;Id&quot; : &quot;001MT000003GudpYAC&quot;
+    },
+    &quot;NameInsuredId&quot; : &quot;001MT000003GudpYAC&quot;
+  } ],
+  &quot;NoTransactionToRefundStep1&quot; : null,
+  &quot;PremiumReimburseStep&quot; : { },
+  &quot;PrepareDataForDecaisementRachatOutput&quot; : {
+    &quot;AmountToCollect&quot; : -46.64,
+    &quot;DefaultPMId&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+    &quot;DefaultPMLabel&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;DefaultTypeAheadBlock&quot; : {
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;TypeAhead1&quot; : &quot;FR1420041010050500013M02606&quot;
+    },
+    &quot;HasBankAccounts&quot; : true,
+    &quot;ListTransactions&quot; : [ {
+      &quot;Id&quot; : &quot;0k9MT0000004CAfYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 12,
+      &quot;TransactionName&quot; : &quot;Rachat Test&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -12,
+      &quot;canceledParentEffectiveDate&quot; : 1688983200000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -12
+    } ],
+    &quot;ListTransactionsBankAccount&quot; : {
+      &quot;Id&quot; : &quot;0k9MT0000004CAfYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 12,
+      &quot;TransactionName&quot; : &quot;Rachat Test&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -12,
+      &quot;canceledParentEffectiveDate&quot; : 1688983200000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -12
+    },
+    &quot;ListUniquePM&quot; : {
+      &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;
+    },
+    &quot;SumSponsorSigned&quot; : 0,
+    &quot;SumSponsorSignedABS&quot; : 0,
+    &quot;SumbankAccountSigned&quot; : -12,
+    &quot;SumbankAccountSignedABS&quot; : 12,
+    &quot;TotalToReimbourse&quot; : -12,
+    &quot;TotalToReimbourseABS&quot; : 12,
+    &quot;UniqueBankAccountPMs&quot; : [ {
+      &quot;HasError&quot; : false,
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;NewLabel&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;inUseForCurrentPolicyFormula&quot; : false
+    } ],
+    &quot;concatmetlifeInvalidIbans&quot; : &quot;-LU100670006550207774-|-FR7611111111111111111111148-|-FR7630004008280001624765376-|-FR7630004008280001610312376-|-IE34CHAS93090379607969-|&quot;,
+    &quot;hasBankAccountTransactions&quot; : true,
+    &quot;hasSponsorCardTransactions&quot; : false,
+    &quot;rachat&quot; : {
+      &quot;Id&quot; : &quot;0k9MT0000004CAfYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 12,
+      &quot;TransactionName&quot; : &quot;Rachat Test&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -12,
+      &quot;canceledParentEffectiveDate&quot; : 1688983200000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -12
+    },
+    &quot;typeReimbursement&quot; : &quot;Rachat&quot;
+  },
+  &quot;PrepareDataForDecaisementRemPrimeOutput&quot; : {
+    &quot;AmountToCollect&quot; : -46.64,
+    &quot;DefaultPMId&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+    &quot;DefaultPMLabel&quot; : &quot;FR1420041010050500013M02606&quot;,
+    &quot;DefaultTypeAheadBlock&quot; : {
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;TypeAhead1&quot; : &quot;FR1420041010050500013M02606&quot;
+    },
+    &quot;HasBankAccounts&quot; : true,
+    &quot;ListTransactions&quot; : [ {
+      &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MT0000004CAVYA2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Sponsor Card&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMT0000008OOe2AM&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;CanceledTransaction_ParentTransaction_PaymentMethod_SponsorCardNumber&quot; : &quot;202993939933&quot;,
+      &quot;CanceledTransaction_ParentTransaction_TransactionEffectiveDate&quot; : &quot;2023-07-22T00:00:00.000Z&quot;,
+      &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+      &quot;CanceledTransaction__c&quot; : &quot;0k9MT0000004CAMYA2&quot;,
+      &quot;Id&quot; : &quot;0k9MT0000004CAbYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.111112,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TransactionName&quot; : &quot;Annulation Prime du 2023-01-05 au 2023-02-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -29.21312,
+      &quot;canceledParentEffectiveDate&quot; : 1689984000000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Sponsor Card&quot;,
+      &quot;signedTotalAmount&quot; : -29.32
+    }, {
+      &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MT0000004CAQYA2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;CanceledTransaction_ParentTransaction_TransactionEffectiveDate&quot; : &quot;2023-07-22T00:00:00.000Z&quot;,
+      &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+      &quot;CanceledTransaction__c&quot; : &quot;0k9MT0000004CALYA2&quot;,
+      &quot;Id&quot; : &quot;0k9MT0000004CAaYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.111112,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TransactionName&quot; : &quot;Annulation Prime du 2022-12-05 au 2023-01-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -29.21312,
+      &quot;canceledParentEffectiveDate&quot; : 1689984000000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -29.32
+    } ],
+    &quot;ListTransactionsBankAccount&quot; : {
+      &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MT0000004CAQYA2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Bank Account&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;CanceledTransaction_ParentTransaction_PaymentMethod_BankAccountNumber&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;CanceledTransaction_ParentTransaction_TransactionEffectiveDate&quot; : &quot;2023-07-22T00:00:00.000Z&quot;,
+      &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+      &quot;CanceledTransaction__c&quot; : &quot;0k9MT0000004CALYA2&quot;,
+      &quot;Id&quot; : &quot;0k9MT0000004CAaYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.111112,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TransactionName&quot; : &quot;Annulation Prime du 2022-12-05 au 2023-01-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -29.21312,
+      &quot;canceledParentEffectiveDate&quot; : 1689984000000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -29.32
+    },
+    &quot;ListTransactionsSponsorCard&quot; : {
+      &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MT0000004CAVYA2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Sponsor Card&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMT0000008OOe2AM&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;CanceledTransaction_ParentTransaction_PaymentMethod_SponsorCardNumber&quot; : &quot;202993939933&quot;,
+      &quot;CanceledTransaction_ParentTransaction_TransactionEffectiveDate&quot; : &quot;2023-07-22T00:00:00.000Z&quot;,
+      &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+      &quot;CanceledTransaction__c&quot; : &quot;0k9MT0000004CAMYA2&quot;,
+      &quot;Id&quot; : &quot;0k9MT0000004CAbYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.111112,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TransactionName&quot; : &quot;Annulation Prime du 2023-01-05 au 2023-02-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -29.21312,
+      &quot;canceledParentEffectiveDate&quot; : 1689984000000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Sponsor Card&quot;,
+      &quot;signedTotalAmount&quot; : -29.32
+    },
+    &quot;ListUniquePM&quot; : {
+      &quot;vlocity_ins__BankAccountNumber__c&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;
+    },
+    &quot;MostRecentlyCreatedSponsorCardTransaction&quot; : {
+      &quot;CanceledTransaction_ParenTransactionId&quot; : &quot;0k9MT0000004CAVYA2&quot;,
+      &quot;CanceledTransaction_ParenTransaction_PaymentMethod_MethodType__c&quot; : &quot;Sponsor Card&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Payment_Method__c&quot; : &quot;a6PMT0000008OOe2AM&quot;,
+      &quot;CanceledTransaction_ParenTransaction_Type&quot; : &quot;Premium Payment&quot;,
+      &quot;CanceledTransaction_ParentTransaction_PaymentMethod_SponsorCardNumber&quot; : &quot;202993939933&quot;,
+      &quot;CanceledTransaction_ParentTransaction_TransactionEffectiveDate&quot; : &quot;2023-07-22T00:00:00.000Z&quot;,
+      &quot;CanceledTransaction_Type&quot; : &quot;Premium Charge&quot;,
+      &quot;CanceledTransaction__c&quot; : &quot;0k9MT0000004CAMYA2&quot;,
+      &quot;Id&quot; : &quot;0k9MT0000004CAbYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : -0.111112,
+      &quot;TotalTransactionAmount&quot; : 29.32,
+      &quot;TransactionName&quot; : &quot;Annulation Prime du 2023-01-05 au 2023-02-04&quot;,
+      &quot;Type&quot; : &quot;Premium Cancellation&quot;,
+      &quot;WTAmountSigned&quot; : -29.21312,
+      &quot;canceledParentEffectiveDate&quot; : 1689984000000,
+      &quot;isForRachat&quot; : false,
+      &quot;isForRemPrime&quot; : true,
+      &quot;isForRenonciation&quot; : true,
+      &quot;isForResiliation&quot; : true,
+      &quot;isPremiumCancelationCharge&quot; : true,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Sponsor Card&quot;,
+      &quot;signedTotalAmount&quot; : -29.32
+    },
+    &quot;SumSponsorSigned&quot; : -29.32,
+    &quot;SumSponsorSignedABS&quot; : 29.32,
+    &quot;SumbankAccountSigned&quot; : -29.32,
+    &quot;SumbankAccountSignedABS&quot; : 29.32,
+    &quot;TotalToReimbourse&quot; : -58.64,
+    &quot;TotalToReimbourseABS&quot; : 58.64,
+    &quot;UniqueBankAccountPMs&quot; : [ {
+      &quot;HasError&quot; : false,
+      &quot;Id&quot; : &quot;a6PMT0000008OOZ2A2&quot;,
+      &quot;NewLabel&quot; : &quot;FR1420041010050500013M02606&quot;,
+      &quot;inUseForCurrentPolicyFormula&quot; : false
+    } ],
+    &quot;concatmetlifeInvalidIbans&quot; : &quot;-LU100670006550207774-|-FR7611111111111111111111148-|-FR7630004008280001624765376-|-FR7630004008280001610312376-|-IE34CHAS93090379607969-|&quot;,
+    &quot;hasBankAccountTransactions&quot; : true,
+    &quot;hasSponsorCardTransactions&quot; : true,
+    &quot;rachat&quot; : {
+      &quot;Id&quot; : &quot;0k9MT0000004CAfYAM&quot;,
+      &quot;InFavorOfClient__c&quot; : true,
+      &quot;TaxAmountSigned&quot; : 0,
+      &quot;TotalTransactionAmount&quot; : 12,
+      &quot;TransactionName&quot; : &quot;Rachat Test&quot;,
+      &quot;Type&quot; : &quot;Surrender&quot;,
+      &quot;WTAmountSigned&quot; : -12,
+      &quot;canceledParentEffectiveDate&quot; : 1688983200000,
+      &quot;isForRachat&quot; : true,
+      &quot;isForRemPrime&quot; : false,
+      &quot;isForRenonciation&quot; : false,
+      &quot;isForResiliation&quot; : false,
+      &quot;isPremiumCancelationCharge&quot; : false,
+      &quot;paymentMethodTypeToReimbourse&quot; : &quot;Bank Account&quot;,
+      &quot;signedTotalAmount&quot; : -12
+    },
+    &quot;typeReimbursement&quot; : &quot;RemPrime&quot;
+  },
+  &quot;RachatReimbursementStep&quot; : null,
+  &quot;TransactionsToRefund&quot; : { },
+  &quot;contextId&quot; : &quot;0YTMT0000004C9I4AU&quot;,
+  &quot;language&quot; : &quot;English&quot;,
+  &quot;localTimeZoneName&quot; : &quot;Asia/Calcutta&quot;,
+  &quot;omniProcessId&quot; : &quot;0jNMT0000008OKV2A2&quot;,
+  &quot;omniscriptId&quot; : &quot;0jNMT0000008OKV2A2&quot;,
+  &quot;runMode&quot; : &quot;preview&quot;,
+  &quot;sId&quot; : &quot;0jNMT0000008OKV2A2&quot;,
+  &quot;subType&quot; : &quot;DecaissementRefactor&quot;,
+  &quot;theme&quot; : &quot;lightning&quot;,
+  &quot;timeStamp&quot; : &quot;2023-07-12T07:50:09.001Z&quot;,
+  &quot;type&quot; : &quot;metLife&quot;,
+  &quot;userCurrencyCode&quot; : &quot;EUR&quot;,
+  &quot;userId&quot; : &quot;0051x00000DPpDqAAL&quot;,
+  &quot;userName&quot; : &quot;sshahrukh@salesforce.com.4sfidev07&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZone&quot; : &quot;120&quot;,
+  &quot;userTimeZoneName&quot; : &quot;Europe/Paris&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTPrepareDecaisementData_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;AmountToCollect&quot; : 0.004231999999998237,
+  &quot;Capital_Advance&quot; : 23,
+  &quot;Id&quot; : &quot;0YTMU000000001J4AQ&quot;,
+  &quot;Interest_on_Advance&quot; : 12,
+  &quot;OriginalEffectiveDate&quot; : &quot;2023-01-01T00:00:00.000Z&quot;,
+  &quot;PaidToDate&quot; : &quot;2025-02-20&quot;,
+  &quot;Profit_Sharing&quot; : 100,
+  &quot;Transaction&quot; : [ {
+    &quot;HasNoParent&quot; : false,
+    &quot;Id&quot; : &quot;0k9MU000000000BYAQ&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;ParentTransactionId&quot; : &quot;0k9MU000000000CYAQ&quot;,
+    &quot;ParentTransaction_Type&quot; : &quot;Premium Payment&quot;,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TotalTransactionAmountSigned&quot; : -29.32,
+    &quot;TransactionEffectiveDate&quot; : &quot;2022-10-05T00:00:00.000Z&quot;,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  }, {
+    &quot;HasNoParent&quot; : true,
+    &quot;Id&quot; : &quot;0k9MU000000000CYAQ&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TotalTransactionAmountSigned&quot; : -29.32,
+    &quot;TransactionEffectiveDate&quot; : &quot;2023-02-21T00:00:00.000Z&quot;,
+    &quot;Type&quot; : &quot;Premium Payment&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>DRTGroupTransactions</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transaction LIST &apos;Type/\/\/=/\/\/&quot;Premium/\/\/Charge&quot;/\/\/&amp;&amp;/\/\/notAlreadyCanceled&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Transaction), &apos;Type = &quot;Premium Charge&quot; &amp;&amp; notAlreadyCanceled&apos;)</formulaExpression>
+        <formulaResultPath>AllPremiumCharges</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom166</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transaction LIST &apos;Type/\/\/=/\/\/&quot;Premium/\/\/Charge&quot;/\/\/&amp;&amp;/\/\/HasNoParent/\/\/&amp;&amp;/\/\/notAlreadyCanceled&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(Transaction), &apos;Type = &quot;Premium Charge&quot; &amp;&amp; HasNoParent &amp;&amp; notAlreadyCanceled&apos;)</formulaExpression>
+        <formulaResultPath>AllUnpaidPremiumCharges</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom2488</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:AllPremiumCharges LIST &apos;ParentTransaction_Type/\/\/=/\/\/&quot;Premium/\/\/Payment&quot;&apos; FILTER</formulaConverted>
+        <formulaExpression>FILTER(LIST(AllPremiumCharges), &apos;ParentTransaction_Type = &quot;Premium Payment&quot;&apos;)</formulaExpression>
+        <formulaResultPath>AllPaidPremiumCharges</formulaResultPath>
+        <formulaSequence>10.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom2514</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:AmountToCollect var:SumAllUnpaidPremiumCharges -</formulaConverted>
+        <formulaExpression>AmountToCollect - SumAllUnpaidPremiumCharges</formulaExpression>
+        <formulaResultPath>SumReduction</formulaResultPath>
+        <formulaSequence>7.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom847</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:AllPaidPremiumCharges:Id ISBLANK var:null | | var:AllPaidPremiumCharges LIST &apos;ParentEffectiveDateUnix&apos; &apos;[:DSC]&apos; SORTBY IF</formulaConverted>
+        <formulaExpression>IF(ISBLANK(AllPaidPremiumCharges:Id) , null, SORTBY(LIST(AllPaidPremiumCharges), &apos;ParentEffectiveDateUnix&apos;, &apos;[:DSC]&apos;))</formulaExpression>
+        <formulaResultPath>AllPaidPremiumChargesSorted</formulaResultPath>
+        <formulaSequence>11.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom9951</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:AllUnpaidPremiumCharges LIST &quot;TotalTransactionAmount&quot; FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(AllUnpaidPremiumCharges), &quot;TotalTransactionAmount&quot;)</formulaExpression>
+        <formulaResultPath>SumAllUnpaidPremiumCharges</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom513</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &quot;CustomFunctionImplementation&quot; &quot;SumFromList&quot; | var:AllPremiumCharges LIST &quot;TotalTransactionAmount&quot; FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&quot;CustomFunctionImplementation&quot;, &quot;SumFromList&quot;, LIST(AllPremiumCharges), &quot;TotalTransactionAmount&quot;)</formulaExpression>
+        <formulaResultPath>SumAllPremiumCharges</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom765</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom8248</globalKey>
+        <inputFieldName>SumResiliation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumResiliation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:AmountToCollect var:SumAllUnpaidPremiumCharges - var:Capital_Advance + var:Interest_on_Advance +</formulaConverted>
+        <formulaExpression>AmountToCollect - SumAllUnpaidPremiumCharges + Capital_Advance + Interest_on_Advance</formulaExpression>
+        <formulaResultPath>SumResiliation</formulaResultPath>
+        <formulaSequence>8.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom6856</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:AmountToCollect var:SumAllUnpaidPremiumCharges - var:Capital_Advance + var:Interest_on_Advance + var:SurrenderValue - var:Profit_Sharing -</formulaConverted>
+        <formulaExpression>AmountToCollect - SumAllUnpaidPremiumCharges + Capital_Advance + Interest_on_Advance - SurrenderValue - Profit_Sharing</formulaExpression>
+        <formulaResultPath>SumRachat</formulaResultPath>
+        <formulaSequence>9.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom6818</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>var:AmountToCollect var:SumAllPremiumCharges -</formulaConverted>
+        <formulaExpression>AmountToCollect - SumAllPremiumCharges</formulaExpression>
+        <formulaResultPath>SumAnnulationRenunciation</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom904</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom1800</globalKey>
+        <inputFieldName>SumAllPremiumCharges</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumAllPremiumCharges</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom6274</globalKey>
+        <inputFieldName>MaxPaymentEffectiveDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>MaxPaymentEffectiveDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom3293</globalKey>
+        <inputFieldName>AllUnpaidPremiumCharges</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AllUnpaidPremiumCharges</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom6514</globalKey>
+        <inputFieldName>AllPremiumCharges</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AllPremiumCharges</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom7797</globalKey>
+        <inputFieldName>SumReduction</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumReduction</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom3008</globalKey>
+        <inputFieldName>SumRachat</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumRachat</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom5551</globalKey>
+        <inputFieldName>SumAnnulationRenunciation</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumAnnulationRenunciation</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>0</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom1181</globalKey>
+        <inputFieldName>SumAllUnpaidPremiumCharges</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>SumAllUnpaidPremiumCharges</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>DRTGroupTransactionsCustom6474</globalKey>
+        <inputFieldName>AllPaidPremiumCharges</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>AllPaidPremiumCharges</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:Transaction:CanceledBy:Id ISNOTBLANK var:Transaction:HasNoParent false == var:Transaction:ParentTransaction_Type &quot;Premium/\/\/Cancellation&quot; == &amp;&amp; || NOT</formulaConverted>
+        <formulaExpression>NOT(ISNOTBLANK(Transaction:CanceledBy:Id) || (Transaction:HasNoParent == false &amp;&amp; Transaction:ParentTransaction_Type == &quot;Premium Cancellation&quot;))</formulaExpression>
+        <formulaResultPath>Transaction:notAlreadyCanceled</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom5628</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:AllPaidPremiumChargesSorted:Id ISNOTBLANK var:AllPaidPremiumChargesSorted|1:ParentTransactionEffectiveDate &apos;1971-06-06T00:00:00.000Z&apos; IF</formulaConverted>
+        <formulaExpression>IF(ISNOTBLANK(AllPaidPremiumChargesSorted:Id), AllPaidPremiumChargesSorted|1:ParentTransactionEffectiveDate, &apos;1971-06-06T00:00:00.000Z&apos;)</formulaExpression>
+        <formulaResultPath>MaxPaymentEffectiveDate</formulaResultPath>
+        <formulaSequence>12.0</formulaSequence>
+        <globalKey>DRTGroupTransactionsCustom3657</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>DRTGroupTransactions</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;AmountToCollect&quot; : 29.32,
+  &quot;Capital_Advance&quot; : &quot;0&quot;,
+  &quot;CoolingPeriodExeeded&quot; : true,
+  &quot;EffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+  &quot;EndOfCoolingOffPeriod&quot; : &quot;2023-01-03&quot;,
+  &quot;InsurancePolicy_Status&quot; : &quot;In Force&quot;,
+  &quot;InsurancePolicy_Substatus&quot; : &quot;Pending Lapse&quot;,
+  &quot;Interest_on_Advance&quot; : &quot;0&quot;,
+  &quot;Name&quot; : &quot;GFO000344&quot;,
+  &quot;NameInsuredId&quot; : &quot;0011x00001oCoqlAAC&quot;,
+  &quot;OriginalEffectiveDate&quot; : &quot;2022-10-04T22:00:00.000Z&quot;,
+  &quot;OriginalEffectiveDateMinus1day&quot; : &quot;2022-10-04&quot;,
+  &quot;PaidToDate&quot; : &quot;2022-12-04&quot;,
+  &quot;PaymentDueDate&quot; : &quot;2023-01-05T00:00:00.000Z&quot;,
+  &quot;PremiumFrequency&quot; : &quot;Quarterly&quot;,
+  &quot;Profit_Sharing&quot; : &quot;0&quot;,
+  &quot;SMIC&quot; : [ {
+    &quot;date&quot; : &quot;2024-01-01&quot;,
+    &quot;val&quot; : 1720.67
+  }, {
+    &quot;date&quot; : &quot;2023-01-01&quot;,
+    &quot;val&quot; : 1709.28
+  } ],
+  &quot;SMICValue&quot; : 1709.28,
+  &quot;SurrenderValue&quot; : -121.77,
+  &quot;SurrenderValueShouldBeRecalculated&quot; : true,
+  &quot;TotalStandardAmount&quot; : 87.96,
+  &quot;Transaction&quot; : {
+    &quot;HasNoParent&quot; : true,
+    &quot;Id&quot; : &quot;0k91x00000006V3AAI&quot;,
+    &quot;InFavorOfClient&quot; : false,
+    &quot;ParentEffectiveDateUnix&quot; : 44114118,
+    &quot;TotalTransactionAmount&quot; : 29.32,
+    &quot;TotalTransactionAmountSigned&quot; : -29.32,
+    &quot;TransactionEffectiveDate&quot; : &quot;2022-12-04T23:00:00.000Z&quot;,
+    &quot;Type&quot; : &quot;Premium Charge&quot;
+  },
+  &quot;coolingOffPeriodDurationInDays&quot; : 90,
+  &quot;listSmicSorted&quot; : {
+    &quot;DeveloperName&quot; : &quot;X01_2023&quot;,
+    &quot;Effective_Start_Date__c&quot; : &quot;2023-01-01&quot;,
+    &quot;Id&quot; : &quot;m0g1x000000D7rmAAC&quot;,
+    &quot;Value__c&quot; : 1709.28
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>DRTGroupTransactions_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

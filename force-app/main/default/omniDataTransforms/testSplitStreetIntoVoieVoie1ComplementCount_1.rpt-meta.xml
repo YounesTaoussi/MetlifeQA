@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <description>Testing how to split the SF Street field back into voie, voie1 and complement, considering it came from three sales file fields that were merged into one with a comma separator</description>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;GetPolicyDetailsKIT&quot; : {
+    &quot;KitContracts&quot; : [ {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;
+    } ]
+  }
+}</expectedInputJson>
+    <expectedOutputXml>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;root&gt;
+    &lt;plis&gt;
+        &lt;pli&gt;
+            &lt;destinataire_adresse_voie/&gt;
+            &lt;destinataire_adresse_voie1/&gt;
+            &lt;destinataire_adresse_complement/&gt;
+        &lt;/pli&gt;
+    &lt;/plis&gt;
+&lt;/root&gt;</expectedOutputXml>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom3686</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:voieFirstCommaPos</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem10</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:complement</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_complement</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos+1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom3983</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem9</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:voie1</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_voie1</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom621</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:voieSecondCommaPos</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom9821</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos 0 &gt; | | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT 0 var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos&gt;0,SUBSTRING(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),0,GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:voie</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem1</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos 1 &gt; | | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT var:GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos + 3 + var:GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos var:GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos + var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos + 2 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos&gt;1,SUBSTRING(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos+GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos+3,GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos+GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos+GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos+2),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:complement</formulaResultPath>
+        <formulaSequence>6.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem0</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos 1 + var:GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos + 1 + SUBSTRING &quot;,&quot; STRINGINDEXOF</formulaConverted>
+        <formulaExpression>STRINGINDEXOF(SUBSTRING(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos + 1 + GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos + 1),&quot;,&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom8913</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem7</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:voie</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:destinataire_adresse_voie</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos 1 &gt; | | var:GetPolicyDetailsKIT:KitContracts:personBillingSrteet &quot;,,,&quot; CONCAT var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos 2 + var:GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos var:GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos + 1 + SUBSTRING &quot;&quot; IF</formulaConverted>
+        <formulaExpression>IF(GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos&gt;1,SUBSTRING(CONCAT(GetPolicyDetailsKIT:KitContracts:personBillingSrteet,&quot;,,,&quot;),GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos+2,GetPolicyDetailsKIT:KitContracts:voieSecondCommaPos+GetPolicyDetailsKIT:KitContracts:voieFirstCommaPos+1),&quot;&quot;)</formulaExpression>
+        <formulaResultPath>GetPolicyDetailsKIT:KitContracts:voie1</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom0jI1x00000002pIEAQItem5</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>testSplitStreetIntoVoieVoie1ComplementCountCustom2895</globalKey>
+        <inputFieldName>GetPolicyDetailsKIT:KitContracts:voieThirdCommaPos</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>testSplitStreetIntoVoieVoie1ComplementCount</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>root:plis:pli:voieThirdCommaPos</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>XML</outputType>
+    <previewJsonData>{
+  &quot;GetPolicyDetailsKIT&quot; : {
+    &quot;KitContracts&quot; : [ {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC, IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ABC,&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, ,&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON, , IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;LOT 1 MUSSON\r\n ABC\r\n IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;, ABC,&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;, ABC, IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;, , IMPASSE DE LA BELERIE&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;🐱‍🚀, 🐱‍💻, 🐱‍🏍&quot;
+    }, {
+      &quot;personBillingSrteet&quot; : &quot;&quot;
+    } ]
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>testSplitStreetIntoVoieVoie1ComplementCount_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+    <xmlOutputTagsOrder>[&quot;root&quot;,&quot;root:plis&quot;,&quot;root:plis:pli&quot;,&quot;root:plis:pli:destinataire_adresse_voie&quot;,&quot;root:plis:pli:destinataire_adresse_voie1&quot;,&quot;root:plis:pli:destinataire_adresse_complement&quot;]</xmlOutputTagsOrder>
+</OmniDataTransform>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;InputFilterEligibleTransactions&quot; : [ {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000wOQAQ&quot;,
+    &quot;IdPlusPolicyNames&quot; : &quot;0k90E00000000wOQAQ/CGFOR000049&quot;,
+    &quot;InsurancePolicyAmountToCollect&quot; : -408.94,
+    &quot;InsurancePolicyId&quot; : &quot;0YT1x0000004qk9GAA&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000049&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement-3&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentMethodId&quot; : &quot;a6P0E000000EEALUA4&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;INCORRECT ACCOUNT NUMBER&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;AC01&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-04-28&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.21,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  }, {
+    &quot;CashOutStatus&quot; : &quot;Approved&quot;,
+    &quot;Id&quot; : &quot;0k90E00000000w9QAA&quot;,
+    &quot;IdPlusPolicyNames&quot; : &quot;0k90E00000000w9QAA/CGFOR000086&quot;,
+    &quot;InsurancePolicyAmountToCollect&quot; : -321.31,
+    &quot;InsurancePolicyId&quot; : &quot;0YT0E000001gFewWAE&quot;,
+    &quot;InsurancePolicyName&quot; : &quot;CGFOR000086&quot;,
+    &quot;IsApproved&quot; : true,
+    &quot;IsRejected&quot; : false,
+    &quot;Names&quot; : &quot;Décaissement 123&quot;,
+    &quot;PaymentMethod&quot; : &quot;a6P0E000000EEbtUAG&quot;,
+    &quot;PaymentMethodId&quot; : &quot;a6P0E000000EEbtUAG&quot;,
+    &quot;PaymentOrderSent&quot; : true,
+    &quot;RejectionReasonDescription&quot; : &quot;INCORRECT ACCOUNT NUMBER&quot;,
+    &quot;RejectionReasonUserInput&quot; : &quot;AC01&quot;,
+    &quot;TaskDueDate&quot; : &quot;2023-04-28&quot;,
+    &quot;TaskStatus&quot; : &quot;Not Started&quot;,
+    &quot;TaskSubType&quot; : &quot;Rejet de décaissement&quot;,
+    &quot;TaskSubject&quot; : &quot;Rejet de décaissement par Kyriba&quot;,
+    &quot;TaskType&quot; : &quot;CASH OUT REJECTION&quot;,
+    &quot;TotalTransactionAmounts&quot; : 29.21,
+    &quot;Type&quot; : &quot;Cash-out&quot;,
+    &quot;paymentMethodType&quot; : &quot;Bank Account&quot;
+  } ]
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>RejectedTransactionsOutput</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RejectedTransactionsOutputCustom6363</globalKey>
+        <inputFieldName>InputFilterEligibleTransactions:IdPlusPolicyNames</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RejectedTransactionsOutput</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>InputFilterEligibleTransactions:RejectedReferenceId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>RejectedTransactionsOutput_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

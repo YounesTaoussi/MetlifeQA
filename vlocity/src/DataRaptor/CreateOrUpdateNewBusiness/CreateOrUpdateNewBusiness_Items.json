@@ -1,0 +1,408 @@
+[
+    {
+        "FormulaExpression": "%ConvertLead:AccountId%",
+        "FormulaResultPath": "accountId",
+        "FormulaSequence": 3,
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom2579",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "%SetValuesTech:DuplicatesRes|1%",
+        "FormulaResultPath": "firstElement",
+        "FormulaSequence": 1,
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom493",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%firstElement% <> \"\", %firstElement:AccountID%, null)",
+        "FormulaResultPath": "accountId",
+        "FormulaSequence": 2,
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom9732",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8929",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:Gender",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Gender__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8865",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BillingCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingCity",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom3815",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:Country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingCountry",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8084",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BillingPostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingPostalCode",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom7926",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BillingState",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingState",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom1196",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:Address",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BillingStreet",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom5823",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BirthCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BirthCity__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom2157",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BirthCountry",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BirthCountry__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom7601",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BirthDepartmentCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BirthFrenchDepartmentCode__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom3185",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BirthName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Birth_Name__pc",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8059",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FirstName",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom7197",
+        "InputFieldName": "accountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8244",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom1364",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "LastName",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom8380",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:BirthDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonBirthdate",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom4048",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:Title",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PersonTitle",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom4492",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:PersonAccountRecordType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "CreateOrUpdateNewBusinessCustom5741",
+        "InputFieldName": "ExtrtactAndBuildData:AccountInfo:AccountType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "CreateOrUpdateNewBusiness",
+        "OmniDataTransformationId": {
+            "Name": "CreateOrUpdateNewBusiness",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/CreateOrUpdateNewBusiness",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "Account",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
